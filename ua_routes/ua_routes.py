@@ -120,6 +120,9 @@ INCLUDE_ALLEYS = True        # highway=service + service=alley are collected (dr
 ONE_DAY_PER_STREET = True    # boundary roads shared by two zones go to ONE day only
 SERVICE_MPH = 8
 DEADHEAD_MPH = 22
+SHIFT_SPLITS = (2, 3)        # also write each day split into 2 and 3 back-to-back shifts
+DEFAULT_MPH = dict(residential=25, unclassified=25, living_street=15, tertiary=30,
+                   secondary=35, primary=35, trunk=45, service=10)
 TURN_COST = dict(straight=0, right=1, left=3, uturn=8)
 TURN_COST_RIGHT_BIAS = dict(straight=0, right=1, left=6, uturn=12)
 
@@ -136,6 +139,19 @@ def as_list(v):
     if v is None or (isinstance(v, float) and math.isnan(v)):
         return []
     return v if isinstance(v, list) else [v]
+
+
+def speed_mph(d):
+    """Posted limit from OSM maxspeed, else a default by road type."""
+    vals = []
+    for m in as_list(d.get("maxspeed")):
+        mm = re.match(r"\s*(\d+)", str(m))
+        if mm:
+            vals.append(float(mm.group(1)) * (1 if "mph" in str(m) else 0.621))
+    if vals:
+        return min(vals)
+    hw = [str(h).replace("_link", "") for h in as_list(d.get("highway"))]
+    return min([DEFAULT_MPH.get(h, 25) for h in hw] or [25])
 
 
 def is_alley(d):
@@ -580,12 +596,13 @@ def group_steps(G, steps):
         wrong = d["_collect"] and not G.has_edge(u, v)
         c = edge_coords(G, u, v, d)
         g = groups[-1] if groups else None
+        drive_s = d["length"] / (speed_mph(d) * M_PER_MI / 3600)
         if g and g["street"] == name and g["_collect"] == d["_collect"] and g["wrong"] == wrong:
-            g["coords"].extend(c[1:]); g["len"] += d["length"]
+            g["coords"].extend(c[1:]); g["len"] += d["length"]; g["drive_s"] += drive_s
         else:
             turn = "start" if i == 0 else classify(hd[i - 1][1], hd[i][0])
             groups.append(dict(street=name, _collect=d["_collect"], wrong=wrong, turn=turn,
-                               coords=list(c), len=d["length"], start=u))
+                               coords=list(c), len=d["length"], start=u, drive_s=drive_s))
     return groups
 
 
@@ -602,12 +619,13 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
     svc = sum(g["len"] for g in groups if g["_collect"])
     dh = sum(g["len"] for g in groups if not g["_collect"])
     hrs = svc / M_PER_MI / SERVICE_MPH + dh / M_PER_MI / DEADHEAD_MPH
+    nonstop_h = sum(g["drive_s"] for g in groups) / 3600
     wrong = sum(1 for g in groups if g["wrong"])
     tstr = lambda st: ", ".join(f"{k} {st.get(k, 0)}" for k in ("right", "straight", "left", "uturn"))
     summary = (f"{zone['name']}: total {(svc + dh) / M_PER_MI:.2f} mi | collect "
                f"{svc / M_PER_MI:.2f} mi | repeat {dh / M_PER_MI:.2f} mi "
                f"({100 * dh / max(svc + dh, 1):.0f}%) | ~{hrs:.1f} h @ {SERVICE_MPH}/"
-               f"{DEADHEAD_MPH} mph | turns: {tstr(stats_after)}")
+               f"{DEADHEAD_MPH} mph | non-stop drive {nonstop_h:.1f} h | turns: {tstr(stats_after)}")
     print("  " + summary)
     print(f"  turns before smoothing: {tstr(stats_before)}")
     if wrong:
@@ -654,28 +672,51 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
         p.style.iconstyle.scale = 1.3
     kml.savekmz(f"{pre}_route.kmz")
 
-    with open(f"{pre}_route.gpx", "w") as f:
+    write_gpx(f"{pre}_route.gpx", f"UA {zone['name']}", groups, G, t)
+    write_turn_sheet(f"{pre}_turn_sheet.csv", groups, G)
+    print(f"  wrote {pre}_route.kmz, {pre}_route.gpx, {pre}_turn_sheet.csv, {pre}_streets.csv")
+    for n in SHIFT_SPLITS:
+        write_shifts(G, zid, zone, groups, s, t, n)
+    return dict(zone=zid, name=zone["name"], nonstop_drive_h=nonstop_h, total_mi=(svc + dh) / M_PER_MI,
+                collect_mi=svc / M_PER_MI, repeat_mi=dh / M_PER_MI,
+                repeat_pct=100 * dh / max(svc + dh, 1), hours=hrs, oneway_flags=wrong,
+                oneway_streets="; ".join(sorted({g["street"] for g in groups if g["wrong"]})),
+                **{f"turn_{k}": stats_after.get(k, 0) for k in ("right", "straight", "left", "uturn")},
+                **{f"before_{k}": stats_before.get(k, 0) for k in ("right", "straight", "left", "uturn")})
+
+
+def work_s(g):
+    mph = SERVICE_MPH if g["_collect"] else DEADHEAD_MPH
+    return g["len"] / (mph * M_PER_MI / 3600)
+
+
+def write_gpx(fn, title, groups, G, end_node):
+    from xml.sax.saxutils import escape
+    with open(fn, "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" '
                 'creator="ua_routes" xmlns="http://www.topografix.com/GPX/1/1">\n'
-                f'<metadata><name>UA {zone["name"]}</name></metadata>\n')
-        from xml.sax.saxutils import escape
-        for i, g in enumerate(groups, 1):          # numbered stops = turn-sheet steps
+                f'<metadata><name>{escape(title)}</name></metadata>\n')
+        for i, g in enumerate(groups, 1):
             x, y = node_xy(G, g["start"])
             mode = "COLLECT" if g["_collect"] else "repeat"
             warn = " - ONE-WAY: go around legally" if g["wrong"] else ""
             f.write(f'<wpt lat="{y:.7f}" lon="{x:.7f}"><name>{i}</name>'
                     f'<desc>{escape(TURN_TXT[g["turn"]])} {escape(g["street"])} - {mode} '
-                    f'{g["len"] * FT_PER_M:.0f} ft{warn}</desc>'
-                    f'<type>{mode}</type></wpt>\n')
-        for label, node in (("START", s), ("END", t)):
+                    f'{g["len"] * FT_PER_M:.0f} ft{warn}</desc><type>{mode}</type></wpt>\n')
+        for label, node in (("START", groups[0]["start"]), ("END", end_node)):
             x, y = node_xy(G, node)
             f.write(f'<wpt lat="{y:.7f}" lon="{x:.7f}"><name>{label}</name></wpt>\n')
-        f.write(f'<trk><name>UA {zone["name"]}</name><trkseg>\n')
+        f.write(f'<trk><name>{escape(title)}</name><trkseg>\n')
+        full = []
+        for g in groups:
+            full.extend(g["coords"] if not full else g["coords"][1:])
         for x, y in full:
             f.write(f'<trkpt lat="{y:.7f}" lon="{x:.7f}"/>\n')
         f.write("</trkseg></trk></gpx>\n")
 
-    with open(f"{pre}_turn_sheet.csv", "w", newline="") as f:
+
+def write_turn_sheet(fn, groups, G):
+    with open(fn, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["step", "instruction", "street", "mode", "feet", "cum_miles",
                     "lat", "lon", "warning"])
@@ -687,13 +728,50 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
                         "COLLECT" if g["_collect"] else "repeat", round(g["len"] * FT_PER_M),
                         round(cum / M_PER_MI, 2), round(y, 6), round(x, 6),
                         "one-way street: check direction" if g["wrong"] else ""])
-    print(f"  wrote {pre}_route.kmz, {pre}_route.gpx, {pre}_turn_sheet.csv, {pre}_streets.csv")
-    return dict(zone=zid, name=zone["name"], total_mi=(svc + dh) / M_PER_MI,
-                collect_mi=svc / M_PER_MI, repeat_mi=dh / M_PER_MI,
-                repeat_pct=100 * dh / max(svc + dh, 1), hours=hrs, oneway_flags=wrong,
-                oneway_streets="; ".join(sorted({g["street"] for g in groups if g["wrong"]})),
-                **{f"turn_{k}": stats_after.get(k, 0) for k in ("right", "straight", "left", "uturn")},
-                **{f"before_{k}": stats_before.get(k, 0) for k in ("right", "straight", "left", "uturn")})
+
+
+SHIFT_ROWS = []
+
+
+def write_shifts(G, zid, zone, groups, s, t, n):
+    """Cut the day's single route into n back-to-back shifts of ~equal work time.
+    Cuts fall at street changes; shift k+1 starts exactly where shift k ended
+    (same truck later, or a 2nd truck driving to that corner) - zero extra miles."""
+    import os
+    os.makedirs("shifts", exist_ok=True)
+    ws = [work_s(g) for g in groups]
+    tot, cum, cuts = sum(ws), 0.0, []
+    for i, w_ in enumerate(ws):
+        if len(cuts) < n - 1 and cum + w_ / 2 >= tot * (len(cuts) + 1) / n and i > 0:
+            cuts.append(i)
+        cum += w_
+    bounds = [0] + cuts + [len(groups)]
+    day = zone["day"]
+    for k in range(n):
+        part = [dict(g) for g in groups[bounds[k]:bounds[k + 1]]]
+        part[0]["turn"] = "start"
+        end_node = groups[bounds[k + 1]]["start"] if k < n - 1 else t
+        pre = f"shifts/{day}_{n}shifts_part{k + 1}"
+        write_gpx(f"{pre}.gpx", f"UA {zone['name']} - shift {k + 1} of {n}", part, G, end_node)
+        write_turn_sheet(f"{pre}_turn_sheet.csv", part, G)
+        sv = sum(g["len"] for g in part if g["_collect"])
+        dh = sum(g["len"] for g in part if not g["_collect"])
+        sx, sy = node_xy(G, part[0]["start"]); ex, ey = node_xy(G, end_node)
+        SHIFT_ROWS.append(dict(
+            day=day.title(), split=f"{n} shifts", shift=k + 1,
+            total_mi=round((sv + dh) / M_PER_MI, 2), collect_mi=round(sv / M_PER_MI, 2),
+            est_work_h=round(sum(work_s(g) for g in part) / 3600, 2),
+            nonstop_drive_h=round(sum(g["drive_s"] for g in part) / 3600, 2),
+            stops=len(part), start_lat=round(sy, 6), start_lon=round(sx, 6),
+            start_street=part[0]["street"], end_lat=round(ey, 6), end_lon=round(ex, 6)))
+
+
+def write_shift_plan():
+    if not SHIFT_ROWS:
+        return
+    with open("ua_shift_plan.csv", "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(SHIFT_ROWS[0]))
+        w.writeheader(); w.writerows(SHIFT_ROWS)
 
 
 def render_png(G, zid, zone, geom, steps, s, t, fname=None):
@@ -1032,6 +1110,7 @@ def main(G=None, args=None):
     for z in zids:
         results[z] = run_zone(G, Gu, roads, z, geoms[z], reqs[z], *ends[z])
     write_summary(results)
+    write_shift_plan()
     if len(zids) > 1:
         write_overview(results)
         city = check_gaps(Gu, results)
