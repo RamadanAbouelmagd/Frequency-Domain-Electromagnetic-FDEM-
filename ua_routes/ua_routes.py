@@ -580,11 +580,11 @@ def group_steps(G, steps):
         wrong = d["_collect"] and not G.has_edge(u, v)
         c = edge_coords(G, u, v, d)
         g = groups[-1] if groups else None
-        if g and g["street"] == name and g["service"] == d["_collect"] and g["wrong"] == wrong:
+        if g and g["street"] == name and g["_collect"] == d["_collect"] and g["wrong"] == wrong:
             g["coords"].extend(c[1:]); g["len"] += d["length"]
         else:
             turn = "start" if i == 0 else classify(hd[i - 1][1], hd[i][0])
-            groups.append(dict(street=name, service=d["_collect"], wrong=wrong, turn=turn,
+            groups.append(dict(street=name, _collect=d["_collect"], wrong=wrong, turn=turn,
                                coords=list(c), len=d["length"], start=u))
     return groups
 
@@ -599,8 +599,8 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
     full = []
     for g in groups:
         full.extend(g["coords"] if not full else g["coords"][1:])
-    svc = sum(g["len"] for g in groups if g["service"])
-    dh = sum(g["len"] for g in groups if not g["service"])
+    svc = sum(g["len"] for g in groups if g["_collect"])
+    dh = sum(g["len"] for g in groups if not g["_collect"])
     hrs = svc / M_PER_MI / SERVICE_MPH + dh / M_PER_MI / DEADHEAD_MPH
     wrong = sum(1 for g in groups if g["wrong"])
     tstr = lambda st: ", ".join(f"{k} {st.get(k, 0)}" for k in ("right", "straight", "left", "uturn"))
@@ -634,7 +634,7 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
         l = fl.newlinestring(name=f"{i:03d} {g['street']}", coords=g["coords"])
         l.visibility = 0
         l.style.linestyle.color = (simplekml.Color.red if g["wrong"] else
-                                   simplekml.Color.green if g["service"] else
+                                   simplekml.Color.green if g["_collect"] else
                                    simplekml.Color.orange)
         l.style.linestyle.width = 4
     fa = kml.newfolder(name="Anchor intersections (numbered steps)")
@@ -642,7 +642,7 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
         x, y = node_xy(G, g["start"])
         p = fa.newpoint(name=str(i), coords=[(x, y)])
         p.description = (f"{TURN_TXT[g['turn']]} {g['street']} - "
-                         f"{'COLLECT' if g['service'] else 'drive (repeat)'} "
+                         f"{'COLLECT' if g['_collect'] else 'drive (repeat)'} "
                          f"{g['len'] * FT_PER_M:.0f} ft")
         p.style.iconstyle.scale = 0.6
         p.style.labelstyle.scale = 0.6
@@ -657,7 +657,20 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
     with open(f"{pre}_route.gpx", "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" '
                 'creator="ua_routes" xmlns="http://www.topografix.com/GPX/1/1">\n'
-                f'<trk><name>UA {zone["name"]}</name><trkseg>\n')
+                f'<metadata><name>UA {zone["name"]}</name></metadata>\n')
+        from xml.sax.saxutils import escape
+        for i, g in enumerate(groups, 1):          # numbered stops = turn-sheet steps
+            x, y = node_xy(G, g["start"])
+            mode = "COLLECT" if g["_collect"] else "repeat"
+            warn = " - ONE-WAY: go around legally" if g["wrong"] else ""
+            f.write(f'<wpt lat="{y:.7f}" lon="{x:.7f}"><name>{i}</name>'
+                    f'<desc>{escape(TURN_TXT[g["turn"]])} {escape(g["street"])} - {mode} '
+                    f'{g["len"] * FT_PER_M:.0f} ft{warn}</desc>'
+                    f'<type>{mode}</type></wpt>\n')
+        for label, node in (("START", s), ("END", t)):
+            x, y = node_xy(G, node)
+            f.write(f'<wpt lat="{y:.7f}" lon="{x:.7f}"><name>{label}</name></wpt>\n')
+        f.write(f'<trk><name>UA {zone["name"]}</name><trkseg>\n')
         for x, y in full:
             f.write(f'<trkpt lat="{y:.7f}" lon="{x:.7f}"/>\n')
         f.write("</trkseg></trk></gpx>\n")
@@ -671,7 +684,7 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
             cum += g["len"]
             x, y = node_xy(G, g["start"])
             w.writerow([i, TURN_TXT[g["turn"]], g["street"],
-                        "COLLECT" if g["service"] else "repeat", round(g["len"] * FT_PER_M),
+                        "COLLECT" if g["_collect"] else "repeat", round(g["len"] * FT_PER_M),
                         round(cum / M_PER_MI, 2), round(y, 6), round(x, 6),
                         "one-way street: check direction" if g["wrong"] else ""])
     print(f"  wrote {pre}_route.kmz, {pre}_route.gpx, {pre}_turn_sheet.csv, {pre}_streets.csv")

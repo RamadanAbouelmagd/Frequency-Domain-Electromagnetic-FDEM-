@@ -1,5 +1,381 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="ua_routes" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>UA Monday Collection</name></metadata>
+<wpt lat="40.0133810" lon="-83.0898000"><name>1</name><desc>Start on Riverside Drive - COLLECT 6585 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9991450" lon="-83.0758220"><name>2</name><desc>Turn LEFT onto Cambridge Boulevard - COLLECT 2149 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9968050" lon="-83.0694370"><name>3</name><desc>Turn RIGHT onto Hillside Drive - repeat 361 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9958820" lon="-83.0690270"><name>4</name><desc>Continue on Hillside Drive - COLLECT 808 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9942650" lon="-83.0670670"><name>5</name><desc>Turn RIGHT onto Waltham Road - repeat 405 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9938109" lon="-83.0683765"><name>6</name><desc>Continue on Waltham Road - COLLECT 308 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9933064" lon="-83.0692553"><name>7</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 1090 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9954340" lon="-83.0719920"><name>8</name><desc>Turn RIGHT onto Club Road - COLLECT 441 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9962980" lon="-83.0708880"><name>9</name><desc>Turn RIGHT onto Malvern Road - COLLECT 1151 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9938109" lon="-83.0683765"><name>10</name><desc>Turn LEFT onto Waltham Road - COLLECT 809 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9950437" lon="-83.0660449"><name>11</name><desc>Turn LEFT onto Hampshire Road - repeat 750 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9951740" lon="-83.0683150"><name>12</name><desc>U-TURN onto Hampshire Road - COLLECT 750 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9950437" lon="-83.0660449"><name>13</name><desc>Turn LEFT onto Waltham Road - COLLECT 655 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9958525" lon="-83.0639638"><name>14</name><desc>Turn RIGHT onto Cambridge Boulevard - COLLECT 405 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9950038" lon="-83.0630288"><name>15</name><desc>Turn RIGHT onto Upper Chelsea Road / Edgemont Road - COLLECT 699 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9949575" lon="-83.0647914"><name>16</name><desc>Turn LEFT onto Alley - COLLECT 312 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9945541" lon="-83.0657697"><name>17</name><desc>U-TURN onto Alley - repeat 312 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9949575" lon="-83.0647914"><name>18</name><desc>Turn LEFT onto Upper Chelsea Road - COLLECT 1502 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9958820" lon="-83.0690270"><name>19</name><desc>Turn RIGHT onto Hillside Drive - COLLECT 361 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9968050" lon="-83.0694370"><name>20</name><desc>Turn RIGHT onto Cambridge Boulevard - repeat 146 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9969610" lon="-83.0689550"><name>21</name><desc>Turn LEFT onto Ellington Road - COLLECT 873 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9990007" lon="-83.0705315"><name>22</name><desc>Turn RIGHT onto Oxford Road - COLLECT 326 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9996985" lon="-83.0698109"><name>23</name><desc>Turn RIGHT onto Elgin Road - COLLECT 1048 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9973120" lon="-83.0677950"><name>24</name><desc>Turn LEFT onto Cambridge Boulevard - COLLECT 360 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9973728" lon="-83.0665228"><name>25</name><desc>Turn LEFT onto Cheshire Road - COLLECT 1065 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9998574" lon="-83.0684757"><name>26</name><desc>Turn LEFT onto Tewksbury Road - COLLECT 258 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9999350" lon="-83.0693915"><name>27</name><desc>Turn LEFT onto Oxford Road - COLLECT 146 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9996985" lon="-83.0698109"><name>28</name><desc>Continue on Oxford Road - repeat 326 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9990007" lon="-83.0705315"><name>29</name><desc>Continue on Oxford Road - COLLECT 323 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9985420" lon="-83.0714580"><name>30</name><desc>Turn RIGHT onto Club Road - COLLECT 1613 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0019994" lon="-83.0687903"><name>31</name><desc>Turn RIGHT onto Yorkshire Road - COLLECT 275 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0012894" lon="-83.0684720"><name>32</name><desc>Turn RIGHT onto Oxford Road - COLLECT 563 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9999350" lon="-83.0693915"><name>33</name><desc>Turn LEFT onto Tewksbury Road - repeat 258 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9998574" lon="-83.0684757"><name>34</name><desc>Continue on Tewksbury Road - COLLECT 409 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9998140" lon="-83.0670270"><name>35</name><desc>Turn RIGHT onto Yorkshire Road - COLLECT 961 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9975240" lon="-83.0653420"><name>36</name><desc>Turn RIGHT onto Guilford Road - COLLECT 158 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9974070" lon="-83.0658850"><name>37</name><desc>Continue on Cambridge Boulevard - COLLECT 180 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9973728" lon="-83.0665228"><name>38</name><desc>Continue on Cambridge Boulevard - repeat 360 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9973120" lon="-83.0677950"><name>39</name><desc>Continue on Cambridge Boulevard - COLLECT 495 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9968050" lon="-83.0694370"><name>40</name><desc>Continue on Cambridge Boulevard - repeat 940 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9976770" lon="-83.0722680"><name>41</name><desc>Turn RIGHT onto Oxford Road - COLLECT 398 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9985420" lon="-83.0714580"><name>42</name><desc>Turn RIGHT onto Club Road - COLLECT 932 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9962980" lon="-83.0708880"><name>43</name><desc>Continue on Club Road - repeat 441 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9954340" lon="-83.0719920"><name>44</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 4122 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0045900" lon="-83.0805970"><name>45</name><desc>Turn RIGHT onto West Lane Avenue - COLLECT 474 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0055340" lon="-83.0794320"><name>46</name><desc>Turn LEFT onto Leeds Road - COLLECT 224 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0060930" lon="-83.0797610"><name>47</name><desc>Turn LEFT onto Charing Road - COLLECT 2673 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0103370" lon="-83.0865600"><name>48</name><desc>Turn RIGHT onto South Dorchester Road - COLLECT 1368 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0131350" lon="-83.0839130"><name>49</name><desc>Turn LEFT onto Canterbury Road - repeat 351 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0131850" lon="-83.0851690"><name>50</name><desc>Turn LEFT onto Margate Road - COLLECT 925 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0113273" lon="-83.0870263"><name>51</name><desc>Turn RIGHT onto Charing Road - COLLECT 639 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0129720" lon="-83.0878080"><name>52</name><desc>U-TURN onto Charing Road - repeat 639 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0113273" lon="-83.0870263"><name>53</name><desc>Continue on Charing Road - COLLECT 384 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0103370" lon="-83.0865600"><name>54</name><desc>Continue on Charing Road - repeat 381 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0093920" lon="-83.0859890"><name>55</name><desc>Turn LEFT onto Abington Road - COLLECT 1279 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0108530" lon="-83.0818960"><name>56</name><desc>Turn LEFT onto Doncaster Road - COLLECT 795 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0130040" lon="-83.0814890"><name>57</name><desc>Turn LEFT onto Canterbury Road - repeat 330 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0130650" lon="-83.0826670"><name>58</name><desc>Turn LEFT onto Exmoor Road - COLLECT 1110 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0101930" lon="-83.0838370"><name>59</name><desc>U-TURN onto Abington Road - repeat 597 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0108530" lon="-83.0818960"><name>60</name><desc>Continue on Abington Road - COLLECT 2444 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0107360" lon="-83.0731870"><name>61</name><desc>Turn LEFT onto Mountview Road - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0116360" lon="-83.0730840"><name>62</name><desc>Turn RIGHT onto Brixton Road - COLLECT 802 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0114890" lon="-83.0702189"><name>63</name><desc>Turn RIGHT onto Redding Road - COLLECT 222 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0109205" lon="-83.0699390"><name>64</name><desc>Continue on Redding Road - COLLECT 95 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106975" lon="-83.0697647"><name>65</name><desc>Turn LEFT onto Unnamed road - COLLECT 7 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106923" lon="-83.0697424"><name>66</name><desc>U-TURN onto Unnamed road - repeat 7 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0106975" lon="-83.0697647"><name>67</name><desc>Continue on Unnamed road - COLLECT 46 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106482" lon="-83.0699046"><name>68</name><desc>Continue on Unnamed road - repeat 34 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0105579" lon="-83.0699080"><name>69</name><desc>Continue on Unnamed road - COLLECT 55 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0105090" lon="-83.0697413"><name>70</name><desc>Continue on Unnamed road - repeat 124 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0106759" lon="-83.0698751"><name>71</name><desc>Turn RIGHT onto Redding Road - COLLECT 92 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0109205" lon="-83.0699390"><name>72</name><desc>U-TURN onto Redding Road - repeat 92 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0106759" lon="-83.0698751"><name>73</name><desc>Turn RIGHT onto Unnamed road - repeat 13 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0106482" lon="-83.0699046"><name>74</name><desc>Turn RIGHT onto Abington Road - repeat 107 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0105886" lon="-83.0702795"><name>75</name><desc>U-TURN onto Abington Road - COLLECT 105 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0105579" lon="-83.0699080"><name>76</name><desc>Turn LEFT onto Unnamed road - COLLECT 34 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106482" lon="-83.0699046"><name>77</name><desc>Turn LEFT onto Abington Road - COLLECT 921 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0107360" lon="-83.0731870"><name>78</name><desc>Turn LEFT onto Mountview Road - COLLECT 419 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0096210" lon="-83.0731990"><name>79</name><desc>Turn LEFT onto Onandaga Drive - COLLECT 909 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0094760" lon="-83.0699530"><name>80</name><desc>U-TURN onto Onandaga Drive - repeat 909 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0096210" lon="-83.0731990"><name>81</name><desc>Continue on Onandaga Drive - COLLECT 925 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0097690" lon="-83.0765040"><name>82</name><desc>Turn RIGHT onto Asbury Drive - repeat 414 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0109010" lon="-83.0764010"><name>83</name><desc>Continue on Asbury Drive - COLLECT 670 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0127330" lon="-83.0762440"><name>84</name><desc>Turn RIGHT onto Canterbury Road - repeat 964 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0125580" lon="-83.0728000"><name>85</name><desc>Turn RIGHT onto Mountview Road - COLLECT 349 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0116360" lon="-83.0730840"><name>86</name><desc>Turn RIGHT onto Brixton Road - COLLECT 2048 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0120130" lon="-83.0803970"><name>87</name><desc>Turn RIGHT onto Leeds Road - COLLECT 342 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0129470" lon="-83.0803120"><name>88</name><desc>U-TURN onto Leeds Road - repeat 342 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0120130" lon="-83.0803970"><name>89</name><desc>Continue on Leeds Road - COLLECT 1187 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0088580" lon="-83.0812860"><name>90</name><desc>Turn RIGHT onto Crafton Park - COLLECT 1235 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0091090" lon="-83.0827590"><name>91</name><desc>Turn LEFT onto Crafton Park - repeat 447 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0088580" lon="-83.0812860"><name>92</name><desc>Turn RIGHT onto Leeds Road - COLLECT 182 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0083850" lon="-83.0810850"><name>93</name><desc>Continue on Leeds Road - repeat 560 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0069834" lon="-83.0802707"><name>94</name><desc>Continue on Leeds Road - COLLECT 355 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0060930" lon="-83.0797610"><name>95</name><desc>Continue on Leeds Road - repeat 224 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0055340" lon="-83.0794320"><name>96</name><desc>Turn LEFT onto West Lane Avenue - COLLECT 1334 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0080970" lon="-83.0760460"><name>97</name><desc>Turn LEFT onto Asbury Drive - COLLECT 1045 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0109010" lon="-83.0764010"><name>98</name><desc>Turn LEFT onto Abington Road - repeat 57 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0109140" lon="-83.0766040"><name>99</name><desc>Turn LEFT onto Sherwin Road - COLLECT 1562 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0083850" lon="-83.0810850"><name>100</name><desc>Turn LEFT onto Leeds Road - COLLECT 560 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0069834" lon="-83.0802707"><name>101</name><desc>Turn LEFT onto Onandaga Drive - COLLECT 1471 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0097690" lon="-83.0765040"><name>102</name><desc>Turn RIGHT onto Asbury Drive - repeat 631 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0080970" lon="-83.0760460"><name>103</name><desc>Turn LEFT onto West Lane Avenue - COLLECT 1639 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0079010" lon="-83.0701960"><name>104</name><desc>Turn RIGHT onto Tremont Road - COLLECT 609 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0062630" lon="-83.0697900"><name>105</name><desc>Continue on Tremont Road - repeat 167 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0058160" lon="-83.0696670"><name>106</name><desc>Continue on Tremont Road - COLLECT 109 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0055235" lon="-83.0695952"><name>107</name><desc>Continue on Tremont Road - repeat 175 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0050586" lon="-83.0694528"><name>108</name><desc>Continue on Tremont Road - COLLECT 2118 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0000850" lon="-83.0656360"><name>109</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 414 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9998140" lon="-83.0670270"><name>110</name><desc>Turn RIGHT onto Yorkshire Road - COLLECT 673 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0012894" lon="-83.0684720"><name>111</name><desc>Continue on Yorkshire Road - repeat 275 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0019994" lon="-83.0687903"><name>112</name><desc>Continue on Yorkshire Road - COLLECT 872 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0041535" lon="-83.0678676"><name>113</name><desc>Turn LEFT onto Arlington Avenue - COLLECT 699 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0055235" lon="-83.0695952"><name>114</name><desc>U-TURN onto Tremont Road - COLLECT 257 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0052507" lon="-83.0693257"><name>115</name><desc>Turn RIGHT onto Arlington Avenue - repeat 573 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0041535" lon="-83.0678676"><name>116</name><desc>Continue on Arlington Avenue - COLLECT 573 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0028790" lon="-83.0666680"><name>117</name><desc>Turn RIGHT onto Westover Road - COLLECT 345 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0022970" lon="-83.0676430"><name>118</name><desc>U-TURN onto Westover Road - repeat 345 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0028790" lon="-83.0666680"><name>119</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 433 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0024090" lon="-83.0652500"><name>120</name><desc>Turn LEFT onto Kensington Drive - COLLECT 1769 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0061850" lon="-83.0688220"><name>121</name><desc>Turn RIGHT onto South Parkway Drive - repeat 331 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0066570" lon="-83.0678120"><name>122</name><desc>Continue on South Parkway Drive - COLLECT 246 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0070220" lon="-83.0670720"><name>123</name><desc>Turn RIGHT onto North Parkway Drive - repeat 172 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0070040" lon="-83.0664580"><name>124</name><desc>Turn RIGHT onto Coventry Road - repeat 193 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0066610" lon="-83.0659320"><name>125</name><desc>Continue on Coventry Road - COLLECT 444 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0057220" lon="-83.0649330"><name>126</name><desc>Continue on Coventry Road - repeat 432 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0047500" lon="-83.0640490"><name>127</name><desc>Turn LEFT onto Chatfield Road - COLLECT 983 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0046630" lon="-83.0605530"><name>128</name><desc>Turn RIGHT onto Andover Road - repeat 163 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0042170" lon="-83.0605870"><name>129</name><desc>Continue on Andover Road - COLLECT 331 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0033470" lon="-83.0603550"><name>130</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 555 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0024190" lon="-83.0619270"><name>131</name><desc>Turn RIGHT onto Coventry Road - COLLECT 314 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0031260" lon="-83.0625690"><name>132</name><desc>Turn RIGHT onto Beverly Road - COLLECT 688 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0042170" lon="-83.0605870"><name>133</name><desc>Turn LEFT onto Andover Road - COLLECT 163 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0046630" lon="-83.0605530"><name>134</name><desc>Turn RIGHT onto Chatfield Road - COLLECT 620 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0045170" lon="-83.0583550"><name>135</name><desc>Turn LEFT onto Northwest Boulevard - COLLECT 675 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0063660" lon="-83.0582290"><name>136</name><desc>Turn LEFT onto Collingswood Road - COLLECT 613 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0064620" lon="-83.0604200"><name>137</name><desc>Turn RIGHT onto Andover Road - COLLECT 364 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0074590" lon="-83.0603510"><name>138</name><desc>U-TURN onto Andover Road - repeat 364 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0064620" lon="-83.0604200"><name>139</name><desc>Continue on Andover Road - COLLECT 657 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0046630" lon="-83.0605530"><name>140</name><desc>Turn RIGHT onto Chatfield Road - repeat 369 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0047170" lon="-83.0618720"><name>141</name><desc>Turn LEFT onto Wickford Road - COLLECT 504 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0038310" lon="-83.0632140"><name>142</name><desc>Turn RIGHT onto Coventry Road - COLLECT 841 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0057220" lon="-83.0649330"><name>143</name><desc>Turn RIGHT onto Berkshire Road - COLLECT 2998 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0052950" lon="-83.0542240"><name>144</name><desc>Turn RIGHT onto Harford Road - COLLECT 657 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0034980" lon="-83.0543670"><name>145</name><desc>Turn RIGHT onto Doone Road - COLLECT 795 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0036190" lon="-83.0572060"><name>146</name><desc>Turn RIGHT onto Brandon Road - repeat 328 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0045170" lon="-83.0571560"><name>147</name><desc>Turn RIGHT onto Cardiff Road - COLLECT 1588 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0042700" lon="-83.0514840"><name>148</name><desc>Turn RIGHT onto Beaumont Road - COLLECT 982 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0015830" lon="-83.0516810"><name>149</name><desc>Turn RIGHT onto Guilford Road - COLLECT 789 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0017110" lon="-83.0544980"><name>150</name><desc>Turn RIGHT onto Harford Road - repeat 326 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0026030" lon="-83.0544340"><name>151</name><desc>Continue on Harford Road - COLLECT 327 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0034980" lon="-83.0543670"><name>152</name><desc>Turn RIGHT onto Doone Road - COLLECT 1728 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0032300" lon="-83.0481950"><name>153</name><desc>Turn RIGHT onto North Star Road - repeat 327 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0023360" lon="-83.0482520"><name>154</name><desc>Continue on North Star Road - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0014370" lon="-83.0483060"><name>155</name><desc>Continue on North Star Road - repeat 328 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0005380" lon="-83.0483580"><name>156</name><desc>Continue on North Star Road - COLLECT 316 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9996720" lon="-83.0483714"><name>157</name><desc>Continue on North Star Road - repeat 261 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9989812" lon="-83.0481943"><name>158</name><desc>Turn RIGHT onto Unnamed road - repeat 18 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9989510" lon="-83.0482460"><name>159</name><desc>Continue on Unnamed road - COLLECT 66 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9987823" lon="-83.0482624"><name>160</name><desc>Continue on North Star Road - COLLECT 859 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9964620" lon="-83.0486090"><name>161</name><desc>Turn RIGHT onto Northwest Boulevard - repeat 51 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9965310" lon="-83.0487680"><name>162</name><desc>Continue on Northwest Boulevard - COLLECT 593 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9975000" lon="-83.0504600"><name>163</name><desc>Turn RIGHT onto Elmwood Avenue - repeat 569 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9989647" lon="-83.0499277"><name>164</name><desc>Turn RIGHT onto Waltham Road - COLLECT 374 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988879" lon="-83.0485955"><name>165</name><desc>Continue on Waltham Road - repeat 92 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9988144" lon="-83.0482831"><name>166</name><desc>U-TURN onto Waltham Road - COLLECT 192 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9989510" lon="-83.0482460"><name>167</name><desc>Turn LEFT onto Unnamed road - COLLECT 18 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9989812" lon="-83.0481943"><name>168</name><desc>Turn LEFT onto North Star Road - COLLECT 211 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9995380" lon="-83.0483265"><name>169</name><desc>Continue on North Star Road - COLLECT 50 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9996720" lon="-83.0483714"><name>170</name><desc>Turn LEFT onto Barrington Road - COLLECT 3020 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988049" lon="-83.0584183"><name>171</name><desc>Turn LEFT onto Waltham Road - COLLECT 544 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988077" lon="-83.0564791"><name>172</name><desc>Turn RIGHT onto Andover Road - COLLECT 531 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9974631" lon="-83.0557670"><name>173</name><desc>Turn RIGHT onto Edgemont Road - COLLECT 1796 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9959150" lon="-83.0617300"><name>174</name><desc>Turn RIGHT onto Tremont Road - COLLECT 1874 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0000850" lon="-83.0656360"><name>175</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 1345 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0024190" lon="-83.0619270"><name>176</name><desc>Turn RIGHT onto Coventry Road - COLLECT 631 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0009900" lon="-83.0606640"><name>177</name><desc>Continue on Coventry Road - repeat 152 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0006430" lon="-83.0603610"><name>178</name><desc>Continue on Coventry Road - COLLECT 3331 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9921750" lon="-83.0589700"><name>179</name><desc>Turn RIGHT onto Cambridge Boulevard - repeat 310 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9928084" lon="-83.0597051"><name>180</name><desc>Continue on Cambridge Boulevard - COLLECT 260 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9932750" lon="-83.0604080"><name>181</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 389 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9943389" lon="-83.0604885"><name>182</name><desc>Continue on Arlington Avenue - COLLECT 252 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9950172" lon="-83.0606259"><name>183</name><desc>Turn RIGHT onto Unnamed road - repeat 164 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9951744" lon="-83.0606292"><name>184</name><desc>Continue on Unnamed road - COLLECT 124 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9950361" lon="-83.0604414"><name>185</name><desc>Continue on Unnamed road - repeat 59 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9951782" lon="-83.0604689"><name>186</name><desc>Continue on Unnamed road - COLLECT 48 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9951744" lon="-83.0606292"><name>187</name><desc>Continue on Unnamed road - repeat 58 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9950329" lon="-83.0606455"><name>188</name><desc>Turn RIGHT onto Stanford Road - COLLECT 570 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9940470" lon="-83.0621950"><name>189</name><desc>Continue on Upper Chelsea Road / Stanford Road - COLLECT 1008 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9924480" lon="-83.0632513"><name>190</name><desc>Continue on Upper Chelsea Road - COLLECT 409 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9915007" lon="-83.0626498"><name>191</name><desc>Turn RIGHT onto Lower Chelsea Road - repeat 80 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9912890" lon="-83.0626270"><name>192</name><desc>Continue on Lower Chelsea Road - COLLECT 688 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9901694" lon="-83.0645554"><name>193</name><desc>Turn RIGHT onto Old Riverside Drive - COLLECT 554 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9911405" lon="-83.0660349"><name>194</name><desc>U-TURN onto Old Riverside Drive - repeat 554 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9901694" lon="-83.0645554"><name>195</name><desc>Continue on Old Riverside Drive - COLLECT 257 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9896026" lon="-83.0640086"><name>196</name><desc>Turn LEFT onto West 5th Avenue - COLLECT 545 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9895268" lon="-83.0620622"><name>197</name><desc>Continue on West 5th Avenue - repeat 542 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9894510" lon="-83.0601272"><name>198</name><desc>Continue on West 5th Avenue - COLLECT 1071 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9893010" lon="-83.0563010"><name>199</name><desc>U-TURN onto West 5th Avenue - repeat 75 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9893120" lon="-83.0565680"><name>200</name><desc>Turn RIGHT onto Andover Road - COLLECT 3010 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9974631" lon="-83.0557670"><name>201</name><desc>Turn RIGHT onto Edgemont Road - COLLECT 332 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9974752" lon="-83.0545800"><name>202</name><desc>Turn LEFT onto Wyandotte Road - COLLECT 18 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9975248" lon="-83.0545936"><name>203</name><desc>Turn RIGHT onto Edgemont Road North - COLLECT 118 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9977225" lon="-83.0542634"><name>204</name><desc>Turn RIGHT onto Wyandotte Road - COLLECT 1370 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9940070" lon="-83.0545480"><name>205</name><desc>Turn LEFT onto Tremont Road - COLLECT 322 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9939700" lon="-83.0533970"><name>206</name><desc>Turn LEFT onto Glenn Avenue - COLLECT 1660 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9984021" lon="-83.0523980"><name>207</name><desc>Turn RIGHT onto Northwest Boulevard - repeat 319 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9979482" lon="-83.0514213"><name>208</name><desc>Continue on Northwest Boulevard - COLLECT 907 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9965310" lon="-83.0487680"><name>209</name><desc>Turn RIGHT onto Stanford Road - COLLECT 329 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9961980" lon="-83.0498580"><name>210</name><desc>Turn LEFT onto Ashland Avenue - COLLECT 856 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9938560" lon="-83.0500520"><name>211</name><desc>Turn LEFT onto Tremont Road - repeat 359 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9938150" lon="-83.0487700"><name>212</name><desc>Turn RIGHT onto North Star Avenue - COLLECT 652 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9938150" lon="-83.0487700"><name>213</name><desc>Turn LEFT onto Tremont Road - COLLECT 661 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9938950" lon="-83.0511330"><name>214</name><desc>Continue on Tremont Road - repeat 315 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9939350" lon="-83.0522600"><name>215</name><desc>Continue on Tremont Road - COLLECT 318 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9939700" lon="-83.0533970"><name>216</name><desc>Continue on Tremont Road - repeat 322 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9940070" lon="-83.0545480"><name>217</name><desc>Continue on Tremont Road - COLLECT 1715 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9950601" lon="-83.0604238"><name>218</name><desc>Turn LEFT onto Unnamed road - COLLECT 10 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9950361" lon="-83.0604414"><name>219</name><desc>Continue on Arlington Avenue - COLLECT 257 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9943389" lon="-83.0604885"><name>220</name><desc>Continue on Arlington Avenue - repeat 389 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9932750" lon="-83.0604080"><name>221</name><desc>Turn RIGHT onto Cambridge Boulevard - COLLECT 968 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9950038" lon="-83.0630288"><name>222</name><desc>Turn RIGHT onto Edgemont Road - COLLECT 492 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9959150" lon="-83.0617300"><name>223</name><desc>Turn RIGHT onto Tremont Road - COLLECT 408 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9951621" lon="-83.0606490"><name>224</name><desc>Turn RIGHT onto Unnamed road - repeat 126 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9950601" lon="-83.0604238"><name>225</name><desc>Continue on Unnamed road - COLLECT 36 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9951563" lon="-83.0604350"><name>226</name><desc>Continue on Unnamed road - repeat 60 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9951744" lon="-83.0606292"><name>227</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 201 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9957189" lon="-83.0605889"><name>228</name><desc>Continue on Arlington Avenue - repeat 838 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9979780" lon="-83.0610520"><name>229</name><desc>Continue on Arlington Avenue - COLLECT 466 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9991233" lon="-83.0617765"><name>230</name><desc>Turn RIGHT onto North Mallway Drive - COLLECT 674 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0003880" lon="-83.0614700"><name>231</name><desc>Turn RIGHT onto Guilford Road - repeat 325 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0006430" lon="-83.0603610"><name>232</name><desc>Continue on Guilford Road - COLLECT 1471 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0017525" lon="-83.0554986"><name>233</name><desc>Turn RIGHT onto Northwest Boulevard - COLLECT 385 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0008210" lon="-83.0548540"><name>234</name><desc>Turn LEFT onto Grenoble Road - repeat 871 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0006890" lon="-83.0517420"><name>235</name><desc>Turn LEFT onto Beaumont Road - COLLECT 327 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0015830" lon="-83.0516810"><name>236</name><desc>Turn RIGHT onto Guilford Road - COLLECT 945 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0014370" lon="-83.0483060"><name>237</name><desc>Turn RIGHT onto North Star Road - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0005380" lon="-83.0483580"><name>238</name><desc>Turn RIGHT onto Grenoble Road - COLLECT 1818 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0008210" lon="-83.0548540"><name>239</name><desc>Turn LEFT onto Northwest Boulevard - COLLECT 722 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9991090" lon="-83.0535670"><name>240</name><desc>Turn RIGHT onto Waltham Road - COLLECT 509 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9990900" lon="-83.0553780"><name>241</name><desc>Turn LEFT onto Wyandotte Road - COLLECT 613 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9975248" lon="-83.0545936"><name>242</name><desc>Continue on Wyandotte Road - repeat 18 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9974752" lon="-83.0545800"><name>243</name><desc>Continue on Wyandotte Road - COLLECT 127 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9971340" lon="-83.0544960"><name>244</name><desc>U-TURN onto Wyandotte Road - repeat 225 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9977225" lon="-83.0542634"><name>245</name><desc>Continue on Edgemont Road North - COLLECT 505 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988970" lon="-83.0533073"><name>246</name><desc>Turn LEFT onto Northwest Boulevard - repeat 106 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9991090" lon="-83.0535670"><name>247</name><desc>Turn RIGHT onto Waltham Road - COLLECT 1019 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9989647" lon="-83.0499277"><name>248</name><desc>Turn RIGHT onto Elmwood Avenue - COLLECT 1201 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9958320" lon="-83.0509280"><name>249</name><desc>Turn RIGHT onto Stanford Road - COLLECT 329 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9956360" lon="-83.0520690"><name>250</name><desc>Turn RIGHT onto Westwood Avenue - COLLECT 876 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9979482" lon="-83.0514213"><name>251</name><desc>Turn LEFT onto Northwest Boulevard - COLLECT 737 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9991090" lon="-83.0535670"><name>252</name><desc>Turn LEFT onto Waltham Road - repeat 509 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9990900" lon="-83.0553780"><name>253</name><desc>Continue on Waltham Road - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988077" lon="-83.0564791"><name>254</name><desc>Turn RIGHT onto Andover Road - COLLECT 1988 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0033470" lon="-83.0603550"><name>255</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 703 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0045170" lon="-83.0583550"><name>256</name><desc>Turn RIGHT onto Northwest Boulevard - COLLECT 652 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0030717" lon="-83.0571463"><name>257</name><desc>Continue on Northwest Boulevard - repeat 267 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0026540" lon="-83.0563640"><name>258</name><desc>Turn LEFT onto Essex Road - COLLECT 2271 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0023360" lon="-83.0482520"><name>259</name><desc>Turn LEFT onto North Star Road - COLLECT 656 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0041330" lon="-83.0481490"><name>260</name><desc>Continue on North Star Road - repeat 327 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0050270" lon="-83.0480940"><name>261</name><desc>Continue on North Star Road - COLLECT 322 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0059091" lon="-83.0480319"><name>262</name><desc>Continue on North Star Road - repeat 12 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0059415" lon="-83.0480296"><name>263</name><desc>Turn LEFT onto Ashdowne Road - repeat 129 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0059405" lon="-83.0484796"><name>264</name><desc>Turn LEFT onto Ashdowne Road - COLLECT 127 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0059091" lon="-83.0480319"><name>265</name><desc>Turn LEFT onto North Star Road - COLLECT 718 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0059415" lon="-83.0480296"><name>266</name><desc>Turn RIGHT onto Ashdowne Road - COLLECT 932 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0060660" lon="-83.0513480"><name>267</name><desc>Turn RIGHT onto Beaumont Road - COLLECT 357 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0070420" lon="-83.0512790"><name>268</name><desc>U-TURN onto Beaumont Road - repeat 357 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0060660" lon="-83.0513480"><name>269</name><desc>Continue on Beaumont Road - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0051690" lon="-83.0514150"><name>270</name><desc>Turn LEFT onto Berkshire Road - COLLECT 929 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0050270" lon="-83.0480940"><name>271</name><desc>Turn RIGHT onto North Star Road - COLLECT 327 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0041330" lon="-83.0481490"><name>272</name><desc>Turn RIGHT onto Cardiff Road - COLLECT 933 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0042700" lon="-83.0514840"><name>273</name><desc>Turn RIGHT onto Beaumont Road - COLLECT 329 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0051690" lon="-83.0514150"><name>274</name><desc>Turn LEFT onto Berkshire Road - COLLECT 786 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0052950" lon="-83.0542240"><name>275</name><desc>Turn LEFT onto Harford Road - repeat 984 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0026030" lon="-83.0544340"><name>276</name><desc>Continue on Harford Road - COLLECT 326 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0017110" lon="-83.0544980"><name>277</name><desc>Turn RIGHT onto Guilford Road - COLLECT 280 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0017525" lon="-83.0554986"><name>278</name><desc>Turn RIGHT onto Northwest Boulevard - COLLECT 678 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0030717" lon="-83.0571463"><name>279</name><desc>Turn LEFT onto Baldridge Road - COLLECT 1242 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0009900" lon="-83.0606640"><name>280</name><desc>Turn LEFT onto Coventry Road - COLLECT 152 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0006430" lon="-83.0603610"><name>281</name><desc>Turn RIGHT onto Guilford Road - COLLECT 1067 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988070" lon="-83.0629900"><name>282</name><desc>Turn RIGHT onto Fairfax Road - COLLECT 1807 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0028790" lon="-83.0666680"><name>283</name><desc>Turn RIGHT onto Westover Road - COLLECT 992 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0045350" lon="-83.0638540"><name>284</name><desc>U-TURN onto Westover Road - repeat 337 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0039740" lon="-83.0648110"><name>285</name><desc>Turn RIGHT onto Southway Drive - COLLECT 1303 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0066570" lon="-83.0678120"><name>286</name><desc>Turn LEFT onto South Parkway Drive - COLLECT 603 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0058160" lon="-83.0696670"><name>287</name><desc>Turn RIGHT onto Tremont Road - COLLECT 167 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0062630" lon="-83.0697900"><name>288</name><desc>Turn RIGHT onto North Parkway Drive - COLLECT 1003 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0070040" lon="-83.0664580"><name>289</name><desc>Turn LEFT onto Coventry Road - COLLECT 268 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0077320" lon="-83.0664680"><name>290</name><desc>U-TURN onto Coventry Road - repeat 268 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0070040" lon="-83.0664580"><name>291</name><desc>Turn LEFT onto Coventry Road - COLLECT 193 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0066610" lon="-83.0659320"><name>292</name><desc>Turn LEFT onto Collingswood Road - COLLECT 752 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0065790" lon="-83.0632450"><name>293</name><desc>Turn LEFT onto Henthorn Road - COLLECT 365 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0075790" lon="-83.0631720"><name>294</name><desc>U-TURN onto Henthorn Road - repeat 365 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0065790" lon="-83.0632450"><name>295</name><desc>Turn LEFT onto Collingswood Road - COLLECT 791 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0064620" lon="-83.0604200"><name>296</name><desc>Continue on Collingswood Road - repeat 613 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0063660" lon="-83.0582290"><name>297</name><desc>Turn LEFT onto Northwest Boulevard - COLLECT 367 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0073700" lon="-83.0581490"><name>298</name><desc>Turn RIGHT onto West Lane Avenue - repeat 324 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0073170" lon="-83.0569930"><name>299</name><desc>Turn RIGHT onto Brandon Road - COLLECT 1538 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0031057" lon="-83.0572260"><name>300</name><desc>Turn RIGHT onto Northwest Boulevard - repeat 295 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0036640" lon="-83.0579800"><name>301</name><desc>Turn LEFT onto Suffolk Road - COLLECT 1824 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0006080" lon="-83.0631460"><name>302</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 287 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0012530" lon="-83.0637370"><name>303</name><desc>Continue on Arlington Avenue - repeat 339 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0020040" lon="-83.0644530"><name>304</name><desc>Continue on Arlington Avenue - COLLECT 270 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0024090" lon="-83.0652500"><name>305</name><desc>Turn RIGHT onto Kensington Drive - repeat 104 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0026772" lon="-83.0651236"><name>306</name><desc>Continue on Wickford Road - COLLECT 680 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0038310" lon="-83.0632140"><name>307</name><desc>Turn RIGHT onto Coventry Road - COLLECT 314 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0031260" lon="-83.0625690"><name>308</name><desc>Turn RIGHT onto Beverly Road - COLLECT 667 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0020040" lon="-83.0644530"><name>309</name><desc>Turn LEFT onto Arlington Avenue - COLLECT 339 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0012530" lon="-83.0637370"><name>310</name><desc>Continue on Arlington Avenue - repeat 287 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0006080" lon="-83.0631460"><name>311</name><desc>Continue on Arlington Avenue - COLLECT 359 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9998047" lon="-83.0624033"><name>312</name><desc>Turn LEFT onto Guilford Road - repeat 182 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0001570" lon="-83.0619429"><name>313</name><desc>Turn RIGHT onto Alley - COLLECT 264 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9995558" lon="-83.0614202"><name>314</name><desc>U-TURN onto Alley - repeat 63 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9996959" lon="-83.0615497"><name>315</name><desc>Turn LEFT onto Alley - COLLECT 169 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9994340" lon="-83.0620466"><name>316</name><desc>Turn RIGHT onto Arlington Avenue - repeat 168 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9998047" lon="-83.0624033"><name>317</name><desc>U-TURN onto Arlington Avenue - COLLECT 304 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9991233" lon="-83.0617765"><name>318</name><desc>Continue on Arlington Avenue - repeat 154 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9987661" lon="-83.0614857"><name>319</name><desc>Turn LEFT onto South Mallway Drive - COLLECT 642 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9983750" lon="-83.0599670"><name>320</name><desc>Continue on North Devon Road - COLLECT 2129 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9928084" lon="-83.0597051"><name>321</name><desc>Continue on West Devon Road - COLLECT 1022 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9924480" lon="-83.0632513"><name>322</name><desc>Turn RIGHT onto Upper Chelsea Road / Stanford Road - COLLECT 1008 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9940470" lon="-83.0621950"><name>323</name><desc>Turn RIGHT onto Roxbury Road - COLLECT 969 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9914020" lon="-83.0619760"><name>324</name><desc>Turn RIGHT onto Chelsea Road - repeat 99 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9914193" lon="-83.0623289"><name>325</name><desc>Continue on Lower Chelsea Road - COLLECT 176 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9915007" lon="-83.0626498"><name>326</name><desc>Turn RIGHT onto Upper Chelsea Road - COLLECT 95 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9914193" lon="-83.0623289"><name>327</name><desc>Continue on Chelsea Road - COLLECT 99 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9914020" lon="-83.0619760"><name>328</name><desc>Turn RIGHT onto Roxbury Road - repeat 370 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9903901" lon="-83.0620320"><name>329</name><desc>Turn RIGHT onto Concord Road - COLLECT 495 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9902760" lon="-83.0629660"><name>330</name><desc>Turn RIGHT onto Concord Road - repeat 270 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9903901" lon="-83.0620320"><name>331</name><desc>Turn LEFT onto Roxbury Road - COLLECT 370 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9914020" lon="-83.0619760"><name>332</name><desc>Turn RIGHT onto Chelsea Road - COLLECT 478 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9913310" lon="-83.0602700"><name>333</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 687 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9894510" lon="-83.0601272"><name>334</name><desc>Turn RIGHT onto West 5th Avenue - COLLECT 542 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9895268" lon="-83.0620622"><name>335</name><desc>Turn RIGHT onto Roxbury Road - COLLECT 315 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9903901" lon="-83.0620320"><name>336</name><desc>Turn RIGHT onto Concord Road - COLLECT 1203 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9902160" lon="-83.0577350"><name>337</name><desc>Turn RIGHT onto Cambridge Boulevard - repeat 315 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9893548" lon="-83.0576647"><name>338</name><desc>U-TURN onto Cambridge Boulevard - COLLECT 648 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9910888" lon="-83.0580738"><name>339</name><desc>Continue on Cambridge Boulevard - repeat 66 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9912520" lon="-83.0581760"><name>340</name><desc>Turn LEFT onto Chelsea Road - COLLECT 586 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9913310" lon="-83.0602700"><name>341</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 710 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9932750" lon="-83.0604080"><name>342</name><desc>Turn RIGHT onto Cambridge Boulevard - repeat 260 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9928084" lon="-83.0597051"><name>343</name><desc>Continue on Cambridge Boulevard - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9921350" lon="-83.0589290"><name>344</name><desc>Turn LEFT onto King Avenue - repeat 387 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9920800" lon="-83.0575450"><name>345</name><desc>Continue on King Avenue - COLLECT 319 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9920360" lon="-83.0564040"><name>346</name><desc>U-TURN onto King Avenue - repeat 319 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9920800" lon="-83.0575450"><name>347</name><desc>Continue on King Avenue - COLLECT 387 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9921350" lon="-83.0589290"><name>348</name><desc>Turn LEFT onto Cambridge Boulevard - COLLECT 451 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9910888" lon="-83.0580738"><name>349</name><desc>Turn LEFT onto Bedford Road - COLLECT 2940 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988572" lon="-83.0575743"><name>350</name><desc>Turn LEFT onto Waltham Road - repeat 237 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9988049" lon="-83.0584183"><name>351</name><desc>Continue on Waltham Road - COLLECT 617 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9982097" lon="-83.0604801"><name>352</name><desc>Turn RIGHT onto Alley - COLLECT 244 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988156" lon="-83.0608475"><name>353</name><desc>U-TURN onto Alley - repeat 244 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9982097" lon="-83.0604801"><name>354</name><desc>Turn RIGHT onto Waltham Road - COLLECT 181 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9979780" lon="-83.0610520"><name>355</name><desc>Continue on Waltham Road - repeat 272 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9975390" lon="-83.0618380"><name>356</name><desc>Continue on Waltham Road - COLLECT 858 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9958525" lon="-83.0639638"><name>357</name><desc>Turn RIGHT onto Cambridge Boulevard - COLLECT 1100 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9970110" lon="-83.0649910"><name>358</name><desc>U-TURN onto Yorkshire Road - COLLECT 211 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9975240" lon="-83.0653420"><name>359</name><desc>Turn RIGHT onto Guilford Road - COLLECT 876 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988070" lon="-83.0629900"><name>360</name><desc>Turn RIGHT onto Fairfax Road - COLLECT 564 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9975390" lon="-83.0618380"><name>361</name><desc>Turn LEFT onto Waltham Road - COLLECT 272 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9979780" lon="-83.0610520"><name>362</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 838 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9957189" lon="-83.0605889"><name>363</name><desc>Continue on Arlington Avenue - COLLECT 202 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9951782" lon="-83.0604689"><name>364</name><desc>Turn LEFT onto Unnamed road - COLLECT 12 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9951563" lon="-83.0604350"><name>365</name><desc>Turn LEFT onto Stanford Road - COLLECT 2410 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9956360" lon="-83.0520690"><name>366</name><desc>Turn RIGHT onto Westwood Avenue - COLLECT 623 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9939350" lon="-83.0522600"><name>367</name><desc>Turn LEFT onto Tremont Road - COLLECT 315 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9938950" lon="-83.0511330"><name>368</name><desc>Turn LEFT onto Elmwood Avenue - COLLECT 709 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9958320" lon="-83.0509280"><name>369</name><desc>Turn RIGHT onto Stanford Road - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9961980" lon="-83.0498580"><name>370</name><desc>Continue on Stanford Road - repeat 329 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9965310" lon="-83.0487680"><name>371</name><desc>Turn RIGHT onto Northwest Boulevard - COLLECT 51 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9964620" lon="-83.0486090"><name>372</name><desc>Turn RIGHT onto North Star Road - COLLECT 967 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9938150" lon="-83.0487700"><name>373</name><desc>Continue on North Star Avenue - repeat 1751 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0133810" lon="-83.0898000"><name>START</name></wpt>
+<wpt lat="39.9890200" lon="-83.0490650"><name>END</name></wpt>
 <trk><name>UA Monday Collection</name><trkseg>
 <trkpt lat="40.0133810" lon="-83.0898000"/>
 <trkpt lat="40.0132120" lon="-83.0896770"/>

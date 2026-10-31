@@ -1,5 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="ua_routes" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>UA Tuesday Collection</name></metadata>
+<wpt lat="40.0300320" lon="-83.0919980"><name>1</name><desc>Start on Riverside Drive - COLLECT 1503 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0259996" lon="-83.0912742"><name>2</name><desc>Turn LEFT onto Nottingham Road - repeat 421 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0259360" lon="-83.0897700"><name>3</name><desc>Turn RIGHT onto Sunset Drive - COLLECT 323 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0250630" lon="-83.0899690"><name>4</name><desc>Continue on Sunset Drive - repeat 320 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0242000" lon="-83.0901670"><name>5</name><desc>Continue on Sunset Drive - COLLECT 608 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0225840" lon="-83.0902250"><name>6</name><desc>Turn RIGHT onto Wickliffe Woods Court - COLLECT 220 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0224640" lon="-83.0909750"><name>7</name><desc>U-TURN onto Wickliffe Woods Court - repeat 220 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0225840" lon="-83.0902250"><name>8</name><desc>Turn RIGHT onto Wickliffe Road - COLLECT 1628 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0220000" lon="-83.0845707"><name>9</name><desc>Turn LEFT onto Kioka Avenue - repeat 327 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0228930" lon="-83.0844920"><name>10</name><desc>Continue on Kioka Avenue - COLLECT 386 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0239490" lon="-83.0844290"><name>11</name><desc>Continue on Kioka Avenue - repeat 31 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0240350" lon="-83.0844230"><name>12</name><desc>Continue on Kioka Avenue - COLLECT 300 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0248570" lon="-83.0843670"><name>13</name><desc>Turn RIGHT onto Woodstock Road - COLLECT 1035 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0246950" lon="-83.0806670"><name>14</name><desc>Turn RIGHT onto Dorchester Road - COLLECT 301 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0238700" lon="-83.0807250"><name>15</name><desc>Turn LEFT onto Swansea Road - repeat 382 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0238120" lon="-83.0793590"><name>16</name><desc>Continue on Swansea Road - COLLECT 1881 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0235230" lon="-83.0726380"><name>17</name><desc>Turn RIGHT onto Mountview Road - COLLECT 243 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0228589" lon="-83.0726426"><name>18</name><desc>Turn RIGHT onto Wickliffe Road - COLLECT 167 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0225571" lon="-83.0730874"><name>19</name><desc>Continue on Wickliffe Road - repeat 354 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0224390" lon="-83.0743300"><name>20</name><desc>Continue on Wickliffe Road - COLLECT 2844 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0228930" lon="-83.0844920"><name>21</name><desc>Turn LEFT onto Kioka Avenue - COLLECT 531 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0214410" lon="-83.0846130"><name>22</name><desc>Continue on Kioka Avenue - repeat 205 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0208790" lon="-83.0846540"><name>23</name><desc>Continue on Kioka Avenue - COLLECT 1039 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0180350" lon="-83.0848550"><name>24</name><desc>Turn RIGHT onto Clifton Road - COLLECT 1867 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0183190" lon="-83.0915270"><name>25</name><desc>Turn RIGHT onto Riverside Drive - repeat 615 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0199163" lon="-83.0922247"><name>26</name><desc>Turn RIGHT onto Zollinger Road - COLLECT 236 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0198881" lon="-83.0913821"><name>27</name><desc>Turn RIGHT onto Alley - COLLECT 617 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0182947" lon="-83.0906434"><name>28</name><desc>Turn LEFT onto Clifton Road - repeat 652 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0181950" lon="-83.0883150"><name>29</name><desc>Turn RIGHT onto Arlingtowne Lane - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0172960" lon="-83.0883760"><name>30</name><desc>Turn RIGHT onto Churchill Drive / Britannia Drive West / Britannia Drive East / Downing Way - COLLECT 1473 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0172960" lon="-83.0883760"><name>31</name><desc>Turn RIGHT onto Arlingtowne Lane - repeat 328 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0181950" lon="-83.0883150"><name>32</name><desc>Turn RIGHT onto Clifton Road - repeat 968 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0180350" lon="-83.0848550"><name>33</name><desc>Continue on Clifton Road - COLLECT 231 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0179980" lon="-83.0840280"><name>34</name><desc>Continue on Clifton Road - repeat 349 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0179170" lon="-83.0827850"><name>35</name><desc>Turn LEFT onto Glenrich Parkway - COLLECT 400 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0189990" lon="-83.0825890"><name>36</name><desc>Turn LEFT onto Love Drive - COLLECT 469 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0189080" lon="-83.0842300"><name>37</name><desc>U-TURN onto Love Drive - repeat 469 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0189990" lon="-83.0825890"><name>38</name><desc>Turn LEFT onto Glenrich Parkway - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0198953" lon="-83.0825200"><name>39</name><desc>Turn RIGHT onto Zollinger Road - repeat 312 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0198438" lon="-83.0814036"><name>40</name><desc>Turn RIGHT onto South Dorchester Road - COLLECT 1319 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0162380" lon="-83.0816820"><name>41</name><desc>Turn RIGHT onto Glenrich Parkway - COLLECT 920 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0179170" lon="-83.0827850"><name>42</name><desc>Turn LEFT onto Clifton Road - COLLECT 349 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0179980" lon="-83.0840280"><name>43</name><desc>Turn LEFT onto Oakridge Road - COLLECT 819 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0165220" lon="-83.0854440"><name>44</name><desc>Turn RIGHT onto Oakridge Court - COLLECT 389 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0169192" lon="-83.0866260"><name>45</name><desc>U-TURN onto Oakridge Court - repeat 389 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0165220" lon="-83.0854440"><name>46</name><desc>Turn RIGHT onto Oakridge Road - COLLECT 334 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0157130" lon="-83.0858640"><name>47</name><desc>U-TURN onto Oakridge Road - repeat 904 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0173160" lon="-83.0840620"><name>48</name><desc>Turn RIGHT onto Bridgeview Road - COLLECT 308 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0172430" lon="-83.0829660"><name>49</name><desc>Turn RIGHT onto Glenrich Parkway - repeat 665 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0162380" lon="-83.0816820"><name>50</name><desc>Turn RIGHT onto South Dorchester Road - COLLECT 645 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0149300" lon="-83.0831980"><name>51</name><desc>Turn RIGHT onto Edington Road - COLLECT 923 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0138660" lon="-83.0860410"><name>52</name><desc>U-TURN onto Edington Road - repeat 923 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0149300" lon="-83.0831980"><name>53</name><desc>Continue on Edington Road - COLLECT 2954 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0143890" lon="-83.0726480"><name>54</name><desc>Turn RIGHT onto Mountview Road - COLLECT 669 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0125580" lon="-83.0728000"><name>55</name><desc>Turn LEFT onto Canterbury Road - repeat 244 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0125120" lon="-83.0719290"><name>56</name><desc>Continue on Northam Road - COLLECT 901 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0123820" lon="-83.0687129"><name>57</name><desc>Turn LEFT onto Tremont Road - COLLECT 350 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0131766" lon="-83.0680097"><name>58</name><desc>Turn LEFT onto Dorset Road - COLLECT 3421 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0138760" lon="-83.0802070"><name>59</name><desc>Turn RIGHT onto Leeds Road - COLLECT 686 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0156490" lon="-83.0794600"><name>60</name><desc>Turn RIGHT onto Farleigh Road - COLLECT 427 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0155710" lon="-83.0779350"><name>61</name><desc>Turn LEFT onto Derby Road - COLLECT 1500 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0196778" lon="-83.0776547"><name>62</name><desc>Turn LEFT onto Zollinger Road - repeat 429 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0197498" lon="-83.0791883"><name>63</name><desc>Turn LEFT onto Leeds Road - COLLECT 1498 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0156490" lon="-83.0794600"><name>64</name><desc>Turn RIGHT onto Farleigh Road - COLLECT 312 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0157040" lon="-83.0805730"><name>65</name><desc>Turn RIGHT onto Herrick Road - COLLECT 1494 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0197947" lon="-83.0802987"><name>66</name><desc>Turn RIGHT onto Zollinger Road - repeat 180 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0197687" lon="-83.0796543"><name>67</name><desc>Continue on Zollinger Road - COLLECT 1191 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0195667" lon="-83.0754013"><name>68</name><desc>Continue on Zollinger Road - repeat 442 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0194912" lon="-83.0738220"><name>69</name><desc>Continue on Zollinger Road - COLLECT 428 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0193937" lon="-83.0722960"><name>70</name><desc>Continue on Zollinger Road - repeat 372 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0193377" lon="-83.0709660"><name>71</name><desc>Continue on Zollinger Road - COLLECT 348 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0192879" lon="-83.0697230"><name>72</name><desc>Turn RIGHT onto Redding Road - COLLECT 314 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0184280" lon="-83.0697670"><name>73</name><desc>Turn RIGHT onto Jervis Road - COLLECT 725 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0185230" lon="-83.0723600"><name>74</name><desc>Turn RIGHT onto Mountview Road - COLLECT 1642 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0228589" lon="-83.0726426"><name>75</name><desc>Continue on Mountview Road - repeat 88 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0230980" lon="-83.0726630"><name>76</name><desc>Turn RIGHT onto Ridgecliff Road - COLLECT 537 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0230090" lon="-83.0707450"><name>77</name><desc>Continue on Ridgecliff Road - repeat 348 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0229500" lon="-83.0695010"><name>78</name><desc>Continue on Ridgecliff Road - COLLECT 787 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0228210" lon="-83.0666880"><name>79</name><desc>Turn LEFT onto Colchester Road - COLLECT 2320 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0291690" lon="-83.0661810"><name>80</name><desc>Turn LEFT onto Fishinger Road - repeat 439 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0292210" lon="-83.0677520"><name>81</name><desc>Turn LEFT onto Sciotangy Drive - COLLECT 2314 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0228850" lon="-83.0681330"><name>82</name><desc>Turn LEFT onto Ridgecliff Road - repeat 404 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0228210" lon="-83.0666880"><name>83</name><desc>Continue on Ridgecliff Road - COLLECT 311 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0227680" lon="-83.0655780"><name>84</name><desc>Continue on Ridgecliff Road - repeat 361 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0227030" lon="-83.0642890"><name>85</name><desc>Turn LEFT onto Kirkham Road - COLLECT 1343 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0263770" lon="-83.0639970"><name>86</name><desc>Turn RIGHT onto Riverhill Road - COLLECT 977 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0262190" lon="-83.0605050"><name>87</name><desc>Turn RIGHT onto Birchcrest Road - repeat 622 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0249650" lon="-83.0591620"><name>88</name><desc>Continue on Birchcrest Road - COLLECT 347 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0243500" lon="-83.0582130"><name>89</name><desc>Turn LEFT onto Tremont Road - COLLECT 377 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0252040" lon="-83.0574520"><name>90</name><desc>Turn LEFT onto Fishinger Road - COLLECT 766 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0265650" lon="-83.0595380"><name>91</name><desc>Turn LEFT onto Riverhill Road - COLLECT 316 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0262190" lon="-83.0605050"><name>92</name><desc>Turn LEFT onto Birchcrest Road - COLLECT 622 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0249650" lon="-83.0591620"><name>93</name><desc>Turn RIGHT onto Ardleigh Road - COLLECT 1361 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0235760" lon="-83.0630430"><name>94</name><desc>Turn RIGHT onto Somerford Road - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0244790" lon="-83.0629690"><name>95</name><desc>Turn RIGHT onto Lynnhaven Drive - COLLECT 695 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0248110" lon="-83.0606810"><name>96</name><desc>Turn RIGHT onto Millwood Drive - COLLECT 322 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0242400" lon="-83.0598040"><name>97</name><desc>U-TURN onto Millwood Drive - repeat 322 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0248110" lon="-83.0606810"><name>98</name><desc>Continue on Millwood Drive - COLLECT 689 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0254410" lon="-83.0628900"><name>99</name><desc>Turn RIGHT onto Somerford Road - COLLECT 323 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0263250" lon="-83.0628150"><name>100</name><desc>U-TURN onto Somerford Road - repeat 323 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0254410" lon="-83.0628900"><name>101</name><desc>Continue on Somerford Road - COLLECT 352 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0244790" lon="-83.0629690"><name>102</name><desc>Continue on Somerford Road - repeat 330 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0235760" lon="-83.0630430"><name>103</name><desc>Continue on Somerford Road - COLLECT 695 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0217850" lon="-83.0637510"><name>104</name><desc>Turn RIGHT onto Milden Road - COLLECT 1625 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0220250" lon="-83.0695580"><name>105</name><desc>Turn LEFT onto Redding Road - COLLECT 662 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0202110" lon="-83.0696560"><name>106</name><desc>Turn LEFT onto Kentwell Road - COLLECT 1617 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0199760" lon="-83.0638770"><name>107</name><desc>Turn RIGHT onto Somerford Road - COLLECT 338 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0190493" lon="-83.0639343"><name>108</name><desc>Turn LEFT onto Zollinger Road - repeat 291 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0190030" lon="-83.0628950"><name>109</name><desc>Turn LEFT onto Tremont Road - COLLECT 652 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0204800" lon="-83.0615800"><name>110</name><desc>Turn LEFT onto Langham Road - COLLECT 2273 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0211160" lon="-83.0696040"><name>111</name><desc>Turn RIGHT onto Redding Road - repeat 332 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0220250" lon="-83.0695580"><name>112</name><desc>Continue on Redding Road - COLLECT 338 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0229500" lon="-83.0695010"><name>113</name><desc>Continue on Redding Road - repeat 370 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0239640" lon="-83.0694450"><name>114</name><desc>Turn LEFT onto Wesleyan Drive - COLLECT 880 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0241150" lon="-83.0725890"><name>115</name><desc>Turn RIGHT onto Mountview Road - repeat 84 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0243450" lon="-83.0725730"><name>116</name><desc>Turn LEFT onto Woodstock Road - COLLECT 2265 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0246950" lon="-83.0806670"><name>117</name><desc>Turn RIGHT onto Dorchester Road - COLLECT 1513 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0288350" lon="-83.0803710"><name>118</name><desc>Turn RIGHT onto Edgevale Road - COLLECT 1064 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0286812" lon="-83.0765660"><name>119</name><desc>Turn RIGHT onto Ramsgate Road - COLLECT 604 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0270280" lon="-83.0766780"><name>120</name><desc>Turn RIGHT onto Cranford Road - COLLECT 3598 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0275850" lon="-83.0895370"><name>121</name><desc>Turn LEFT onto Sunset Drive - repeat 300 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0267650" lon="-83.0895800"><name>122</name><desc>Continue on Sunset Drive - COLLECT 307 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0259360" lon="-83.0897700"><name>123</name><desc>Turn RIGHT onto Nottingham Road - COLLECT 421 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0259996" lon="-83.0912742"><name>124</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 595 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0276125" lon="-83.0913158"><name>125</name><desc>Continue on Riverside Drive - repeat 908 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0300320" lon="-83.0919980"><name>126</name><desc>Turn RIGHT onto Fishinger Road - COLLECT 5549 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0293780" lon="-83.0721660"><name>127</name><desc>Turn RIGHT onto Mountview Road - repeat 327 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0284820" lon="-83.0722360"><name>128</name><desc>Turn RIGHT onto Edgevale Road - COLLECT 1212 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0286812" lon="-83.0765660"><name>129</name><desc>Turn RIGHT onto Ramsgate Road - COLLECT 316 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0295470" lon="-83.0765050"><name>130</name><desc>Turn LEFT onto Fishinger Road - repeat 1065 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0296960" lon="-83.0803130"><name>131</name><desc>Turn LEFT onto Dorchester Road - COLLECT 315 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0288350" lon="-83.0803710"><name>132</name><desc>Turn RIGHT onto Edgevale Road - COLLECT 1175 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0288950" lon="-83.0845310"><name>133</name><desc>Turn RIGHT onto Kioka Avenue - COLLECT 726 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0299280" lon="-83.0863400"><name>134</name><desc>Turn LEFT onto Fishinger Road - repeat 420 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0299940" lon="-83.0878420"><name>135</name><desc>Turn LEFT onto Sunset Drive - COLLECT 424 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0292010" lon="-83.0887380"><name>136</name><desc>Continue on Sunset Drive - repeat 472 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0284220" lon="-83.0897790"><name>137</name><desc>Turn LEFT onto Bristol Road - COLLECT 4890 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0276510" lon="-83.0723030"><name>138</name><desc>Turn LEFT onto Mountview Road - repeat 207 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0282180" lon="-83.0722570"><name>139</name><desc>Continue on Mountview Road - COLLECT 424 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0293780" lon="-83.0721660"><name>140</name><desc>Turn RIGHT onto Fishinger Road - COLLECT 849 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0292720" lon="-83.0691310"><name>141</name><desc>Turn RIGHT onto Redding Road - COLLECT 438 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0280730" lon="-83.0691980"><name>142</name><desc>Turn RIGHT onto Springhill Drive - COLLECT 856 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0282180" lon="-83.0722570"><name>143</name><desc>Turn LEFT onto Mountview Road - COLLECT 389 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0271530" lon="-83.0723430"><name>144</name><desc>Continue on Mountview Road - repeat 116 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0268350" lon="-83.0723690"><name>145</name><desc>Continue on Mountview Road - COLLECT 255 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0261380" lon="-83.0724210"><name>146</name><desc>Continue on Mountview Road - repeat 44 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0260170" lon="-83.0724320"><name>147</name><desc>Continue on Mountview Road - COLLECT 912 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0235230" lon="-83.0726380"><name>148</name><desc>Turn RIGHT onto Swansea Road - repeat 1200 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0237060" lon="-83.0769280"><name>149</name><desc>Turn RIGHT onto Ramsgate Road - COLLECT 1214 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0270280" lon="-83.0766780"><name>150</name><desc>Turn RIGHT onto Cranford Road - COLLECT 1206 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0268350" lon="-83.0723690"><name>151</name><desc>Turn LEFT onto Mountview Road - COLLECT 116 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0271530" lon="-83.0723430"><name>152</name><desc>Turn RIGHT onto Riverhill Road - COLLECT 882 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0267840" lon="-83.0692750"><name>153</name><desc>Turn LEFT onto Redding Road - COLLECT 471 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0280730" lon="-83.0691980"><name>154</name><desc>Continue on Redding Road - repeat 438 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0292720" lon="-83.0691310"><name>155</name><desc>Turn RIGHT onto Fishinger Road - COLLECT 1187 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0291490" lon="-83.0648870"><name>156</name><desc>Continue on Fishinger Road - repeat 310 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0291140" lon="-83.0637770"><name>157</name><desc>Continue on Fishinger Road - COLLECT 301 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0290240" lon="-83.0627110"><name>158</name><desc>Turn RIGHT onto Hove Road - COLLECT 697 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0282040" lon="-83.0614990"><name>159</name><desc>Turn RIGHT onto Fishinger Road - repeat 335 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0274405" lon="-83.0608360"><name>160</name><desc>Continue on Fishinger Road - COLLECT 1249 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0252040" lon="-83.0574520"><name>161</name><desc>Turn RIGHT onto Tremont Road - repeat 377 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0243500" lon="-83.0582130"><name>162</name><desc>Continue on Tremont Road - COLLECT 838 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0224424" lon="-83.0598830"><name>163</name><desc>Continue on Tremont Road - repeat 528 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0212320" lon="-83.0609220"><name>164</name><desc>Continue on Tremont Road - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0204800" lon="-83.0615800"><name>165</name><desc>Continue on Tremont Road - repeat 325 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0197520" lon="-83.0622490"><name>166</name><desc>Turn RIGHT onto Kentwell Road - COLLECT 469 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0199760" lon="-83.0638770"><name>167</name><desc>Turn RIGHT onto Somerford Road - COLLECT 661 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0217850" lon="-83.0637510"><name>168</name><desc>Turn RIGHT onto Milden Road - COLLECT 830 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0212320" lon="-83.0609220"><name>169</name><desc>Turn LEFT onto Tremont Road - COLLECT 528 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0224424" lon="-83.0598830"><name>170</name><desc>Turn LEFT onto Ridgecliff Road - COLLECT 1599 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0227680" lon="-83.0655780"><name>171</name><desc>Turn RIGHT onto Leighton Road - COLLECT 2338 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0291490" lon="-83.0648870"><name>172</name><desc>Turn RIGHT onto Fishinger Road - COLLECT 310 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0291140" lon="-83.0637770"><name>173</name><desc>Turn RIGHT onto Kirkham Road - COLLECT 680 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0272530" lon="-83.0639270"><name>174</name><desc>Turn LEFT onto Merriweather Drive - COLLECT 894 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0274405" lon="-83.0608360"><name>175</name><desc>Turn LEFT onto Fishinger Road - COLLECT 1099 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0291140" lon="-83.0637770"><name>176</name><desc>Turn LEFT onto Kirkham Road - COLLECT 1000 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0263770" lon="-83.0639970"><name>177</name><desc>Turn RIGHT onto Riverhill Road - COLLECT 1485 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0267840" lon="-83.0692750"><name>178</name><desc>Turn LEFT onto Redding Road - COLLECT 701 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0248650" lon="-83.0693900"><name>179</name><desc>Turn RIGHT onto Oakmount Road - COLLECT 881 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0251250" lon="-83.0725050"><name>180</name><desc>Turn RIGHT onto Mountview Road - repeat 19 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0251760" lon="-83.0725000"><name>181</name><desc>Turn LEFT onto Nottingham Road - COLLECT 5253 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0259996" lon="-83.0912742"><name>182</name><desc>Turn LEFT onto Riverside Drive - COLLECT 1313 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0224550" lon="-83.0920800"><name>183</name><desc>Turn LEFT onto Wickliffe Road - COLLECT 220 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0224230" lon="-83.0912950"><name>184</name><desc>U-TURN onto Wickliffe Road - repeat 220 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0224550" lon="-83.0920800"><name>185</name><desc>Turn LEFT onto Riverside Drive - COLLECT 456 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0212080" lon="-83.0921850"><name>186</name><desc>Turn LEFT onto Eastcleft Drive - COLLECT 2108 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0208790" lon="-83.0846540"><name>187</name><desc>Turn LEFT onto Kioka Avenue - COLLECT 205 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0214410" lon="-83.0846130"><name>188</name><desc>Turn RIGHT onto Eastcleft Drive - COLLECT 1415 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0212080" lon="-83.0795560"><name>189</name><desc>Turn RIGHT onto Cimmaron Road - COLLECT 526 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0197687" lon="-83.0796543"><name>190</name><desc>Turn RIGHT onto Zollinger Road - COLLECT 3317 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0198881" lon="-83.0913821"><name>191</name><desc>Turn RIGHT onto Alley - COLLECT 472 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0211816" lon="-83.0912993"><name>192</name><desc>Turn LEFT onto Eastcleft Drive - repeat 248 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0212080" lon="-83.0921850"><name>193</name><desc>Turn LEFT onto Riverside Drive - COLLECT 1429 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0174341" lon="-83.0911228"><name>194</name><desc>Turn LEFT onto Craigs Way - COLLECT 211 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0173820" lon="-83.0903850"><name>195</name><desc>U-TURN onto Craigs Way - repeat 211 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0174341" lon="-83.0911228"><name>196</name><desc>Turn LEFT onto Riverside Drive - COLLECT 444 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0162532" lon="-83.0907592"><name>197</name><desc>Turn LEFT onto Chateau Circle - COLLECT 523 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0159650" lon="-83.0890550"><name>198</name><desc>Turn RIGHT onto Chateau Circle South - COLLECT 693 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0159050" lon="-83.0872050"><name>199</name><desc>Turn RIGHT onto Chateau Circle - COLLECT 228 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0158280" lon="-83.0864050"><name>200</name><desc>U-TURN onto Chateau Circle - repeat 228 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0159050" lon="-83.0872050"><name>201</name><desc>Continue on Chateau Circle - COLLECT 484 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0165494" lon="-83.0883717"><name>202</name><desc>U-TURN onto Chateau Circle - repeat 133 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0161860" lon="-83.0883950"><name>203</name><desc>Turn RIGHT onto Chateau Circle - COLLECT 719 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0162532" lon="-83.0907592"><name>204</name><desc>Turn LEFT onto Riverside Drive - COLLECT 1090 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0133810" lon="-83.0898000"><name>205</name><desc>Turn LEFT onto Canterbury Road - COLLECT 202 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0133670" lon="-83.0890790"><name>206</name><desc>Turn LEFT onto Linkbury Lane - COLLECT 443 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0143090" lon="-83.0899200"><name>207</name><desc>U-TURN onto Linkbury Lane - repeat 443 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0133670" lon="-83.0890790"><name>208</name><desc>Turn LEFT onto Canterbury Road - COLLECT 181 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0135320" lon="-83.0884770"><name>209</name><desc>Turn LEFT onto Canterbury Lane - COLLECT 502 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0143754" lon="-83.0877161"><name>210</name><desc>U-TURN onto Canterbury Lane - repeat 252 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0142036" lon="-83.0883830"><name>211</name><desc>Continue on Upper Canterbury Lane - COLLECT 820 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0150043" lon="-83.0871022"><name>212</name><desc>U-TURN onto Upper Canterbury Lane - repeat 820 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0142036" lon="-83.0883830"><name>213</name><desc>Turn RIGHT onto Canterbury Lane - repeat 250 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0135320" lon="-83.0884770"><name>214</name><desc>Turn LEFT onto Canterbury Road - COLLECT 1428 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0131350" lon="-83.0839130"><name>215</name><desc>Turn LEFT onto South Dorchester Road - repeat 340 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0140580" lon="-83.0837800"><name>216</name><desc>Continue on South Dorchester Road - COLLECT 360 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0149300" lon="-83.0831980"><name>217</name><desc>Continue on South Dorchester Road - repeat 449 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0157830" lon="-83.0820410"><name>218</name><desc>Turn RIGHT onto Farleigh Road - COLLECT 411 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0157040" lon="-83.0805730"><name>219</name><desc>Continue on Farleigh Road - repeat 739 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0155710" lon="-83.0779350"><name>220</name><desc>Continue on Farleigh Road - COLLECT 1071 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0153750" lon="-83.0741120"><name>221</name><desc>Continue on Farleigh Road - repeat 434 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0152930" lon="-83.0725640"><name>222</name><desc>Continue on Farleigh Road - COLLECT 729 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0151424" lon="-83.0699657"><name>223</name><desc>Turn RIGHT onto Redding Road - COLLECT 190 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0146220" lon="-83.0699940"><name>224</name><desc>Continue on Redding Road - repeat 134 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0142550" lon="-83.0700160"><name>225</name><desc>Turn RIGHT onto Edington Road - COLLECT 737 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0143890" lon="-83.0726480"><name>226</name><desc>Turn RIGHT onto Mountview Road - COLLECT 331 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0152930" lon="-83.0725640"><name>227</name><desc>Continue on Mountview Road - repeat 297 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0161060" lon="-83.0725120"><name>228</name><desc>Continue on Mountview Road - COLLECT 295 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0169130" lon="-83.0724630"><name>229</name><desc>Continue on Mountview Road - repeat 294 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0177170" lon="-83.0724050"><name>230</name><desc>Turn RIGHT onto Inchcliff Road - COLLECT 2271 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0174250" lon="-83.0642870"><name>231</name><desc>Turn LEFT onto Tremont Road - COLLECT 86 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0176180" lon="-83.0641120"><name>232</name><desc>Continue on Tremont Road - repeat 258 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0182060" lon="-83.0635980"><name>233</name><desc>Continue on Tremont Road - COLLECT 351 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0190030" lon="-83.0628950"><name>234</name><desc>Turn LEFT onto Zollinger Road - COLLECT 1910 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0192879" lon="-83.0697230"><name>235</name><desc>Turn RIGHT onto Redding Road - COLLECT 337 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0202110" lon="-83.0696560"><name>236</name><desc>Continue on Redding Road - repeat 218 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0208070" lon="-83.0696220"><name>237</name><desc>Turn LEFT onto Eastcleft Drive - COLLECT 2779 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0212080" lon="-83.0795560"><name>238</name><desc>Turn RIGHT onto Cimmaron Road - COLLECT 952 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0238120" lon="-83.0793590"><name>239</name><desc>Turn LEFT onto Swansea Road - COLLECT 1417 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0240350" lon="-83.0844230"><name>240</name><desc>Turn LEFT onto Kioka Avenue - COLLECT 31 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0239490" lon="-83.0844290"><name>241</name><desc>Turn RIGHT onto Swansea Road - COLLECT 1606 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0242000" lon="-83.0901670"><name>242</name><desc>Turn RIGHT onto Sunset Drive - COLLECT 320 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0250630" lon="-83.0899690"><name>243</name><desc>Turn RIGHT onto Woodstock Road - COLLECT 1567 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0248170" lon="-83.0843700"><name>244</name><desc>Turn LEFT onto Kioka Avenue - repeat 15 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0248570" lon="-83.0843670"><name>245</name><desc>Continue on Kioka Avenue - COLLECT 612 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0265310" lon="-83.0842330"><name>246</name><desc>Turn LEFT onto Shrewsbury Road - COLLECT 1496 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0267650" lon="-83.0895800"><name>247</name><desc>Turn RIGHT onto Sunset Drive - COLLECT 1085 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0292010" lon="-83.0887380"><name>248</name><desc>Continue on Edgevale Road - COLLECT 781 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0292150" lon="-83.0860040"><name>249</name><desc>Turn RIGHT onto Kioka Avenue - repeat 436 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0288950" lon="-83.0845310"><name>250</name><desc>Continue on Kioka Avenue - COLLECT 902 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0265310" lon="-83.0842330"><name>251</name><desc>Turn LEFT onto Shrewsbury Road - COLLECT 3302 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0260170" lon="-83.0724320"><name>252</name><desc>Turn LEFT onto Mountview Road - COLLECT 44 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0261380" lon="-83.0724210"><name>253</name><desc>Turn RIGHT onto Cresthill Drive - COLLECT 867 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0259940" lon="-83.0693230"><name>254</name><desc>Turn RIGHT onto Redding Road - repeat 412 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0248650" lon="-83.0693900"><name>255</name><desc>Continue on Redding Road - COLLECT 699 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0229500" lon="-83.0695010"><name>256</name><desc>Turn RIGHT onto Ridgecliff Road - COLLECT 348 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0230090" lon="-83.0707450"><name>257</name><desc>Turn LEFT onto Ainwick Road - COLLECT 1341 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0193377" lon="-83.0709660"><name>258</name><desc>Turn RIGHT onto Zollinger Road - COLLECT 372 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0193937" lon="-83.0722960"><name>259</name><desc>Turn LEFT onto Mountview Road - repeat 318 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0185230" lon="-83.0723600"><name>260</name><desc>Continue on Mountview Road - COLLECT 588 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0169130" lon="-83.0724630"><name>261</name><desc>Turn LEFT onto Harwitch Road - COLLECT 729 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0168190" lon="-83.0698580"><name>262</name><desc>Turn RIGHT onto Redding Road - COLLECT 295 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0160111" lon="-83.0699117"><name>263</name><desc>Turn RIGHT onto Ridgeview Road - COLLECT 727 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0161060" lon="-83.0725120"><name>264</name><desc>Turn LEFT onto Mountview Road - COLLECT 297 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0152930" lon="-83.0725640"><name>265</name><desc>Turn RIGHT onto Farleigh Road - COLLECT 434 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0153750" lon="-83.0741120"><name>266</name><desc>Turn RIGHT onto Avalon Road - COLLECT 2643 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0224390" lon="-83.0743300"><name>267</name><desc>Turn RIGHT onto Wickliffe Road - COLLECT 354 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0225571" lon="-83.0730874"><name>268</name><desc>Turn RIGHT onto Kenyon Road - COLLECT 975 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0201090" lon="-83.0737990"><name>269</name><desc>Turn LEFT onto Avalon Road - repeat 226 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0194912" lon="-83.0738220"><name>270</name><desc>Turn RIGHT onto Zollinger Road - COLLECT 442 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0195667" lon="-83.0754013"><name>271</name><desc>Turn RIGHT onto Fisher Place - COLLECT 200 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0201129" lon="-83.0753575"><name>272</name><desc>U-TURN onto Fisher Place - repeat 200 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0195667" lon="-83.0754013"><name>273</name><desc>Turn RIGHT onto Zollinger Road - repeat 93 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0195837" lon="-83.0757317"><name>274</name><desc>Turn LEFT onto Asbury Drive - COLLECT 2503 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0127330" lon="-83.0762440"><name>275</name><desc>Turn RIGHT onto Canterbury Road - repeat 1139 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0129470" lon="-83.0803120"><name>276</name><desc>Continue on Canterbury Road - COLLECT 1009 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0131350" lon="-83.0839130"><name>277</name><desc>Turn RIGHT onto South Dorchester Road - COLLECT 340 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0140580" lon="-83.0837800"><name>278</name><desc>Turn RIGHT onto Dorset Road - COLLECT 1001 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0138760" lon="-83.0802070"><name>279</name><desc>Turn RIGHT onto Leeds Road - COLLECT 340 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0129470" lon="-83.0803120"><name>280</name><desc>Turn LEFT onto Canterbury Road - COLLECT 2964 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0114890" lon="-83.0702189"><name>281</name><desc>Turn LEFT onto Redding Road - COLLECT 1145 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0146220" lon="-83.0699940"><name>282</name><desc>Turn RIGHT onto Alley - COLLECT 879 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0145039" lon="-83.0668533"><name>283</name><desc>Turn LEFT onto Tremont Road - COLLECT 213 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0149880" lon="-83.0664280"><name>284</name><desc>Turn LEFT onto Farleigh Road - COLLECT 991 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0151424" lon="-83.0699657"><name>285</name><desc>Turn RIGHT onto Redding Road - COLLECT 317 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0160111" lon="-83.0699117"><name>286</name><desc>Turn RIGHT onto Ridgeview Road - COLLECT 1192 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0158680" lon="-83.0656490"><name>287</name><desc>Turn LEFT onto Tremont Road - COLLECT 347 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0166578" lon="-83.0649555"><name>288</name><desc>Turn LEFT onto Harwitch Road - COLLECT 1371 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0168190" lon="-83.0698580"><name>289</name><desc>Turn RIGHT onto Redding Road - COLLECT 588 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0184280" lon="-83.0697670"><name>290</name><desc>Turn RIGHT onto Jervis Road - COLLECT 1726 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0182060" lon="-83.0635980"><name>291</name><desc>Turn RIGHT onto Tremont Road - COLLECT 258 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0176180" lon="-83.0641120"><name>292</name><desc>Continue on Tremont Road - repeat 86 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0174250" lon="-83.0642870"><name>293</name><desc>Continue on Tremont Road - COLLECT 1072 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0149880" lon="-83.0664280"><name>294</name><desc>Continue on Tremont Road - repeat 213 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0145039" lon="-83.0668533"><name>295</name><desc>Continue on Tremont Road - COLLECT 582 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0131766" lon="-83.0680097"><name>296</name><desc>Continue on Tremont Road - repeat 350 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0123820" lon="-83.0687129"><name>297</name><desc>Continue on Tremont Road - COLLECT 599 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0108734" lon="-83.0695347"><name>298</name><desc>Continue on Tremont Road - COLLECT 98 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106255" lon="-83.0696660"><name>299</name><desc>Turn RIGHT onto Unnamed road - COLLECT 33 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106923" lon="-83.0697424"><name>300</name><desc>Continue on Unnamed road - repeat 193 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0106255" lon="-83.0696660"><name>301</name><desc>Turn RIGHT onto Tremont Road - repeat 98 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0108734" lon="-83.0695347"><name>302</name><desc>U-TURN onto Tremont Road - COLLECT 89 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106923" lon="-83.0697424"><name>303</name><desc>Turn RIGHT onto Unnamed road - repeat 7 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0106975" lon="-83.0697647"><name>304</name><desc>Turn RIGHT onto Redding Road - repeat 317 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0300320" lon="-83.0919980"><name>START</name></wpt>
+<wpt lat="40.0114890" lon="-83.0702189"><name>END</name></wpt>
 <trk><name>UA Tuesday Collection</name><trkseg>
 <trkpt lat="40.0300320" lon="-83.0919980"/>
 <trkpt lat="40.0298787" lon="-83.0919630"/>

@@ -1,5 +1,532 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="ua_routes" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>UA Thursday Collection</name></metadata>
+<wpt lat="40.0613100" lon="-83.1027610"><name>1</name><desc>Start on Riverside Drive - repeat 5493 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0478630" lon="-83.0950440"><name>2</name><desc>Turn LEFT onto Lane Road - COLLECT 882 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0477707" lon="-83.0918900"><name>3</name><desc>Turn RIGHT onto Langport Road - COLLECT 1272 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0445460" lon="-83.0903190"><name>4</name><desc>Turn RIGHT onto Elginfield Road / Alliston Court / Lowestone Road - COLLECT 1491 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0436310" lon="-83.0899800"><name>5</name><desc>Continue on Alliston Court - COLLECT 753 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0439137" lon="-83.0880199"><name>6</name><desc>Turn LEFT onto Alliston Court - repeat 567 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0436310" lon="-83.0899800"><name>7</name><desc>Turn LEFT onto Langport Road - COLLECT 289 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0428680" lon="-83.0897080"><name>8</name><desc>Continue on Langport Road / Folkstone Road - COLLECT 1467 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0420020" lon="-83.0936420"><name>9</name><desc>Turn RIGHT onto McCoy Road - repeat 312 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0428550" lon="-83.0937060"><name>10</name><desc>Continue on Masters Drive - COLLECT 262 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0435710" lon="-83.0936260"><name>11</name><desc>Continue on Masters Drive / Rivertop Lane - COLLECT 403 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0446660" lon="-83.0935410"><name>12</name><desc>Continue on Masters Court - COLLECT 183 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0447731" lon="-83.0930781"><name>13</name><desc>U-TURN onto Masters Court - repeat 142 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0447738" lon="-83.0935865"><name>14</name><desc>Continue on Masters Court - COLLECT 199 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0448070" lon="-83.0942990"><name>15</name><desc>U-TURN onto Masters Court - repeat 241 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0446660" lon="-83.0935410"><name>16</name><desc>Turn RIGHT onto Rivertop Lane - COLLECT 798 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0435710" lon="-83.0936260"><name>17</name><desc>Turn RIGHT onto Masters Drive - repeat 262 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0428550" lon="-83.0937060"><name>18</name><desc>Continue on McCoy Road - COLLECT 527 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0415501" lon="-83.0931797"><name>19</name><desc>Turn RIGHT onto Alley - COLLECT 246 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0409257" lon="-83.0929747"><name>20</name><desc>U-TURN onto Alley - repeat 246 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0415501" lon="-83.0931797"><name>21</name><desc>Turn RIGHT onto McCoy Road - COLLECT 463 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0414179" lon="-83.0915435"><name>22</name><desc>Turn RIGHT onto Alley - COLLECT 498 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0402033" lon="-83.0920483"><name>23</name><desc>U-TURN onto Alley - repeat 498 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0414179" lon="-83.0915435"><name>24</name><desc>Turn RIGHT onto McCoy Road - COLLECT 237 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0413870" lon="-83.0906960"><name>25</name><desc>Turn RIGHT onto Oxford Drive - repeat 211 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0408100" lon="-83.0907380"><name>26</name><desc>Continue on Oxford Drive - COLLECT 1828 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0363960" lon="-83.0932760"><name>27</name><desc>Continue on Riverside Drive - COLLECT 165 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0359480" lon="-83.0931870"><name>28</name><desc>Turn LEFT onto Fairfax Drive - COLLECT 859 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0358750" lon="-83.0901150"><name>29</name><desc>Turn RIGHT onto Fairfax Drive - repeat 603 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0353440" lon="-83.0883300"><name>30</name><desc>Continue on Johnston Road - COLLECT 3235 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0349310" lon="-83.0767620"><name>31</name><desc>Turn RIGHT onto Surrey Hill Place - repeat 327 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0340363" lon="-83.0768200"><name>32</name><desc>Continue on Surrey Hill Place - COLLECT 324 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0331500" lon="-83.0768779"><name>33</name><desc>Turn RIGHT onto Hoxton Court - COLLECT 603 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0327936" lon="-83.0781852"><name>34</name><desc>Turn LEFT onto Hoxton Court - repeat 422 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0331500" lon="-83.0768779"><name>35</name><desc>Turn RIGHT onto Surrey Hill Place - COLLECT 555 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0316321" lon="-83.0769940"><name>36</name><desc>Turn LEFT onto Glenmere Road - repeat 348 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0315872" lon="-83.0757493"><name>37</name><desc>Turn LEFT onto Walhaven Road - COLLECT 1119 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0340363" lon="-83.0768200"><name>38</name><desc>Continue on Walhaven Court - COLLECT 436 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0340736" lon="-83.0778016"><name>39</name><desc>Turn RIGHT onto Walhaven Court - repeat 275 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0340363" lon="-83.0768200"><name>40</name><desc>Turn LEFT onto Surrey Hill Place - COLLECT 327 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0349310" lon="-83.0767620"><name>41</name><desc>Turn RIGHT onto Johnston Road - COLLECT 414 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0350210" lon="-83.0753080"><name>42</name><desc>Turn RIGHT onto Woodbridge Road - COLLECT 1348 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0315352" lon="-83.0745060"><name>43</name><desc>Turn LEFT onto Glenmere Road - repeat 399 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0314802" lon="-83.0730790"><name>44</name><desc>Turn LEFT onto Chevington Road - COLLECT 1723 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0361970" lon="-83.0727340"><name>45</name><desc>Turn LEFT onto Lytham Road - COLLECT 447 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0360937" lon="-83.0742849"><name>46</name><desc>Turn LEFT onto Bramford Road - COLLECT 794 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0341360" lon="-83.0745499"><name>47</name><desc>Turn RIGHT onto Woodbridge Road - repeat 389 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0350210" lon="-83.0753080"><name>48</name><desc>Continue on Woodbridge Road - COLLECT 334 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0359090" lon="-83.0755000"><name>49</name><desc>Turn RIGHT onto Lytham Road - COLLECT 355 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0360937" lon="-83.0742849"><name>50</name><desc>Continue on Lytham Road - repeat 447 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0361970" lon="-83.0727340"><name>51</name><desc>Continue on Lytham Road - COLLECT 672 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0360350" lon="-83.0703470"><name>52</name><desc>Turn LEFT onto Fenwick Road - repeat 702 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0379557" lon="-83.0702080"><name>53</name><desc>Turn RIGHT onto Newhall Road - COLLECT 897 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0359890" lon="-83.0691770"><name>54</name><desc>Turn LEFT onto Lytham Road - COLLECT 711 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0359060" lon="-83.0666340"><name>55</name><desc>U-TURN onto Lytham Road - repeat 350 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0359460" lon="-83.0678850"><name>56</name><desc>Turn RIGHT onto Lytham Court - COLLECT 509 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0373400" lon="-83.0678700"><name>57</name><desc>U-TURN onto Lytham Court - repeat 509 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0359460" lon="-83.0678850"><name>58</name><desc>Turn RIGHT onto Lytham Road - repeat 361 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0359890" lon="-83.0691770"><name>59</name><desc>Continue on Lytham Road - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0360350" lon="-83.0703470"><name>60</name><desc>Turn RIGHT onto Fenwick Road - COLLECT 1364 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0397690" lon="-83.0700720"><name>61</name><desc>U-TURN onto Fenwick Road - repeat 339 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0388420" lon="-83.0701420"><name>62</name><desc>Turn RIGHT onto Haviland Road - COLLECT 329 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0388820" lon="-83.0713190"><name>63</name><desc>Turn RIGHT onto Mountview Road - COLLECT 682 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0407500" lon="-83.0711880"><name>64</name><desc>Turn RIGHT onto McCoy Road - COLLECT 602 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0406920" lon="-83.0690350"><name>65</name><desc>Turn RIGHT onto Longhill Road - COLLECT 915 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0383040" lon="-83.0685100"><name>66</name><desc>U-TURN onto Longhill Road - repeat 915 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0406920" lon="-83.0690350"><name>67</name><desc>Turn RIGHT onto McCoy Road - COLLECT 1297 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0406920" lon="-83.0690350"><name>68</name><desc>Continue on McCoy Road - repeat 602 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0407500" lon="-83.0711880"><name>69</name><desc>Continue on McCoy Road - COLLECT 1133 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0408860" lon="-83.0752390"><name>70</name><desc>Turn RIGHT onto Woodbridge Road - COLLECT 1263 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0439820" lon="-83.0741020"><name>71</name><desc>Turn LEFT onto Cheltenham Road - repeat 504 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0440420" lon="-83.0759060"><name>72</name><desc>Turn LEFT onto Waybourn Road - COLLECT 549 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0427420" lon="-83.0752520"><name>73</name><desc>Turn LEFT onto Sheringham Road - COLLECT 349 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0429980" lon="-83.0741550"><name>74</name><desc>U-TURN onto Sheringham Road - repeat 349 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0427420" lon="-83.0752520"><name>75</name><desc>Continue on Sheringham Road - COLLECT 633 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0418900" lon="-83.0767940"><name>76</name><desc>Turn RIGHT onto Woodhall Road - COLLECT 824 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0440820" lon="-83.0772690"><name>77</name><desc>Turn RIGHT onto Cheltenham Road - COLLECT 885 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0439820" lon="-83.0741020"><name>78</name><desc>Turn LEFT onto Woodbridge Road - COLLECT 523 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0453776" lon="-83.0737459"><name>79</name><desc>Continue on Woodbridge Road - repeat 649 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0471551" lon="-83.0736357"><name>80</name><desc>Turn RIGHT onto Lane Road - COLLECT 1172 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0470140" lon="-83.0694440"><name>81</name><desc>Turn LEFT onto Cassill Street - COLLECT 448 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0482390" lon="-83.0693590"><name>82</name><desc>Turn RIGHT onto Victorian Court - COLLECT 497 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0480461" lon="-83.0676270"><name>83</name><desc>U-TURN onto Victorian Court - repeat 497 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0482390" lon="-83.0693590"><name>84</name><desc>Turn RIGHT onto Cassill Street - COLLECT 372 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0492560" lon="-83.0692840"><name>85</name><desc>Turn RIGHT onto Ivanhoe Court - COLLECT 459 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0491820" lon="-83.0676450"><name>86</name><desc>U-TURN onto Ivanhoe Court - repeat 459 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0492560" lon="-83.0692840"><name>87</name><desc>Turn RIGHT onto Cassill Street - COLLECT 185 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0497640" lon="-83.0692560"><name>88</name><desc>U-TURN onto Cassill Street - repeat 528 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0483190" lon="-83.0693550"><name>89</name><desc>Turn RIGHT onto Cassill Court - COLLECT 146 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0483410" lon="-83.0698780"><name>90</name><desc>U-TURN onto Cassill Court - repeat 146 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0483190" lon="-83.0693550"><name>91</name><desc>Turn RIGHT onto Cassill Street - repeat 477 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0470140" lon="-83.0694440"><name>92</name><desc>Turn LEFT onto Lane Road - COLLECT 726 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0469310" lon="-83.0668480"><name>93</name><desc>Turn RIGHT onto Reed Road - repeat 387 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0458710" lon="-83.0668350"><name>94</name><desc>Turn RIGHT onto Willow Forge Drive - COLLECT 338 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0459130" lon="-83.0680450"><name>95</name><desc>Continue on Willow Forge Drive / Brandywine Drive - COLLECT 1468 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0443760" lon="-83.0680170"><name>96</name><desc>Turn LEFT onto Crown Point Drive - COLLECT 561 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0459130" lon="-83.0680450"><name>97</name><desc>U-TURN onto Crown Point Drive - repeat 561 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0443760" lon="-83.0680170"><name>98</name><desc>Turn LEFT onto Brandywine Drive - COLLECT 341 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0443320" lon="-83.0667990"><name>99</name><desc>Turn RIGHT onto Reed Road - repeat 328 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0434330" lon="-83.0667790"><name>100</name><desc>Turn RIGHT onto Ardwick Road - COLLECT 204 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0434530" lon="-83.0675090"><name>101</name><desc>Turn LEFT onto Waddington Road - COLLECT 915 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0420174" lon="-83.0675014"><name>102</name><desc>Continue on Waddington Road - repeat 524 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0434530" lon="-83.0675090"><name>103</name><desc>Turn LEFT onto Ardwick Road / Gavin Lane - COLLECT 1323 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0417150" lon="-83.0703040"><name>104</name><desc>Turn RIGHT onto Mountview Road - COLLECT 1129 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0445627" lon="-83.0708915"><name>105</name><desc>U-TURN onto Mountview Road - repeat 1129 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0417150" lon="-83.0703040"><name>106</name><desc>Continue on Mountview Road - COLLECT 456 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0407500" lon="-83.0711880"><name>107</name><desc>Continue on Mountview Road - repeat 362 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0397590" lon="-83.0712540"><name>108</name><desc>Turn RIGHT onto Chardon Road - COLLECT 1129 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0398880" lon="-83.0752930"><name>109</name><desc>Turn LEFT onto Woodbridge Road - repeat 314 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0390267" lon="-83.0753385"><name>110</name><desc>Turn RIGHT onto Haviland Road - repeat 383 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0390760" lon="-83.0767090"><name>111</name><desc>Continue on Haviland Road - COLLECT 2156 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0393250" lon="-83.0844230"><name>112</name><desc>Turn RIGHT onto Buckley Road / Winfield Road - COLLECT 1147 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0401040" lon="-83.0812050"><name>113</name><desc>Continue on Buckley Road - COLLECT 1270 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0399580" lon="-83.0766610"><name>114</name><desc>Turn LEFT onto Ashmore Road - COLLECT 355 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0409296" lon="-83.0766030"><name>115</name><desc>Turn RIGHT onto McCoy Road - COLLECT 381 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0408860" lon="-83.0752390"><name>116</name><desc>Turn RIGHT onto Woodbridge Road - COLLECT 1817 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0359090" lon="-83.0755000"><name>117</name><desc>Turn RIGHT onto Lytham Road - COLLECT 336 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0359480" lon="-83.0767030"><name>118</name><desc>Turn RIGHT onto Chelton Place - COLLECT 469 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0372330" lon="-83.0766300"><name>119</name><desc>Turn RIGHT onto Middlesex Road - COLLECT 1448 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0370760" lon="-83.0714509"><name>120</name><desc>Turn LEFT onto Mountview Road - repeat 341 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0380089" lon="-83.0713820"><name>121</name><desc>Turn LEFT onto Nayland Road - COLLECT 1120 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0381310" lon="-83.0753890"><name>122</name><desc>Turn LEFT onto Woodbridge Road - repeat 27 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0380560" lon="-83.0753920"><name>123</name><desc>Turn RIGHT onto Nayland Road - COLLECT 1514 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0382910" lon="-83.0808010"><name>124</name><desc>Turn LEFT onto Windermere Road - repeat 337 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0373680" lon="-83.0808480"><name>125</name><desc>Turn LEFT onto Middlesex Road - COLLECT 323 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0373320" lon="-83.0796940"><name>126</name><desc>Turn RIGHT onto Glenda Place - COLLECT 513 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0359280" lon="-83.0797660"><name>127</name><desc>Turn RIGHT onto Lytham Road - repeat 324 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0359590" lon="-83.0809260"><name>128</name><desc>Turn RIGHT onto Windermere Road - COLLECT 1904 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0410780" lon="-83.0811500"><name>129</name><desc>Turn RIGHT onto McCoy Road - COLLECT 298 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0410370" lon="-83.0800850"><name>130</name><desc>Turn LEFT onto Camborne Road - repeat 347 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0419890" lon="-83.0800470"><name>131</name><desc>Turn RIGHT onto Sheringham Road - repeat 350 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0419510" lon="-83.0787960"><name>132</name><desc>Turn LEFT onto Stratton Road - COLLECT 342 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0428871" lon="-83.0787431"><name>133</name><desc>Continue on Stratton Road - repeat 453 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0441290" lon="-83.0786750"><name>134</name><desc>Turn LEFT onto Cheltenham Road - COLLECT 350 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0441680" lon="-83.0799270"><name>135</name><desc>Continue on Cheltenham Road - repeat 346 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0442060" lon="-83.0811660"><name>136</name><desc>Turn RIGHT onto Braunton Road - COLLECT 205 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0447690" lon="-83.0811430"><name>137</name><desc>Turn RIGHT onto Wimbledon Road - COLLECT 78 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0447640" lon="-83.0808620"><name>138</name><desc>U-TURN onto Wimbledon Road - repeat 78 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0447690" lon="-83.0811430"><name>139</name><desc>Continue on Wimbledon Road - COLLECT 1305 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0449915" lon="-83.0857777"><name>140</name><desc>Turn LEFT onto Kipling Lane - COLLECT 279 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0443935" lon="-83.0859987"><name>141</name><desc>U-TURN onto Kipling Lane - repeat 279 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0449915" lon="-83.0857777"><name>142</name><desc>Turn LEFT onto Kipling Road - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0458910" lon="-83.0857620"><name>143</name><desc>Continue on Kipling Road - repeat 609 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0475600" lon="-83.0856650"><name>144</name><desc>Turn RIGHT onto Lane Road - COLLECT 967 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0474430" lon="-83.0822050"><name>145</name><desc>Turn LEFT onto Burbank Drive - COLLECT 177 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0479270" lon="-83.0821680"><name>146</name><desc>Turn RIGHT onto Deno's Court - COLLECT 211 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0483290" lon="-83.0818170"><name>147</name><desc>U-TURN onto Deno's Court - repeat 211 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0479270" lon="-83.0821680"><name>148</name><desc>Turn RIGHT onto Burbank Drive - COLLECT 1429 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0517270" lon="-83.0823100"><name>149</name><desc>Turn LEFT onto Sandover Road - repeat 960 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0518450" lon="-83.0857450"><name>150</name><desc>Turn RIGHT onto Stonehaven Drive - COLLECT 374 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0528040" lon="-83.0853160"><name>151</name><desc>Turn LEFT onto Stonehaven Court South - COLLECT 197 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0529122" lon="-83.0860080"><name>152</name><desc>U-TURN onto Stonehaven Court South - repeat 197 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0528040" lon="-83.0853160"><name>153</name><desc>Turn LEFT onto Stonehaven Drive - COLLECT 464 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0540660" lon="-83.0853640"><name>154</name><desc>Turn LEFT onto Stonehaven Court North - COLLECT 181 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0539970" lon="-83.0860050"><name>155</name><desc>U-TURN onto Stonehaven Court North - repeat 181 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0540660" lon="-83.0853640"><name>156</name><desc>Turn LEFT onto Stonehaven Drive - COLLECT 379 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0550750" lon="-83.0856680"><name>157</name><desc>Turn LEFT onto Slate Run Road - COLLECT 735 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0550330" lon="-83.0882860"><name>158</name><desc>Turn RIGHT onto Slate Run Court - COLLECT 247 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0556590" lon="-83.0882110"><name>159</name><desc>U-TURN onto Slate Run Court - repeat 247 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0550330" lon="-83.0882860"><name>160</name><desc>Turn RIGHT onto Slate Run Road - COLLECT 444 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0546780" lon="-83.0897210"><name>161</name><desc>U-TURN onto Slate Run Road - repeat 1179 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0550750" lon="-83.0856680"><name>162</name><desc>Turn LEFT onto Stonehaven Drive - COLLECT 560 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0565210" lon="-83.0851050"><name>163</name><desc>Turn LEFT onto Stonehaven Place - COLLECT 485 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0567088" lon="-83.0868022"><name>164</name><desc>U-TURN onto Stonehaven Place - repeat 485 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0565210" lon="-83.0851050"><name>165</name><desc>Turn LEFT onto Stonehaven Drive - COLLECT 1844 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0595537" lon="-83.0813813"><name>166</name><desc>Turn RIGHT onto West Henderson Road - COLLECT 754 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0585880" lon="-83.0789940"><name>167</name><desc>Turn RIGHT onto Arlington Centre Boulevard - COLLECT 775 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0565363" lon="-83.0794027"><name>168</name><desc>Turn RIGHT onto North Bank Drive - COLLECT 771 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0567680" lon="-83.0820740"><name>169</name><desc>U-TURN onto North Bank Drive - repeat 771 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0565363" lon="-83.0794027"><name>170</name><desc>Continue on Centre Loop East - repeat 44 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0565390" lon="-83.0792435"><name>171</name><desc>Continue on Centre Loop East - COLLECT 225 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0566153" lon="-83.0784459"><name>172</name><desc>U-TURN onto Centre Loop East - repeat 225 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0565390" lon="-83.0792435"><name>173</name><desc>Continue on Centre Loop East - COLLECT 44 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0565363" lon="-83.0794027"><name>174</name><desc>Turn LEFT onto Arlington Centre Boulevard - COLLECT 783 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0544060" lon="-83.0793610"><name>175</name><desc>Turn LEFT onto Sandston Road / Shackelford Court - COLLECT 944 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0550850" lon="-83.0769510"><name>176</name><desc>Continue on Shackelford Court - COLLECT 101 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0553610" lon="-83.0769380"><name>177</name><desc>U-TURN onto Shackelford Court - repeat 101 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0550850" lon="-83.0769510"><name>178</name><desc>Continue on Sandston Road / Shackelford Court - COLLECT 944 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0544060" lon="-83.0793610"><name>179</name><desc>Turn LEFT onto Arlington Centre Boulevard - COLLECT 248 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0537267" lon="-83.0793963"><name>180</name><desc>U-TURN onto Arlington Centre Boulevard - repeat 248 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0544060" lon="-83.0793610"><name>181</name><desc>Turn RIGHT onto Sandston Road / Shackelford Court - repeat 944 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0550850" lon="-83.0769510"><name>182</name><desc>Turn LEFT onto Partlow Drive - COLLECT 665 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0552540" lon="-83.0793150"><name>183</name><desc>Turn RIGHT onto Arlington Centre Boulevard - repeat 209 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0558263" lon="-83.0792865"><name>184</name><desc>Continue on Arlington Centre Boulevard - COLLECT 1015 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0585880" lon="-83.0789940"><name>185</name><desc>Turn RIGHT onto West Henderson Road - COLLECT 3767 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0539880" lon="-83.0669440"><name>186</name><desc>U-TURN onto West Henderson Road - repeat 2215 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0566980" lon="-83.0740393"><name>187</name><desc>Turn LEFT onto Nugent Drive - COLLECT 1978 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0513400" lon="-83.0742210"><name>188</name><desc>Continue on Nugent Drive / Keswick Drive - COLLECT 1088 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0503510" lon="-83.0714660"><name>189</name><desc>Turn RIGHT onto Crompton Drive - COLLECT 397 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0493580" lon="-83.0710240"><name>190</name><desc>Turn RIGHT onto Rosebery Drive - COLLECT 977 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0494870" lon="-83.0745190"><name>191</name><desc>Continue on Rosebery Drive / Benderton Court - COLLECT 702 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0484750" lon="-83.0757790"><name>192</name><desc>U-TURN onto Rosebery Drive / Benderton Court - repeat 702 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0494870" lon="-83.0745190"><name>193</name><desc>Turn RIGHT onto Elderberry Court - COLLECT 380 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0484460" lon="-83.0745920"><name>194</name><desc>U-TURN onto Elderberry Court - repeat 380 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0494870" lon="-83.0745190"><name>195</name><desc>Turn RIGHT onto Rosebery Drive - repeat 343 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0494463" lon="-83.0732912"><name>196</name><desc>Turn RIGHT onto Bellrose Lane / Crompton Drive / Belgrave Drive - COLLECT 1314 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0493580" lon="-83.0710240"><name>197</name><desc>Continue on Crompton Drive - repeat 397 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0503510" lon="-83.0714660"><name>198</name><desc>Continue on Crompton Drive - COLLECT 606 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0519550" lon="-83.0713820"><name>199</name><desc>Turn RIGHT onto Mackenzie Drive - COLLECT 381 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0516710" lon="-83.0701070"><name>200</name><desc>Turn RIGHT onto Kempton Drive / Meekison Drive - COLLECT 828 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0502260" lon="-83.0688730"><name>201</name><desc>Turn LEFT onto Elan Court - COLLECT 224 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0508390" lon="-83.0688690"><name>202</name><desc>U-TURN onto Elan Court - repeat 224 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0502260" lon="-83.0688730"><name>203</name><desc>Turn LEFT onto Kempton Drive - COLLECT 342 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0501820" lon="-83.0676510"><name>204</name><desc>Turn LEFT onto Shires Court - COLLECT 219 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0507830" lon="-83.0676540"><name>205</name><desc>U-TURN onto Shires Court - repeat 219 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0501820" lon="-83.0676510"><name>206</name><desc>Turn LEFT onto Kempton Drive - COLLECT 212 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0501550" lon="-83.0668930"><name>207</name><desc>Turn LEFT onto Reed Road - repeat 514 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0515640" lon="-83.0669230"><name>208</name><desc>Turn LEFT onto Mackenzie Drive - COLLECT 890 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0516710" lon="-83.0701070"><name>209</name><desc>Continue on Mackenzie Drive - repeat 182 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0517076" lon="-83.0707557"><name>210</name><desc>Turn RIGHT onto Merrifield Place - COLLECT 2336 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0522613" lon="-83.0707100"><name>211</name><desc>Turn LEFT onto Merrifield Place - repeat 202 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0517076" lon="-83.0707557"><name>212</name><desc>Turn RIGHT onto Mackenzie Drive - repeat 199 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0519550" lon="-83.0713820"><name>213</name><desc>Continue on Mackenzie Drive - COLLECT 250 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0522221" lon="-83.0721807"><name>214</name><desc>Turn RIGHT onto Aberdeen Drive - COLLECT 1058 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0530973" lon="-83.0721400"><name>215</name><desc>Turn RIGHT onto Aberdeen Drive - repeat 245 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0531494" lon="-83.0730160"><name>216</name><desc>Turn LEFT onto Aberdeen Drive - COLLECT 378 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0528050" lon="-83.0741400"><name>217</name><desc>Turn LEFT onto Nugent Drive - repeat 186 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0522953" lon="-83.0741635"><name>218</name><desc>Turn LEFT onto Mackenzie Drive - COLLECT 554 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0522221" lon="-83.0721807"><name>219</name><desc>Continue on Mackenzie Drive - repeat 250 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0519550" lon="-83.0713820"><name>220</name><desc>Turn RIGHT onto Crompton Drive - repeat 276 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0512510" lon="-83.0715920"><name>221</name><desc>Turn RIGHT onto Braemar Drive - COLLECT 735 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0513400" lon="-83.0742210"><name>222</name><desc>Turn RIGHT onto Nugent Drive - repeat 349 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0522953" lon="-83.0741635"><name>223</name><desc>Turn LEFT onto Mackenzie Drive - COLLECT 331 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0524270" lon="-83.0753230"><name>224</name><desc>Turn RIGHT onto Dierker Road - COLLECT 1867 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0572070" lon="-83.0753660"><name>225</name><desc>Turn LEFT onto West Henderson Road - repeat 936 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0583493" lon="-83.0783677"><name>226</name><desc>Turn RIGHT onto West Henderson Road - COLLECT 960 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0595537" lon="-83.0813813"><name>227</name><desc>Turn LEFT onto Stonehaven Drive - COLLECT 490 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0588730" lon="-83.0824902"><name>228</name><desc>Turn LEFT onto Chevy Chase Avenue - COLLECT 495 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0575473" lon="-83.0827722"><name>229</name><desc>U-TURN onto Chevy Chase Avenue - repeat 495 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0588730" lon="-83.0824902"><name>230</name><desc>Turn RIGHT onto Stonehaven Drive - repeat 490 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0595537" lon="-83.0813813"><name>231</name><desc>Turn LEFT onto West Henderson Road - COLLECT 1738 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0603570" lon="-83.0874780"><name>232</name><desc>Turn LEFT onto Slate Run Woods Court - COLLECT 375 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0593687" lon="-83.0876449"><name>233</name><desc>U-TURN onto Slate Run Woods Court - repeat 375 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0603570" lon="-83.0874780"><name>234</name><desc>Turn LEFT onto West Henderson Road - COLLECT 542 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0605223" lon="-83.0894060"><name>235</name><desc>Turn LEFT onto Summit Ridge Drive - COLLECT 355 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0595560" lon="-83.0892550"><name>236</name><desc>Turn RIGHT onto Rushmore Drive - COLLECT 2292 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0589890" lon="-83.0967650"><name>237</name><desc>U-TURN onto Rushmore Drive - repeat 1098 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0596280" lon="-83.0935270"><name>238</name><desc>Turn LEFT onto Sawmill Road - repeat 440 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0608310" lon="-83.0934150"><name>239</name><desc>Continue on Sawmill Road - COLLECT 668 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0626615" lon="-83.0933266"><name>240</name><desc>U-TURN onto Sawmill Road - repeat 668 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0608310" lon="-83.0934150"><name>241</name><desc>Continue on Sawmill Road - COLLECT 1780 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0562410" lon="-83.0947100"><name>242</name><desc>U-TURN onto Sawmill Road - repeat 487 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0575440" lon="-83.0947120"><name>243</name><desc>Turn RIGHT onto Squirrel Bend - COLLECT 1765 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0550390" lon="-83.0934050"><name>244</name><desc>Continue on Squirrel Bend - repeat 1466 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0575440" lon="-83.0947120"><name>245</name><desc>Turn RIGHT onto Sawmill Road - repeat 469 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0586080" lon="-83.0937970"><name>246</name><desc>Turn LEFT onto Waldo Place - COLLECT 407 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0587470" lon="-83.0952060"><name>247</name><desc>U-TURN onto Waldo Place - repeat 407 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0586080" lon="-83.0937970"><name>248</name><desc>Continue on Waldo Place - COLLECT 1278 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0582465" lon="-83.0892855"><name>249</name><desc>Turn RIGHT onto Summit Ridge Drive - COLLECT 247 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0575790" lon="-83.0894159"><name>250</name><desc>U-TURN onto Summit Ridge Drive - repeat 247 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0582465" lon="-83.0892855"><name>251</name><desc>Continue on Summit Ridge Drive - COLLECT 481 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0595560" lon="-83.0892550"><name>252</name><desc>Continue on Summit Ridge Drive - repeat 355 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0605223" lon="-83.0894060"><name>253</name><desc>Turn LEFT onto West Henderson Road - COLLECT 1125 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0608310" lon="-83.0934150"><name>254</name><desc>Continue on Henderson Road - COLLECT 1485 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0611380" lon="-83.0987200"><name>255</name><desc>Turn LEFT onto Hampton Lane - COLLECT 706 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0592600" lon="-83.0988220"><name>256</name><desc>U-TURN onto Hampton Lane - repeat 706 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0611380" lon="-83.0987200"><name>257</name><desc>Continue on Tarrington Lane - COLLECT 2356 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0616072" lon="-83.0988622"><name>258</name><desc>Turn LEFT onto Tarrington Lane - repeat 180 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0611380" lon="-83.0987200"><name>259</name><desc>Turn RIGHT onto Henderson Road - COLLECT 1132 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0613100" lon="-83.1027610"><name>260</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 2574 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0627358" lon="-83.1035100"><name>261</name><desc>Turn LEFT onto Horizons Drive - COLLECT 1072 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0612667" lon="-83.1011657"><name>262</name><desc>Turn RIGHT onto Henderson Road - repeat 448 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0613100" lon="-83.1027610"><name>263</name><desc>Turn LEFT onto Riverside Drive - COLLECT 7325 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0428700" lon="-83.0945870"><name>264</name><desc>Continue on Riverside Drive - repeat 721 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0409120" lon="-83.0942740"><name>265</name><desc>Continue on Stratford Drive - COLLECT 1108 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0390660" lon="-83.0913620"><name>266</name><desc>Turn RIGHT onto Oxford Drive - repeat 261 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0384248" lon="-83.0917737"><name>267</name><desc>Continue on Lear Road - COLLECT 343 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0381752" lon="-83.0923151"><name>268</name><desc>U-TURN onto Lear Road - repeat 188 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0380160" lon="-83.0916840"><name>269</name><desc>Continue on Lear Road - COLLECT 580 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0372910" lon="-83.0900580"><name>270</name><desc>U-TURN onto Lear Road - repeat 92 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0371753" lon="-83.0903307"><name>271</name><desc>Turn LEFT onto Lear Road - COLLECT 127 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0368723" lon="-83.0901200"><name>272</name><desc>Continue on Edgehill Drive - repeat 121 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0365400" lon="-83.0901250"><name>273</name><desc>Turn LEFT onto Clairmont Road / Lear Road - COLLECT 2235 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0412830" lon="-83.0875780"><name>274</name><desc>Continue on Clairmont Road - COLLECT 422 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0423901" lon="-83.0876515"><name>275</name><desc>Turn RIGHT onto Clairmont Court - COLLECT 329 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0422643" lon="-83.0871596"><name>276</name><desc>Turn RIGHT onto Clairmont Court - repeat 145 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0423901" lon="-83.0876515"><name>277</name><desc>Continue on Clairmont Court - COLLECT 331 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0425182" lon="-83.0881525"><name>278</name><desc>Turn RIGHT onto Clairmont Court - repeat 148 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0423901" lon="-83.0876515"><name>279</name><desc>Turn RIGHT onto Clairmont Road - repeat 422 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0412830" lon="-83.0875780"><name>280</name><desc>Turn LEFT onto McCoy Road - COLLECT 1797 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0410780" lon="-83.0811500"><name>281</name><desc>Turn RIGHT onto Windermere Road - repeat 356 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0401040" lon="-83.0812050"><name>282</name><desc>Turn RIGHT onto Buckley Road / Winfield Road - COLLECT 1147 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0393250" lon="-83.0844230"><name>283</name><desc>Continue on Winfield Road - COLLECT 671 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0374860" lon="-83.0845190"><name>284</name><desc>Turn LEFT onto Middlesex Road - repeat 701 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0374080" lon="-83.0820100"><name>285</name><desc>Turn RIGHT onto Bickley Place - COLLECT 846 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0351000" lon="-83.0819980"><name>286</name><desc>Turn RIGHT onto Johnston Road - repeat 51 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0351060" lon="-83.0821820"><name>287</name><desc>Turn LEFT onto Bickley Place - COLLECT 1003 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0323610" lon="-83.0823570"><name>288</name><desc>Turn LEFT onto Anson Street - COLLECT 745 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0322677" lon="-83.0796943"><name>289</name><desc>Turn RIGHT onto Hillview Drive / Donna Drive - COLLECT 1019 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0307050" lon="-83.0818213"><name>290</name><desc>Turn LEFT onto Center Drive - COLLECT 350 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0297650" lon="-83.0820480"><name>291</name><desc>Turn RIGHT onto Fishinger Road - repeat 1200 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0299280" lon="-83.0863400"><name>292</name><desc>Turn RIGHT onto Kioka Avenue - COLLECT 1503 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0339960" lon="-83.0857530"><name>293</name><desc>Continue on Kioka Avenue - repeat 454 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0352390" lon="-83.0856790"><name>294</name><desc>Continue on Kioka Avenue - COLLECT 388 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0363010" lon="-83.0855950"><name>295</name><desc>Turn RIGHT onto Lytham Road - COLLECT 2502 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0359480" lon="-83.0767030"><name>296</name><desc>Turn LEFT onto Chelton Place - repeat 469 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0372330" lon="-83.0766300"><name>297</name><desc>Turn LEFT onto Middlesex Road - COLLECT 2609 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0373270" lon="-83.0859100"><name>298</name><desc>Continue on Middlesex Road - repeat 431 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0367713" lon="-83.0872713"><name>299</name><desc>Turn LEFT onto Fairfax Drive - COLLECT 1263 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0358750" lon="-83.0901150"><name>300</name><desc>Turn RIGHT onto Edgehill Drive - COLLECT 2053 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0408100" lon="-83.0907380"><name>301</name><desc>Turn RIGHT onto Oxford Drive - COLLECT 211 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0413870" lon="-83.0906960"><name>302</name><desc>Turn RIGHT onto McCoy Road - COLLECT 872 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0412830" lon="-83.0875780"><name>303</name><desc>Continue on McCoy Road - repeat 394 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0412390" lon="-83.0861700"><name>304</name><desc>Turn RIGHT onto Fairfax Drive - COLLECT 1754 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0367713" lon="-83.0872713"><name>305</name><desc>Turn LEFT onto Middlesex Road - COLLECT 431 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0373270" lon="-83.0859100"><name>306</name><desc>Turn RIGHT onto Kioka Avenue - COLLECT 392 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0363010" lon="-83.0855950"><name>307</name><desc>Continue on Kioka Avenue - repeat 388 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0352390" lon="-83.0856790"><name>308</name><desc>Continue on Kioka Avenue - COLLECT 454 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0339960" lon="-83.0857530"><name>309</name><desc>Turn RIGHT onto Fairlington Drive - COLLECT 2332 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0301014" lon="-83.0907137"><name>310</name><desc>U-TURN onto Fairlington Drive - repeat 451 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0313213" lon="-83.0905243"><name>311</name><desc>Turn RIGHT onto Donna Drive - COLLECT 1215 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0313132" lon="-83.0861902"><name>312</name><desc>Continue on Donna Drive - repeat 388 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0312613" lon="-83.0848030"><name>313</name><desc>Continue on Donna Drive - COLLECT 875 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0307050" lon="-83.0818213"><name>314</name><desc>Continue on Donna Drive / Hillview Drive - COLLECT 1019 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0322677" lon="-83.0796943"><name>315</name><desc>Continue on Hillview Drive - COLLECT 1009 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0350240" lon="-83.0796890"><name>316</name><desc>Turn LEFT onto Johnston Road - repeat 348 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0350650" lon="-83.0809320"><name>317</name><desc>Turn LEFT onto Chiselhurst Place - COLLECT 1005 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0323130" lon="-83.0811140"><name>318</name><desc>Turn RIGHT onto Anson Street - repeat 348 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0323610" lon="-83.0823570"><name>319</name><desc>Continue on Anson Street - COLLECT 343 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0324084" lon="-83.0835837"><name>320</name><desc>Turn LEFT onto Overdale Drive - repeat 465 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0311365" lon="-83.0836743"><name>321</name><desc>U-TURN onto Overdale Drive - COLLECT 1467 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0351510" lon="-83.0833940"><name>322</name><desc>Turn LEFT onto Johnston Road - repeat 320 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0351940" lon="-83.0845400"><name>323</name><desc>Turn LEFT onto Norbrook Drive - COLLECT 1437 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0312613" lon="-83.0848030"><name>324</name><desc>Turn RIGHT onto Donna Drive - COLLECT 388 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0313132" lon="-83.0861902"><name>325</name><desc>Turn RIGHT onto Kioka Avenue - repeat 446 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0324950" lon="-83.0858670"><name>326</name><desc>Turn LEFT onto River Park Drive - COLLECT 1840 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0321240" lon="-83.0923970"><name>327</name><desc>Turn LEFT onto Riverside Drive - COLLECT 774 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0300320" lon="-83.0919980"><name>328</name><desc>U-TURN onto Riverside Drive - repeat 155 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0304516" lon="-83.0920825"><name>329</name><desc>Continue on Riverside Drive - COLLECT 315 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0312849" lon="-83.0922444"><name>330</name><desc>Continue on Riverside Drive - repeat 309 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0321240" lon="-83.0923970"><name>331</name><desc>Continue on Riverside Drive - COLLECT 688 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0339880" lon="-83.0927780"><name>332</name><desc>Turn RIGHT onto Edgewood Road - COLLECT 547 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0339590" lon="-83.0908340"><name>333</name><desc>U-TURN onto Edgewood Road - repeat 547 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0339880" lon="-83.0927780"><name>334</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 355 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0349490" lon="-83.0929770"><name>335</name><desc>Turn RIGHT onto Lakinhurst Drive - COLLECT 687 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0348770" lon="-83.0905210"><name>336</name><desc>U-TURN onto Lakinhurst Drive - repeat 687 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0349490" lon="-83.0929770"><name>337</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 369 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0359480" lon="-83.0931870"><name>338</name><desc>Continue on Riverside Drive - repeat 165 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0363960" lon="-83.0932760"><name>339</name><desc>Continue on Riverside Drive - COLLECT 1112 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0394010" lon="-83.0939370"><name>340</name><desc>Turn RIGHT onto Stratford Drive - COLLECT 246 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0397260" lon="-83.0932580"><name>341</name><desc>Turn RIGHT onto Stratford Drive - repeat 117 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0395132" lon="-83.0929467"><name>342</name><desc>U-TURN onto Stratford Drive - COLLECT 116 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0395330" lon="-83.0933530"><name>343</name><desc>Continue on Stratford Drive - repeat 170 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0394010" lon="-83.0939370"><name>344</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 1280 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0428700" lon="-83.0945870"><name>345</name><desc>Turn RIGHT onto McCoy Road - COLLECT 246 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0428550" lon="-83.0937060"><name>346</name><desc>Continue on Lymington Road - COLLECT 1122 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0428680" lon="-83.0897080"><name>347</name><desc>Turn LEFT onto Langport Road - repeat 289 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0436310" lon="-83.0899800"><name>348</name><desc>Continue on Langport Road - COLLECT 347 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0445460" lon="-83.0903190"><name>349</name><desc>Continue on Langport Road - repeat 351 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0454700" lon="-83.0906660"><name>350</name><desc>Turn LEFT onto Helston Road - COLLECT 510 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0455280" lon="-83.0924910"><name>351</name><desc>Continue on Helston Road / Helston Court - COLLECT 799 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0468930" lon="-83.0936210"><name>352</name><desc>Continue on Helston Court - COLLECT 314 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0472620" lon="-83.0935565"><name>353</name><desc>Turn RIGHT onto Helston Court - repeat 136 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0468930" lon="-83.0936210"><name>354</name><desc>Turn LEFT onto Brackley Road - COLLECT 340 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0468530" lon="-83.0924050"><name>355</name><desc>Turn RIGHT onto Tetford Road - COLLECT 484 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0455280" lon="-83.0924910"><name>356</name><desc>U-TURN onto Tetford Road - repeat 484 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0468530" lon="-83.0924050"><name>357</name><desc>Turn RIGHT onto Brackley Road - COLLECT 252 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0468300" lon="-83.0915050"><name>358</name><desc>Turn LEFT onto Langport Road - repeat 369 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0477707" lon="-83.0918900"><name>359</name><desc>Turn RIGHT onto Lane Road - COLLECT 532 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0477056" lon="-83.0899870"><name>360</name><desc>Turn RIGHT onto Lanes End Street - COLLECT 254 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0470090" lon="-83.0900190"><name>361</name><desc>U-TURN onto Lanes End Street - repeat 254 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0477056" lon="-83.0899870"><name>362</name><desc>Turn RIGHT onto Lane Road - COLLECT 579 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0476360" lon="-83.0879160"><name>363</name><desc>Turn LEFT onto Gateway Drive - COLLECT 345 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0485820" lon="-83.0878800"><name>364</name><desc>Turn RIGHT onto Chartwell Road - repeat 191 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0485620" lon="-83.0871960"><name>365</name><desc>Continue on Stonehaven Drive / Chartwell Road - COLLECT 1150 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0508490" lon="-83.0858110"><name>366</name><desc>Turn RIGHT onto Wenbury Road - COLLECT 967 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0507390" lon="-83.0823500"><name>367</name><desc>Turn RIGHT onto Burbank Drive - repeat 379 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0497160" lon="-83.0825330"><name>368</name><desc>Turn RIGHT onto Billiton Court - COLLECT 576 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0497870" lon="-83.0845950"><name>369</name><desc>U-TURN onto Billiton Court - repeat 576 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0497160" lon="-83.0825330"><name>370</name><desc>Turn RIGHT onto Burbank Drive - repeat 361 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0487280" lon="-83.0825890"><name>371</name><desc>Turn RIGHT onto Danvers Court - COLLECT 587 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0487410" lon="-83.0846870"><name>372</name><desc>U-TURN onto Danvers Court - repeat 587 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0487280" lon="-83.0825890"><name>373</name><desc>Turn RIGHT onto Burbank Drive - repeat 505 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0474430" lon="-83.0822050"><name>374</name><desc>Turn LEFT onto Lane Road - COLLECT 340 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0474029" lon="-83.0809882"><name>375</name><desc>Turn LEFT onto Hull Farm Lane - COLLECT 1215 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0493860" lon="-83.0808112"><name>376</name><desc>Turn RIGHT onto Hull Farm Lane - repeat 726 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0474029" lon="-83.0809882"><name>377</name><desc>Turn LEFT onto Lane Road - COLLECT 2055 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0471551" lon="-83.0736357"><name>378</name><desc>Turn RIGHT onto Woodbridge Road - COLLECT 649 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0453776" lon="-83.0737459"><name>379</name><desc>Turn RIGHT onto Pinebrook Road - COLLECT 276 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0453612" lon="-83.0747263"><name>380</name><desc>Turn RIGHT onto Haverford Road - COLLECT 197 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0457822" lon="-83.0751463"><name>381</name><desc>Turn RIGHT onto Clearbrook Court - COLLECT 187 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0462620" lon="-83.0749480"><name>382</name><desc>U-TURN onto Clearbrook Court - repeat 187 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0457822" lon="-83.0751463"><name>383</name><desc>Turn RIGHT onto Haverford Road - COLLECT 570 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0459229" lon="-83.0771690"><name>384</name><desc>Turn RIGHT onto Stonebrook Court - COLLECT 159 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0463580" lon="-83.0771490"><name>385</name><desc>U-TURN onto Stonebrook Court - repeat 159 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0459229" lon="-83.0771690"><name>386</name><desc>Turn RIGHT onto Haverford Road - COLLECT 329 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0459540" lon="-83.0783450"><name>387</name><desc>Turn RIGHT onto Haverford Court - COLLECT 159 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0463880" lon="-83.0783180"><name>388</name><desc>U-TURN onto Haverford Court - repeat 159 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0459540" lon="-83.0783450"><name>389</name><desc>Turn RIGHT onto Haverford Road - COLLECT 569 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0457329" lon="-83.0803257"><name>390</name><desc>Turn LEFT onto Pinebrook Road - COLLECT 1780 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0453612" lon="-83.0747263"><name>391</name><desc>U-TURN onto Pinebrook Road - repeat 743 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0450180" lon="-83.0772180"><name>392</name><desc>Turn LEFT onto Woodhall Road - COLLECT 342 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0440820" lon="-83.0772690"><name>393</name><desc>Turn RIGHT onto Cheltenham Road - COLLECT 393 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0441290" lon="-83.0786750"><name>394</name><desc>Turn LEFT onto Stratton Road - COLLECT 453 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0428871" lon="-83.0787431"><name>395</name><desc>Turn LEFT onto Hadleigh Road - COLLECT 459 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0429740" lon="-83.0771260"><name>396</name><desc>Turn RIGHT onto Woodhall Road - repeat 412 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0418900" lon="-83.0767940"><name>397</name><desc>Turn RIGHT onto Sheringham Road - COLLECT 1258 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0420320" lon="-83.0812950"><name>398</name><desc>Continue on Sheringham Road - repeat 346 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0420670" lon="-83.0825330"><name>399</name><desc>Continue on Sheringham Road - COLLECT 771 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0419540" lon="-83.0852460"><name>400</name><desc>Turn RIGHT onto Shelbourne Lane - COLLECT 622 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0429719" lon="-83.0856266"><name>401</name><desc>Turn RIGHT onto Shelbourne Lane - repeat 389 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0419540" lon="-83.0852460"><name>402</name><desc>Continue on Shelbourne Lane - COLLECT 471 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0406770" lon="-83.0851700"><name>403</name><desc>U-TURN onto Shelbourne Lane - repeat 471 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0419540" lon="-83.0852460"><name>404</name><desc>Turn RIGHT onto Sheringham Road - repeat 420 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0421130" lon="-83.0837860"><name>405</name><desc>Turn LEFT onto Donington Road - COLLECT 1002 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0448570" lon="-83.0836370"><name>406</name><desc>Turn RIGHT onto Wimbledon Road - repeat 349 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0448170" lon="-83.0823900"><name>407</name><desc>Turn LEFT onto Harborough Road - COLLECT 351 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0457795" lon="-83.0823350"><name>408</name><desc>Turn RIGHT onto Haverford Road - COLLECT 562 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0457329" lon="-83.0803257"><name>409</name><desc>Continue on Haverford Road - repeat 260 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0459704" lon="-83.0794489"><name>410</name><desc>Turn LEFT onto Willowbrook Road - COLLECT 510 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0473578" lon="-83.0795747"><name>411</name><desc>Turn RIGHT onto Lane Road - repeat 128 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0473420" lon="-83.0791170"><name>412</name><desc>Turn LEFT onto Lanercost Way - COLLECT 902 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0497400" lon="-83.0793480"><name>413</name><desc>U-TURN onto Lanercost Way - repeat 902 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0473420" lon="-83.0791170"><name>414</name><desc>Turn LEFT onto Lane Road - repeat 412 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0472940" lon="-83.0776430"><name>415</name><desc>Turn LEFT onto Coach Road - COLLECT 1172 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0505001" lon="-83.0773915"><name>416</name><desc>Turn RIGHT onto Fontenay Place - COLLECT 570 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0504328" lon="-83.0753522"><name>417</name><desc>U-TURN onto Fontenay Place - repeat 570 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0505001" lon="-83.0773915"><name>418</name><desc>Turn RIGHT onto Coach Road - COLLECT 413 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0516300" lon="-83.0773020"><name>419</name><desc>Continue on Coach Road - repeat 316 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0524940" lon="-83.0772440"><name>420</name><desc>Continue on Coach Road North / Coach Road - COLLECT 691 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0533310" lon="-83.0757860"><name>421</name><desc>Continue on Dierker Road - repeat 440 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0524270" lon="-83.0753230"><name>422</name><desc>Turn RIGHT onto Mackenzie Drive - COLLECT 1168 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0525810" lon="-83.0794400"><name>423</name><desc>Continue on Concord Village Drive - COLLECT 758 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0546070" lon="-83.0795100"><name>424</name><desc>Turn LEFT onto Atlee Court - COLLECT 396 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0546480" lon="-83.0809270"><name>425</name><desc>Turn LEFT onto Etrick Drive - COLLECT 143 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0542550" lon="-83.0809420"><name>426</name><desc>U-TURN onto Etrick Drive - repeat 143 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0546480" lon="-83.0809270"><name>427</name><desc>Continue on Etrick Drive - COLLECT 193 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0551710" lon="-83.0809610"><name>428</name><desc>Turn LEFT onto Concord Village Drive - COLLECT 244 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0549890" lon="-83.0818010"><name>429</name><desc>Turn LEFT onto Mannboro Drive / Pleasant Valley Drive - COLLECT 827 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0549240" lon="-83.0828030"><name>430</name><desc>Continue on Pleasant Valley Drive - COLLECT 78 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0551320" lon="-83.0828540"><name>431</name><desc>U-TURN onto Pleasant Valley Drive - repeat 78 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0549240" lon="-83.0828030"><name>432</name><desc>Turn LEFT onto Concord Village Drive - COLLECT 283 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0549890" lon="-83.0818010"><name>433</name><desc>Continue on Concord Village Drive - repeat 244 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0551710" lon="-83.0809610"><name>434</name><desc>Continue on Concord Village Drive - COLLECT 661 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0546070" lon="-83.0795100"><name>435</name><desc>Continue on Concord Village Drive - repeat 259 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0538990" lon="-83.0795500"><name>436</name><desc>Turn RIGHT onto Sedgwick Drive - COLLECT 618 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0532280" lon="-83.0809760"><name>437</name><desc>Turn LEFT onto Adner Court - COLLECT 403 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0531800" lon="-83.0795330"><name>438</name><desc>U-TURN onto Adner Court - repeat 403 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0532280" lon="-83.0809760"><name>439</name><desc>Turn LEFT onto Sedgwick Drive - COLLECT 264 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0525290" lon="-83.0809330"><name>440</name><desc>Turn RIGHT onto Montague Court - COLLECT 46 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0524535" lon="-83.0810641"><name>441</name><desc>U-TURN onto Montague Court - repeat 46 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0525290" lon="-83.0809330"><name>442</name><desc>Turn RIGHT onto Montague Court - COLLECT 429 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0525810" lon="-83.0794400"><name>443</name><desc>Turn RIGHT onto Mackenzie Drive - repeat 631 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0524940" lon="-83.0772440"><name>444</name><desc>Turn RIGHT onto Coach Road - COLLECT 316 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0516300" lon="-83.0773020"><name>445</name><desc>Turn LEFT onto Sandover Court - COLLECT 546 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0514190" lon="-83.0754040"><name>446</name><desc>U-TURN onto Sandover Court - repeat 546 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0516300" lon="-83.0773020"><name>447</name><desc>Continue on Sandover Road - COLLECT 329 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0516700" lon="-83.0784800"><name>448</name><desc>Turn LEFT onto Picket Post Lane - COLLECT 1426 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0517640" lon="-83.0811410"><name>449</name><desc>Turn RIGHT onto Sandover Road - COLLECT 745 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0516700" lon="-83.0784800"><name>450</name><desc>U-TURN onto Sandover Road - repeat 745 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0517640" lon="-83.0811410"><name>451</name><desc>Continue on Sandover Road - COLLECT 1724 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0515670" lon="-83.0872480"><name>452</name><desc>Turn LEFT onto Bayford Court - COLLECT 492 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0502390" lon="-83.0871100"><name>453</name><desc>U-TURN onto Bayford Court - repeat 492 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0515670" lon="-83.0872480"><name>454</name><desc>Continue on Clarion Court - COLLECT 316 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0522970" lon="-83.0878130"><name>455</name><desc>Turn RIGHT onto Oldbridge Drive - COLLECT 1398 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0534640" lon="-83.0909980"><name>456</name><desc>U-TURN onto Oldbridge Drive - repeat 1398 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0522970" lon="-83.0878130"><name>457</name><desc>Turn RIGHT onto Clarion Court - COLLECT 865 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0522427" lon="-83.0907816"><name>458</name><desc>U-TURN onto Clarion Court - repeat 1180 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0515670" lon="-83.0872480"><name>459</name><desc>Turn RIGHT onto Sandover Road - COLLECT 1123 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0510900" lon="-83.0911580"><name>460</name><desc>U-TURN onto Sandover Road - repeat 410 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0510660" lon="-83.0896910"><name>461</name><desc>Turn RIGHT onto Old Ravine Court - COLLECT 245 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0503940" lon="-83.0896940"><name>462</name><desc>U-TURN onto Old Ravine Court - repeat 245 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0510660" lon="-83.0896910"><name>463</name><desc>Turn RIGHT onto Sandover Road - repeat 349 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0511820" lon="-83.0884540"><name>464</name><desc>Turn RIGHT onto Chantry Court - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0502860" lon="-83.0883740"><name>465</name><desc>U-TURN onto Chantry Court - repeat 330 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0511820" lon="-83.0884540"><name>466</name><desc>Turn RIGHT onto Sandover Road - repeat 802 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0518450" lon="-83.0857450"><name>467</name><desc>Turn RIGHT onto Stonehaven Drive - COLLECT 364 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0508490" lon="-83.0858110"><name>468</name><desc>Continue on Stonehaven Drive / Chartwell Road - COLLECT 1150 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0485620" lon="-83.0871960"><name>469</name><desc>Turn RIGHT onto Kingston Court - COLLECT 207 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0491287" lon="-83.0871643"><name>470</name><desc>U-TURN onto Kingston Court - repeat 207 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0485620" lon="-83.0871960"><name>471</name><desc>Turn RIGHT onto Chartwell Road - COLLECT 349 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0486050" lon="-83.0884460"><name>472</name><desc>Turn RIGHT onto Barrymede Court - COLLECT 207 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0491708" lon="-83.0884112"><name>473</name><desc>U-TURN onto Barrymede Court - repeat 207 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0486050" lon="-83.0884460"><name>474</name><desc>Turn RIGHT onto Haymarket Court / Chartwell Road - COLLECT 486 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0490137" lon="-83.0897481"><name>475</name><desc>Turn LEFT onto Haymarket Court - COLLECT 175 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0490137" lon="-83.0897481"><name>476</name><desc>Turn LEFT onto Haymarket Court / Chartwell Road - repeat 486 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0486050" lon="-83.0884460"><name>477</name><desc>Continue on Chartwell Road - repeat 158 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0485820" lon="-83.0878800"><name>478</name><desc>Turn RIGHT onto Gateway Drive - repeat 345 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0476360" lon="-83.0879160"><name>479</name><desc>Turn LEFT onto Lane Road - COLLECT 629 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0475600" lon="-83.0856650"><name>480</name><desc>Turn RIGHT onto Kipling Road - COLLECT 609 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0458910" lon="-83.0857620"><name>481</name><desc>Turn RIGHT onto Haverford Road - COLLECT 1167 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0458376" lon="-83.0891249"><name>482</name><desc>Turn LEFT onto Haverford Road - repeat 980 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0458910" lon="-83.0857620"><name>483</name><desc>Continue on Haverford Road - COLLECT 958 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0457795" lon="-83.0823350"><name>484</name><desc>Turn RIGHT onto Harborough Road - repeat 351 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0448170" lon="-83.0823900"><name>485</name><desc>Continue on Harborough Road - COLLECT 1004 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0420670" lon="-83.0825330"><name>486</name><desc>Turn LEFT onto Sheringham Road - COLLECT 346 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0420320" lon="-83.0812950"><name>487</name><desc>Turn LEFT onto Braunton Road - COLLECT 794 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0442060" lon="-83.0811660"><name>488</name><desc>Turn RIGHT onto Cheltenham Road - COLLECT 346 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0441680" lon="-83.0799270"><name>489</name><desc>Turn RIGHT onto Camborne Road - COLLECT 1143 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0410370" lon="-83.0800850"><name>490</name><desc>Turn LEFT onto McCoy Road - COLLECT 973 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0409296" lon="-83.0766030"><name>491</name><desc>Turn RIGHT onto Ashmore Road - repeat 355 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0399580" lon="-83.0766610"><name>492</name><desc>Continue on Ashmore Road - COLLECT 322 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0390760" lon="-83.0767090"><name>493</name><desc>Turn LEFT onto Haviland Road - COLLECT 1508 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0388820" lon="-83.0713190"><name>494</name><desc>Turn RIGHT onto Mountview Road - COLLECT 2721 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0314342" lon="-83.0718693"><name>495</name><desc>Turn RIGHT onto Glenmere Road - COLLECT 1433 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0316321" lon="-83.0769940"><name>496</name><desc>Turn LEFT onto Surrey Hill Place - COLLECT 753 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0295720" lon="-83.0771310"><name>497</name><desc>U-TURN onto Surrey Hill Place - repeat 413 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0307020" lon="-83.0770600"><name>498</name><desc>Turn RIGHT onto Shoreham Road - COLLECT 1438 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0304110" lon="-83.0719420"><name>499</name><desc>Turn RIGHT onto Mountview Road - COLLECT 384 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0293780" lon="-83.0721660"><name>500</name><desc>U-TURN onto Mountview Road - repeat 384 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0304110" lon="-83.0719420"><name>501</name><desc>Continue on Mountview Road - COLLECT 374 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0314342" lon="-83.0718693"><name>502</name><desc>Turn RIGHT onto Glenmere Road - COLLECT 329 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0313820" lon="-83.0706950"><name>503</name><desc>Turn LEFT onto Hastings Lane / Romnay Road - COLLECT 936 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0324960" lon="-83.0686804"><name>504</name><desc>Continue on Hastings Lane - COLLECT 615 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0324280" lon="-83.0664810"><name>505</name><desc>U-TURN onto Hastings Lane - repeat 286 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0324640" lon="-83.0675030"><name>506</name><desc>Turn LEFT onto Seaford Drive - COLLECT 441 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0312880" lon="-83.0678010"><name>507</name><desc>Turn LEFT onto Seaford Court - COLLECT 303 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0311820" lon="-83.0674530"><name>508</name><desc>Turn LEFT onto Seaford Court - repeat 105 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0312880" lon="-83.0678010"><name>509</name><desc>Turn LEFT onto Seaford Drive - COLLECT 425 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0302430" lon="-83.0683720"><name>510</name><desc>Turn RIGHT onto Hythe Road - COLLECT 329 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0302800" lon="-83.0695500"><name>511</name><desc>Turn RIGHT onto Pevensey Drive - COLLECT 462 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0314620" lon="-83.0690760"><name>512</name><desc>Turn LEFT onto Pevensey Court - COLLECT 288 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0315886" lon="-83.0693704"><name>513</name><desc>Turn RIGHT onto Pevensey Court - repeat 95 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0314620" lon="-83.0690760"><name>514</name><desc>Turn LEFT onto Pevensey Drive - COLLECT 403 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0324960" lon="-83.0686804"><name>515</name><desc>Turn LEFT onto Hastings Lane / Romnay Road - repeat 936 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0313820" lon="-83.0706950"><name>516</name><desc>Continue on Romnay Road - COLLECT 747 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0293380" lon="-83.0708440"><name>517</name><desc>U-TURN onto Romnay Road - repeat 360 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0303220" lon="-83.0707650"><name>518</name><desc>Turn RIGHT onto Hythe Road - COLLECT 340 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0302800" lon="-83.0695500"><name>519</name><desc>Continue on Hythe Road - repeat 329 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0302430" lon="-83.0683720"><name>520</name><desc>Continue on Hythe Road - COLLECT 513 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0303120" lon="-83.0665460"><name>521</name><desc>Turn RIGHT onto Hythe Court - COLLECT 370 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0299074" lon="-83.0664750"><name>522</name><desc>Turn RIGHT onto Hythe Court - repeat 150 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0303120" lon="-83.0665460"><name>523</name><desc>Turn RIGHT onto Hythe Road - COLLECT 224 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0304801" lon="-83.0657756"><name>524</name><desc>Turn RIGHT onto Reed Road - repeat 492 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0613100" lon="-83.1027610"><name>START</name></wpt>
+<wpt lat="40.0291605" lon="-83.0654764"><name>END</name></wpt>
 <trk><name>UA Thursday Collection</name><trkseg>
 <trkpt lat="40.0613100" lon="-83.1027610"/>
 <trkpt lat="40.0611770" lon="-83.1026960"/>
