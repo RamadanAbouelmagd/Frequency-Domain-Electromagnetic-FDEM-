@@ -1,0 +1,63 @@
+# Upper Arlington collection routes: run report
+
+Data: OpenStreetMap, downloaded 2026-10-31. Overpass was unreachable from the cloud
+container, so `fetch_osm.py` pulled the same OSM data from api.openstreetmap.org and
+built the graph with osmnx's own `graph_from_bbox` pipeline (filter `network_type="drive"`).
+The snapshot is committed as `ua_osm_graph.graphml` + `ua_city_boundary.geojson`, so
+`python ua_routes.py --zone all` re-runs offline and produces identical output.
+
+## Results
+
+| Zone | Day | Total mi | Collect mi | Repeat mi | Repeat % | Est. h (8/22 mph) | Right | Straight | Left | U-turn | Red legs |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Mon (right bias) | 47.41 | 40.33 | 7.08 | 14.9 | 5.4 | 177 | 299 | 93 | 22 | 7 (765 ft) |
+| 2 | Tue | 43.98 | 37.72 | 6.26 | 14.2 | 5.0 | 134 | 226 | 73 | 17 | 2 (190 ft) |
+| 3 | Wed | 56.05 | 45.50 | 10.55 | 18.8 | 6.2 | 194 | 271 | 127 | 32 | 5 (419 ft) |
+| 4 | Thu | 66.34 | 50.53 | 15.82 | 23.8 | 7.0 | 239 | 252 | 127 | 65 | 0 |
+
+- Coverage: **OK** in all four zones (strict check, counts parallel segments).
+- Every route starts at its START corner and ends at its END corner (asserted).
+- Turn smoothing (zero extra miles): U-turns 60→22, 49→17, 60→32, 106→65.
+  Zone 1 lefts 154→93.
+- All KMZs unzip to valid `doc.kml`.
+
+## Fixes made for the real street network
+| Problem found | Fix |
+|---|---|
+| North Star becomes **North Star Avenue** south of ~39.994 and is the road that reaches 5th Ave; the pattern only matched "Road", so the 5th Ave corner was ~530 m off and Old Arlington (Cambridge, Arlington, Andover, Concord…; 2.25 mi) fell into no zone | Pattern `north\s*star\s+(r\|av)` |
+| **Tremont never reaches 5th Ave** (it ends ~0.3 mi north) | Zone 1 area A ring now = Canterbury, Tremont, **Lane**, Riverside (B already covers everything south of Lane; same intended area, no fake corner) |
+| **Reed ends at Fishinger ~800 m west of Tremont**; **North Star ends at Fishinger ~300 m west of Kenny** | Zone 3 ring runs along Fishinger at both joins: Henderson, Kenny, Fishinger, North Star, Lane, Tremont, Fishinger, Reed |
+| `henderson` matched **Old Henderson Rd** and **Henderson Heights Rd** | Pattern `(?<!old )henderson\s+r(oa)?d` |
+| Columbus enclaves inside the road rings (Ducrest, Norwell, Larwell, Reymond, Trentwood, Winterset, Old Henderson; 2.3 mi) | Zones clipped to the OSM Upper Arlington city limit (30 m edge tolerance). `--no-city-clip` disables |
+| 38 one-way legs driven wrong way, incl. Mount Holyoke 1,827 ft, Brandon 1,579 ft, S. Mallway 642 ft | New zero-mile step: reverse a directed cycle of two-way route arcs through each wrong-way arc. Long ones all fixed; 14 short island slip-lane legs remain flagged red |
+
+## Remaining warnings (inspected on the maps, all acceptable)
+- `canterbury`/`tremont` don't intersect (~90 m): Canterbury's east end becomes **Redding Rd**
+  for 90 m before Tremont. The corner sits at Canterbury/Redding. Zone 2's END is there.
+- `tremont`, `north_star`, `riverside`, `canterbury` "not continuous between corners":
+  short unnamed/differently named links at junction islands; fallback path follows the
+  real road (checked on `diag_south.png`, `diag_north.png`).
+
+## Red legs still flagged (all ≤ 252 ft, traffic-island slip lanes)
+Zone 1: Arlington Ave ×2 (island), Redding Rd, Abington Rd, 3 unnamed links.
+Zone 2: Tremont Rd, Redding Rd (Tremont/Redding/Canterbury triangle).
+Zone 3: Tremont ×2, Redding ×2 (same triangle), La Rochelle Dr 48 ft.
+Driver: go around the island the legal way.
+
+## Needs your decision
+1. **Unzoned UA pockets** (`ua_zone_gap_pockets.csv`):
+   - East of Kenny Rd, ~40.035 (1.71 mi): Criswell, Millcreek, Kenbrook Common, Highland,
+     Regency, Kennybrook, Kingsdale Terrace… Only touches Zone 3.
+   - North of Henderson by Riverside, ~40.063 (0.94 mi): Tarrington Ln, Bethel Rd, Horizons Dr.
+     Only touches Zone 4.
+   - Slivers: Lane Ave east of North Star (0.31 mi), Zollinger stub; ignorable.
+   To assign: `GAP_ASSIGN = {"3": [(40.03482, -83.04844)], "4": [(40.06325, -83.10108)]}`.
+2. **Zone 3 north edge.** Kept Henderson. McCoy Rd is at ~40.041. With McCoy, the strip east
+   of Reed between McCoy and Henderson would belong to no zone (Zone 4 is west of Reed).
+3. **Shared boundary roads** collected by more than one day (`ua_zone_overlaps.csv`):
+   Canterbury (1&2), Fishinger (2&3&4), Reed (3&4), Tremont (1&2&3), Lane (1&3), Redding.
+   Choose one day each, or run `--no-boundary`.
+4. **Alleys**: `network_type="drive"` already excludes all `highway=service`, so alleys
+   would need a `drive_service` download.
+5. **Zone 1 END** (5th Ave & North Star Ave) is ~0.25 mi south of the city limit; the last
+   leg is a repeat drive to that corner.

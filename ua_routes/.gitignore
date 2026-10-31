@@ -1,3 +1,4 @@
 __pycache__/
-*.graphml
 *.log
+ua_osm_raw.json
+cache/

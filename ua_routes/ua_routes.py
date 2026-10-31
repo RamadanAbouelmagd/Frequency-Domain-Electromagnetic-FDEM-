@@ -38,6 +38,8 @@ Run:      python ua_routes.py --zone all
 """
 
 import argparse
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 import csv
 import heapq
 import math
@@ -62,14 +64,14 @@ GRAPH_CACHE = "ua_osm_graph.graphml"
 
 # Road name patterns (case-insensitive, matched on OSM name + ref)
 ROADS = {
-    "henderson":  r"\bhenderson\b",
+    "henderson":  r"(?<!old )\bhenderson\s+r(oa)?d\b",   # not Old Henderson / Henderson Heights
     "reed":       r"\breed\s+r(oa)?d\b",
     "fishinger":  r"\bfishinger\b",
     "riverside":  r"\briverside\s+dr|\bus\s*33\b|\b(oh|sr)\s*257\b",
     "canterbury": r"\bcanterbury\s+r(oa)?d\b",
     "tremont":    r"\btremont\s+r(oa)?d\b",
     "lane":       r"\blane\s+av",
-    "north_star": r"\bnorth\s*star\s+r",
+    "north_star": r"\bnorth\s*star\s+(r|av)",          # Rd north of ~Tremont end, Ave south to 5th
     "fifth":      r"\b(5th|fifth)\s+av",
     "kenny":      r"\bkenny\s+r(oa)?d\b",
 }
@@ -77,7 +79,10 @@ ROADS = {
 # rings = boundary roads in order around the zone (corners = consecutive pairs)
 ZONES = {
     "1": dict(name="Zone 1 - Monday",
-              rings=[["canterbury", "tremont", "fifth", "riverside"],
+              # A: Canterbury->Lane strip west of Tremont (Tremont never reaches 5th Ave;
+              #    everything south of Lane is already in B)
+              # B: south of Lane to 5th Ave, Riverside -> North Star
+              rings=[["canterbury", "tremont", "lane", "riverside"],
                      ["lane", "north_star", "fifth", "riverside"]],
               start=("canterbury", "riverside"), end=("fifth", "north_star"),
               right_turn_bias=True),
@@ -86,7 +91,10 @@ ZONES = {
               start=("fishinger", "riverside"), end=("canterbury", "tremont"),
               right_turn_bias=False),
     "3": dict(name="Zone 3 - Wednesday",
-              rings=[["henderson", "kenny", "north_star", "lane", "tremont", "reed"]],
+              # Reed ends at Fishinger ~800 m west of Tremont; North Star ends at
+              # Fishinger ~300 m west of Kenny -> both joins run along Fishinger
+              rings=[["henderson", "kenny", "fishinger", "north_star", "lane", "tremont",
+                      "fishinger", "reed"]],
               start=("henderson", "reed"), end=("lane", "north_star"),
               right_turn_bias=False),
     "4": dict(name="Zone 4 - Thursday",
@@ -96,6 +104,11 @@ ZONES = {
 }
 
 INCLUDE_BOUNDARY_ROADS = True
+CLIP_TO_CITY = True          # drop anything outside Upper Arlington city limits (OSM)
+CITY_EDGE_M = 30             # keep boundary roads lying on the city line
+# Unzoned pockets of the city: {zone: [(lat, lon), ...]} - a pocket containing one
+# of these points is added to that zone. Filled in only after the user decides.
+GAP_ASSIGN = {}
 EDGE_BUFFER_M = 12
 EXCLUDE_HIGHWAY = {"motorway", "motorway_link", "trunk_link", "service", "services"}
 SERVICE_MPH = 8
@@ -366,7 +379,45 @@ def solve_undirected(G, Gu, req, s, t):
     if not nx.has_eulerian_path(R, source=s):
         sys.exit("ERROR: no Euler path after augmentation (unexpected).")
     steps = [(u, v, R[u][v][k]) for u, v, k in nx.eulerian_path(R, source=s, keys=True)]
+    steps = orient_one_way(G, steps, s)
     return repair_one_way(G, steps)
+
+
+def orient_one_way(G, steps, s):
+    """Zero-extra-mile one-way fix. For every arc driven against a one-way,
+    find a directed cycle through it made of route arcs on two-way streets
+    and reverse the whole cycle: balance (and so the Euler path) and total
+    miles are unchanged, the one-way leg becomes legal."""
+    arcs = [[u, v, d] for u, v, d in steps]
+    bad = [i for i, (u, v, d) in enumerate(arcs) if not G.has_edge(u, v)]
+    if not bad:
+        return steps
+    fixed = 0
+    for i in bad:
+        u, v, _ = arcs[i]
+        if G.has_edge(u, v):
+            continue
+        H = nx.DiGraph()
+        for j, (x, y, d) in enumerate(arcs):
+            if j != i and G.has_edge(y, x) and G.has_edge(x, y):       # reversible arc
+                if not H.has_edge(x, y) or d["length"] < H[x][y]["length"]:
+                    H.add_edge(x, y, length=d["length"], j=j)
+        try:
+            path = nx.shortest_path(H, v, u, weight="length")
+        except (nx.NetworkXNoPath, nx.NodeNotFound):
+            continue
+        for x, y in zip(path[:-1], path[1:]):
+            j = H[x][y]["j"]
+            arcs[j][0], arcs[j][1] = arcs[j][1], arcs[j][0]
+        arcs[i][0], arcs[i][1] = v, u
+        fixed += 1
+    D = nx.MultiDiGraph()
+    for x, y, d in arcs:
+        D.add_edge(x, y, **d)
+    left = sum(1 for x, y, d in arcs if not G.has_edge(x, y))
+    print(f"  one-way orientation: {fixed} of {len(bad)} wrong-way arcs fixed at 0 extra miles"
+          f" ({left} left)")
+    return [(x, y, D[x][y][k]) for x, y, k in nx.eulerian_path(D, source=s, keys=True)]
 
 
 def repair_one_way(G, steps):
@@ -666,6 +717,24 @@ def check_gaps(Gu, results):
         return
     cityb = shp_transform(to_utm, city)
     zone_u = shp_transform(to_utm, unary_union([g for g, *_ in results.values()])).buffer(EDGE_BUFFER_M)
+    pockets = cityb.difference(zone_u.buffer(3)).buffer(-8).buffer(8)
+    inv = Transformer.from_crs(UTM, "EPSG:4326", always_xy=True).transform
+    with open("ua_zone_gap_pockets.csv", "w", newline="") as f:
+        w = csv.writer(f); w.writerow(["lat", "lon", "hectares", "street_miles", "streets"])
+        for p in sorted(polys_of(pockets), key=lambda q: -q.area):
+            st = defaultdict(float)
+            for u, v, k, d in Gu.edges(keys=True, data=True):
+                if {str(h) for h in as_list(d.get("highway"))} & EXCLUDE_HIGHWAY:
+                    continue
+                m = shp_transform(to_utm, LineString(edge_coords(Gu, u, v, d))).interpolate(0.5, normalized=True)
+                if p.contains(m):
+                    st[street_name(d)] += d["length"]
+            if not st:
+                continue
+            c = shp_transform(inv, p).representative_point()
+            w.writerow([round(c.y, 5), round(c.x, 5), round(p.area / 1e4, 1),
+                        round(sum(st.values()) / M_PER_MI, 2),
+                        "; ".join(sorted(st, key=lambda n: -st[n]))])
     gaps, outside = defaultdict(float), defaultdict(float)
     for u, v, k, d in Gu.edges(keys=True, data=True):
         if {str(h) for h in as_list(d.get("highway"))} & EXCLUDE_HIGHWAY:
@@ -761,13 +830,36 @@ def write_overview(results):
 
 
 # ----------------------------------------------------------------------------
-def run_zone(G, Gu, roads, zid, zone_kml=None, start=None, end=None):
+def build_geoms(Gu, roads, zids, zone_kml=None):
+    geoms = {}
+    for z in ZONES:
+        if zone_kml and z in zids:
+            geoms[z] = polygon_from_kml(zone_kml)
+            continue
+        print(f"\n[{ZONES[z]['name']}] tracing boundary")
+        geoms[z] = unary_union([ring_polygon(Gu, roads, r) for r in ZONES[z]["rings"]])
+    city = city_boundary() if CLIP_TO_CITY else None
+    if city is None:
+        return geoms, None
+    from shapely.geometry import Point
+    fwd = to_utm
+    inv = Transformer.from_crs(UTM, "EPSG:4326", always_xy=True).transform
+    cu = shp_transform(fwd, city)
+    gu = {z: shp_transform(fwd, g).intersection(cu.buffer(CITY_EDGE_M)) for z, g in geoms.items()}
+    left = cu.difference(unary_union(list(gu.values())).buffer(15)).buffer(-8).buffer(8)
+    for z, pts in GAP_ASSIGN.items():
+        for lat, lon in pts:
+            pt = Point(fwd(lon, lat))
+            for piece in polys_of(left):
+                if piece.contains(pt):
+                    gu[z] = unary_union([gu[z], piece.buffer(16)]).intersection(cu.buffer(CITY_EDGE_M))
+                    print(f"  pocket at {lat},{lon} ({piece.area / 1e4:.1f} ha) -> zone {z}")
+    return {z: shp_transform(inv, g) for z, g in gu.items()}, city
+
+
+def run_zone(G, Gu, roads, zid, geom, start=None, end=None):
     zone = ZONES[zid]
     print(f"\n===== {zone['name']} =====")
-    if zone_kml:
-        geom = polygon_from_kml(zone_kml)
-    else:
-        geom = unary_union([ring_polygon(Gu, roads, r) for r in zone["rings"]])
     area = shp_transform(to_utm, geom).area / 1e6
     print(f"  zone area {area:.2f} km^2")
     if area < 0.1:
@@ -827,10 +919,12 @@ def main(G=None, args=None):
     roads = Roads(G)
     parse = lambda s: tuple(map(float, s.split(","))) if s else None
     zids = list(ZONES) if args.zone == "all" else [args.zone]
+    global CLIP_TO_CITY
+    CLIP_TO_CITY = not args.no_city_clip
+    geoms, _ = build_geoms(Gu, roads, zids, args.zone_kml if len(zids) == 1 else None)
     results = {}
     for z in zids:
-        results[z] = run_zone(G, Gu, roads, z, args.zone_kml if len(zids) == 1 else None,
-                              parse(args.start), parse(args.end))
+        results[z] = run_zone(G, Gu, roads, z, geoms[z], parse(args.start), parse(args.end))
     write_summary(results)
     if len(zids) > 1:
         write_overview(results)
@@ -858,6 +952,8 @@ def cli(argv=None):
     ap.add_argument("--start", help="override start 'lat,lon'")
     ap.add_argument("--end", help="override end 'lat,lon'")
     ap.add_argument("--graphml", help="load a saved OSM graph")
+    ap.add_argument("--no-city-clip", action="store_true",
+                    help="don't clip zones to the Upper Arlington city limit")
     return ap.parse_args(argv)
 
 

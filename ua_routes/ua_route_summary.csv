@@ -1,0 +1,5 @@
+zone,name,total_mi,collect_mi,repeat_mi,repeat_pct,hours,oneway_flags,oneway_streets,turn_right,turn_straight,turn_left,turn_uturn,before_right,before_straight,before_left,before_uturn,missing,streets,segments
+1,Zone 1 - Monday,47.41,40.33,7.08,14.93,5.36,7,Abington Road; Arlington Avenue; Redding Road; Unnamed road,177,299,93,22,134,243,154,60,0,84,447
+2,Zone 2 - Tuesday,43.98,37.72,6.26,14.24,5.0,2,Redding Road; Tremont Road,134,226,73,17,122,170,109,49,0,74,348
+3,Zone 3 - Wednesday,56.05,45.5,10.55,18.82,6.17,5,La Rochelle Drive; Redding Road; Tremont Road,194,271,127,32,161,239,164,60,0,126,458
+4,Zone 4 - Thursday,66.34,50.53,15.82,23.84,7.04,0,,239,252,127,65,225,199,153,106,0,180,490
