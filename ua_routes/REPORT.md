@@ -8,18 +8,22 @@ The snapshot is committed as `ua_osm_graph.graphml` + `ua_city_boundary.geojson`
 
 ## Results
 
-| Zone | Day | Total mi | Collect mi | Repeat mi | Repeat % | Est. h (8/22 mph) | Right | Straight | Left | U-turn | Red legs |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Mon (right bias) | 47.41 | 40.33 | 7.08 | 14.9 | 5.4 | 177 | 299 | 93 | 22 | 7 (765 ft) |
-| 2 | Tue | 43.98 | 37.72 | 6.26 | 14.2 | 5.0 | 134 | 226 | 73 | 17 | 2 (190 ft) |
-| 3 | Wed | 56.05 | 45.50 | 10.55 | 18.8 | 6.2 | 194 | 271 | 127 | 32 | 5 (419 ft) |
-| 4 | Thu | 66.34 | 50.53 | 15.82 | 23.8 | 7.0 | 239 | 252 | 127 | 65 | 0 |
+Zones are named by collection day, matching the city's collection-day map (updated 3/08).
+Files: `<day>_route.kmz`, `<day>_route.gpx`, `<day>_turn_sheet.csv`, `<day>_streets.csv`,
+`<day>_preview.png` for day = monday / tuesday / wednesday / thursday.
 
-- Coverage: **OK** in all four zones (strict check, counts parallel segments).
+| Day | Total mi | Collect mi | Repeat mi | Repeat % | Est. h (8/22 mph) | Right | Straight | Left | U-turn | Red legs |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Monday (right bias) | 47.41 | 40.33 | 7.08 | 14.9 | 5.4 | 177 | 299 | 93 | 22 | 7 |
+| Tuesday | 43.98 | 37.72 | 6.26 | 14.2 | 5.0 | 134 | 226 | 73 | 17 | 2 |
+| Wednesday | 58.47 | 47.06 | 11.40 | 19.5 | 6.4 | 199 | 283 | 125 | 39 | 5 |
+| Thursday | 67.84 | 51.79 | 16.05 | 23.6 | 7.2 | 220 | 263 | 149 | 66 | 0 |
+
+- Coverage: **OK** for every day (strict check, counts parallel segments).
 - Every route starts at its START corner and ends at its END corner (asserted).
-- Turn smoothing (zero extra miles): U-turns 60→22, 49→17, 60→32, 106→65.
-  Zone 1 lefts 154→93.
 - All KMZs unzip to valid `doc.kml`.
+- Unzoned city streets: 0.38 mi of slivers only (Lane Ave east of North Star, Zollinger stub,
+  Scioto Pointe stub).
 
 ## Fixes made for the real street network
 | Problem found | Fix |
@@ -29,7 +33,7 @@ The snapshot is committed as `ua_osm_graph.graphml` + `ua_city_boundary.geojson`
 | **Reed ends at Fishinger ~800 m west of Tremont**; **North Star ends at Fishinger ~300 m west of Kenny** | Zone 3 ring runs along Fishinger at both joins: Henderson, Kenny, Fishinger, North Star, Lane, Tremont, Fishinger, Reed |
 | `henderson` matched **Old Henderson Rd** and **Henderson Heights Rd** | Pattern `(?<!old )henderson\s+r(oa)?d` |
 | Columbus enclaves inside the road rings (Ducrest, Norwell, Larwell, Reymond, Trentwood, Winterset, Old Henderson; 2.3 mi) | Zones clipped to the OSM Upper Arlington city limit (30 m edge tolerance). `--no-city-clip` disables |
-| 38 one-way legs driven wrong way, incl. Mount Holyoke 1,827 ft, Brandon 1,579 ft, S. Mallway 642 ft | New zero-mile step: reverse a directed cycle of two-way route arcs through each wrong-way arc. Long ones all fixed; 14 short island slip-lane legs remain flagged red |
+| One-way legs driven wrong way, incl. Mount Holyoke 1,827 ft, Brandon 1,579 ft, S. Mallway 642 ft | New zero-mile step: reverse a directed cycle of two-way route arcs through each wrong-way arc. Long ones all fixed; 14 short island slip-lane legs remain flagged red |
 
 ## Remaining warnings (inspected on the maps, all acceptable)
 - `canterbury`/`tremont` don't intersect (~90 m): Canterbury's east end becomes **Redding Rd**
@@ -44,20 +48,18 @@ Zone 2: Tremont Rd, Redding Rd (Tremont/Redding/Canterbury triangle).
 Zone 3: Tremont ×2, Redding ×2 (same triangle), La Rochelle Dr 48 ft.
 Driver: go around the island the legal way.
 
-## Needs your decision
-1. **Unzoned UA pockets** (`ua_zone_gap_pockets.csv`):
-   - East of Kenny Rd, ~40.035 (1.71 mi): Criswell, Millcreek, Kenbrook Common, Highland,
-     Regency, Kennybrook, Kingsdale Terrace… Only touches Zone 3.
-   - North of Henderson by Riverside, ~40.063 (0.94 mi): Tarrington Ln, Bethel Rd, Horizons Dr.
-     Only touches Zone 4.
-   - Slivers: Lane Ave east of North Star (0.31 mi), Zollinger stub; ignorable.
-   To assign: `GAP_ASSIGN = {"3": [(40.03482, -83.04844)], "4": [(40.06325, -83.10108)]}`.
-2. **Zone 3 north edge.** Kept Henderson. McCoy Rd is at ~40.041. With McCoy, the strip east
-   of Reed between McCoy and Henderson would belong to no zone (Zone 4 is west of Reed).
-3. **Shared boundary roads** collected by more than one day (`ua_zone_overlaps.csv`):
-   Canterbury (1&2), Fishinger (2&3&4), Reed (3&4), Tremont (1&2&3), Lane (1&3), Redding.
-   Choose one day each, or run `--no-boundary`.
-4. **Alleys**: `network_type="drive"` already excludes all `highway=service`, so alleys
-   would need a `drive_service` download.
-5. **Zone 1 END** (5th Ave & North Star Ave) is ~0.25 mi south of the city limit; the last
-   leg is a repeat drive to that corner.
+## Pockets assigned from the city map
+- East of Kenny Rd between McCoy and Fishinger (Criswell, Millcreek, Kenbrook Common, Highland,
+  Regency, Kennybrook, Kingsdale Terrace; 1.7 mi): **Wednesday**, as shaded on the city map.
+- North of Henderson by US-33 (Tarrington, Bethel, Horizons; 0.9 mi): **Thursday**. It is not
+  drawn on the city map; Thursday is its only neighbour.
+- Wednesday's north edge = Henderson / city limit, as on the city map (not McCoy).
+
+## Still open
+1. **Shared boundary roads** are collected on more than one day (`ua_zone_overlaps.csv`):
+   Canterbury (Mon & Tue), Fishinger (Tue, Wed, Thu), Reed (Wed & Thu), Tremont (Mon, Tue, Wed),
+   Lane (Mon & Wed), Redding. Choose one day each, or run `--no-boundary`.
+2. **Alleys**: `network_type="drive"` excludes all `highway=service`; including alleys needs a
+   `drive_service` download.
+3. **Monday END** (5th Ave & North Star Ave) is ~0.25 mi south of the city limit; the last leg
+   is a repeat drive to that corner.

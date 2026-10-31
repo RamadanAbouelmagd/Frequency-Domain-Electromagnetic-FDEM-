@@ -27,7 +27,8 @@ Pipeline per zone
 5. Turn smoothing: same streets, same miles, re-sequenced at every
    intersection to minimise U-turns and left turns (strong right-turn bias
    on Zone 1).
-6. Outputs: zoneN_route.kmz / .gpx, zoneN_turn_sheet.csv, zoneN_streets.csv
+6. Outputs: <day>_route.kmz / .gpx, <day>_turn_sheet.csv, <day>_streets.csv,
+   <day>_preview.png  (day = monday / tuesday / wednesday / thursday)
    and with --zone all: ua_zones_overview.kmz + ua_zone_overlaps.csv
 
 Install:  pip install osmnx networkx simplekml shapely pyproj scipy
@@ -78,7 +79,7 @@ ROADS = {
 
 # rings = boundary roads in order around the zone (corners = consecutive pairs)
 ZONES = {
-    "1": dict(name="Zone 1 - Monday",
+    "1": dict(name="Monday Collection", day="monday",
               # A: Canterbury->Lane strip west of Tremont (Tremont never reaches 5th Ave;
               #    everything south of Lane is already in B)
               # B: south of Lane to 5th Ave, Riverside -> North Star
@@ -86,18 +87,18 @@ ZONES = {
                      ["lane", "north_star", "fifth", "riverside"]],
               start=("canterbury", "riverside"), end=("fifth", "north_star"),
               right_turn_bias=True),
-    "2": dict(name="Zone 2 - Tuesday",
+    "2": dict(name="Tuesday Collection", day="tuesday",
               rings=[["fishinger", "tremont", "canterbury", "riverside"]],
               start=("fishinger", "riverside"), end=("canterbury", "tremont"),
               right_turn_bias=False),
-    "3": dict(name="Zone 3 - Wednesday",
+    "3": dict(name="Wednesday Collection", day="wednesday",
               # Reed ends at Fishinger ~800 m west of Tremont; North Star ends at
               # Fishinger ~300 m west of Kenny -> both joins run along Fishinger
               rings=[["henderson", "kenny", "fishinger", "north_star", "lane", "tremont",
                       "fishinger", "reed"]],
               start=("henderson", "reed"), end=("lane", "north_star"),
               right_turn_bias=False),
-    "4": dict(name="Zone 4 - Thursday",
+    "4": dict(name="Thursday Collection", day="thursday",
               rings=[["henderson", "reed", "fishinger", "riverside"]],
               start=("henderson", "riverside"), end=("fishinger", "reed"),
               right_turn_bias=False),
@@ -108,7 +109,10 @@ CLIP_TO_CITY = True          # drop anything outside Upper Arlington city limits
 CITY_EDGE_M = 30             # keep boundary roads lying on the city line
 # Unzoned pockets of the city: {zone: [(lat, lon), ...]} - a pocket containing one
 # of these points is added to that zone. Filled in only after the user decides.
-GAP_ASSIGN = {}
+# Assigned per the city's official collection-day map (updated 3/08):
+#   east of Kenny Rd between McCoy and Fishinger -> Wednesday
+#   north of Henderson by US-33 (Tarrington / Bethel / Horizons) -> Thursday (only neighbour)
+GAP_ASSIGN = {"3": [(40.03482, -83.04844)], "4": [(40.06325, -83.10108)]}
 EDGE_BUFFER_M = 12
 EXCLUDE_HIGHWAY = {"motorway", "motorway_link", "trunk_link", "service", "services"}
 SERVICE_MPH = 8
@@ -571,7 +575,7 @@ TURN_TXT = dict(start="Start on", straight="Continue on", right="Turn RIGHT onto
 
 
 def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_after):
-    pre = f"zone{zid}"
+    pre = ZONES[zid]["day"]
     groups = group_steps(G, steps)
     full = []
     for g in groups:
@@ -690,7 +694,7 @@ def render_png(G, zid, zone, geom, steps, s, t, fname=None):
     ax.set_aspect(1 / math.cos(math.radians((miny + maxy) / 2)))
     ax.set_title(f"{zone['name']}  (blue = collect, orange = repeat, red = against one-way)")
     fig.tight_layout()
-    fig.savefig(fname or f"zone{zid}_preview.png", dpi=130)
+    fig.savefig(fname or f"{ZONES[zid]['day']}_preview.png", dpi=130)
     plt.close(fig)
 
 
@@ -761,7 +765,7 @@ def render_overview(G, results, city):
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    cols = {"1": "red", "2": "orange", "3": "deepskyblue", "4": "limegreen"}
+    cols = {"1": "#c8a96e", "2": "#7f8fb5", "3": "#d98ca0", "4": "#9e9e9e"}
     allg = unary_union([g for g, *_ in results.values()] + ([city] if city is not None else []))
     minx, miny, maxx, maxy = allg.bounds
     pad = 0.004
@@ -781,7 +785,7 @@ def render_overview(G, results, city):
             ax.fill(xs, ys, color=cols[zid], alpha=0.25, zorder=2)
             ax.plot(xs, ys, color=cols[zid], lw=2, zorder=3)
         c = geom.representative_point()
-        ax.annotate(f"Zone {zid}", (c.x, c.y), ha="center", weight="bold", fontsize=14, zorder=6)
+        ax.annotate(ZONES[zid]["day"].upper(), (c.x, c.y), ha="center", weight="bold", fontsize=14, zorder=6)
     ax.set_xlim(minx - pad, maxx + pad); ax.set_ylim(miny - pad, maxy + pad)
     ax.set_aspect(1 / math.cos(math.radians((miny + maxy) / 2)))
     h, l = ax.get_legend_handles_labels()
@@ -802,8 +806,8 @@ def write_summary(results):
 
 def write_overview(results):
     kml = simplekml.Kml(name="Upper Arlington collection zones")
-    colors = {"1": simplekml.Color.red, "2": simplekml.Color.orange,
-              "3": simplekml.Color.cyan, "4": simplekml.Color.lime}
+    colors = {"1": simplekml.Color.hex("6ea9c8"), "2": simplekml.Color.hex("b58f7f"),
+              "3": simplekml.Color.hex("a08cd9"), "4": simplekml.Color.white}   # KML is aabbggrr
     owner = defaultdict(set)
     for zid, (geom, req, _) in results.items():
         f = kml.newfolder(name=ZONES[zid]["name"])
@@ -824,7 +828,7 @@ def write_overview(results):
         w = csv.writer(f)
         w.writerow(["street", "segments_in_multiple_zones", "zones"])
         for name, (n, zs) in sorted(shared.items()):
-            w.writerow([name, int(n), " & ".join(sorted(zs))])
+            w.writerow([name, int(n), " & ".join(ZONES[z]["day"].title() for z in sorted(zs))])
     print(f"\nOverview: ua_zones_overview.kmz | {len(shared)} streets fall in >1 zone "
           "-> ua_zone_overlaps.csv (decide which day collects them)")
 
@@ -884,7 +888,7 @@ def run_zone(G, Gu, roads, zid, geom, start=None, end=None):
     tot = defaultdict(float)
     for *_, d in req:
         tot[street_name(d)] += d["length"]
-    with open(f"zone{zid}_streets.csv", "w", newline="") as f:
+    with open(f"{ZONES[zid]['day']}_streets.csv", "w", newline="") as f:
         w = csv.writer(f); w.writerow(["street", "centerline_ft"])
         for n in sorted(tot):
             w.writerow([n, round(tot[n] * FT_PER_M)])
@@ -930,7 +934,7 @@ def main(G=None, args=None):
         write_overview(results)
         city = check_gaps(Gu, results)
         render_overview(G, results, city)
-    validate_kmz([f"zone{z}_route.kmz" for z in zids] +
+    validate_kmz([f"{ZONES[z]['day']}_route.kmz" for z in zids] +
                  (["ua_zones_overview.kmz"] if len(zids) > 1 else []))
 
 
