@@ -12,12 +12,12 @@ Zones are named by collection day, matching the city's collection-day map (updat
 Files: `<day>_route.kmz`, `<day>_route.gpx`, `<day>_turn_sheet.csv`, `<day>_streets.csv`,
 `<day>_preview.png` for day = monday / tuesday / wednesday / thursday.
 
-| Day | Total mi | Collect mi | Repeat mi | Repeat % | Est. h (8/22 mph) | Right | Straight | Left | U-turn | Red legs |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Monday (right bias) | 47.41 | 40.33 | 7.08 | 14.9 | 5.4 | 177 | 299 | 93 | 22 | 7 |
-| Tuesday | 43.98 | 37.72 | 6.26 | 14.2 | 5.0 | 134 | 226 | 73 | 17 | 2 |
-| Wednesday | 58.47 | 47.06 | 11.40 | 19.5 | 6.4 | 199 | 283 | 125 | 39 | 5 |
-| Thursday | 67.84 | 51.79 | 16.05 | 23.6 | 7.2 | 220 | 263 | 149 | 66 | 0 |
+| Day | Total mi | Collect mi | Alleys mi | Repeat mi | Repeat % | Est. h (8/22 mph) | Right | Straight | Left | U-turn | Red legs |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Monday (right bias) | 44.53 | 37.97 | 0.19 | 6.56 | 14.7 | 5.0 | 154 | 271 | 95 | 30 | 13 (≤257 ft) |
+| Tuesday | 44.12 | 38.01 | 0.37 | 6.11 | 13.8 | 5.0 | 127 | 218 | 88 | 16 | 1 (98 ft) |
+| Wednesday | 56.26 | 45.03 | 0.00 | 11.23 | 20.0 | 6.1 | 181 | 242 | 136 | 46 | 3 (≤93 ft) |
+| Thursday | 65.09 | 48.71 | 0.14 | 16.38 | 25.2 | 6.8 | 213 | 236 | 147 | 79 | 0 |
 
 - Coverage: **OK** for every day (strict check, counts parallel segments).
 - Every route starts at its START corner and ends at its END corner (asserted).
@@ -55,11 +55,30 @@ Driver: go around the island the legal way.
   drawn on the city map; Thursday is its only neighbour.
 - Wednesday's north edge = Henderson / city limit, as on the city map (not McCoy).
 
+## One day per street (`ua_boundary_assignment.csv`)
+Every street segment is collected on exactly one day (`ua_zone_overlaps.csv` is empty).
+Rule: each zone is first solved without the shared boundary roads; each shared stretch
+(same street, same pair of days) then goes to the day whose route already drives most of
+it, so it costs the least extra driving.
+
+| Street | Borders | Collected on |
+|---|---|---|
+| Canterbury Rd | Mon / Tue | **Tuesday** |
+| Fishinger Rd | Tue / Wed and Tue / Thu | **Tuesday** |
+| Reed Rd | Wed / Thu | **Wednesday** |
+| Tremont Rd, Canterbury to Fishinger | Tue / Wed | **Tuesday** |
+| Tremont Rd, south of Canterbury (872 ft) | Mon / Wed | **Wednesday** |
+| Lane Ave | Mon / Wed | **Wednesday** |
+| Redding Rd | Mon / Tue / Wed | Monday (409 ft), Wednesday (184 ft) |
+
+To override, run with `--both-days` (old behaviour) or edit the CSV logic in `assign_shared`.
+
+## Alleys
+Collected: `highway=service` + `service=alley` (driveways, parking aisles, private ways
+excluded). OpenStreetMap only has **0.7 mi** of alleys tagged in Upper Arlington (Mon 988 ft,
+Tue 1,968 ft, Thu 744 ft). If the trucks know of alleys that are missing, they are untagged
+in OSM; add them on openstreetmap.org (or send me a list) and re-run `fetch_osm.py`.
+
 ## Still open
-1. **Shared boundary roads** are collected on more than one day (`ua_zone_overlaps.csv`):
-   Canterbury (Mon & Tue), Fishinger (Tue, Wed, Thu), Reed (Wed & Thu), Tremont (Mon, Tue, Wed),
-   Lane (Mon & Wed), Redding. Choose one day each, or run `--no-boundary`.
-2. **Alleys**: `network_type="drive"` excludes all `highway=service`; including alleys needs a
-   `drive_service` download.
-3. **Monday END** (5th Ave & North Star Ave) is ~0.25 mi south of the city limit; the last leg
-   is a repeat drive to that corner.
+- **Monday END** (5th Ave & North Star Ave) is ~0.25 mi south of the city limit; the last leg
+  is a repeat drive to that corner.

@@ -2,7 +2,7 @@
 """
 Fallback downloader for when the Overpass API is unreachable.
 
-Pulls the same OpenStreetMap data from the main OSM API (/api/0.6/map) in
+Pulls the same OpenStreetMap data (plus highway=service + service=alley) from the main OSM API (/api/0.6/map) in
 small tiles, applies osmnx's own network_type="drive" way filter, then runs
 osmnx.graph_from_bbox with its Overpass download step swapped for these
 tiles - so truncation, simplification and attributes are identical to a
@@ -42,6 +42,9 @@ EXCLUDE = [
 
 
 def keep(tags):
+    if tags.get("highway") == "service" and tags.get("service") == "alley":
+        rest = [(k, p) for k, p in EXCLUDE if k not in ("highway", "service")]
+        return not any(k in tags and re.search(p, tags[k]) for k, p in rest)
     return "highway" in tags and not any(k in tags and re.search(p, tags[k]) for k, p in EXCLUDE)
 
 

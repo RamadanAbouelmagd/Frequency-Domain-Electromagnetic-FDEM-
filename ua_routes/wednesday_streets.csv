@@ -5,7 +5,7 @@ Airendel Lane,216
 Andover Road,2692
 Ardwick Road,2436
 Arlingate Drive,223
-Arlingate Drive West / Arlingate Drive East / Arlingate Drive North / Arlingate Drive South,1565
+Arlingate Drive South / Arlingate Drive North / Arlingate Drive East / Arlingate Drive West,1565
 Baronsmede Court,408
 Bayberry Court,174
 Beecham Court,160
@@ -17,13 +17,14 @@ Bridgeton Drive,1020
 Brittany Lane,759
 Camden Road,1646
 Camelot Drive,572
-Camelot Drive / Chadbourne Drive,942
 Carisbrook Road,1096
+Carriage Hill Lane / Longeaton Drive,2460
 Carron Drive,1352
 Castleton Road,1202
 Castleton Road North,2164
 Castleton Road West,684
 Chadbourne Drive,683
+Chadbourne Drive / Camelot Drive,942
 Chaucer Drive,395
 Chaucer Lane,833
 Chester Road,2582
@@ -34,9 +35,8 @@ Criswell Drive,873
 Criswell Drive / Millcreek Lane,1539
 Darcann Drive,1720
 Daventry Road,387
-Daventry Road / Marlyn Drive,495
 Edgefield Road,1103
-Fishinger Road,8946
+Fishinger Road,5057
 Fountaine Drive,1688
 Friar Lane,1675
 Grace Lane,543
@@ -57,19 +57,22 @@ Kennybrook Lane,490
 Kent Road,1656
 Kingsdale Terrace,700
 Kingsgate Road / Abbey Road,1061
+Kingsgate Road / Westbury Drive,1167
 Kirkley Road,2347
 La Rochelle Drive,1143
 La Rochelle Drive / Avignon Place,758
 Lafayette Drive,1138
+Lafayette Drive / Oak Hill Road,1398
 Lane Road,353
 Langston Drive,3013
 London Court Drive,414
 London Drive,3093
-Longeaton Drive / Carriage Hill Lane,2460
+Longeaton Drive / Northwest Professional Plaza,682
 Lyon Drive,4198
 Lyon Drive / Grace Lane,1498
 Mansion Way,758
 Marlyn Drive,1146
+Marlyn Drive / Daventry Road,495
 Mary Sue Lane,330
 McCoy Road,4522
 Melford Road,524
@@ -83,11 +86,9 @@ North Star Road,6214
 Northam Road,5924
 Northwest Boulevard,8998
 Northwest Professional Plaza,826
-Northwest Professional Plaza / Longeaton Drive,682
-Norwell Drive East / Norwell Drive,1841
+Norwell Drive / Norwell Drive East,1841
 Nottinghill Gate Road,1078
 Oak Hill Road,310
-Oak Hill Road / Lafayette Drive,1398
 Old Henderson Road,1694
 Oldham Road,526
 Ombersley Lane,295
@@ -105,8 +106,8 @@ Regency Drive,1043
 Ridgeview Road,5147
 Ritamarie Drive,2306
 Rue de Fleur,1713
-Sandringham Court / Sandringham Drive,501
 Sandringham Drive,414
+Sandringham Drive / Sandringham Court,501
 Squires Lane,577
 Stonehenge Court,946
 Stoneygate Lane,1508
@@ -116,9 +117,9 @@ Sunningdale Way,989
 Sussex Court,473
 Sussex Drive,1171
 Teeway Drive,929
-Tremont Road,11447
+Tremont Road,4676
 Trentwood Road,2683
-Unnamed road,1636
+Unnamed road,1556
 Vassar Place,2591
 Wareham Road,1099
 Watergate Court,418
@@ -127,7 +128,6 @@ Welsford Road,4162
 West Henderson Road,293
 West Lane Avenue,6610
 Westbury Drive,527
-Westbury Drive / Kingsgate Road,1167
 Westminster Drive,1469
 Westmont Boulevard,2690
 Wexford Road,1641

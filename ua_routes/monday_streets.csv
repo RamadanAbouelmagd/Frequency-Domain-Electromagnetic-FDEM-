@@ -1,5 +1,6 @@
 street,centerline_ft
 Abington Road,4749
+Alley,988
 Andover Road,7045
 Arlington Avenue,7267
 Asbury Drive,1715
@@ -14,7 +15,6 @@ Beverly Road,1355
 Brandon Road,1538
 Brixton Road,2850
 Cambridge Boulevard,7346
-Canterbury Road,5782
 Cardiff Road,2521
 Charing Road,3696
 Chatfield Road,1603
@@ -58,7 +58,7 @@ Northwest Boulevard,5766
 Old Riverside Drive,811
 Onandaga Drive,3305
 Oxford Road,1756
-Redding Road,592
+Redding Road,409
 Riverside Drive,11796
 Roxbury Road,1654
 Sherwin Road,1562
@@ -69,15 +69,15 @@ Southway Drive,1303
 Stanford Road,3965
 Suffolk Road,1824
 Tewksbury Road,3682
-Tremont Road,9745
+Tremont Road,8873
 Unnamed road,456
-Upper Chelsea Road,1804
-Upper Chelsea Road / Edgemont Road,901
+Upper Chelsea Road,2006
+Upper Chelsea Road / Edgemont Road,699
 Upper Chelsea Road / Stanford Road,2016
 Waltham Road,6668
 West 5th Avenue,2157
 West Devon Road,1022
-West Lane Avenue,10057
+West Lane Avenue,3447
 Westover Road,1337
 Westwood Avenue,1500
 Wickford Road,1185

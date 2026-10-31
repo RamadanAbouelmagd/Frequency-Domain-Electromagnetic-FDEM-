@@ -1,6 +1,7 @@
 street,centerline_ft
 Aberdeen Drive,1436
 Adner Court,403
+Alley,744
 Alliston Court,753
 Anson Street,1088
 Ardwick Road,204
@@ -10,14 +11,13 @@ Ashmore Road,677
 Atlee Court,396
 Barrymede Court,207
 Bayford Court,492
-Bellrose Lane / Belgrave Drive / Crompton Drive,1314
+Bellrose Lane / Crompton Drive / Belgrave Drive,1314
 Bickley Place,1849
 Billiton Court,576
 Brackley Road,591
 Braemar Drive,735
 Bramford Road,794
 Brandywine Drive,341
-Brandywine Drive / Willow Forge Drive,1468
 Braunton Road,999
 Buckley Road,1270
 Buckley Road / Winfield Road,2294
@@ -30,8 +30,6 @@ Centre Loop East,270
 Chantry Court,330
 Chardon Road,1129
 Chartwell Road,349
-Chartwell Road / Haymarket Court,486
-Chartwell Road / Stonehaven Drive,2301
 Cheltenham Road,1975
 Chelton Place,469
 Chevington Road,1723
@@ -43,7 +41,7 @@ Clairmont Road / Lear Road,2235
 Clarion Court,1180
 Clearbrook Court,187
 Coach Road,1900
-Coach Road / Coach Road North,691
+Coach Road North / Coach Road,691
 Concord Village Drive,1944
 Crompton Drive,1003
 Crown Point Drive,561
@@ -52,6 +50,7 @@ Deno's Court,211
 Dierker Road,1867
 Donington Road,1002
 Donna Drive,2477
+Donna Drive / Hillview Drive,1019
 Edgehill Drive,2053
 Edgewood Road,547
 Elan Court,224
@@ -61,8 +60,6 @@ Etrick Drive,336
 Fairfax Drive,3875
 Fairlington Drive,2332
 Fenwick Road,1364
-Fishinger Road,7420
-Folkstone Road / Langport Road,1467
 Fontenay Place,570
 Gateway Drive,345
 Glenda Place,513
@@ -71,16 +68,18 @@ Hadleigh Road,459
 Hampton Lane,706
 Harborough Road,1356
 Hastings Lane,615
+Hastings Lane / Romnay Road,936
 Haverford Court,159
 Haverford Road,4352
 Haviland Road,3993
 Haymarket Court,175
+Haymarket Court / Chartwell Road,486
 Helston Court,314
-Helston Court / Helston Road,799
 Helston Road,510
+Helston Road / Helston Court,799
 Henderson Road,2617
 Hillview Drive,1009
-Hillview Drive / Donna Drive,2038
+Hillview Drive / Donna Drive,1019
 Horizons Drive,1072
 Hoxton Court,603
 Hull Farm Lane,1215
@@ -99,12 +98,14 @@ Lane Road,7882
 Lanercost Way,902
 Lanes End Street,254
 Langport Road,1907
+Langport Road / Folkstone Road,1467
 Lear Road,1050
 Longhill Road,915
 Lymington Road,1122
 Lytham Court,509
 Lytham Road,5351
 Mackenzie Drive,3573
+Mannboro Drive / Pleasant Valley Drive,827
 Masters Court,383
 Masters Drive,262
 Masters Drive / Rivertop Lane,403
@@ -129,13 +130,10 @@ Pevensey Drive,865
 Picket Post Lane,1426
 Pinebrook Road,2057
 Pleasant Valley Drive,78
-Pleasant Valley Drive / Mannboro Drive,827
-Reed Road,9590
 River Park Drive,1840
 Riverside Drive,14958
 Rivertop Lane,798
 Romnay Road,747
-Romnay Road / Hastings Lane,936
 Rosebery Drive,977
 Rosebery Drive / Benderton Court,702
 Rushmore Drive,2292
@@ -159,6 +157,7 @@ Stonebrook Court,159
 Stonehaven Court North,181
 Stonehaven Court South,197
 Stonehaven Drive,4476
+Stonehaven Drive / Chartwell Road,2301
 Stonehaven Place,485
 Stratford Drive,1470
 Stratton Road,795
@@ -175,6 +174,7 @@ Waybourn Road,549
 Wenbury Road,967
 West Henderson Road,8886
 Willow Forge Drive,338
+Willow Forge Drive / Brandywine Drive,1468
 Willowbrook Road,510
 Wimbledon Road,1383
 Windermere Road,1904

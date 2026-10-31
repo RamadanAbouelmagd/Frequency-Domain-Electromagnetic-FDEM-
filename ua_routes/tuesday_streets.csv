@@ -1,5 +1,6 @@
 street,centerline_ft
 Ainwick Road,1341
+Alley,1968
 Ardleigh Road,1361
 Arlingtowne Lane,328
 Asbury Drive,2503
@@ -7,11 +8,11 @@ Avalon Road,2643
 Birchcrest Road,970
 Bridgeview Road,308
 Bristol Road,4890
-Britannia Drive West / Britannia Drive East / Downing Way / Churchill Drive,1473
 Canterbury Lane,502
 Canterbury Road,5782
 Chateau Circle,1954
 Chateau Circle South,693
+Churchill Drive / Britannia Drive West / Britannia Drive East / Downing Way,1473
 Cimmaron Road,1477
 Clifton Road,2447
 Colchester Road,2320
@@ -53,7 +54,7 @@ Oakmount Road,881
 Oakridge Court,389
 Oakridge Road,1153
 Ramsgate Road,2134
-Redding Road,6904
+Redding Road,6495
 Ridgecliff Road,3582
 Ridgeview Road,1920
 Riverhill Road,3660
@@ -66,7 +67,7 @@ Springhill Drive,856
 Sunset Drive,3067
 Swansea Road,4903
 Tremont Road,6771
-Unnamed road,73
+Unnamed road,33
 Upper Canterbury Lane,820
 Wesleyan Drive,880
 Wickliffe Road,5212

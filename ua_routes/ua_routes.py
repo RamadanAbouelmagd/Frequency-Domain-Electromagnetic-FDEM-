@@ -115,6 +115,9 @@ CITY_EDGE_M = 30             # keep boundary roads lying on the city line
 GAP_ASSIGN = {"3": [(40.03482, -83.04844)], "4": [(40.06325, -83.10108)]}
 EDGE_BUFFER_M = 12
 EXCLUDE_HIGHWAY = {"motorway", "motorway_link", "trunk_link", "service", "services"}
+INCLUDE_ALLEYS = True        # highway=service + service=alley are collected (driveways,
+                             # parking aisles etc. stay excluded)
+ONE_DAY_PER_STREET = True    # boundary roads shared by two zones go to ONE day only
 SERVICE_MPH = 8
 DEADHEAD_MPH = 22
 TURN_COST = dict(straight=0, right=1, left=3, uturn=8)
@@ -135,12 +138,23 @@ def as_list(v):
     return v if isinstance(v, list) else [v]
 
 
+def is_alley(d):
+    return "service" in {str(h) for h in as_list(d.get("highway"))} and \
+        "alley" in {str(x) for x in as_list(d.get("service"))}
+
+
+def collectable(d):
+    if INCLUDE_ALLEYS and is_alley(d):
+        return True
+    return not ({str(h) for h in as_list(d.get("highway"))} & EXCLUDE_HIGHWAY)
+
+
 def street_name(d):
     names = [str(n) for n in as_list(d.get("name"))]
     if names:
         return " / ".join(names)
     refs = [str(r) for r in as_list(d.get("ref"))]
-    return refs[0] if refs else "Unnamed road"
+    return refs[0] if refs else ("Alley" if is_alley(d) else "Unnamed road")
 
 
 def road_labels(d):
@@ -197,8 +211,11 @@ def load_graph(graphml=None):
         print(f"Loading {path}")
         return ox.load_graphml(path)
     print("Downloading OSM drive network for Upper Arlington ...")
+    # osmnx "drive" network + alleys (highway=service, service=alley)
+    drive = ox._overpass._get_network_filter("drive")
+    alley = '["highway"="service"]["service"="alley"]["access"!~"private"]'
     G = ox.graph_from_bbox((BBOX["west"], BBOX["south"], BBOX["east"], BBOX["north"]),
-                           network_type="drive", simplify=True, truncate_by_edge=True)
+                           custom_filter=[drive, alley], simplify=True, truncate_by_edge=True)
     ox.save_graphml(G, GRAPH_CACHE)
     return G
 
@@ -319,7 +336,7 @@ def connect_components(R, Gw, extra_nodes, directed):
             comps.append({n})
     if len(comps) <= 1:
         return []
-    print(f"  connecting {len(comps)} separate pieces")
+    # print(f"  connecting {len(comps)} separate pieces")
     K, links = nx.Graph(), {}
     for i, ci in enumerate(comps):
         dist, paths = nx.multi_source_dijkstra(Gw, ci, weight="length")
@@ -344,20 +361,21 @@ def connect_components(R, Gw, extra_nodes, directed):
     return out
 
 
-def solve_undirected(G, Gu, req, s, t):
+def solve_undirected(G, Gu, req, s, t, quiet=False):
     R = nx.MultiGraph()
     for u, v, k, d in req:
-        R.add_edge(u, v, **d, service=True)
+        R.add_edge(u, v, **d, _collect=True)
     R.add_nodes_from([s, t])
     for p in connect_components(R, Gu, [s, t], directed=False):
         for a, b in zip(p[:-1], p[1:]):
-            R.add_edge(a, b, **best_edge(Gu, a, b)[1], service=False)
+            R.add_edge(a, b, **best_edge(Gu, a, b)[1], _collect=False)
 
     odd = {n for n, deg in R.degree() if deg % 2}
     odd ^= {s, t}
     odd = sorted(odd)
     oddset = set(odd)
-    print(f"  pairing {len(odd)} odd intersections")
+    if not quiet:
+        print(f"  pairing {len(odd)} odd intersections")
     dist, paths = {}, {}
     for n in odd:
         dl, pl = nx.single_source_dijkstra(Gu, n, weight="length")
@@ -378,16 +396,16 @@ def solve_undirected(G, Gu, req, s, t):
     for a, b in matching:
         p = paths[a][b]
         for x, y in zip(p[:-1], p[1:]):
-            R.add_edge(x, y, **best_edge(Gu, x, y)[1], service=False)
+            R.add_edge(x, y, **best_edge(Gu, x, y)[1], _collect=False)
 
     if not nx.has_eulerian_path(R, source=s):
         sys.exit("ERROR: no Euler path after augmentation (unexpected).")
     steps = [(u, v, R[u][v][k]) for u, v, k in nx.eulerian_path(R, source=s, keys=True)]
-    steps = orient_one_way(G, steps, s)
+    steps = orient_one_way(G, steps, s, quiet)
     return repair_one_way(G, steps)
 
 
-def orient_one_way(G, steps, s):
+def orient_one_way(G, steps, s, quiet=False):
     """Zero-extra-mile one-way fix. For every arc driven against a one-way,
     find a directed cycle through it made of route arcs on two-way streets
     and reverse the whole cycle: balance (and so the Euler path) and total
@@ -419,7 +437,8 @@ def orient_one_way(G, steps, s):
     for x, y, d in arcs:
         D.add_edge(x, y, **d)
     left = sum(1 for x, y, d in arcs if not G.has_edge(x, y))
-    print(f"  one-way orientation: {fixed} of {len(bad)} wrong-way arcs fixed at 0 extra miles"
+    if not quiet:
+      print(f"  one-way orientation: {fixed} of {len(bad)} wrong-way arcs fixed at 0 extra miles"
           f" ({left} left)")
     return [(x, y, D[x][y][k]) for x, y, k in nx.eulerian_path(D, source=s, keys=True)]
 
@@ -431,17 +450,17 @@ def repair_one_way(G, steps):
             Gs.add_edge(u, v, length=d["length"])
     out, i = [], 0
     while i < len(steps):
-        if steps[i][2]["service"]:
+        if steps[i][2]["_collect"]:
             out.append(steps[i]); i += 1; continue
         j = i
-        while j < len(steps) and not steps[j][2]["service"]:
+        while j < len(steps) and not steps[j][2]["_collect"]:
             j += 1
         run = steps[i:j]
         if any(not G.has_edge(u, v) for u, v, _ in run):
             a, b = run[0][0], run[-1][1]
             p = nx.shortest_path(Gs, a, b, weight="length") if a != b else [a]
             for x, y in zip(p[:-1], p[1:]):
-                out.append((x, y, {**best_edge(G, x, y)[1], "service": False}))
+                out.append((x, y, {**best_edge(G, x, y)[1], "_collect": False}))
         else:
             out.extend(run)
         i = j
@@ -558,14 +577,14 @@ def group_steps(G, steps):
     groups = []
     for i, (u, v, d) in enumerate(steps):
         name = street_name(d)
-        wrong = d["service"] and not G.has_edge(u, v)
+        wrong = d["_collect"] and not G.has_edge(u, v)
         c = edge_coords(G, u, v, d)
         g = groups[-1] if groups else None
-        if g and g["street"] == name and g["service"] == d["service"] and g["wrong"] == wrong:
+        if g and g["street"] == name and g["service"] == d["_collect"] and g["wrong"] == wrong:
             g["coords"].extend(c[1:]); g["len"] += d["length"]
         else:
             turn = "start" if i == 0 else classify(hd[i - 1][1], hd[i][0])
-            groups.append(dict(street=name, service=d["service"], wrong=wrong, turn=turn,
+            groups.append(dict(street=name, service=d["_collect"], wrong=wrong, turn=turn,
                                coords=list(c), len=d["length"], start=u))
     return groups
 
@@ -683,9 +702,9 @@ def render_png(G, zid, zone, geom, steps, s, t, fname=None):
         ax.plot(xs, ys, color="goldenrod", lw=2.5, zorder=2)
     for u, v, d in steps:
         xs, ys = zip(*edge_coords(G, u, v, d))
-        col = ("red" if d["service"] and not G.has_edge(u, v) else
-               "tab:blue" if d["service"] else "darkorange")
-        ax.plot(xs, ys, color=col, lw=1.6 if d["service"] else 2.4, zorder=3)
+        col = ("red" if d["_collect"] and not G.has_edge(u, v) else
+               "tab:blue" if d["_collect"] else "darkorange")
+        ax.plot(xs, ys, color=col, lw=1.6 if d["_collect"] else 2.4, zorder=3)
     for lab, n, col in (("START", s, "green"), ("END", t, "red")):
         x, y = node_xy(G, n)
         ax.scatter([x], [y], s=160, color=col, edgecolor="k", zorder=5)
@@ -728,7 +747,7 @@ def check_gaps(Gu, results):
         for p in sorted(polys_of(pockets), key=lambda q: -q.area):
             st = defaultdict(float)
             for u, v, k, d in Gu.edges(keys=True, data=True):
-                if {str(h) for h in as_list(d.get("highway"))} & EXCLUDE_HIGHWAY:
+                if not collectable(d):
                     continue
                 m = shp_transform(to_utm, LineString(edge_coords(Gu, u, v, d))).interpolate(0.5, normalized=True)
                 if p.contains(m):
@@ -741,7 +760,7 @@ def check_gaps(Gu, results):
                         "; ".join(sorted(st, key=lambda n: -st[n]))])
     gaps, outside = defaultdict(float), defaultdict(float)
     for u, v, k, d in Gu.edges(keys=True, data=True):
-        if {str(h) for h in as_list(d.get("highway"))} & EXCLUDE_HIGHWAY:
+        if not collectable(d):
             continue
         ln = shp_transform(to_utm, LineString(edge_coords(Gu, u, v, d)))
         mid = ln.interpolate(0.5, normalized=True)
@@ -861,28 +880,87 @@ def build_geoms(Gu, roads, zids, zone_kml=None):
     return {z: shp_transform(inv, g) for z, g in gu.items()}, city
 
 
-def run_zone(G, Gu, roads, zid, geom, start=None, end=None):
+def seg_key(u, v, d):
+    return (min(u, v), max(u, v), round(d["length"], 1))
+
+
+def zone_endpoints(G, roads, zid, geom, start=None, end=None):
+    zone = ZONES[zid]
+    c = geom.representative_point()
+    s = nearest_node(G, *start) if start else roads.corner(*zone["start"], (c.x, c.y))
+    t = nearest_node(G, *end) if end else roads.corner(*zone["end"], (c.x, c.y))
+    return s, t
+
+
+def zone_required(Gu, zid, geom):
+    zone = ZONES[zid]
+    boundary = {lab for r in zone["rings"] for lab in r}
+    buf = shp_transform(to_utm, geom).buffer(EDGE_BUFFER_M)
+    req = []
+    for u, v, k, d in Gu.edges(keys=True, data=True):
+        if not collectable(d):
+            continue
+        if not INCLUDE_BOUNDARY_ROADS and road_labels(d) & boundary:
+            continue
+        if buf.contains(shp_transform(to_utm, LineString(edge_coords(Gu, u, v, d)))):
+            req.append((u, v, k, d))
+    return req
+
+
+def assign_shared(G, Gu, roads, geoms, reqs, ends):
+    """Each street segment claimed by more than one zone goes to ONE day.
+    Pass 1 solves every zone without the shared segments; each shared stretch
+    (same street, same pair of zones) then goes to the day whose route already
+    drives most of it (ties -> the shorter route), i.e. least extra driving."""
+    owners = defaultdict(set)
+    for z, req in reqs.items():
+        for u, v, k, d in req:
+            owners[seg_key(u, v, d)].add(z)
+    shared = {k for k, zs in owners.items() if len(zs) > 1}
+    if not shared:
+        return reqs, []
+    print(f"\nOne day per street: {len(shared)} boundary segments are claimed by >1 zone; "
+          "pass 1 (without them) ...")
+    driven, total = {}, {}
+    for z, req in reqs.items():
+        own = [e for e in req if seg_key(e[0], e[1], e[3]) not in shared]
+        steps = solve_undirected(G, Gu, own, *ends[z], quiet=True)
+        driven[z] = defaultdict(float)
+        for u, v, d in steps:
+            driven[z][seg_key(u, v, d)] += d["length"]
+        total[z] = sum(d["length"] for *_, d in steps)
+    seg_data = {seg_key(u, v, d): d for req in reqs.values() for u, v, k, d in req}
+    groups = defaultdict(list)
+    for k in shared:
+        groups[(street_name(seg_data[k]), frozenset(owners[k]))].append(k)
+    winner, rows = {}, []
+    for (name, zs), keys in sorted(groups.items(), key=lambda kv: (kv[0][0], sorted(kv[0][1]))):
+        score = {z: sum(seg_data[k]["length"] for k in keys if driven[z].get(k)) for z in zs}
+        z = max(zs, key=lambda z: (round(score[z], 1), -total[z]))
+        for k in keys:
+            winner[k] = z
+        L = sum(seg_data[k]["length"] for k in keys)
+        rows.append([name, " & ".join(ZONES[x]["day"].title() for x in sorted(zs)),
+                     ZONES[z]["day"].title(), round(L * FT_PER_M),
+                     round(score[z] * FT_PER_M)])
+    with open("ua_boundary_assignment.csv", "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["street", "bordering_days", "collected_on", "feet",
+                    "feet_already_driven_by_that_day"])
+        w.writerows(rows)
+    out = {z: [e for e in req if seg_key(e[0], e[1], e[3]) not in shared or
+               winner[seg_key(e[0], e[1], e[3])] == z] for z, req in reqs.items()}
+    print(f"  assigned {len(groups)} shared stretches -> ua_boundary_assignment.csv")
+    return out, rows
+
+
+def run_zone(G, Gu, roads, zid, geom, req, s, t):
     zone = ZONES[zid]
     print(f"\n===== {zone['name']} =====")
     area = shp_transform(to_utm, geom).area / 1e6
     print(f"  zone area {area:.2f} km^2")
     if area < 0.1:
         sys.exit("ERROR: zone polygon implausibly small - check corners or use --zone-kml.")
-    c = geom.representative_point()
-    s = nearest_node(G, *start) if start else roads.corner(*zone["start"], (c.x, c.y))
-    t = nearest_node(G, *end) if end else roads.corner(*zone["end"], (c.x, c.y))
-
-    boundary = {lab for r in zone["rings"] for lab in r}
-    buf = shp_transform(to_utm, geom).buffer(EDGE_BUFFER_M)
-    base = Gu
-    req = []
-    for u, v, k, d in base.edges(keys=True, data=True):
-        if {str(h) for h in as_list(d.get("highway"))} & EXCLUDE_HIGHWAY:
-            continue
-        if not INCLUDE_BOUNDARY_ROADS and road_labels(d) & boundary:
-            continue
-        if buf.contains(shp_transform(to_utm, LineString(edge_coords(base, u, v, d)))):
-            req.append((u, v, k, d))
     if not req:
         sys.exit("ERROR: no streets inside zone.")
     tot = defaultdict(float)
@@ -892,8 +970,10 @@ def run_zone(G, Gu, roads, zid, geom, start=None, end=None):
         w = csv.writer(f); w.writerow(["street", "centerline_ft"])
         for n in sorted(tot):
             w.writerow([n, round(tot[n] * FT_PER_M)])
+    alley = sum(d["length"] for *_, d in req if is_alley(d))
     print(f"  {len(tot)} streets, {len(req)} segments, "
-          f"{sum(d['length'] for *_, d in req) / M_PER_MI:.2f} mi of street")
+          f"{sum(d['length'] for *_, d in req) / M_PER_MI:.2f} mi of street "
+          f"(incl. {alley / M_PER_MI:.2f} mi alleys)")
 
     steps = solve_undirected(G, Gu, req, s, t)
     before = turn_stats(G, steps)
@@ -904,12 +984,13 @@ def run_zone(G, Gu, roads, zid, geom, start=None, end=None):
     from collections import Counter
     key = lambda u, v, d: (frozenset((u, v)), round(d["length"], 1))
     need = Counter(key(u, v, d) for u, v, k, d in req)
-    got = Counter(key(u, v, d) for u, v, d in steps if d["service"])
+    got = Counter(key(u, v, d) for u, v, d in steps if d["_collect"])
     missing = sum((need - got).values())
     assert steps[0][0] == s and steps[-1][1] == t, "route does not run START -> END"
     print("  coverage:", "OK - every segment covered" if not missing else f"{missing} MISSING")
     stats = write_outputs(G, zid, zone, geom, steps, s, t, before, after)
-    stats.update(missing=missing, streets=len(tot), segments=len(req))
+    stats.update(missing=missing, streets=len(tot), segments=len(req),
+                 alley_mi=alley / M_PER_MI)
     render_png(G, zid, zone, geom, steps, s, t)
     return geom, req, stats
 
@@ -917,6 +998,8 @@ def run_zone(G, Gu, roads, zid, geom, start=None, end=None):
 def main(G=None, args=None):
     global INCLUDE_BOUNDARY_ROADS
     INCLUDE_BOUNDARY_ROADS = not args.no_boundary
+    global INCLUDE_ALLEYS
+    INCLUDE_ALLEYS = not args.no_alleys
     if G is None:
         G = load_graph(args.graphml)
     G, Gu = prepare(G)
@@ -926,9 +1009,15 @@ def main(G=None, args=None):
     global CLIP_TO_CITY
     CLIP_TO_CITY = not args.no_city_clip
     geoms, _ = build_geoms(Gu, roads, zids, args.zone_kml if len(zids) == 1 else None)
+    ends = {z: zone_endpoints(G, roads, z, geoms[z],
+                              parse(args.start) if z in zids else None,
+                              parse(args.end) if z in zids else None) for z in ZONES}
+    reqs = {z: zone_required(Gu, z, geoms[z]) for z in ZONES}
+    if ONE_DAY_PER_STREET and not args.both_days:
+        reqs, _ = assign_shared(G, Gu, roads, geoms, reqs, ends)
     results = {}
     for z in zids:
-        results[z] = run_zone(G, Gu, roads, z, geoms[z], parse(args.start), parse(args.end))
+        results[z] = run_zone(G, Gu, roads, z, geoms[z], reqs[z], *ends[z])
     write_summary(results)
     if len(zids) > 1:
         write_overview(results)
@@ -956,6 +1045,9 @@ def cli(argv=None):
     ap.add_argument("--start", help="override start 'lat,lon'")
     ap.add_argument("--end", help="override end 'lat,lon'")
     ap.add_argument("--graphml", help="load a saved OSM graph")
+    ap.add_argument("--both-days", action="store_true",
+                    help="let boundary roads be collected by every zone they border")
+    ap.add_argument("--no-alleys", action="store_true", help="don't collect alleys")
     ap.add_argument("--no-city-clip", action="store_true",
                     help="don't clip zones to the Upper Arlington city limit")
     return ap.parse_args(argv)

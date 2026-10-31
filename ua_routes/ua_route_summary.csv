@@ -1,5 +1,5 @@
-zone,name,total_mi,collect_mi,repeat_mi,repeat_pct,hours,oneway_flags,oneway_streets,turn_right,turn_straight,turn_left,turn_uturn,before_right,before_straight,before_left,before_uturn,missing,streets,segments
-1,Monday Collection,47.41,40.33,7.08,14.93,5.36,7,Abington Road; Arlington Avenue; Redding Road; Unnamed road,177,299,93,22,134,243,154,60,0,84,447
-2,Tuesday Collection,43.98,37.72,6.26,14.24,5.0,2,Redding Road; Tremont Road,134,226,73,17,122,170,109,49,0,74,348
-3,Wednesday Collection,58.47,47.06,11.4,19.51,6.4,5,La Rochelle Drive; Redding Road; Tremont Road,199,283,125,39,170,237,166,73,0,137,472
-4,Thursday Collection,67.84,51.79,16.05,23.65,7.2,0,,220,263,149,66,189,222,182,105,0,182,497
+zone,name,total_mi,collect_mi,repeat_mi,repeat_pct,hours,oneway_flags,oneway_streets,turn_right,turn_straight,turn_left,turn_uturn,before_right,before_straight,before_left,before_uturn,missing,streets,segments,alley_mi
+1,Monday Collection,44.53,37.97,6.56,14.74,5.04,13,Arlington Avenue; North Star Road; Redding Road; Unnamed road; Waltham Road,154,271,95,30,131,209,151,59,0,84,421,0.19
+2,Tuesday Collection,44.12,38.01,6.11,13.86,5.03,1,Tremont Road,127,218,88,16,118,162,121,48,0,75,351,0.37
+3,Wednesday Collection,56.26,45.03,11.23,19.97,6.14,3,La Rochelle Drive; Redding Road,181,242,136,46,158,210,164,73,0,137,441,0.0
+4,Thursday Collection,65.09,48.71,16.38,25.16,6.83,0,,213,236,147,79,188,189,183,115,0,182,474,0.14
