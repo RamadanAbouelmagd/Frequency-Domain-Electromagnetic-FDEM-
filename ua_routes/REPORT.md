@@ -82,3 +82,12 @@ in OSM; add them on openstreetmap.org (or send me a list) and re-run `fetch_osm.
 ## Still open
 - **Monday END** (5th Ave & North Star Ave) is ~0.25 mi south of the city limit; the last leg
   is a repeat drive to that corner.
+
+## Shifts (`shifts/`, `ua_shift_plan.csv`)
+Each day is also split into **2** and **3** shifts. The zone is cut into compact neighbouring
+areas of equal street length (bands across the START→END direction) and each area gets its own
+single-pass route. Shift 1 starts at the day's START corner, the last shift ends at the day's
+END corner, and each shift ends where the next one starts. Files per shift:
+`<day>_<n>shifts_part<k>.gpx` (numbered stops) and `..._turn_sheet.csv`; split maps:
+`<day>_shift_split.png`. Extra driving versus one shift: Mon +0.5 / +2.0 mi, Tue +1.5 / +2.6,
+Wed +0.6 / +1.9, Thu +1.7 / +2.9 (2 / 3 shifts).

@@ -675,8 +675,6 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
     write_gpx(f"{pre}_route.gpx", f"UA {zone['name']}", groups, G, t)
     write_turn_sheet(f"{pre}_turn_sheet.csv", groups, G)
     print(f"  wrote {pre}_route.kmz, {pre}_route.gpx, {pre}_turn_sheet.csv, {pre}_streets.csv")
-    for n in SHIFT_SPLITS:
-        write_shifts(G, zid, zone, groups, s, t, n)
     return dict(zone=zid, name=zone["name"], nonstop_drive_h=nonstop_h, total_mi=(svc + dh) / M_PER_MI,
                 collect_mi=svc / M_PER_MI, repeat_mi=dh / M_PER_MI,
                 repeat_pct=100 * dh / max(svc + dh, 1), hours=hrs, oneway_flags=wrong,
@@ -733,37 +731,65 @@ def write_turn_sheet(fn, groups, G):
 SHIFT_ROWS = []
 
 
-def write_shifts(G, zid, zone, groups, s, t, n):
-    """Cut the day's single route into n back-to-back shifts of ~equal work time.
-    Cuts fall at street changes; shift k+1 starts exactly where shift k ended
-    (same truck later, or a 2nd truck driving to that corner) - zero extra miles."""
+def write_shifts(G, Gu, zid, zone, req, s, t, n, total_mi):
+    """Split the zone into n COMPACT areas (bands across the START->END axis, equal
+    street length), then build a single-pass route per area. Shift k ends at a
+    corner on the edge of area k+1, where shift k+1 starts."""
     import os
     os.makedirs("shifts", exist_ok=True)
-    ws = [work_s(g) for g in groups]
-    tot, cum, cuts = sum(ws), 0.0, []
-    for i, w_ in enumerate(ws):
-        if len(cuts) < n - 1 and cum + w_ / 2 >= tot * (len(cuts) + 1) / n and i > 0:
-            cuts.append(i)
-        cum += w_
-    bounds = [0] + cuts + [len(groups)]
-    day = zone["day"]
+    sx, sy = to_utm(*node_xy(G, s)); tx, ty = to_utm(*node_xy(G, t))
+    L = math.hypot(tx - sx, ty - sy) or 1.0
+    ux, uy = (tx - sx) / L, (ty - sy) / L
+
+    def proj(n_):
+        x, y = to_utm(*node_xy(G, n_))
+        return (x - sx) * ux + (y - sy) * uy
+
+    pos = sorted(((proj(u) + proj(v)) / 2, i) for i, (u, v, k, d) in enumerate(req))
+    total = sum(d["length"] for *_, d in req)
+    bands, cum, b = [[] for _ in range(n)], 0.0, 0
+    for p_, i in pos:
+        d = req[i][3]
+        if b < n - 1 and cum + d["length"] / 2 > total * (b + 1) / n:
+            b += 1
+        bands[b].append(req[i]); cum += d["length"]
+    # hand-over corners: a node of band k nearest the cut line, near the middle of it
+    starts, ends = [s], []
+    for k in range(n - 1):
+        cut = max((proj(u) + proj(v)) / 2 for u, v, *_ in bands[k])
+        nodes = {x for u, v, *_ in bands[k] for x in (u, v)} & \
+                {x for u, v, *_ in bands[k + 1] for x in (u, v)}
+        if not nodes:
+            nodes = {x for u, v, *_ in bands[k] for x in (u, v)}
+        near = sorted(nodes, key=lambda x: abs(proj(x) - cut))[:max(3, len(nodes) // 4)]
+        cx = sum(node_xy(G, x)[0] for x in near) / len(near)
+        cy = sum(node_xy(G, x)[1] for x in near) / len(near)
+        h = min(near, key=lambda x: (node_xy(G, x)[0] - cx) ** 2 + (node_xy(G, x)[1] - cy) ** 2)
+        ends.append(h); starts.append(h)
+    ends.append(t)
+    costs = TURN_COST_RIGHT_BIAS if zone["right_turn_bias"] else TURN_COST
+    day, sum_mi = zone["day"], 0.0
     for k in range(n):
-        part = [dict(g) for g in groups[bounds[k]:bounds[k + 1]]]
-        part[0]["turn"] = "start"
-        end_node = groups[bounds[k + 1]]["start"] if k < n - 1 else t
+        steps = solve_undirected(G, Gu, bands[k], starts[k], ends[k], quiet=True)
+        steps = optimize_turns(G, steps, starts[k], ends[k], costs)
+        groups = group_steps(G, steps)
         pre = f"shifts/{day}_{n}shifts_part{k + 1}"
-        write_gpx(f"{pre}.gpx", f"UA {zone['name']} - shift {k + 1} of {n}", part, G, end_node)
-        write_turn_sheet(f"{pre}_turn_sheet.csv", part, G)
-        sv = sum(g["len"] for g in part if g["_collect"])
-        dh = sum(g["len"] for g in part if not g["_collect"])
-        sx, sy = node_xy(G, part[0]["start"]); ex, ey = node_xy(G, end_node)
+        write_gpx(f"{pre}.gpx", f"UA {zone['name']} - shift {k + 1} of {n}", groups, G, ends[k])
+        write_turn_sheet(f"{pre}_turn_sheet.csv", groups, G)
+        sv = sum(g["len"] for g in groups if g["_collect"])
+        dh = sum(g["len"] for g in groups if not g["_collect"])
+        sum_mi += (sv + dh) / M_PER_MI
+        x0, y0 = node_xy(G, starts[k]); x1, y1 = node_xy(G, ends[k])
         SHIFT_ROWS.append(dict(
             day=day.title(), split=f"{n} shifts", shift=k + 1,
             total_mi=round((sv + dh) / M_PER_MI, 2), collect_mi=round(sv / M_PER_MI, 2),
-            est_work_h=round(sum(work_s(g) for g in part) / 3600, 2),
-            nonstop_drive_h=round(sum(g["drive_s"] for g in part) / 3600, 2),
-            stops=len(part), start_lat=round(sy, 6), start_lon=round(sx, 6),
-            start_street=part[0]["street"], end_lat=round(ey, 6), end_lon=round(ex, 6)))
+            repeat_pct=round(100 * dh / max(sv + dh, 1), 1),
+            nonstop_drive_h=round(sum(g["drive_s"] for g in groups) / 3600, 2),
+            stops=len(groups), oneway_flags=sum(1 for g in groups if g["wrong"]),
+            start_street=groups[0]["street"], start_lat=round(y0, 6), start_lon=round(x0, 6),
+            end_lat=round(y1, 6), end_lon=round(x1, 6)))
+    print(f"  {n} shifts: {sum_mi:.2f} mi total vs {total_mi:.2f} mi single route "
+          f"(+{sum_mi - total_mi:.2f})")
 
 
 def write_shift_plan():
@@ -1083,6 +1109,8 @@ def run_zone(G, Gu, roads, zid, geom, req, s, t):
     stats.update(missing=missing, streets=len(tot), segments=len(req),
                  alley_mi=alley / M_PER_MI)
     render_png(G, zid, zone, geom, steps, s, t)
+    for n in SHIFT_SPLITS:
+        write_shifts(G, Gu, zid, zone, req, s, t, n, stats["total_mi"])
     return geom, req, stats
 
 

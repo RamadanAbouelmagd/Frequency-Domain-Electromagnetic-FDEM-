@@ -1,181 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="ua_routes" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>UA Monday Collection - shift 1 of 2</name></metadata>
-<wpt lat="40.0133810" lon="-83.0898000"><name>1</name><desc>Start on Riverside Drive - COLLECT 6585 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9991450" lon="-83.0758220"><name>2</name><desc>Turn LEFT onto Cambridge Boulevard - COLLECT 2149 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9968050" lon="-83.0694370"><name>3</name><desc>Turn RIGHT onto Hillside Drive - repeat 361 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9958820" lon="-83.0690270"><name>4</name><desc>Continue on Hillside Drive - COLLECT 808 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9942650" lon="-83.0670670"><name>5</name><desc>Turn RIGHT onto Waltham Road - repeat 405 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9938109" lon="-83.0683765"><name>6</name><desc>Continue on Waltham Road - COLLECT 308 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9933064" lon="-83.0692553"><name>7</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 1090 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9954340" lon="-83.0719920"><name>8</name><desc>Turn RIGHT onto Club Road - COLLECT 441 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9962980" lon="-83.0708880"><name>9</name><desc>Turn RIGHT onto Malvern Road - COLLECT 1151 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9938109" lon="-83.0683765"><name>10</name><desc>Turn LEFT onto Waltham Road - COLLECT 809 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9950437" lon="-83.0660449"><name>11</name><desc>Turn LEFT onto Hampshire Road - repeat 750 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9951740" lon="-83.0683150"><name>12</name><desc>U-TURN onto Hampshire Road - COLLECT 750 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9950437" lon="-83.0660449"><name>13</name><desc>Turn LEFT onto Waltham Road - COLLECT 655 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9958525" lon="-83.0639638"><name>14</name><desc>Turn RIGHT onto Cambridge Boulevard - COLLECT 405 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9950038" lon="-83.0630288"><name>15</name><desc>Turn RIGHT onto Upper Chelsea Road / Edgemont Road - COLLECT 699 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9949575" lon="-83.0647914"><name>16</name><desc>Turn LEFT onto Alley - COLLECT 312 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9945541" lon="-83.0657697"><name>17</name><desc>U-TURN onto Alley - repeat 312 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9949575" lon="-83.0647914"><name>18</name><desc>Turn LEFT onto Upper Chelsea Road - COLLECT 1502 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9958820" lon="-83.0690270"><name>19</name><desc>Turn RIGHT onto Hillside Drive - COLLECT 361 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9968050" lon="-83.0694370"><name>20</name><desc>Turn RIGHT onto Cambridge Boulevard - repeat 146 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9969610" lon="-83.0689550"><name>21</name><desc>Turn LEFT onto Ellington Road - COLLECT 873 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9990007" lon="-83.0705315"><name>22</name><desc>Turn RIGHT onto Oxford Road - COLLECT 326 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9996985" lon="-83.0698109"><name>23</name><desc>Turn RIGHT onto Elgin Road - COLLECT 1048 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9973120" lon="-83.0677950"><name>24</name><desc>Turn LEFT onto Cambridge Boulevard - COLLECT 360 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9973728" lon="-83.0665228"><name>25</name><desc>Turn LEFT onto Cheshire Road - COLLECT 1065 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9998574" lon="-83.0684757"><name>26</name><desc>Turn LEFT onto Tewksbury Road - COLLECT 258 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9999350" lon="-83.0693915"><name>27</name><desc>Turn LEFT onto Oxford Road - COLLECT 146 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9996985" lon="-83.0698109"><name>28</name><desc>Continue on Oxford Road - repeat 326 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9990007" lon="-83.0705315"><name>29</name><desc>Continue on Oxford Road - COLLECT 323 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9985420" lon="-83.0714580"><name>30</name><desc>Turn RIGHT onto Club Road - COLLECT 1613 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0019994" lon="-83.0687903"><name>31</name><desc>Turn RIGHT onto Yorkshire Road - COLLECT 275 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0012894" lon="-83.0684720"><name>32</name><desc>Turn RIGHT onto Oxford Road - COLLECT 563 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9999350" lon="-83.0693915"><name>33</name><desc>Turn LEFT onto Tewksbury Road - repeat 258 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9998574" lon="-83.0684757"><name>34</name><desc>Continue on Tewksbury Road - COLLECT 409 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9998140" lon="-83.0670270"><name>35</name><desc>Turn RIGHT onto Yorkshire Road - COLLECT 961 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9975240" lon="-83.0653420"><name>36</name><desc>Turn RIGHT onto Guilford Road - COLLECT 158 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9974070" lon="-83.0658850"><name>37</name><desc>Continue on Cambridge Boulevard - COLLECT 180 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9973728" lon="-83.0665228"><name>38</name><desc>Continue on Cambridge Boulevard - repeat 360 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9973120" lon="-83.0677950"><name>39</name><desc>Continue on Cambridge Boulevard - COLLECT 495 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9968050" lon="-83.0694370"><name>40</name><desc>Continue on Cambridge Boulevard - repeat 940 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9976770" lon="-83.0722680"><name>41</name><desc>Turn RIGHT onto Oxford Road - COLLECT 398 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9985420" lon="-83.0714580"><name>42</name><desc>Turn RIGHT onto Club Road - COLLECT 932 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9962980" lon="-83.0708880"><name>43</name><desc>Continue on Club Road - repeat 441 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9954340" lon="-83.0719920"><name>44</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 4122 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0045900" lon="-83.0805970"><name>45</name><desc>Turn RIGHT onto West Lane Avenue - COLLECT 474 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0055340" lon="-83.0794320"><name>46</name><desc>Turn LEFT onto Leeds Road - COLLECT 224 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0060930" lon="-83.0797610"><name>47</name><desc>Turn LEFT onto Charing Road - COLLECT 2673 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0103370" lon="-83.0865600"><name>48</name><desc>Turn RIGHT onto South Dorchester Road - COLLECT 1368 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0131350" lon="-83.0839130"><name>49</name><desc>Turn LEFT onto Canterbury Road - repeat 351 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0131850" lon="-83.0851690"><name>50</name><desc>Turn LEFT onto Margate Road - COLLECT 925 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0113273" lon="-83.0870263"><name>51</name><desc>Turn RIGHT onto Charing Road - COLLECT 639 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0129720" lon="-83.0878080"><name>52</name><desc>U-TURN onto Charing Road - repeat 639 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0113273" lon="-83.0870263"><name>53</name><desc>Continue on Charing Road - COLLECT 384 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0103370" lon="-83.0865600"><name>54</name><desc>Continue on Charing Road - repeat 381 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0093920" lon="-83.0859890"><name>55</name><desc>Turn LEFT onto Abington Road - COLLECT 1279 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0108530" lon="-83.0818960"><name>56</name><desc>Turn LEFT onto Doncaster Road - COLLECT 795 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0130040" lon="-83.0814890"><name>57</name><desc>Turn LEFT onto Canterbury Road - repeat 330 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0130650" lon="-83.0826670"><name>58</name><desc>Turn LEFT onto Exmoor Road - COLLECT 1110 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0101930" lon="-83.0838370"><name>59</name><desc>U-TURN onto Abington Road - repeat 597 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0108530" lon="-83.0818960"><name>60</name><desc>Continue on Abington Road - COLLECT 2444 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0107360" lon="-83.0731870"><name>61</name><desc>Turn LEFT onto Mountview Road - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0116360" lon="-83.0730840"><name>62</name><desc>Turn RIGHT onto Brixton Road - COLLECT 802 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0114890" lon="-83.0702189"><name>63</name><desc>Turn RIGHT onto Redding Road - COLLECT 222 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0109205" lon="-83.0699390"><name>64</name><desc>Continue on Redding Road - COLLECT 95 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0106975" lon="-83.0697647"><name>65</name><desc>Turn LEFT onto Unnamed road - COLLECT 7 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0106923" lon="-83.0697424"><name>66</name><desc>U-TURN onto Unnamed road - repeat 7 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0106975" lon="-83.0697647"><name>67</name><desc>Continue on Unnamed road - COLLECT 46 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0106482" lon="-83.0699046"><name>68</name><desc>Continue on Unnamed road - repeat 34 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0105579" lon="-83.0699080"><name>69</name><desc>Continue on Unnamed road - COLLECT 55 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0105090" lon="-83.0697413"><name>70</name><desc>Continue on Unnamed road - repeat 124 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0106759" lon="-83.0698751"><name>71</name><desc>Turn RIGHT onto Redding Road - COLLECT 92 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0109205" lon="-83.0699390"><name>72</name><desc>U-TURN onto Redding Road - repeat 92 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0106759" lon="-83.0698751"><name>73</name><desc>Turn RIGHT onto Unnamed road - repeat 13 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0106482" lon="-83.0699046"><name>74</name><desc>Turn RIGHT onto Abington Road - repeat 107 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0105886" lon="-83.0702795"><name>75</name><desc>U-TURN onto Abington Road - COLLECT 105 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0105579" lon="-83.0699080"><name>76</name><desc>Turn LEFT onto Unnamed road - COLLECT 34 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0106482" lon="-83.0699046"><name>77</name><desc>Turn LEFT onto Abington Road - COLLECT 921 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0107360" lon="-83.0731870"><name>78</name><desc>Turn LEFT onto Mountview Road - COLLECT 419 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0096210" lon="-83.0731990"><name>79</name><desc>Turn LEFT onto Onandaga Drive - COLLECT 909 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0094760" lon="-83.0699530"><name>80</name><desc>U-TURN onto Onandaga Drive - repeat 909 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0096210" lon="-83.0731990"><name>81</name><desc>Continue on Onandaga Drive - COLLECT 925 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0097690" lon="-83.0765040"><name>82</name><desc>Turn RIGHT onto Asbury Drive - repeat 414 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0109010" lon="-83.0764010"><name>83</name><desc>Continue on Asbury Drive - COLLECT 670 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0127330" lon="-83.0762440"><name>84</name><desc>Turn RIGHT onto Canterbury Road - repeat 964 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0125580" lon="-83.0728000"><name>85</name><desc>Turn RIGHT onto Mountview Road - COLLECT 349 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0116360" lon="-83.0730840"><name>86</name><desc>Turn RIGHT onto Brixton Road - COLLECT 2048 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0120130" lon="-83.0803970"><name>87</name><desc>Turn RIGHT onto Leeds Road - COLLECT 342 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0129470" lon="-83.0803120"><name>88</name><desc>U-TURN onto Leeds Road - repeat 342 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0120130" lon="-83.0803970"><name>89</name><desc>Continue on Leeds Road - COLLECT 1187 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0088580" lon="-83.0812860"><name>90</name><desc>Turn RIGHT onto Crafton Park - COLLECT 1235 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0091090" lon="-83.0827590"><name>91</name><desc>Turn LEFT onto Crafton Park - repeat 447 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0088580" lon="-83.0812860"><name>92</name><desc>Turn RIGHT onto Leeds Road - COLLECT 182 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0083850" lon="-83.0810850"><name>93</name><desc>Continue on Leeds Road - repeat 560 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0069834" lon="-83.0802707"><name>94</name><desc>Continue on Leeds Road - COLLECT 355 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0060930" lon="-83.0797610"><name>95</name><desc>Continue on Leeds Road - repeat 224 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0055340" lon="-83.0794320"><name>96</name><desc>Turn LEFT onto West Lane Avenue - COLLECT 1334 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0080970" lon="-83.0760460"><name>97</name><desc>Turn LEFT onto Asbury Drive - COLLECT 1045 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0109010" lon="-83.0764010"><name>98</name><desc>Turn LEFT onto Abington Road - repeat 57 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0109140" lon="-83.0766040"><name>99</name><desc>Turn LEFT onto Sherwin Road - COLLECT 1562 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0083850" lon="-83.0810850"><name>100</name><desc>Turn LEFT onto Leeds Road - COLLECT 560 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0069834" lon="-83.0802707"><name>101</name><desc>Turn LEFT onto Onandaga Drive - COLLECT 1471 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0097690" lon="-83.0765040"><name>102</name><desc>Turn RIGHT onto Asbury Drive - repeat 631 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0080970" lon="-83.0760460"><name>103</name><desc>Turn LEFT onto West Lane Avenue - COLLECT 1639 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0079010" lon="-83.0701960"><name>104</name><desc>Turn RIGHT onto Tremont Road - COLLECT 609 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0062630" lon="-83.0697900"><name>105</name><desc>Continue on Tremont Road - repeat 167 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0058160" lon="-83.0696670"><name>106</name><desc>Continue on Tremont Road - COLLECT 109 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0055235" lon="-83.0695952"><name>107</name><desc>Continue on Tremont Road - repeat 175 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0050586" lon="-83.0694528"><name>108</name><desc>Continue on Tremont Road - COLLECT 2118 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0000850" lon="-83.0656360"><name>109</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 414 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9998140" lon="-83.0670270"><name>110</name><desc>Turn RIGHT onto Yorkshire Road - COLLECT 673 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0012894" lon="-83.0684720"><name>111</name><desc>Continue on Yorkshire Road - repeat 275 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0019994" lon="-83.0687903"><name>112</name><desc>Continue on Yorkshire Road - COLLECT 872 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0041535" lon="-83.0678676"><name>113</name><desc>Turn LEFT onto Arlington Avenue - COLLECT 699 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0055235" lon="-83.0695952"><name>114</name><desc>U-TURN onto Tremont Road - COLLECT 257 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0052507" lon="-83.0693257"><name>115</name><desc>Turn RIGHT onto Arlington Avenue - repeat 573 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0041535" lon="-83.0678676"><name>116</name><desc>Continue on Arlington Avenue - COLLECT 573 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0028790" lon="-83.0666680"><name>117</name><desc>Turn RIGHT onto Westover Road - COLLECT 345 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0022970" lon="-83.0676430"><name>118</name><desc>U-TURN onto Westover Road - repeat 345 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0028790" lon="-83.0666680"><name>119</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 433 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0024090" lon="-83.0652500"><name>120</name><desc>Turn LEFT onto Kensington Drive - COLLECT 1769 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0061850" lon="-83.0688220"><name>121</name><desc>Turn RIGHT onto South Parkway Drive - repeat 331 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0066570" lon="-83.0678120"><name>122</name><desc>Continue on South Parkway Drive - COLLECT 246 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0070220" lon="-83.0670720"><name>123</name><desc>Turn RIGHT onto North Parkway Drive - repeat 172 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0070040" lon="-83.0664580"><name>124</name><desc>Turn RIGHT onto Coventry Road - repeat 193 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0066610" lon="-83.0659320"><name>125</name><desc>Continue on Coventry Road - COLLECT 444 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0057220" lon="-83.0649330"><name>126</name><desc>Continue on Coventry Road - repeat 432 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0047500" lon="-83.0640490"><name>127</name><desc>Turn LEFT onto Chatfield Road - COLLECT 983 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0046630" lon="-83.0605530"><name>128</name><desc>Turn RIGHT onto Andover Road - repeat 163 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0042170" lon="-83.0605870"><name>129</name><desc>Continue on Andover Road - COLLECT 331 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0033470" lon="-83.0603550"><name>130</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 555 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0024190" lon="-83.0619270"><name>131</name><desc>Turn RIGHT onto Coventry Road - COLLECT 314 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0031260" lon="-83.0625690"><name>132</name><desc>Turn RIGHT onto Beverly Road - COLLECT 688 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0042170" lon="-83.0605870"><name>133</name><desc>Turn LEFT onto Andover Road - COLLECT 163 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0046630" lon="-83.0605530"><name>134</name><desc>Turn RIGHT onto Chatfield Road - COLLECT 620 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0045170" lon="-83.0583550"><name>135</name><desc>Turn LEFT onto Northwest Boulevard - COLLECT 675 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0063660" lon="-83.0582290"><name>136</name><desc>Turn LEFT onto Collingswood Road - COLLECT 613 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0064620" lon="-83.0604200"><name>137</name><desc>Turn RIGHT onto Andover Road - COLLECT 364 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0074590" lon="-83.0603510"><name>138</name><desc>U-TURN onto Andover Road - repeat 364 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0064620" lon="-83.0604200"><name>139</name><desc>Continue on Andover Road - COLLECT 657 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0046630" lon="-83.0605530"><name>140</name><desc>Turn RIGHT onto Chatfield Road - repeat 369 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0047170" lon="-83.0618720"><name>141</name><desc>Turn LEFT onto Wickford Road - COLLECT 504 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0038310" lon="-83.0632140"><name>142</name><desc>Turn RIGHT onto Coventry Road - COLLECT 841 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0057220" lon="-83.0649330"><name>143</name><desc>Turn RIGHT onto Berkshire Road - COLLECT 2998 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0052950" lon="-83.0542240"><name>144</name><desc>Turn RIGHT onto Harford Road - COLLECT 657 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0034980" lon="-83.0543670"><name>145</name><desc>Turn RIGHT onto Doone Road - COLLECT 795 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0036190" lon="-83.0572060"><name>146</name><desc>Turn RIGHT onto Brandon Road - repeat 328 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0045170" lon="-83.0571560"><name>147</name><desc>Turn RIGHT onto Cardiff Road - COLLECT 1588 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0042700" lon="-83.0514840"><name>148</name><desc>Turn RIGHT onto Beaumont Road - COLLECT 982 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0015830" lon="-83.0516810"><name>149</name><desc>Turn RIGHT onto Guilford Road - COLLECT 789 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0017110" lon="-83.0544980"><name>150</name><desc>Turn RIGHT onto Harford Road - repeat 326 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0026030" lon="-83.0544340"><name>151</name><desc>Continue on Harford Road - COLLECT 327 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0034980" lon="-83.0543670"><name>152</name><desc>Turn RIGHT onto Doone Road - COLLECT 1728 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0032300" lon="-83.0481950"><name>153</name><desc>Turn RIGHT onto North Star Road - repeat 327 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0023360" lon="-83.0482520"><name>154</name><desc>Continue on North Star Road - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="40.0014370" lon="-83.0483060"><name>155</name><desc>Continue on North Star Road - repeat 328 ft</desc><type>repeat</type></wpt>
-<wpt lat="40.0005380" lon="-83.0483580"><name>156</name><desc>Continue on North Star Road - COLLECT 316 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9996720" lon="-83.0483714"><name>157</name><desc>Continue on North Star Road - repeat 261 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9989812" lon="-83.0481943"><name>158</name><desc>Turn RIGHT onto Unnamed road - repeat 18 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9989510" lon="-83.0482460"><name>159</name><desc>Continue on Unnamed road - COLLECT 66 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9987823" lon="-83.0482624"><name>160</name><desc>Continue on North Star Road - COLLECT 859 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9964620" lon="-83.0486090"><name>161</name><desc>Turn RIGHT onto Northwest Boulevard - repeat 51 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9965310" lon="-83.0487680"><name>162</name><desc>Continue on Northwest Boulevard - COLLECT 593 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9975000" lon="-83.0504600"><name>163</name><desc>Turn RIGHT onto Elmwood Avenue - repeat 569 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9989647" lon="-83.0499277"><name>164</name><desc>Turn RIGHT onto Waltham Road - COLLECT 374 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9988879" lon="-83.0485955"><name>165</name><desc>Continue on Waltham Road - repeat 92 ft</desc><type>repeat</type></wpt>
-<wpt lat="39.9988144" lon="-83.0482831"><name>166</name><desc>U-TURN onto Waltham Road - COLLECT 192 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9989510" lon="-83.0482460"><name>167</name><desc>Turn LEFT onto Unnamed road - COLLECT 18 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9989812" lon="-83.0481943"><name>168</name><desc>Turn LEFT onto North Star Road - COLLECT 211 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9995380" lon="-83.0483265"><name>169</name><desc>Continue on North Star Road - COLLECT 50 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9996720" lon="-83.0483714"><name>170</name><desc>Turn LEFT onto Barrington Road - COLLECT 3020 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9988049" lon="-83.0584183"><name>171</name><desc>Turn LEFT onto Waltham Road - COLLECT 544 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9988077" lon="-83.0564791"><name>172</name><desc>Turn RIGHT onto Andover Road - COLLECT 531 ft</desc><type>COLLECT</type></wpt>
-<wpt lat="39.9974631" lon="-83.0557670"><name>173</name><desc>Turn RIGHT onto Edgemont Road - COLLECT 1796 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0133810" lon="-83.0898000"><name>1</name><desc>Start on Riverside Drive - COLLECT 9403 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9933064" lon="-83.0692553"><name>2</name><desc>Turn LEFT onto Waltham Road - COLLECT 308 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9938109" lon="-83.0683765"><name>3</name><desc>Turn LEFT onto Malvern Road - COLLECT 1151 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9962980" lon="-83.0708880"><name>4</name><desc>Turn LEFT onto Club Road - repeat 441 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9954340" lon="-83.0719920"><name>5</name><desc>U-TURN onto Club Road - COLLECT 1373 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9985420" lon="-83.0714580"><name>6</name><desc>Turn RIGHT onto Oxford Road - COLLECT 795 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9999350" lon="-83.0693915"><name>7</name><desc>Turn RIGHT onto Tewksbury Road - repeat 258 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9998574" lon="-83.0684757"><name>8</name><desc>Turn RIGHT onto Cheshire Road - COLLECT 1065 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9973728" lon="-83.0665228"><name>9</name><desc>Turn RIGHT onto Cambridge Boulevard - COLLECT 360 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9973120" lon="-83.0677950"><name>10</name><desc>Turn RIGHT onto Elgin Road - COLLECT 1048 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9996985" lon="-83.0698109"><name>11</name><desc>Turn LEFT onto Oxford Road - repeat 326 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9990007" lon="-83.0705315"><name>12</name><desc>Turn LEFT onto Ellington Road - COLLECT 873 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9969610" lon="-83.0689550"><name>13</name><desc>Turn RIGHT onto Cambridge Boulevard - COLLECT 2295 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9991450" lon="-83.0758220"><name>14</name><desc>Turn RIGHT onto Riverside Drive - COLLECT 2393 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0045900" lon="-83.0805970"><name>15</name><desc>Turn RIGHT onto West Lane Avenue - COLLECT 474 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0055340" lon="-83.0794320"><name>16</name><desc>Turn LEFT onto Leeds Road - COLLECT 224 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0060930" lon="-83.0797610"><name>17</name><desc>Turn LEFT onto Charing Road - COLLECT 3696 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0129720" lon="-83.0878080"><name>18</name><desc>U-TURN onto Charing Road - repeat 639 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0113273" lon="-83.0870263"><name>19</name><desc>Turn LEFT onto Margate Road - COLLECT 925 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0131850" lon="-83.0851690"><name>20</name><desc>Turn RIGHT onto Canterbury Road - repeat 351 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0131350" lon="-83.0839130"><name>21</name><desc>Turn RIGHT onto South Dorchester Road - COLLECT 1368 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0103370" lon="-83.0865600"><name>22</name><desc>Turn LEFT onto Charing Road - repeat 381 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0093920" lon="-83.0859890"><name>23</name><desc>Turn LEFT onto Abington Road - COLLECT 682 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0101930" lon="-83.0838370"><name>24</name><desc>Continue on Exmoor Road - COLLECT 1110 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0130650" lon="-83.0826670"><name>25</name><desc>Turn RIGHT onto Canterbury Road - repeat 330 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0130040" lon="-83.0814890"><name>26</name><desc>Turn RIGHT onto Doncaster Road - COLLECT 795 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0108530" lon="-83.0818960"><name>27</name><desc>Turn RIGHT onto Abington Road - COLLECT 597 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0101930" lon="-83.0838370"><name>28</name><desc>U-TURN onto Abington Road - repeat 597 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0108530" lon="-83.0818960"><name>29</name><desc>Continue on Abington Road - COLLECT 390 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0110380" lon="-83.0805240"><name>30</name><desc>Turn LEFT onto Leeds Road - COLLECT 699 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0129470" lon="-83.0803120"><name>31</name><desc>U-TURN onto Leeds Road - repeat 342 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0120130" lon="-83.0803970"><name>32</name><desc>Turn LEFT onto Brixton Road - COLLECT 1140 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0118030" lon="-83.0763270"><name>33</name><desc>Turn LEFT onto Asbury Drive - COLLECT 340 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0127330" lon="-83.0762440"><name>34</name><desc>Turn RIGHT onto Canterbury Road - repeat 964 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0125580" lon="-83.0728000"><name>35</name><desc>Turn RIGHT onto Mountview Road - COLLECT 349 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0116360" lon="-83.0730840"><name>36</name><desc>Turn LEFT onto Brixton Road - COLLECT 802 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0114890" lon="-83.0702189"><name>37</name><desc>Turn RIGHT onto Redding Road - COLLECT 314 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106759" lon="-83.0698751"><name>38</name><desc>Turn RIGHT onto Unnamed road - COLLECT 102 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0105090" lon="-83.0697413"><name>39</name><desc>Continue on Unnamed road - repeat 92 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0106975" lon="-83.0697647"><name>40</name><desc>Turn RIGHT onto Redding Road - repeat 95 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0109205" lon="-83.0699390"><name>41</name><desc>U-TURN onto Redding Road - COLLECT 95 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106975" lon="-83.0697647"><name>42</name><desc>Turn LEFT onto Unnamed road - COLLECT 7 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106923" lon="-83.0697424"><name>43</name><desc>U-TURN onto Unnamed road - repeat 53 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0106482" lon="-83.0699046"><name>44</name><desc>Turn RIGHT onto Abington Road - COLLECT 107 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0105886" lon="-83.0702795"><name>45</name><desc>U-TURN onto Abington Road - repeat 105 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0105579" lon="-83.0699080"><name>46</name><desc>Turn RIGHT onto Unnamed road - repeat 146 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0106975" lon="-83.0697647"><name>47</name><desc>Continue on Unnamed road - COLLECT 33 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0106759" lon="-83.0698751"><name>48</name><desc>Continue on Unnamed road - repeat 274 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0105579" lon="-83.0699080"><name>49</name><desc>Turn RIGHT onto Abington Road - COLLECT 105 ft - ONE-WAY: go around legally</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0105886" lon="-83.0702795"><name>50</name><desc>Continue on Abington Road - COLLECT 814 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0107360" lon="-83.0731870"><name>51</name><desc>Turn RIGHT onto Mountview Road - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0116360" lon="-83.0730840"><name>52</name><desc>Turn LEFT onto Brixton Road - COLLECT 908 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0118030" lon="-83.0763270"><name>53</name><desc>Turn LEFT onto Asbury Drive - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0109010" lon="-83.0764010"><name>54</name><desc>Turn RIGHT onto Abington Road - COLLECT 1154 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0110380" lon="-83.0805240"><name>55</name><desc>Turn LEFT onto Leeds Road - COLLECT 830 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0088580" lon="-83.0812860"><name>56</name><desc>Turn RIGHT onto Crafton Park - COLLECT 1235 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0091090" lon="-83.0827590"><name>57</name><desc>Turn LEFT onto Crafton Park - repeat 447 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0088580" lon="-83.0812860"><name>58</name><desc>Turn RIGHT onto Leeds Road - COLLECT 182 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0083850" lon="-83.0810850"><name>59</name><desc>Continue on Leeds Road - repeat 560 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0069834" lon="-83.0802707"><name>60</name><desc>Continue on Leeds Road - COLLECT 355 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0060930" lon="-83.0797610"><name>61</name><desc>Continue on Leeds Road - repeat 224 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0055340" lon="-83.0794320"><name>62</name><desc>Turn LEFT onto West Lane Avenue - COLLECT 1334 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0080970" lon="-83.0760460"><name>63</name><desc>Turn LEFT onto Asbury Drive - COLLECT 631 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0097690" lon="-83.0765040"><name>64</name><desc>Continue on Asbury Drive - repeat 414 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0109010" lon="-83.0764010"><name>65</name><desc>Turn RIGHT onto Abington Road - COLLECT 900 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0107360" lon="-83.0731870"><name>66</name><desc>Turn RIGHT onto Mountview Road - COLLECT 419 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0096210" lon="-83.0731990"><name>67</name><desc>Turn LEFT onto Onandaga Drive - COLLECT 909 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0094760" lon="-83.0699530"><name>68</name><desc>U-TURN onto Onandaga Drive - repeat 909 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0096210" lon="-83.0731990"><name>69</name><desc>Continue on Onandaga Drive - COLLECT 2396 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0069834" lon="-83.0802707"><name>70</name><desc>Turn RIGHT onto Leeds Road - COLLECT 560 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0083850" lon="-83.0810850"><name>71</name><desc>Turn RIGHT onto Sherwin Road - COLLECT 1562 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0109140" lon="-83.0766040"><name>72</name><desc>Turn RIGHT onto Abington Road - repeat 57 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0109010" lon="-83.0764010"><name>73</name><desc>Turn RIGHT onto Asbury Drive - COLLECT 414 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0097690" lon="-83.0765040"><name>74</name><desc>Continue on Asbury Drive - repeat 631 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0080970" lon="-83.0760460"><name>75</name><desc>Turn LEFT onto West Lane Avenue - COLLECT 1639 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0079010" lon="-83.0701960"><name>76</name><desc>Turn RIGHT onto Tremont Road - COLLECT 1141 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0052507" lon="-83.0693257"><name>77</name><desc>Turn RIGHT onto Arlington Avenue - repeat 573 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0041535" lon="-83.0678676"><name>78</name><desc>Continue on Arlington Avenue - COLLECT 573 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0028790" lon="-83.0666680"><name>79</name><desc>Turn RIGHT onto Westover Road - COLLECT 345 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0022970" lon="-83.0676430"><name>80</name><desc>Turn RIGHT onto Tremont Road - COLLECT 491 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0034200" lon="-83.0686060"><name>81</name><desc>Turn RIGHT onto Yorkshire Road - COLLECT 347 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0041535" lon="-83.0678676"><name>82</name><desc>Turn LEFT onto Arlington Avenue - COLLECT 699 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0055235" lon="-83.0695952"><name>83</name><desc>U-TURN onto Tremont Road - repeat 175 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0050586" lon="-83.0694528"><name>84</name><desc>Continue on Tremont Road - COLLECT 645 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0034200" lon="-83.0686060"><name>85</name><desc>Turn RIGHT onto Yorkshire Road - COLLECT 525 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0019994" lon="-83.0687903"><name>86</name><desc>Continue on Yorkshire Road - repeat 275 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0012894" lon="-83.0684720"><name>87</name><desc>Continue on Yorkshire Road - COLLECT 673 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9998140" lon="-83.0670270"><name>88</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 666 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9999350" lon="-83.0693915"><name>89</name><desc>Turn RIGHT onto Oxford Road - COLLECT 563 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0012894" lon="-83.0684720"><name>90</name><desc>Turn LEFT onto Yorkshire Road - COLLECT 275 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0019994" lon="-83.0687903"><name>91</name><desc>Turn LEFT onto Club Road - COLLECT 1613 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9985420" lon="-83.0714580"><name>92</name><desc>Turn RIGHT onto Oxford Road - COLLECT 398 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9976770" lon="-83.0722680"><name>93</name><desc>Turn LEFT onto Cambridge Boulevard - repeat 940 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9968050" lon="-83.0694370"><name>94</name><desc>Turn RIGHT onto Hillside Drive - COLLECT 1169 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9942650" lon="-83.0670670"><name>95</name><desc>U-TURN onto Hillside Drive - repeat 482 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9951740" lon="-83.0683150"><name>96</name><desc>Turn RIGHT onto Hampshire Road - COLLECT 750 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9950437" lon="-83.0660449"><name>97</name><desc>Turn LEFT onto Waltham Road - repeat 312 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9954657" lon="-83.0650763"><name>98</name><desc>Turn LEFT onto Upper Chelsea Road - COLLECT 1300 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9958820" lon="-83.0690270"><name>99</name><desc>Turn RIGHT onto Hillside Drive - repeat 361 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9968050" lon="-83.0694370"><name>100</name><desc>Turn RIGHT onto Cambridge Boulevard - repeat 146 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9969610" lon="-83.0689550"><name>101</name><desc>Continue on Cambridge Boulevard - COLLECT 349 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9973120" lon="-83.0677950"><name>102</name><desc>Continue on Cambridge Boulevard - repeat 360 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9973728" lon="-83.0665228"><name>103</name><desc>Continue on Cambridge Boulevard - COLLECT 769 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9974070" lon="-83.0658850"><name>104</name><desc>U-TURN onto Guilford Road - COLLECT 158 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9975240" lon="-83.0653420"><name>105</name><desc>Turn LEFT onto Yorkshire Road - COLLECT 961 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9998140" lon="-83.0670270"><name>106</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 414 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0000850" lon="-83.0656360"><name>107</name><desc>Turn LEFT onto Tremont Road - COLLECT 983 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0022970" lon="-83.0676430"><name>108</name><desc>Turn RIGHT onto Westover Road - repeat 345 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0028790" lon="-83.0666680"><name>109</name><desc>Continue on Westover Road - COLLECT 332 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0034330" lon="-83.0657250"><name>110</name><desc>Turn RIGHT onto Kensington Drive - COLLECT 429 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0024090" lon="-83.0652500"><name>111</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 433 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0028790" lon="-83.0666680"><name>112</name><desc>U-TURN onto Fairfax Road - COLLECT 999 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0006220" lon="-83.0646460"><name>113</name><desc>Turn LEFT onto Tewksbury Road - COLLECT 1006 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0024190" lon="-83.0619270"><name>114</name><desc>Turn RIGHT onto Coventry Road - COLLECT 631 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0009900" lon="-83.0606640"><name>115</name><desc>U-TURN onto Coventry Road - repeat 320 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0017204" lon="-83.0612880"><name>116</name><desc>Turn RIGHT onto Suffolk Road - COLLECT 567 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0026610" lon="-83.0596710"><name>117</name><desc>Turn LEFT onto Andover Road - COLLECT 315 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0033470" lon="-83.0603550"><name>118</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 703 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0045170" lon="-83.0583550"><name>119</name><desc>Turn LEFT onto Chatfield Road - COLLECT 989 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0047170" lon="-83.0618720"><name>120</name><desc>Turn LEFT onto Wickford Road - COLLECT 504 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0038310" lon="-83.0632140"><name>121</name><desc>Turn RIGHT onto Coventry Road - COLLECT 313 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0045350" lon="-83.0638540"><name>122</name><desc>Turn LEFT onto Westover Road - COLLECT 660 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0034330" lon="-83.0657250"><name>123</name><desc>Turn RIGHT onto Kensington Drive - COLLECT 1340 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0061850" lon="-83.0688220"><name>124</name><desc>Turn RIGHT onto South Parkway Drive - repeat 331 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0066570" lon="-83.0678120"><name>125</name><desc>Turn RIGHT onto Southway Drive - COLLECT 1303 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0039740" lon="-83.0648110"><name>126</name><desc>Turn LEFT onto Westover Road - repeat 337 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0045350" lon="-83.0638540"><name>127</name><desc>Turn LEFT onto Coventry Road - COLLECT 1432 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0077320" lon="-83.0664680"><name>128</name><desc>U-TURN onto Coventry Road - repeat 268 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0070040" lon="-83.0664580"><name>129</name><desc>Turn RIGHT onto North Parkway Drive - COLLECT 172 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0070220" lon="-83.0670720"><name>130</name><desc>Turn LEFT onto South Parkway Drive - COLLECT 849 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0058160" lon="-83.0696670"><name>131</name><desc>Turn RIGHT onto Tremont Road - repeat 167 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0062630" lon="-83.0697900"><name>132</name><desc>Turn RIGHT onto North Parkway Drive - COLLECT 832 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0070220" lon="-83.0670720"><name>133</name><desc>Continue on North Parkway Drive - repeat 172 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0070040" lon="-83.0664580"><name>134</name><desc>Turn RIGHT onto Coventry Road - repeat 193 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0066610" lon="-83.0659320"><name>135</name><desc>Turn LEFT onto Collingswood Road - COLLECT 752 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0065790" lon="-83.0632450"><name>136</name><desc>Turn LEFT onto Henthorn Road - COLLECT 365 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0075790" lon="-83.0631720"><name>137</name><desc>U-TURN onto Henthorn Road - repeat 365 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0065790" lon="-83.0632450"><name>138</name><desc>Turn LEFT onto Collingswood Road - COLLECT 791 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0064620" lon="-83.0604200"><name>139</name><desc>Continue on Collingswood Road - repeat 613 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0063660" lon="-83.0582290"><name>140</name><desc>Turn LEFT onto Northwest Boulevard - COLLECT 367 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0073700" lon="-83.0581490"><name>141</name><desc>Turn RIGHT onto West Lane Avenue - repeat 324 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0073170" lon="-83.0569930"><name>142</name><desc>Turn RIGHT onto Brandon Road - COLLECT 1023 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0045170" lon="-83.0571560"><name>143</name><desc>U-TURN onto Brandon Road - repeat 327 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0054120" lon="-83.0571050"><name>144</name><desc>Turn LEFT onto Berkshire Road - COLLECT 332 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0054640" lon="-83.0582900"><name>145</name><desc>Turn RIGHT onto Northwest Boulevard - COLLECT 330 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0063660" lon="-83.0582290"><name>146</name><desc>Turn LEFT onto Collingswood Road - COLLECT 613 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0064620" lon="-83.0604200"><name>147</name><desc>Turn RIGHT onto Andover Road - COLLECT 364 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0074590" lon="-83.0603510"><name>148</name><desc>U-TURN onto Andover Road - repeat 364 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0064620" lon="-83.0604200"><name>149</name><desc>Continue on Andover Road - COLLECT 328 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0055640" lon="-83.0604920"><name>150</name><desc>Turn RIGHT onto Berkshire Road - COLLECT 1243 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0057220" lon="-83.0649330"><name>151</name><desc>Turn LEFT onto Coventry Road - repeat 432 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0047500" lon="-83.0640490"><name>152</name><desc>Turn LEFT onto Chatfield Road - COLLECT 614 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0047170" lon="-83.0618720"><name>153</name><desc>Continue on Chatfield Road - repeat 369 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0046630" lon="-83.0605530"><name>154</name><desc>Turn RIGHT onto Andover Road - repeat 163 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0042170" lon="-83.0605870"><name>155</name><desc>Continue on Andover Road - COLLECT 331 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0033470" lon="-83.0603550"><name>156</name><desc>Turn RIGHT onto Tewksbury Road - COLLECT 555 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0024190" lon="-83.0619270"><name>157</name><desc>Turn RIGHT onto Coventry Road - COLLECT 314 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0031260" lon="-83.0625690"><name>158</name><desc>Turn RIGHT onto Beverly Road - COLLECT 688 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0042170" lon="-83.0605870"><name>159</name><desc>Turn LEFT onto Andover Road - COLLECT 492 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0055640" lon="-83.0604920"><name>160</name><desc>Turn RIGHT onto Berkshire Road - COLLECT 616 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0054640" lon="-83.0582900"><name>161</name><desc>Turn RIGHT onto Northwest Boulevard - COLLECT 677 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0036640" lon="-83.0579800"><name>162</name><desc>Turn RIGHT onto Suffolk Road - COLLECT 598 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0026610" lon="-83.0596710"><name>163</name><desc>Continue on Suffolk Road - repeat 567 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0017204" lon="-83.0612880"><name>164</name><desc>Continue on Suffolk Road - COLLECT 659 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0006080" lon="-83.0631460"><name>165</name><desc>Turn RIGHT onto Arlington Avenue - COLLECT 897 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0024090" lon="-83.0652500"><name>166</name><desc>Turn RIGHT onto Kensington Drive - repeat 104 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0026772" lon="-83.0651236"><name>167</name><desc>Continue on Wickford Road - COLLECT 680 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0038310" lon="-83.0632140"><name>168</name><desc>Turn RIGHT onto Coventry Road - COLLECT 314 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0031260" lon="-83.0625690"><name>169</name><desc>Turn RIGHT onto Beverly Road - COLLECT 667 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0020040" lon="-83.0644530"><name>170</name><desc>Turn LEFT onto Arlington Avenue - repeat 627 ft</desc><type>repeat</type></wpt>
+<wpt lat="40.0006080" lon="-83.0631460"><name>171</name><desc>Continue on Arlington Avenue - COLLECT 359 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9998047" lon="-83.0624033"><name>172</name><desc>Turn LEFT onto Guilford Road - COLLECT 182 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0001570" lon="-83.0619429"><name>173</name><desc>U-TURN onto Guilford Road - repeat 182 ft</desc><type>repeat</type></wpt>
+<wpt lat="39.9998047" lon="-83.0624033"><name>174</name><desc>Continue on Guilford Road - COLLECT 403 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9988070" lon="-83.0629900"><name>175</name><desc>Turn RIGHT onto Fairfax Road - COLLECT 808 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0006220" lon="-83.0646460"><name>176</name><desc>Turn LEFT onto Tewksbury Road - COLLECT 339 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="40.0000850" lon="-83.0656360"><name>177</name><desc>Turn LEFT onto Tremont Road - COLLECT 963 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9979180" lon="-83.0636660"><name>178</name><desc>Turn RIGHT onto Guilford Road - COLLECT 496 ft</desc><type>COLLECT</type></wpt>
+<wpt lat="39.9975240" lon="-83.0653420"><name>179</name><desc>Turn LEFT onto Yorkshire Road - COLLECT 211 ft</desc><type>COLLECT</type></wpt>
 <wpt lat="40.0133810" lon="-83.0898000"><name>START</name></wpt>
-<wpt lat="39.9959150" lon="-83.0617300"><name>END</name></wpt>
+<wpt lat="39.9970110" lon="-83.0649910"><name>END</name></wpt>
 <trk><name>UA Monday Collection - shift 1 of 2</name><trkseg>
 <trkpt lat="40.0133810" lon="-83.0898000"/>
 <trkpt lat="40.0132120" lon="-83.0896770"/>
@@ -233,411 +239,174 @@
 <trkpt lat="39.9996112" lon="-83.0762300"/>
 <trkpt lat="39.9994260" lon="-83.0760680"/>
 <trkpt lat="39.9991450" lon="-83.0758220"/>
-<trkpt lat="39.9992280" lon="-83.0756230"/>
-<trkpt lat="39.9992576" lon="-83.0755378"/>
-<trkpt lat="39.9992830" lon="-83.0754450"/>
-<trkpt lat="39.9992901" lon="-83.0753900"/>
-<trkpt lat="39.9992916" lon="-83.0753359"/>
-<trkpt lat="39.9992890" lon="-83.0752540"/>
-<trkpt lat="39.9992665" lon="-83.0750431"/>
-<trkpt lat="39.9992526" lon="-83.0749819"/>
-<trkpt lat="39.9992050" lon="-83.0748210"/>
-<trkpt lat="39.9991594" lon="-83.0746707"/>
-<trkpt lat="39.9990897" lon="-83.0744688"/>
-<trkpt lat="39.9989910" lon="-83.0742560"/>
-<trkpt lat="39.9988040" lon="-83.0739020"/>
-<trkpt lat="39.9986109" lon="-83.0735538"/>
-<trkpt lat="39.9984377" lon="-83.0732666"/>
-<trkpt lat="39.9982460" lon="-83.0729890"/>
-<trkpt lat="39.9980168" lon="-83.0726728"/>
-<trkpt lat="39.9977520" lon="-83.0723560"/>
-<trkpt lat="39.9976770" lon="-83.0722680"/>
-<trkpt lat="39.9975800" lon="-83.0721610"/>
-<trkpt lat="39.9974804" lon="-83.0720538"/>
-<trkpt lat="39.9973950" lon="-83.0719620"/>
-<trkpt lat="39.9972500" lon="-83.0718110"/>
-<trkpt lat="39.9971283" lon="-83.0716739"/>
-<trkpt lat="39.9970315" lon="-83.0715435"/>
-<trkpt lat="39.9969400" lon="-83.0713930"/>
-<trkpt lat="39.9968657" lon="-83.0712424"/>
-<trkpt lat="39.9967980" lon="-83.0710770"/>
-<trkpt lat="39.9967460" lon="-83.0709150"/>
-<trkpt lat="39.9966880" lon="-83.0706330"/>
-<trkpt lat="39.9966710" lon="-83.0705350"/>
-<trkpt lat="39.9966630" lon="-83.0704470"/>
-<trkpt lat="39.9966648" lon="-83.0701894"/>
-<trkpt lat="39.9966813" lon="-83.0699931"/>
-<trkpt lat="39.9967099" lon="-83.0698147"/>
-<trkpt lat="39.9967440" lon="-83.0696530"/>
-<trkpt lat="39.9968050" lon="-83.0694370"/>
-<trkpt lat="39.9967355" lon="-83.0694292"/>
-<trkpt lat="39.9966810" lon="-83.0694230"/>
-<trkpt lat="39.9965633" lon="-83.0694012"/>
-<trkpt lat="39.9963547" lon="-83.0693382"/>
-<trkpt lat="39.9961410" lon="-83.0692370"/>
-<trkpt lat="39.9960070" lon="-83.0691400"/>
-<trkpt lat="39.9958820" lon="-83.0690270"/>
-<trkpt lat="39.9958100" lon="-83.0689700"/>
-<trkpt lat="39.9952170" lon="-83.0683670"/>
-<trkpt lat="39.9951740" lon="-83.0683150"/>
-<trkpt lat="39.9950590" lon="-83.0681760"/>
-<trkpt lat="39.9948074" lon="-83.0678697"/>
-<trkpt lat="39.9945697" lon="-83.0675262"/>
-<trkpt lat="39.9942650" lon="-83.0670670"/>
-<trkpt lat="39.9941720" lon="-83.0672370"/>
-<trkpt lat="39.9940918" lon="-83.0674041"/>
-<trkpt lat="39.9940371" lon="-83.0675254"/>
-<trkpt lat="39.9939874" lon="-83.0676516"/>
-<trkpt lat="39.9939422" lon="-83.0678188"/>
-<trkpt lat="39.9939147" lon="-83.0679353"/>
-<trkpt lat="39.9938465" lon="-83.0682312"/>
-<trkpt lat="39.9938109" lon="-83.0683765"/>
-<trkpt lat="39.9937648" lon="-83.0684975"/>
-<trkpt lat="39.9936229" lon="-83.0687739"/>
-<trkpt lat="39.9934080" lon="-83.0690950"/>
-<trkpt lat="39.9933064" lon="-83.0692553"/>
-<trkpt lat="39.9933410" lon="-83.0692970"/>
-<trkpt lat="39.9935942" lon="-83.0696189"/>
-<trkpt lat="39.9937723" lon="-83.0698452"/>
-<trkpt lat="39.9938496" lon="-83.0699435"/>
-<trkpt lat="39.9947280" lon="-83.0710600"/>
-<trkpt lat="39.9948733" lon="-83.0712542"/>
-<trkpt lat="39.9950682" lon="-83.0715091"/>
-<trkpt lat="39.9954340" lon="-83.0719920"/>
-<trkpt lat="39.9959940" lon="-83.0712740"/>
-<trkpt lat="39.9961610" lon="-83.0710720"/>
-<trkpt lat="39.9962980" lon="-83.0708880"/>
-<trkpt lat="39.9959980" lon="-83.0705410"/>
-<trkpt lat="39.9957200" lon="-83.0702970"/>
-<trkpt lat="39.9953920" lon="-83.0700383"/>
-<trkpt lat="39.9950600" lon="-83.0697051"/>
-<trkpt lat="39.9947807" lon="-83.0693986"/>
-<trkpt lat="39.9945110" lon="-83.0690740"/>
-<trkpt lat="39.9943300" lon="-83.0688460"/>
-<trkpt lat="39.9941735" lon="-83.0686636"/>
-<trkpt lat="39.9939730" lon="-83.0684850"/>
-<trkpt lat="39.9938109" lon="-83.0683765"/>
-<trkpt lat="39.9938465" lon="-83.0682312"/>
-<trkpt lat="39.9939147" lon="-83.0679353"/>
-<trkpt lat="39.9939422" lon="-83.0678188"/>
-<trkpt lat="39.9939874" lon="-83.0676516"/>
-<trkpt lat="39.9940371" lon="-83.0675254"/>
-<trkpt lat="39.9940918" lon="-83.0674041"/>
-<trkpt lat="39.9941720" lon="-83.0672370"/>
-<trkpt lat="39.9942650" lon="-83.0670670"/>
-<trkpt lat="39.9943290" lon="-83.0669760"/>
-<trkpt lat="39.9946411" lon="-83.0666246"/>
-<trkpt lat="39.9947100" lon="-83.0665417"/>
-<trkpt lat="39.9948241" lon="-83.0663910"/>
-<trkpt lat="39.9948980" lon="-83.0662860"/>
-<trkpt lat="39.9949714" lon="-83.0661704"/>
-<trkpt lat="39.9950437" lon="-83.0660449"/>
-<trkpt lat="39.9951067" lon="-83.0661021"/>
-<trkpt lat="39.9953247" lon="-83.0662886"/>
-<trkpt lat="39.9954196" lon="-83.0663889"/>
-<trkpt lat="39.9954805" lon="-83.0664708"/>
-<trkpt lat="39.9955160" lon="-83.0665580"/>
-<trkpt lat="39.9955409" lon="-83.0666269"/>
-<trkpt lat="39.9955570" lon="-83.0667270"/>
-<trkpt lat="39.9955611" lon="-83.0668246"/>
-<trkpt lat="39.9955520" lon="-83.0669040"/>
-<trkpt lat="39.9954860" lon="-83.0672940"/>
-<trkpt lat="39.9954260" lon="-83.0676610"/>
-<trkpt lat="39.9953925" lon="-83.0678217"/>
-<trkpt lat="39.9953510" lon="-83.0679548"/>
-<trkpt lat="39.9952720" lon="-83.0681400"/>
-<trkpt lat="39.9952210" lon="-83.0682410"/>
-<trkpt lat="39.9951740" lon="-83.0683150"/>
-<trkpt lat="39.9952210" lon="-83.0682410"/>
-<trkpt lat="39.9952720" lon="-83.0681400"/>
-<trkpt lat="39.9953510" lon="-83.0679548"/>
-<trkpt lat="39.9953925" lon="-83.0678217"/>
-<trkpt lat="39.9954260" lon="-83.0676610"/>
-<trkpt lat="39.9954860" lon="-83.0672940"/>
-<trkpt lat="39.9955520" lon="-83.0669040"/>
-<trkpt lat="39.9955611" lon="-83.0668246"/>
-<trkpt lat="39.9955570" lon="-83.0667270"/>
-<trkpt lat="39.9955409" lon="-83.0666269"/>
-<trkpt lat="39.9955160" lon="-83.0665580"/>
-<trkpt lat="39.9954805" lon="-83.0664708"/>
-<trkpt lat="39.9954196" lon="-83.0663889"/>
-<trkpt lat="39.9953247" lon="-83.0662886"/>
-<trkpt lat="39.9951067" lon="-83.0661021"/>
-<trkpt lat="39.9950437" lon="-83.0660449"/>
-<trkpt lat="39.9951586" lon="-83.0658382"/>
-<trkpt lat="39.9952397" lon="-83.0656742"/>
-<trkpt lat="39.9953467" lon="-83.0654230"/>
-<trkpt lat="39.9954657" lon="-83.0650763"/>
-<trkpt lat="39.9955694" lon="-83.0647027"/>
-<trkpt lat="39.9955820" lon="-83.0646610"/>
-<trkpt lat="39.9956250" lon="-83.0645227"/>
-<trkpt lat="39.9957170" lon="-83.0642720"/>
-<trkpt lat="39.9958027" lon="-83.0640726"/>
-<trkpt lat="39.9958150" lon="-83.0640440"/>
-<trkpt lat="39.9958525" lon="-83.0639638"/>
-<trkpt lat="39.9957896" lon="-83.0638978"/>
-<trkpt lat="39.9957060" lon="-83.0638097"/>
-<trkpt lat="39.9955588" lon="-83.0636544"/>
-<trkpt lat="39.9955475" lon="-83.0636425"/>
-<trkpt lat="39.9950635" lon="-83.0630984"/>
-<trkpt lat="39.9950038" lon="-83.0630288"/>
-<trkpt lat="39.9949462" lon="-83.0631162"/>
-<trkpt lat="39.9949282" lon="-83.0631446"/>
-<trkpt lat="39.9948200" lon="-83.0633150"/>
-<trkpt lat="39.9947392" lon="-83.0634770"/>
-<trkpt lat="39.9946570" lon="-83.0636420"/>
-<trkpt lat="39.9946070" lon="-83.0637580"/>
-<trkpt lat="39.9944290" lon="-83.0641390"/>
-<trkpt lat="39.9943880" lon="-83.0642430"/>
-<trkpt lat="39.9943690" lon="-83.0643250"/>
-<trkpt lat="39.9943670" lon="-83.0643850"/>
-<trkpt lat="39.9943810" lon="-83.0644420"/>
-<trkpt lat="39.9944100" lon="-83.0644860"/>
-<trkpt lat="39.9944500" lon="-83.0645120"/>
-<trkpt lat="39.9949575" lon="-83.0647914"/>
-<trkpt lat="39.9948967" lon="-83.0649868"/>
-<trkpt lat="39.9947867" lon="-83.0653226"/>
-<trkpt lat="39.9947321" lon="-83.0654263"/>
-<trkpt lat="39.9946427" lon="-83.0655938"/>
-<trkpt lat="39.9945775" lon="-83.0657135"/>
-<trkpt lat="39.9945541" lon="-83.0657697"/>
-<trkpt lat="39.9945775" lon="-83.0657135"/>
-<trkpt lat="39.9946427" lon="-83.0655938"/>
-<trkpt lat="39.9947321" lon="-83.0654263"/>
-<trkpt lat="39.9947867" lon="-83.0653226"/>
-<trkpt lat="39.9948967" lon="-83.0649868"/>
-<trkpt lat="39.9949575" lon="-83.0647914"/>
-<trkpt lat="39.9952310" lon="-83.0649420"/>
-<trkpt lat="39.9953760" lon="-83.0650260"/>
-<trkpt lat="39.9954657" lon="-83.0650763"/>
-<trkpt lat="39.9955196" lon="-83.0651252"/>
-<trkpt lat="39.9960220" lon="-83.0655810"/>
-<trkpt lat="39.9960720" lon="-83.0656270"/>
-<trkpt lat="39.9962164" lon="-83.0657977"/>
-<trkpt lat="39.9963350" lon="-83.0660020"/>
-<trkpt lat="39.9964014" lon="-83.0661612"/>
-<trkpt lat="39.9964318" lon="-83.0663474"/>
-<trkpt lat="39.9964410" lon="-83.0665650"/>
-<trkpt lat="39.9964240" lon="-83.0668430"/>
-<trkpt lat="39.9964110" lon="-83.0670380"/>
-<trkpt lat="39.9962850" lon="-83.0677460"/>
-<trkpt lat="39.9962130" lon="-83.0679890"/>
-<trkpt lat="39.9960070" lon="-83.0686520"/>
-<trkpt lat="39.9959510" lon="-83.0688090"/>
-<trkpt lat="39.9958820" lon="-83.0690270"/>
-<trkpt lat="39.9960070" lon="-83.0691400"/>
-<trkpt lat="39.9961410" lon="-83.0692370"/>
-<trkpt lat="39.9963547" lon="-83.0693382"/>
-<trkpt lat="39.9965633" lon="-83.0694012"/>
-<trkpt lat="39.9966810" lon="-83.0694230"/>
-<trkpt lat="39.9967355" lon="-83.0694292"/>
-<trkpt lat="39.9968050" lon="-83.0694370"/>
-<trkpt lat="39.9969610" lon="-83.0689550"/>
-<trkpt lat="39.9974290" lon="-83.0691930"/>
-<trkpt lat="39.9977220" lon="-83.0693480"/>
-<trkpt lat="39.9978380" lon="-83.0694130"/>
-<trkpt lat="39.9980482" lon="-83.0695529"/>
-<trkpt lat="39.9982016" lon="-83.0696903"/>
-<trkpt lat="39.9983600" lon="-83.0698495"/>
-<trkpt lat="39.9986524" lon="-83.0701761"/>
-<trkpt lat="39.9988460" lon="-83.0703810"/>
-<trkpt lat="39.9989444" lon="-83.0704775"/>
-<trkpt lat="39.9990007" lon="-83.0705315"/>
-<trkpt lat="39.9990932" lon="-83.0704676"/>
-<trkpt lat="39.9992205" lon="-83.0703435"/>
-<trkpt lat="39.9993079" lon="-83.0702315"/>
-<trkpt lat="39.9993939" lon="-83.0701133"/>
-<trkpt lat="39.9995116" lon="-83.0700057"/>
-<trkpt lat="39.9995904" lon="-83.0699381"/>
-<trkpt lat="39.9996985" lon="-83.0698109"/>
-<trkpt lat="39.9993893" lon="-83.0694822"/>
-<trkpt lat="39.9993409" lon="-83.0694303"/>
-<trkpt lat="39.9988361" lon="-83.0688836"/>
-<trkpt lat="39.9984746" lon="-83.0685006"/>
-<trkpt lat="39.9982367" lon="-83.0682940"/>
-<trkpt lat="39.9980489" lon="-83.0681503"/>
-<trkpt lat="39.9977560" lon="-83.0679814"/>
-<trkpt lat="39.9975339" lon="-83.0678794"/>
-<trkpt lat="39.9973120" lon="-83.0677950"/>
-<trkpt lat="39.9973478" lon="-83.0676610"/>
-<trkpt lat="39.9973711" lon="-83.0675138"/>
-<trkpt lat="39.9973759" lon="-83.0673917"/>
-<trkpt lat="39.9973633" lon="-83.0672136"/>
-<trkpt lat="39.9973461" lon="-83.0670331"/>
-<trkpt lat="39.9973398" lon="-83.0669075"/>
-<trkpt lat="39.9973427" lon="-83.0667774"/>
-<trkpt lat="39.9973529" lon="-83.0666576"/>
-<trkpt lat="39.9973610" lon="-83.0665941"/>
-<trkpt lat="39.9973728" lon="-83.0665228"/>
-<trkpt lat="39.9974620" lon="-83.0665730"/>
-<trkpt lat="39.9977652" lon="-83.0667721"/>
-<trkpt lat="39.9984641" lon="-83.0672244"/>
-<trkpt lat="39.9988473" lon="-83.0675054"/>
-<trkpt lat="39.9990213" lon="-83.0676585"/>
-<trkpt lat="39.9993670" lon="-83.0680320"/>
-<trkpt lat="39.9996900" lon="-83.0683760"/>
-<trkpt lat="39.9997650" lon="-83.0684470"/>
-<trkpt lat="39.9998574" lon="-83.0684757"/>
-<trkpt lat="39.9998749" lon="-83.0686866"/>
-<trkpt lat="39.9999070" lon="-83.0690460"/>
-<trkpt lat="39.9999060" lon="-83.0690937"/>
-<trkpt lat="39.9999350" lon="-83.0693915"/>
-<trkpt lat="39.9997824" lon="-83.0696774"/>
-<trkpt lat="39.9996985" lon="-83.0698109"/>
-<trkpt lat="39.9995904" lon="-83.0699381"/>
-<trkpt lat="39.9995116" lon="-83.0700057"/>
-<trkpt lat="39.9993939" lon="-83.0701133"/>
-<trkpt lat="39.9993079" lon="-83.0702315"/>
-<trkpt lat="39.9992205" lon="-83.0703435"/>
-<trkpt lat="39.9990932" lon="-83.0704676"/>
-<trkpt lat="39.9990007" lon="-83.0705315"/>
-<trkpt lat="39.9988350" lon="-83.0706610"/>
-<trkpt lat="39.9987632" lon="-83.0707474"/>
-<trkpt lat="39.9986980" lon="-83.0708510"/>
-<trkpt lat="39.9986581" lon="-83.0709604"/>
-<trkpt lat="39.9986289" lon="-83.0710874"/>
-<trkpt lat="39.9986049" lon="-83.0712398"/>
-<trkpt lat="39.9985799" lon="-83.0713516"/>
-<trkpt lat="39.9985420" lon="-83.0714580"/>
-<trkpt lat="39.9986255" lon="-83.0714960"/>
-<trkpt lat="39.9989005" lon="-83.0716303"/>
-<trkpt lat="39.9991232" lon="-83.0717312"/>
-<trkpt lat="39.9992200" lon="-83.0717421"/>
-<trkpt lat="39.9993055" lon="-83.0717301"/>
-<trkpt lat="39.9994235" lon="-83.0716852"/>
-<trkpt lat="39.9995530" lon="-83.0715930"/>
-<trkpt lat="39.9998287" lon="-83.0713696"/>
-<trkpt lat="40.0002079" lon="-83.0709649"/>
-<trkpt lat="40.0002561" lon="-83.0709030"/>
-<trkpt lat="40.0002981" lon="-83.0708240"/>
-<trkpt lat="40.0004580" lon="-83.0704240"/>
-<trkpt lat="40.0004746" lon="-83.0703875"/>
-<trkpt lat="40.0005047" lon="-83.0703443"/>
-<trkpt lat="40.0005590" lon="-83.0703090"/>
-<trkpt lat="40.0009270" lon="-83.0700870"/>
-<trkpt lat="40.0010305" lon="-83.0700175"/>
-<trkpt lat="40.0011950" lon="-83.0698810"/>
-<trkpt lat="40.0016611" lon="-83.0694885"/>
-<trkpt lat="40.0017292" lon="-83.0694146"/>
-<trkpt lat="40.0017838" lon="-83.0693183"/>
-<trkpt lat="40.0019580" lon="-83.0689240"/>
-<trkpt lat="40.0019994" lon="-83.0687903"/>
-<trkpt lat="40.0017805" lon="-83.0687212"/>
-<trkpt lat="40.0014841" lon="-83.0685873"/>
-<trkpt lat="40.0013661" lon="-83.0685217"/>
-<trkpt lat="40.0012894" lon="-83.0684720"/>
-<trkpt lat="40.0012115" lon="-83.0685633"/>
-<trkpt lat="40.0010333" lon="-83.0687352"/>
-<trkpt lat="40.0009347" lon="-83.0688107"/>
-<trkpt lat="40.0007922" lon="-83.0688987"/>
-<trkpt lat="40.0006251" lon="-83.0689759"/>
-<trkpt lat="40.0003535" lon="-83.0690906"/>
-<trkpt lat="40.0001597" lon="-83.0691854"/>
-<trkpt lat="40.0000209" lon="-83.0693056"/>
-<trkpt lat="39.9999350" lon="-83.0693915"/>
-<trkpt lat="39.9999060" lon="-83.0690937"/>
-<trkpt lat="39.9999070" lon="-83.0690460"/>
-<trkpt lat="39.9998749" lon="-83.0686866"/>
-<trkpt lat="39.9998574" lon="-83.0684757"/>
-<trkpt lat="39.9998349" lon="-83.0681476"/>
-<trkpt lat="39.9998231" lon="-83.0679382"/>
-<trkpt lat="39.9998232" lon="-83.0677767"/>
-<trkpt lat="39.9998290" lon="-83.0677250"/>
-<trkpt lat="39.9998509" lon="-83.0675665"/>
-<trkpt lat="39.9998617" lon="-83.0673963"/>
-<trkpt lat="39.9998524" lon="-83.0671977"/>
-<trkpt lat="39.9998371" lon="-83.0671299"/>
-<trkpt lat="39.9998140" lon="-83.0670270"/>
-<trkpt lat="39.9994444" lon="-83.0666677"/>
-<trkpt lat="39.9991962" lon="-83.0664662"/>
-<trkpt lat="39.9989992" lon="-83.0663170"/>
-<trkpt lat="39.9987405" lon="-83.0661420"/>
-<trkpt lat="39.9984669" lon="-83.0659631"/>
-<trkpt lat="39.9983319" lon="-83.0658742"/>
-<trkpt lat="39.9975240" lon="-83.0653420"/>
-<trkpt lat="39.9974070" lon="-83.0658850"/>
-<trkpt lat="39.9974248" lon="-83.0660633"/>
-<trkpt lat="39.9974221" lon="-83.0661583"/>
-<trkpt lat="39.9974173" lon="-83.0662534"/>
-<trkpt lat="39.9973945" lon="-83.0664075"/>
-<trkpt lat="39.9973728" lon="-83.0665228"/>
-<trkpt lat="39.9973610" lon="-83.0665941"/>
-<trkpt lat="39.9973529" lon="-83.0666576"/>
-<trkpt lat="39.9973427" lon="-83.0667774"/>
-<trkpt lat="39.9973398" lon="-83.0669075"/>
-<trkpt lat="39.9973461" lon="-83.0670331"/>
-<trkpt lat="39.9973633" lon="-83.0672136"/>
-<trkpt lat="39.9973759" lon="-83.0673917"/>
-<trkpt lat="39.9973711" lon="-83.0675138"/>
-<trkpt lat="39.9973478" lon="-83.0676610"/>
-<trkpt lat="39.9973120" lon="-83.0677950"/>
-<trkpt lat="39.9972420" lon="-83.0680140"/>
-<trkpt lat="39.9971040" lon="-83.0684660"/>
-<trkpt lat="39.9969610" lon="-83.0689550"/>
-<trkpt lat="39.9968050" lon="-83.0694370"/>
-<trkpt lat="39.9967440" lon="-83.0696530"/>
-<trkpt lat="39.9967099" lon="-83.0698147"/>
-<trkpt lat="39.9966813" lon="-83.0699931"/>
-<trkpt lat="39.9966648" lon="-83.0701894"/>
-<trkpt lat="39.9966630" lon="-83.0704470"/>
-<trkpt lat="39.9966710" lon="-83.0705350"/>
-<trkpt lat="39.9966880" lon="-83.0706330"/>
-<trkpt lat="39.9967460" lon="-83.0709150"/>
-<trkpt lat="39.9967980" lon="-83.0710770"/>
-<trkpt lat="39.9968657" lon="-83.0712424"/>
-<trkpt lat="39.9969400" lon="-83.0713930"/>
-<trkpt lat="39.9970315" lon="-83.0715435"/>
-<trkpt lat="39.9971283" lon="-83.0716739"/>
-<trkpt lat="39.9972500" lon="-83.0718110"/>
-<trkpt lat="39.9973950" lon="-83.0719620"/>
-<trkpt lat="39.9974804" lon="-83.0720538"/>
-<trkpt lat="39.9975800" lon="-83.0721610"/>
-<trkpt lat="39.9976770" lon="-83.0722680"/>
-<trkpt lat="39.9977550" lon="-83.0722090"/>
-<trkpt lat="39.9978550" lon="-83.0721520"/>
-<trkpt lat="39.9982100" lon="-83.0719340"/>
-<trkpt lat="39.9983159" lon="-83.0718344"/>
-<trkpt lat="39.9984782" lon="-83.0716107"/>
-<trkpt lat="39.9985420" lon="-83.0714580"/>
-<trkpt lat="39.9983730" lon="-83.0713510"/>
-<trkpt lat="39.9980780" lon="-83.0710880"/>
-<trkpt lat="39.9978180" lon="-83.0708140"/>
-<trkpt lat="39.9976415" lon="-83.0706600"/>
-<trkpt lat="39.9974918" lon="-83.0705737"/>
-<trkpt lat="39.9973243" lon="-83.0705182"/>
-<trkpt lat="39.9972148" lon="-83.0704933"/>
-<trkpt lat="39.9970533" lon="-83.0704902"/>
-<trkpt lat="39.9968400" lon="-83.0705050"/>
-<trkpt lat="39.9966710" lon="-83.0705350"/>
-<trkpt lat="39.9966062" lon="-83.0705587"/>
-<trkpt lat="39.9965569" lon="-83.0705768"/>
-<trkpt lat="39.9965006" lon="-83.0706377"/>
-<trkpt lat="39.9962980" lon="-83.0708880"/>
-<trkpt lat="39.9961610" lon="-83.0710720"/>
-<trkpt lat="39.9959940" lon="-83.0712740"/>
-<trkpt lat="39.9954340" lon="-83.0719920"/>
-<trkpt lat="39.9956582" lon="-83.0722879"/>
-<trkpt lat="39.9959453" lon="-83.0726582"/>
-<trkpt lat="39.9959590" lon="-83.0726760"/>
-<trkpt lat="39.9960995" lon="-83.0728317"/>
-<trkpt lat="39.9962170" lon="-83.0729620"/>
-<trkpt lat="39.9962531" lon="-83.0730009"/>
-<trkpt lat="39.9965811" lon="-83.0733539"/>
-<trkpt lat="39.9967158" lon="-83.0734988"/>
-<trkpt lat="39.9967290" lon="-83.0735130"/>
-<trkpt lat="39.9969250" lon="-83.0737072"/>
-<trkpt lat="39.9971377" lon="-83.0739179"/>
-<trkpt lat="39.9971560" lon="-83.0739360"/>
-<trkpt lat="39.9974726" lon="-83.0742364"/>
-<trkpt lat="39.9977237" lon="-83.0744789"/>
-<trkpt lat="39.9978180" lon="-83.0745640"/>
-<trkpt lat="39.9980204" lon="-83.0747542"/>
-<trkpt lat="39.9981490" lon="-83.0748751"/>
-<trkpt lat="39.9984496" lon="-83.0751577"/>
-<trkpt lat="39.9985212" lon="-83.0752250"/>
-<trkpt lat="39.9986737" lon="-83.0753683"/>
-<trkpt lat="39.9988341" lon="-83.0755191"/>
 <trkpt lat="39.9988840" lon="-83.0755660"/>
+<trkpt lat="39.9988341" lon="-83.0755191"/>
+<trkpt lat="39.9986737" lon="-83.0753683"/>
+<trkpt lat="39.9985212" lon="-83.0752250"/>
+<trkpt lat="39.9984496" lon="-83.0751577"/>
+<trkpt lat="39.9981490" lon="-83.0748751"/>
+<trkpt lat="39.9980204" lon="-83.0747542"/>
+<trkpt lat="39.9978180" lon="-83.0745640"/>
+<trkpt lat="39.9977237" lon="-83.0744789"/>
+<trkpt lat="39.9974726" lon="-83.0742364"/>
+<trkpt lat="39.9971560" lon="-83.0739360"/>
+<trkpt lat="39.9971377" lon="-83.0739179"/>
+<trkpt lat="39.9969250" lon="-83.0737072"/>
+<trkpt lat="39.9967290" lon="-83.0735130"/>
+<trkpt lat="39.9967158" lon="-83.0734988"/>
+<trkpt lat="39.9965811" lon="-83.0733539"/>
+<trkpt lat="39.9962531" lon="-83.0730009"/>
+<trkpt lat="39.9962170" lon="-83.0729620"/>
+<trkpt lat="39.9960995" lon="-83.0728317"/>
+<trkpt lat="39.9959590" lon="-83.0726760"/>
+<trkpt lat="39.9959453" lon="-83.0726582"/>
+<trkpt lat="39.9956582" lon="-83.0722879"/>
+<trkpt lat="39.9954340" lon="-83.0719920"/>
+<trkpt lat="39.9950682" lon="-83.0715091"/>
+<trkpt lat="39.9948733" lon="-83.0712542"/>
+<trkpt lat="39.9947280" lon="-83.0710600"/>
+<trkpt lat="39.9938496" lon="-83.0699435"/>
+<trkpt lat="39.9937723" lon="-83.0698452"/>
+<trkpt lat="39.9935942" lon="-83.0696189"/>
+<trkpt lat="39.9933410" lon="-83.0692970"/>
+<trkpt lat="39.9933064" lon="-83.0692553"/>
+<trkpt lat="39.9934080" lon="-83.0690950"/>
+<trkpt lat="39.9936229" lon="-83.0687739"/>
+<trkpt lat="39.9937648" lon="-83.0684975"/>
+<trkpt lat="39.9938109" lon="-83.0683765"/>
+<trkpt lat="39.9939730" lon="-83.0684850"/>
+<trkpt lat="39.9941735" lon="-83.0686636"/>
+<trkpt lat="39.9943300" lon="-83.0688460"/>
+<trkpt lat="39.9945110" lon="-83.0690740"/>
+<trkpt lat="39.9947807" lon="-83.0693986"/>
+<trkpt lat="39.9950600" lon="-83.0697051"/>
+<trkpt lat="39.9953920" lon="-83.0700383"/>
+<trkpt lat="39.9957200" lon="-83.0702970"/>
+<trkpt lat="39.9959980" lon="-83.0705410"/>
+<trkpt lat="39.9962980" lon="-83.0708880"/>
+<trkpt lat="39.9961610" lon="-83.0710720"/>
+<trkpt lat="39.9959940" lon="-83.0712740"/>
+<trkpt lat="39.9954340" lon="-83.0719920"/>
+<trkpt lat="39.9959940" lon="-83.0712740"/>
+<trkpt lat="39.9961610" lon="-83.0710720"/>
+<trkpt lat="39.9962980" lon="-83.0708880"/>
+<trkpt lat="39.9965006" lon="-83.0706377"/>
+<trkpt lat="39.9965569" lon="-83.0705768"/>
+<trkpt lat="39.9966062" lon="-83.0705587"/>
+<trkpt lat="39.9966710" lon="-83.0705350"/>
+<trkpt lat="39.9968400" lon="-83.0705050"/>
+<trkpt lat="39.9970533" lon="-83.0704902"/>
+<trkpt lat="39.9972148" lon="-83.0704933"/>
+<trkpt lat="39.9973243" lon="-83.0705182"/>
+<trkpt lat="39.9974918" lon="-83.0705737"/>
+<trkpt lat="39.9976415" lon="-83.0706600"/>
+<trkpt lat="39.9978180" lon="-83.0708140"/>
+<trkpt lat="39.9980780" lon="-83.0710880"/>
+<trkpt lat="39.9983730" lon="-83.0713510"/>
+<trkpt lat="39.9985420" lon="-83.0714580"/>
+<trkpt lat="39.9985799" lon="-83.0713516"/>
+<trkpt lat="39.9986049" lon="-83.0712398"/>
+<trkpt lat="39.9986289" lon="-83.0710874"/>
+<trkpt lat="39.9986581" lon="-83.0709604"/>
+<trkpt lat="39.9986980" lon="-83.0708510"/>
+<trkpt lat="39.9987632" lon="-83.0707474"/>
+<trkpt lat="39.9988350" lon="-83.0706610"/>
+<trkpt lat="39.9990007" lon="-83.0705315"/>
+<trkpt lat="39.9990932" lon="-83.0704676"/>
+<trkpt lat="39.9992205" lon="-83.0703435"/>
+<trkpt lat="39.9993079" lon="-83.0702315"/>
+<trkpt lat="39.9993939" lon="-83.0701133"/>
+<trkpt lat="39.9995116" lon="-83.0700057"/>
+<trkpt lat="39.9995904" lon="-83.0699381"/>
+<trkpt lat="39.9996985" lon="-83.0698109"/>
+<trkpt lat="39.9997824" lon="-83.0696774"/>
+<trkpt lat="39.9999350" lon="-83.0693915"/>
+<trkpt lat="39.9999060" lon="-83.0690937"/>
+<trkpt lat="39.9999070" lon="-83.0690460"/>
+<trkpt lat="39.9998749" lon="-83.0686866"/>
+<trkpt lat="39.9998574" lon="-83.0684757"/>
+<trkpt lat="39.9997650" lon="-83.0684470"/>
+<trkpt lat="39.9996900" lon="-83.0683760"/>
+<trkpt lat="39.9993670" lon="-83.0680320"/>
+<trkpt lat="39.9990213" lon="-83.0676585"/>
+<trkpt lat="39.9988473" lon="-83.0675054"/>
+<trkpt lat="39.9984641" lon="-83.0672244"/>
+<trkpt lat="39.9977652" lon="-83.0667721"/>
+<trkpt lat="39.9974620" lon="-83.0665730"/>
+<trkpt lat="39.9973728" lon="-83.0665228"/>
+<trkpt lat="39.9973610" lon="-83.0665941"/>
+<trkpt lat="39.9973529" lon="-83.0666576"/>
+<trkpt lat="39.9973427" lon="-83.0667774"/>
+<trkpt lat="39.9973398" lon="-83.0669075"/>
+<trkpt lat="39.9973461" lon="-83.0670331"/>
+<trkpt lat="39.9973633" lon="-83.0672136"/>
+<trkpt lat="39.9973759" lon="-83.0673917"/>
+<trkpt lat="39.9973711" lon="-83.0675138"/>
+<trkpt lat="39.9973478" lon="-83.0676610"/>
+<trkpt lat="39.9973120" lon="-83.0677950"/>
+<trkpt lat="39.9975339" lon="-83.0678794"/>
+<trkpt lat="39.9977560" lon="-83.0679814"/>
+<trkpt lat="39.9980489" lon="-83.0681503"/>
+<trkpt lat="39.9982367" lon="-83.0682940"/>
+<trkpt lat="39.9984746" lon="-83.0685006"/>
+<trkpt lat="39.9988361" lon="-83.0688836"/>
+<trkpt lat="39.9993409" lon="-83.0694303"/>
+<trkpt lat="39.9993893" lon="-83.0694822"/>
+<trkpt lat="39.9996985" lon="-83.0698109"/>
+<trkpt lat="39.9995904" lon="-83.0699381"/>
+<trkpt lat="39.9995116" lon="-83.0700057"/>
+<trkpt lat="39.9993939" lon="-83.0701133"/>
+<trkpt lat="39.9993079" lon="-83.0702315"/>
+<trkpt lat="39.9992205" lon="-83.0703435"/>
+<trkpt lat="39.9990932" lon="-83.0704676"/>
+<trkpt lat="39.9990007" lon="-83.0705315"/>
+<trkpt lat="39.9989444" lon="-83.0704775"/>
+<trkpt lat="39.9988460" lon="-83.0703810"/>
+<trkpt lat="39.9986524" lon="-83.0701761"/>
+<trkpt lat="39.9983600" lon="-83.0698495"/>
+<trkpt lat="39.9982016" lon="-83.0696903"/>
+<trkpt lat="39.9980482" lon="-83.0695529"/>
+<trkpt lat="39.9978380" lon="-83.0694130"/>
+<trkpt lat="39.9977220" lon="-83.0693480"/>
+<trkpt lat="39.9974290" lon="-83.0691930"/>
+<trkpt lat="39.9969610" lon="-83.0689550"/>
+<trkpt lat="39.9968050" lon="-83.0694370"/>
+<trkpt lat="39.9967440" lon="-83.0696530"/>
+<trkpt lat="39.9967099" lon="-83.0698147"/>
+<trkpt lat="39.9966813" lon="-83.0699931"/>
+<trkpt lat="39.9966648" lon="-83.0701894"/>
+<trkpt lat="39.9966630" lon="-83.0704470"/>
+<trkpt lat="39.9966710" lon="-83.0705350"/>
+<trkpt lat="39.9966880" lon="-83.0706330"/>
+<trkpt lat="39.9967460" lon="-83.0709150"/>
+<trkpt lat="39.9967980" lon="-83.0710770"/>
+<trkpt lat="39.9968657" lon="-83.0712424"/>
+<trkpt lat="39.9969400" lon="-83.0713930"/>
+<trkpt lat="39.9970315" lon="-83.0715435"/>
+<trkpt lat="39.9971283" lon="-83.0716739"/>
+<trkpt lat="39.9972500" lon="-83.0718110"/>
+<trkpt lat="39.9973950" lon="-83.0719620"/>
+<trkpt lat="39.9974804" lon="-83.0720538"/>
+<trkpt lat="39.9975800" lon="-83.0721610"/>
+<trkpt lat="39.9976770" lon="-83.0722680"/>
+<trkpt lat="39.9977520" lon="-83.0723560"/>
+<trkpt lat="39.9980168" lon="-83.0726728"/>
+<trkpt lat="39.9982460" lon="-83.0729890"/>
+<trkpt lat="39.9984377" lon="-83.0732666"/>
+<trkpt lat="39.9986109" lon="-83.0735538"/>
+<trkpt lat="39.9988040" lon="-83.0739020"/>
+<trkpt lat="39.9989910" lon="-83.0742560"/>
+<trkpt lat="39.9990897" lon="-83.0744688"/>
+<trkpt lat="39.9991594" lon="-83.0746707"/>
+<trkpt lat="39.9992050" lon="-83.0748210"/>
+<trkpt lat="39.9992526" lon="-83.0749819"/>
+<trkpt lat="39.9992665" lon="-83.0750431"/>
+<trkpt lat="39.9992890" lon="-83.0752540"/>
+<trkpt lat="39.9992916" lon="-83.0753359"/>
+<trkpt lat="39.9992901" lon="-83.0753900"/>
+<trkpt lat="39.9992830" lon="-83.0754450"/>
+<trkpt lat="39.9992576" lon="-83.0755378"/>
+<trkpt lat="39.9992280" lon="-83.0756230"/>
 <trkpt lat="39.9991450" lon="-83.0758220"/>
 <trkpt lat="39.9994260" lon="-83.0760680"/>
 <trkpt lat="39.9996112" lon="-83.0762300"/>
@@ -705,34 +474,11 @@
 <trkpt lat="40.0096460" lon="-83.0861940"/>
 <trkpt lat="40.0100170" lon="-83.0864030"/>
 <trkpt lat="40.0103370" lon="-83.0865600"/>
-<trkpt lat="40.0103590" lon="-83.0864710"/>
-<trkpt lat="40.0104820" lon="-83.0860200"/>
-<trkpt lat="40.0106820" lon="-83.0854490"/>
-<trkpt lat="40.0108303" lon="-83.0851766"/>
-<trkpt lat="40.0110008" lon="-83.0849299"/>
-<trkpt lat="40.0112510" lon="-83.0846630"/>
-<trkpt lat="40.0118770" lon="-83.0842300"/>
-<trkpt lat="40.0120403" lon="-83.0841467"/>
-<trkpt lat="40.0122087" lon="-83.0840930"/>
-<trkpt lat="40.0125765" lon="-83.0839777"/>
-<trkpt lat="40.0127490" lon="-83.0839510"/>
-<trkpt lat="40.0129950" lon="-83.0839290"/>
-<trkpt lat="40.0130650" lon="-83.0839230"/>
-<trkpt lat="40.0131350" lon="-83.0839130"/>
-<trkpt lat="40.0131540" lon="-83.0843850"/>
-<trkpt lat="40.0131770" lon="-83.0848870"/>
-<trkpt lat="40.0131850" lon="-83.0851690"/>
-<trkpt lat="40.0130530" lon="-83.0851760"/>
-<trkpt lat="40.0128066" lon="-83.0852035"/>
-<trkpt lat="40.0125570" lon="-83.0852760"/>
-<trkpt lat="40.0124347" lon="-83.0853349"/>
-<trkpt lat="40.0121697" lon="-83.0854972"/>
-<trkpt lat="40.0119450" lon="-83.0857010"/>
-<trkpt lat="40.0118051" lon="-83.0858821"/>
-<trkpt lat="40.0116690" lon="-83.0860850"/>
-<trkpt lat="40.0115637" lon="-83.0863099"/>
-<trkpt lat="40.0114670" lon="-83.0865720"/>
-<trkpt lat="40.0113660" lon="-83.0869030"/>
+<trkpt lat="40.0103801" lon="-83.0865820"/>
+<trkpt lat="40.0104330" lon="-83.0866090"/>
+<trkpt lat="40.0106000" lon="-83.0866860"/>
+<trkpt lat="40.0107383" lon="-83.0867505"/>
+<trkpt lat="40.0108044" lon="-83.0867814"/>
 <trkpt lat="40.0113273" lon="-83.0870263"/>
 <trkpt lat="40.0116280" lon="-83.0871750"/>
 <trkpt lat="40.0126610" lon="-83.0876710"/>
@@ -744,11 +490,34 @@
 <trkpt lat="40.0126610" lon="-83.0876710"/>
 <trkpt lat="40.0116280" lon="-83.0871750"/>
 <trkpt lat="40.0113273" lon="-83.0870263"/>
-<trkpt lat="40.0108044" lon="-83.0867814"/>
-<trkpt lat="40.0107383" lon="-83.0867505"/>
-<trkpt lat="40.0106000" lon="-83.0866860"/>
-<trkpt lat="40.0104330" lon="-83.0866090"/>
-<trkpt lat="40.0103801" lon="-83.0865820"/>
+<trkpt lat="40.0113660" lon="-83.0869030"/>
+<trkpt lat="40.0114670" lon="-83.0865720"/>
+<trkpt lat="40.0115637" lon="-83.0863099"/>
+<trkpt lat="40.0116690" lon="-83.0860850"/>
+<trkpt lat="40.0118051" lon="-83.0858821"/>
+<trkpt lat="40.0119450" lon="-83.0857010"/>
+<trkpt lat="40.0121697" lon="-83.0854972"/>
+<trkpt lat="40.0124347" lon="-83.0853349"/>
+<trkpt lat="40.0125570" lon="-83.0852760"/>
+<trkpt lat="40.0128066" lon="-83.0852035"/>
+<trkpt lat="40.0130530" lon="-83.0851760"/>
+<trkpt lat="40.0131850" lon="-83.0851690"/>
+<trkpt lat="40.0131770" lon="-83.0848870"/>
+<trkpt lat="40.0131540" lon="-83.0843850"/>
+<trkpt lat="40.0131350" lon="-83.0839130"/>
+<trkpt lat="40.0130650" lon="-83.0839230"/>
+<trkpt lat="40.0129950" lon="-83.0839290"/>
+<trkpt lat="40.0127490" lon="-83.0839510"/>
+<trkpt lat="40.0125765" lon="-83.0839777"/>
+<trkpt lat="40.0122087" lon="-83.0840930"/>
+<trkpt lat="40.0120403" lon="-83.0841467"/>
+<trkpt lat="40.0118770" lon="-83.0842300"/>
+<trkpt lat="40.0112510" lon="-83.0846630"/>
+<trkpt lat="40.0110008" lon="-83.0849299"/>
+<trkpt lat="40.0108303" lon="-83.0851766"/>
+<trkpt lat="40.0106820" lon="-83.0854490"/>
+<trkpt lat="40.0104820" lon="-83.0860200"/>
+<trkpt lat="40.0103590" lon="-83.0864710"/>
 <trkpt lat="40.0103370" lon="-83.0865600"/>
 <trkpt lat="40.0100170" lon="-83.0864030"/>
 <trkpt lat="40.0096460" lon="-83.0861940"/>
@@ -762,24 +531,24 @@
 <trkpt lat="40.0098800" lon="-83.0842930"/>
 <trkpt lat="40.0101010" lon="-83.0839760"/>
 <trkpt lat="40.0101930" lon="-83.0838370"/>
-<trkpt lat="40.0104010" lon="-83.0834280"/>
-<trkpt lat="40.0105468" lon="-83.0830497"/>
-<trkpt lat="40.0106620" lon="-83.0826380"/>
-<trkpt lat="40.0108370" lon="-83.0819620"/>
-<trkpt lat="40.0108530" lon="-83.0818960"/>
-<trkpt lat="40.0109590" lon="-83.0818660"/>
-<trkpt lat="40.0110550" lon="-83.0818300"/>
-<trkpt lat="40.0115130" lon="-83.0816750"/>
-<trkpt lat="40.0120270" lon="-83.0815790"/>
-<trkpt lat="40.0122440" lon="-83.0815570"/>
-<trkpt lat="40.0130040" lon="-83.0814890"/>
-<trkpt lat="40.0130170" lon="-83.0817180"/>
-<trkpt lat="40.0130650" lon="-83.0826670"/>
-<trkpt lat="40.0128880" lon="-83.0826840"/>
-<trkpt lat="40.0123350" lon="-83.0827590"/>
-<trkpt lat="40.0116200" lon="-83.0829720"/>
-<trkpt lat="40.0110790" lon="-83.0832340"/>
 <trkpt lat="40.0105010" lon="-83.0836260"/>
+<trkpt lat="40.0110790" lon="-83.0832340"/>
+<trkpt lat="40.0116200" lon="-83.0829720"/>
+<trkpt lat="40.0123350" lon="-83.0827590"/>
+<trkpt lat="40.0128880" lon="-83.0826840"/>
+<trkpt lat="40.0130650" lon="-83.0826670"/>
+<trkpt lat="40.0130170" lon="-83.0817180"/>
+<trkpt lat="40.0130040" lon="-83.0814890"/>
+<trkpt lat="40.0122440" lon="-83.0815570"/>
+<trkpt lat="40.0120270" lon="-83.0815790"/>
+<trkpt lat="40.0115130" lon="-83.0816750"/>
+<trkpt lat="40.0110550" lon="-83.0818300"/>
+<trkpt lat="40.0109590" lon="-83.0818660"/>
+<trkpt lat="40.0108530" lon="-83.0818960"/>
+<trkpt lat="40.0108370" lon="-83.0819620"/>
+<trkpt lat="40.0106620" lon="-83.0826380"/>
+<trkpt lat="40.0105468" lon="-83.0830497"/>
+<trkpt lat="40.0104010" lon="-83.0834280"/>
 <trkpt lat="40.0101930" lon="-83.0838370"/>
 <trkpt lat="40.0104010" lon="-83.0834280"/>
 <trkpt lat="40.0105468" lon="-83.0830497"/>
@@ -790,18 +559,28 @@
 <trkpt lat="40.0109980" lon="-83.0809550"/>
 <trkpt lat="40.0110330" lon="-83.0805950"/>
 <trkpt lat="40.0110380" lon="-83.0805240"/>
-<trkpt lat="40.0110601" lon="-83.0801066"/>
-<trkpt lat="40.0110676" lon="-83.0796888"/>
-<trkpt lat="40.0110532" lon="-83.0793509"/>
-<trkpt lat="40.0110360" lon="-83.0790750"/>
-<trkpt lat="40.0109910" lon="-83.0781940"/>
-<trkpt lat="40.0109859" lon="-83.0780905"/>
-<trkpt lat="40.0109270" lon="-83.0768990"/>
-<trkpt lat="40.0109140" lon="-83.0766040"/>
-<trkpt lat="40.0109010" lon="-83.0764010"/>
-<trkpt lat="40.0107430" lon="-83.0733230"/>
-<trkpt lat="40.0107360" lon="-83.0731870"/>
-<trkpt lat="40.0109370" lon="-83.0731470"/>
+<trkpt lat="40.0111460" lon="-83.0805050"/>
+<trkpt lat="40.0117390" lon="-83.0804220"/>
+<trkpt lat="40.0120130" lon="-83.0803970"/>
+<trkpt lat="40.0124325" lon="-83.0803592"/>
+<trkpt lat="40.0129470" lon="-83.0803120"/>
+<trkpt lat="40.0124325" lon="-83.0803592"/>
+<trkpt lat="40.0120130" lon="-83.0803970"/>
+<trkpt lat="40.0119963" lon="-83.0801033"/>
+<trkpt lat="40.0119670" lon="-83.0795880"/>
+<trkpt lat="40.0119350" lon="-83.0789230"/>
+<trkpt lat="40.0118680" lon="-83.0775690"/>
+<trkpt lat="40.0118030" lon="-83.0763270"/>
+<trkpt lat="40.0123500" lon="-83.0762760"/>
+<trkpt lat="40.0127330" lon="-83.0762440"/>
+<trkpt lat="40.0126140" lon="-83.0739000"/>
+<trkpt lat="40.0125580" lon="-83.0728000"/>
+<trkpt lat="40.0123761" lon="-83.0728314"/>
+<trkpt lat="40.0122437" lon="-83.0728827"/>
+<trkpt lat="40.0121120" lon="-83.0729600"/>
+<trkpt lat="40.0120454" lon="-83.0730075"/>
+<trkpt lat="40.0119680" lon="-83.0730380"/>
+<trkpt lat="40.0118759" lon="-83.0730625"/>
 <trkpt lat="40.0116360" lon="-83.0730840"/>
 <trkpt lat="40.0114970" lon="-83.0703750"/>
 <trkpt lat="40.0114890" lon="-83.0702189"/>
@@ -810,11 +589,73 @@
 <trkpt lat="40.0111212" lon="-83.0700218"/>
 <trkpt lat="40.0109971" lon="-83.0699637"/>
 <trkpt lat="40.0109205" lon="-83.0699390"/>
+<trkpt lat="40.0108223" lon="-83.0699084"/>
+<trkpt lat="40.0107804" lon="-83.0698904"/>
+<trkpt lat="40.0107248" lon="-83.0698723"/>
+<trkpt lat="40.0106759" lon="-83.0698751"/>
+<trkpt lat="40.0106631" lon="-83.0698915"/>
+<trkpt lat="40.0106482" lon="-83.0699046"/>
+<trkpt lat="40.0106310" lon="-83.0699143"/>
+<trkpt lat="40.0106127" lon="-83.0699196"/>
+<trkpt lat="40.0105940" lon="-83.0699203"/>
+<trkpt lat="40.0105755" lon="-83.0699164"/>
+<trkpt lat="40.0105579" lon="-83.0699080"/>
+<trkpt lat="40.0105411" lon="-83.0698948"/>
+<trkpt lat="40.0105267" lon="-83.0698776"/>
+<trkpt lat="40.0105112" lon="-83.0698474"/>
+<trkpt lat="40.0105027" lon="-83.0698128"/>
+<trkpt lat="40.0105020" lon="-83.0697764"/>
+<trkpt lat="40.0105090" lon="-83.0697413"/>
+<trkpt lat="40.0105219" lon="-83.0697123"/>
+<trkpt lat="40.0105402" lon="-83.0696885"/>
+<trkpt lat="40.0105690" lon="-83.0696684"/>
+<trkpt lat="40.0105971" lon="-83.0696618"/>
+<trkpt lat="40.0106255" lon="-83.0696660"/>
+<trkpt lat="40.0106536" lon="-83.0696819"/>
+<trkpt lat="40.0106766" lon="-83.0697082"/>
+<trkpt lat="40.0106923" lon="-83.0697424"/>
+<trkpt lat="40.0106975" lon="-83.0697647"/>
+<trkpt lat="40.0107323" lon="-83.0697858"/>
+<trkpt lat="40.0107634" lon="-83.0698111"/>
+<trkpt lat="40.0107990" lon="-83.0698418"/>
+<trkpt lat="40.0108461" lon="-83.0698733"/>
+<trkpt lat="40.0109205" lon="-83.0699390"/>
 <trkpt lat="40.0108461" lon="-83.0698733"/>
 <trkpt lat="40.0107990" lon="-83.0698418"/>
 <trkpt lat="40.0107634" lon="-83.0698111"/>
 <trkpt lat="40.0107323" lon="-83.0697858"/>
 <trkpt lat="40.0106975" lon="-83.0697647"/>
+<trkpt lat="40.0106923" lon="-83.0697424"/>
+<trkpt lat="40.0106975" lon="-83.0697647"/>
+<trkpt lat="40.0106996" lon="-83.0697881"/>
+<trkpt lat="40.0106984" lon="-83.0698116"/>
+<trkpt lat="40.0106939" lon="-83.0698345"/>
+<trkpt lat="40.0106863" lon="-83.0698559"/>
+<trkpt lat="40.0106759" lon="-83.0698751"/>
+<trkpt lat="40.0106631" lon="-83.0698915"/>
+<trkpt lat="40.0106482" lon="-83.0699046"/>
+<trkpt lat="40.0106254" lon="-83.0700411"/>
+<trkpt lat="40.0106132" lon="-83.0701095"/>
+<trkpt lat="40.0106010" lon="-83.0701714"/>
+<trkpt lat="40.0105886" lon="-83.0702795"/>
+<trkpt lat="40.0105769" lon="-83.0701484"/>
+<trkpt lat="40.0105776" lon="-83.0700382"/>
+<trkpt lat="40.0105767" lon="-83.0700150"/>
+<trkpt lat="40.0105652" lon="-83.0699355"/>
+<trkpt lat="40.0105579" lon="-83.0699080"/>
+<trkpt lat="40.0105411" lon="-83.0698948"/>
+<trkpt lat="40.0105267" lon="-83.0698776"/>
+<trkpt lat="40.0105112" lon="-83.0698474"/>
+<trkpt lat="40.0105027" lon="-83.0698128"/>
+<trkpt lat="40.0105020" lon="-83.0697764"/>
+<trkpt lat="40.0105090" lon="-83.0697413"/>
+<trkpt lat="40.0105219" lon="-83.0697123"/>
+<trkpt lat="40.0105402" lon="-83.0696885"/>
+<trkpt lat="40.0105690" lon="-83.0696684"/>
+<trkpt lat="40.0105971" lon="-83.0696618"/>
+<trkpt lat="40.0106255" lon="-83.0696660"/>
+<trkpt lat="40.0106536" lon="-83.0696819"/>
+<trkpt lat="40.0106766" lon="-83.0697082"/>
 <trkpt lat="40.0106923" lon="-83.0697424"/>
 <trkpt lat="40.0106975" lon="-83.0697647"/>
 <trkpt lat="40.0106996" lon="-83.0697881"/>
@@ -849,89 +690,34 @@
 <trkpt lat="40.0106939" lon="-83.0698345"/>
 <trkpt lat="40.0106863" lon="-83.0698559"/>
 <trkpt lat="40.0106759" lon="-83.0698751"/>
-<trkpt lat="40.0107248" lon="-83.0698723"/>
-<trkpt lat="40.0107804" lon="-83.0698904"/>
-<trkpt lat="40.0108223" lon="-83.0699084"/>
-<trkpt lat="40.0109205" lon="-83.0699390"/>
-<trkpt lat="40.0108223" lon="-83.0699084"/>
-<trkpt lat="40.0107804" lon="-83.0698904"/>
-<trkpt lat="40.0107248" lon="-83.0698723"/>
-<trkpt lat="40.0106759" lon="-83.0698751"/>
 <trkpt lat="40.0106631" lon="-83.0698915"/>
 <trkpt lat="40.0106482" lon="-83.0699046"/>
-<trkpt lat="40.0106254" lon="-83.0700411"/>
-<trkpt lat="40.0106132" lon="-83.0701095"/>
-<trkpt lat="40.0106010" lon="-83.0701714"/>
-<trkpt lat="40.0105886" lon="-83.0702795"/>
-<trkpt lat="40.0105769" lon="-83.0701484"/>
-<trkpt lat="40.0105776" lon="-83.0700382"/>
-<trkpt lat="40.0105767" lon="-83.0700150"/>
-<trkpt lat="40.0105652" lon="-83.0699355"/>
-<trkpt lat="40.0105579" lon="-83.0699080"/>
-<trkpt lat="40.0105755" lon="-83.0699164"/>
-<trkpt lat="40.0105940" lon="-83.0699203"/>
-<trkpt lat="40.0106127" lon="-83.0699196"/>
 <trkpt lat="40.0106310" lon="-83.0699143"/>
-<trkpt lat="40.0106482" lon="-83.0699046"/>
-<trkpt lat="40.0106254" lon="-83.0700411"/>
-<trkpt lat="40.0106132" lon="-83.0701095"/>
-<trkpt lat="40.0106010" lon="-83.0701714"/>
+<trkpt lat="40.0106127" lon="-83.0699196"/>
+<trkpt lat="40.0105940" lon="-83.0699203"/>
+<trkpt lat="40.0105755" lon="-83.0699164"/>
+<trkpt lat="40.0105579" lon="-83.0699080"/>
+<trkpt lat="40.0105652" lon="-83.0699355"/>
+<trkpt lat="40.0105767" lon="-83.0700150"/>
+<trkpt lat="40.0105776" lon="-83.0700382"/>
+<trkpt lat="40.0105769" lon="-83.0701484"/>
 <trkpt lat="40.0105886" lon="-83.0702795"/>
 <trkpt lat="40.0106320" lon="-83.0711910"/>
 <trkpt lat="40.0107360" lon="-83.0731870"/>
-<trkpt lat="40.0106440" lon="-83.0732150"/>
-<trkpt lat="40.0104421" lon="-83.0733074"/>
-<trkpt lat="40.0103660" lon="-83.0733334"/>
-<trkpt lat="40.0102841" lon="-83.0733496"/>
-<trkpt lat="40.0102129" lon="-83.0733562"/>
-<trkpt lat="40.0101270" lon="-83.0733580"/>
-<trkpt lat="40.0099006" lon="-83.0733139"/>
-<trkpt lat="40.0097100" lon="-83.0732330"/>
-<trkpt lat="40.0096210" lon="-83.0731990"/>
-<trkpt lat="40.0095590" lon="-83.0718220"/>
-<trkpt lat="40.0095270" lon="-83.0711820"/>
-<trkpt lat="40.0094827" lon="-83.0701151"/>
-<trkpt lat="40.0094799" lon="-83.0700479"/>
-<trkpt lat="40.0094760" lon="-83.0699530"/>
-<trkpt lat="40.0094799" lon="-83.0700479"/>
-<trkpt lat="40.0094827" lon="-83.0701151"/>
-<trkpt lat="40.0095270" lon="-83.0711820"/>
-<trkpt lat="40.0095590" lon="-83.0718220"/>
-<trkpt lat="40.0096210" lon="-83.0731990"/>
-<trkpt lat="40.0096310" lon="-83.0734230"/>
-<trkpt lat="40.0096790" lon="-83.0744400"/>
-<trkpt lat="40.0097020" lon="-83.0749110"/>
-<trkpt lat="40.0097690" lon="-83.0765040"/>
-<trkpt lat="40.0100240" lon="-83.0764750"/>
-<trkpt lat="40.0107290" lon="-83.0764140"/>
-<trkpt lat="40.0108210" lon="-83.0764070"/>
-<trkpt lat="40.0109010" lon="-83.0764010"/>
-<trkpt lat="40.0111390" lon="-83.0763830"/>
-<trkpt lat="40.0118030" lon="-83.0763270"/>
-<trkpt lat="40.0123500" lon="-83.0762760"/>
-<trkpt lat="40.0127330" lon="-83.0762440"/>
-<trkpt lat="40.0126140" lon="-83.0739000"/>
-<trkpt lat="40.0125580" lon="-83.0728000"/>
-<trkpt lat="40.0123761" lon="-83.0728314"/>
-<trkpt lat="40.0122437" lon="-83.0728827"/>
-<trkpt lat="40.0121120" lon="-83.0729600"/>
-<trkpt lat="40.0120454" lon="-83.0730075"/>
-<trkpt lat="40.0119680" lon="-83.0730380"/>
-<trkpt lat="40.0118759" lon="-83.0730625"/>
+<trkpt lat="40.0109370" lon="-83.0731470"/>
 <trkpt lat="40.0116360" lon="-83.0730840"/>
 <trkpt lat="40.0116530" lon="-83.0734120"/>
 <trkpt lat="40.0118030" lon="-83.0763270"/>
-<trkpt lat="40.0118680" lon="-83.0775690"/>
-<trkpt lat="40.0119350" lon="-83.0789230"/>
-<trkpt lat="40.0119670" lon="-83.0795880"/>
-<trkpt lat="40.0119963" lon="-83.0801033"/>
-<trkpt lat="40.0120130" lon="-83.0803970"/>
-<trkpt lat="40.0124325" lon="-83.0803592"/>
-<trkpt lat="40.0129470" lon="-83.0803120"/>
-<trkpt lat="40.0124325" lon="-83.0803592"/>
-<trkpt lat="40.0120130" lon="-83.0803970"/>
-<trkpt lat="40.0117390" lon="-83.0804220"/>
-<trkpt lat="40.0111460" lon="-83.0805050"/>
+<trkpt lat="40.0111390" lon="-83.0763830"/>
+<trkpt lat="40.0109010" lon="-83.0764010"/>
+<trkpt lat="40.0109140" lon="-83.0766040"/>
+<trkpt lat="40.0109270" lon="-83.0768990"/>
+<trkpt lat="40.0109859" lon="-83.0780905"/>
+<trkpt lat="40.0109910" lon="-83.0781940"/>
+<trkpt lat="40.0110360" lon="-83.0790750"/>
+<trkpt lat="40.0110532" lon="-83.0793509"/>
+<trkpt lat="40.0110676" lon="-83.0796888"/>
+<trkpt lat="40.0110601" lon="-83.0801066"/>
 <trkpt lat="40.0110380" lon="-83.0805240"/>
 <trkpt lat="40.0109400" lon="-83.0805580"/>
 <trkpt lat="40.0106341" lon="-83.0806571"/>
@@ -1013,37 +799,66 @@
 <trkpt lat="40.0107290" lon="-83.0764140"/>
 <trkpt lat="40.0108210" lon="-83.0764070"/>
 <trkpt lat="40.0109010" lon="-83.0764010"/>
-<trkpt lat="40.0109140" lon="-83.0766040"/>
-<trkpt lat="40.0107350" lon="-83.0769860"/>
-<trkpt lat="40.0106032" lon="-83.0772426"/>
-<trkpt lat="40.0104170" lon="-83.0776050"/>
-<trkpt lat="40.0103053" lon="-83.0777562"/>
-<trkpt lat="40.0098730" lon="-83.0783410"/>
-<trkpt lat="40.0097710" lon="-83.0784690"/>
-<trkpt lat="40.0096840" lon="-83.0785700"/>
-<trkpt lat="40.0094490" lon="-83.0789360"/>
-<trkpt lat="40.0088590" lon="-83.0801000"/>
-<trkpt lat="40.0086940" lon="-83.0804410"/>
-<trkpt lat="40.0085944" lon="-83.0806392"/>
-<trkpt lat="40.0084990" lon="-83.0808290"/>
-<trkpt lat="40.0084030" lon="-83.0810380"/>
-<trkpt lat="40.0083850" lon="-83.0810850"/>
-<trkpt lat="40.0073700" lon="-83.0804990"/>
-<trkpt lat="40.0071350" lon="-83.0803590"/>
-<trkpt lat="40.0069834" lon="-83.0802707"/>
-<trkpt lat="40.0070300" lon="-83.0801920"/>
-<trkpt lat="40.0071030" lon="-83.0800870"/>
-<trkpt lat="40.0074600" lon="-83.0796312"/>
-<trkpt lat="40.0077504" lon="-83.0792656"/>
-<trkpt lat="40.0079243" lon="-83.0790467"/>
-<trkpt lat="40.0079647" lon="-83.0789958"/>
-<trkpt lat="40.0079780" lon="-83.0789790"/>
-<trkpt lat="40.0088460" lon="-83.0778690"/>
-<trkpt lat="40.0091430" lon="-83.0774940"/>
-<trkpt lat="40.0093890" lon="-83.0771900"/>
-<trkpt lat="40.0095670" lon="-83.0769610"/>
-<trkpt lat="40.0096930" lon="-83.0767560"/>
+<trkpt lat="40.0107430" lon="-83.0733230"/>
+<trkpt lat="40.0107360" lon="-83.0731870"/>
+<trkpt lat="40.0106440" lon="-83.0732150"/>
+<trkpt lat="40.0104421" lon="-83.0733074"/>
+<trkpt lat="40.0103660" lon="-83.0733334"/>
+<trkpt lat="40.0102841" lon="-83.0733496"/>
+<trkpt lat="40.0102129" lon="-83.0733562"/>
+<trkpt lat="40.0101270" lon="-83.0733580"/>
+<trkpt lat="40.0099006" lon="-83.0733139"/>
+<trkpt lat="40.0097100" lon="-83.0732330"/>
+<trkpt lat="40.0096210" lon="-83.0731990"/>
+<trkpt lat="40.0095590" lon="-83.0718220"/>
+<trkpt lat="40.0095270" lon="-83.0711820"/>
+<trkpt lat="40.0094827" lon="-83.0701151"/>
+<trkpt lat="40.0094799" lon="-83.0700479"/>
+<trkpt lat="40.0094760" lon="-83.0699530"/>
+<trkpt lat="40.0094799" lon="-83.0700479"/>
+<trkpt lat="40.0094827" lon="-83.0701151"/>
+<trkpt lat="40.0095270" lon="-83.0711820"/>
+<trkpt lat="40.0095590" lon="-83.0718220"/>
+<trkpt lat="40.0096210" lon="-83.0731990"/>
+<trkpt lat="40.0096310" lon="-83.0734230"/>
+<trkpt lat="40.0096790" lon="-83.0744400"/>
+<trkpt lat="40.0097020" lon="-83.0749110"/>
+<trkpt lat="40.0097690" lon="-83.0765040"/>
 <trkpt lat="40.0097680" lon="-83.0765510"/>
+<trkpt lat="40.0096930" lon="-83.0767560"/>
+<trkpt lat="40.0095670" lon="-83.0769610"/>
+<trkpt lat="40.0093890" lon="-83.0771900"/>
+<trkpt lat="40.0091430" lon="-83.0774940"/>
+<trkpt lat="40.0088460" lon="-83.0778690"/>
+<trkpt lat="40.0079780" lon="-83.0789790"/>
+<trkpt lat="40.0079647" lon="-83.0789958"/>
+<trkpt lat="40.0079243" lon="-83.0790467"/>
+<trkpt lat="40.0077504" lon="-83.0792656"/>
+<trkpt lat="40.0074600" lon="-83.0796312"/>
+<trkpt lat="40.0071030" lon="-83.0800870"/>
+<trkpt lat="40.0070300" lon="-83.0801920"/>
+<trkpt lat="40.0069834" lon="-83.0802707"/>
+<trkpt lat="40.0071350" lon="-83.0803590"/>
+<trkpt lat="40.0073700" lon="-83.0804990"/>
+<trkpt lat="40.0083850" lon="-83.0810850"/>
+<trkpt lat="40.0084030" lon="-83.0810380"/>
+<trkpt lat="40.0084990" lon="-83.0808290"/>
+<trkpt lat="40.0085944" lon="-83.0806392"/>
+<trkpt lat="40.0086940" lon="-83.0804410"/>
+<trkpt lat="40.0088590" lon="-83.0801000"/>
+<trkpt lat="40.0094490" lon="-83.0789360"/>
+<trkpt lat="40.0096840" lon="-83.0785700"/>
+<trkpt lat="40.0097710" lon="-83.0784690"/>
+<trkpt lat="40.0098730" lon="-83.0783410"/>
+<trkpt lat="40.0103053" lon="-83.0777562"/>
+<trkpt lat="40.0104170" lon="-83.0776050"/>
+<trkpt lat="40.0106032" lon="-83.0772426"/>
+<trkpt lat="40.0107350" lon="-83.0769860"/>
+<trkpt lat="40.0109140" lon="-83.0766040"/>
+<trkpt lat="40.0109010" lon="-83.0764010"/>
+<trkpt lat="40.0108210" lon="-83.0764070"/>
+<trkpt lat="40.0107290" lon="-83.0764140"/>
+<trkpt lat="40.0100240" lon="-83.0764750"/>
 <trkpt lat="40.0097690" lon="-83.0765040"/>
 <trkpt lat="40.0094850" lon="-83.0765300"/>
 <trkpt lat="40.0093758" lon="-83.0765346"/>
@@ -1088,65 +903,6 @@
 <trkpt lat="40.0053801" lon="-83.0695694"/>
 <trkpt lat="40.0052144" lon="-83.0695210"/>
 <trkpt lat="40.0050586" lon="-83.0694528"/>
-<trkpt lat="40.0047278" lon="-83.0693375"/>
-<trkpt lat="40.0043514" lon="-83.0691771"/>
-<trkpt lat="40.0040721" lon="-83.0690268"/>
-<trkpt lat="40.0039350" lon="-83.0689530"/>
-<trkpt lat="40.0035954" lon="-83.0687242"/>
-<trkpt lat="40.0034200" lon="-83.0686060"/>
-<trkpt lat="40.0031360" lon="-83.0683970"/>
-<trkpt lat="40.0028720" lon="-83.0681700"/>
-<trkpt lat="40.0023543" lon="-83.0676956"/>
-<trkpt lat="40.0022970" lon="-83.0676430"/>
-<trkpt lat="40.0022508" lon="-83.0676010"/>
-<trkpt lat="40.0019376" lon="-83.0673162"/>
-<trkpt lat="40.0001610" lon="-83.0657008"/>
-<trkpt lat="40.0001040" lon="-83.0656490"/>
-<trkpt lat="40.0000850" lon="-83.0656360"/>
-<trkpt lat="40.0000300" lon="-83.0657398"/>
-<trkpt lat="40.0000182" lon="-83.0657623"/>
-<trkpt lat="40.0000100" lon="-83.0657780"/>
-<trkpt lat="39.9999199" lon="-83.0659855"/>
-<trkpt lat="39.9998667" lon="-83.0661464"/>
-<trkpt lat="39.9998360" lon="-83.0662710"/>
-<trkpt lat="39.9998112" lon="-83.0664184"/>
-<trkpt lat="39.9998018" lon="-83.0665472"/>
-<trkpt lat="39.9997900" lon="-83.0668090"/>
-<trkpt lat="39.9998020" lon="-83.0669180"/>
-<trkpt lat="39.9998140" lon="-83.0670270"/>
-<trkpt lat="39.9998722" lon="-83.0670863"/>
-<trkpt lat="40.0007700" lon="-83.0680010"/>
-<trkpt lat="40.0010130" lon="-83.0682451"/>
-<trkpt lat="40.0012894" lon="-83.0684720"/>
-<trkpt lat="40.0013661" lon="-83.0685217"/>
-<trkpt lat="40.0014841" lon="-83.0685873"/>
-<trkpt lat="40.0017805" lon="-83.0687212"/>
-<trkpt lat="40.0019994" lon="-83.0687903"/>
-<trkpt lat="40.0022121" lon="-83.0688209"/>
-<trkpt lat="40.0024003" lon="-83.0688334"/>
-<trkpt lat="40.0025852" lon="-83.0688223"/>
-<trkpt lat="40.0027202" lon="-83.0688043"/>
-<trkpt lat="40.0028690" lon="-83.0687740"/>
-<trkpt lat="40.0031539" lon="-83.0686871"/>
-<trkpt lat="40.0034200" lon="-83.0686060"/>
-<trkpt lat="40.0035141" lon="-83.0685575"/>
-<trkpt lat="40.0036740" lon="-83.0684750"/>
-<trkpt lat="40.0039311" lon="-83.0682467"/>
-<trkpt lat="40.0040978" lon="-83.0679713"/>
-<trkpt lat="40.0041535" lon="-83.0678676"/>
-<trkpt lat="40.0042324" lon="-83.0679520"/>
-<trkpt lat="40.0045133" lon="-83.0682714"/>
-<trkpt lat="40.0047711" lon="-83.0685996"/>
-<trkpt lat="40.0049823" lon="-83.0689017"/>
-<trkpt lat="40.0050859" lon="-83.0690689"/>
-<trkpt lat="40.0051820" lon="-83.0692240"/>
-<trkpt lat="40.0052507" lon="-83.0693257"/>
-<trkpt lat="40.0053554" lon="-83.0694711"/>
-<trkpt lat="40.0054349" lon="-83.0695371"/>
-<trkpt lat="40.0055235" lon="-83.0695952"/>
-<trkpt lat="40.0053801" lon="-83.0695694"/>
-<trkpt lat="40.0052144" lon="-83.0695210"/>
-<trkpt lat="40.0050586" lon="-83.0694528"/>
 <trkpt lat="40.0051217" lon="-83.0694470"/>
 <trkpt lat="40.0051475" lon="-83.0694384"/>
 <trkpt lat="40.0051752" lon="-83.0694179"/>
@@ -1168,25 +924,360 @@
 <trkpt lat="40.0023649" lon="-83.0675294"/>
 <trkpt lat="40.0023492" lon="-83.0675557"/>
 <trkpt lat="40.0022970" lon="-83.0676430"/>
+<trkpt lat="40.0023543" lon="-83.0676956"/>
+<trkpt lat="40.0028720" lon="-83.0681700"/>
+<trkpt lat="40.0031360" lon="-83.0683970"/>
+<trkpt lat="40.0034200" lon="-83.0686060"/>
+<trkpt lat="40.0035141" lon="-83.0685575"/>
+<trkpt lat="40.0036740" lon="-83.0684750"/>
+<trkpt lat="40.0039311" lon="-83.0682467"/>
+<trkpt lat="40.0040978" lon="-83.0679713"/>
+<trkpt lat="40.0041535" lon="-83.0678676"/>
+<trkpt lat="40.0042324" lon="-83.0679520"/>
+<trkpt lat="40.0045133" lon="-83.0682714"/>
+<trkpt lat="40.0047711" lon="-83.0685996"/>
+<trkpt lat="40.0049823" lon="-83.0689017"/>
+<trkpt lat="40.0050859" lon="-83.0690689"/>
+<trkpt lat="40.0051820" lon="-83.0692240"/>
+<trkpt lat="40.0052507" lon="-83.0693257"/>
+<trkpt lat="40.0053554" lon="-83.0694711"/>
+<trkpt lat="40.0054349" lon="-83.0695371"/>
+<trkpt lat="40.0055235" lon="-83.0695952"/>
+<trkpt lat="40.0053801" lon="-83.0695694"/>
+<trkpt lat="40.0052144" lon="-83.0695210"/>
+<trkpt lat="40.0050586" lon="-83.0694528"/>
+<trkpt lat="40.0047278" lon="-83.0693375"/>
+<trkpt lat="40.0043514" lon="-83.0691771"/>
+<trkpt lat="40.0040721" lon="-83.0690268"/>
+<trkpt lat="40.0039350" lon="-83.0689530"/>
+<trkpt lat="40.0035954" lon="-83.0687242"/>
+<trkpt lat="40.0034200" lon="-83.0686060"/>
+<trkpt lat="40.0031539" lon="-83.0686871"/>
+<trkpt lat="40.0028690" lon="-83.0687740"/>
+<trkpt lat="40.0027202" lon="-83.0688043"/>
+<trkpt lat="40.0025852" lon="-83.0688223"/>
+<trkpt lat="40.0024003" lon="-83.0688334"/>
+<trkpt lat="40.0022121" lon="-83.0688209"/>
+<trkpt lat="40.0019994" lon="-83.0687903"/>
+<trkpt lat="40.0017805" lon="-83.0687212"/>
+<trkpt lat="40.0014841" lon="-83.0685873"/>
+<trkpt lat="40.0013661" lon="-83.0685217"/>
+<trkpt lat="40.0012894" lon="-83.0684720"/>
+<trkpt lat="40.0010130" lon="-83.0682451"/>
+<trkpt lat="40.0007700" lon="-83.0680010"/>
+<trkpt lat="39.9998722" lon="-83.0670863"/>
+<trkpt lat="39.9998140" lon="-83.0670270"/>
+<trkpt lat="39.9998371" lon="-83.0671299"/>
+<trkpt lat="39.9998524" lon="-83.0671977"/>
+<trkpt lat="39.9998617" lon="-83.0673963"/>
+<trkpt lat="39.9998509" lon="-83.0675665"/>
+<trkpt lat="39.9998290" lon="-83.0677250"/>
+<trkpt lat="39.9998232" lon="-83.0677767"/>
+<trkpt lat="39.9998231" lon="-83.0679382"/>
+<trkpt lat="39.9998349" lon="-83.0681476"/>
+<trkpt lat="39.9998574" lon="-83.0684757"/>
+<trkpt lat="39.9998749" lon="-83.0686866"/>
+<trkpt lat="39.9999070" lon="-83.0690460"/>
+<trkpt lat="39.9999060" lon="-83.0690937"/>
+<trkpt lat="39.9999350" lon="-83.0693915"/>
+<trkpt lat="40.0000209" lon="-83.0693056"/>
+<trkpt lat="40.0001597" lon="-83.0691854"/>
+<trkpt lat="40.0003535" lon="-83.0690906"/>
+<trkpt lat="40.0006251" lon="-83.0689759"/>
+<trkpt lat="40.0007922" lon="-83.0688987"/>
+<trkpt lat="40.0009347" lon="-83.0688107"/>
+<trkpt lat="40.0010333" lon="-83.0687352"/>
+<trkpt lat="40.0012115" lon="-83.0685633"/>
+<trkpt lat="40.0012894" lon="-83.0684720"/>
+<trkpt lat="40.0013661" lon="-83.0685217"/>
+<trkpt lat="40.0014841" lon="-83.0685873"/>
+<trkpt lat="40.0017805" lon="-83.0687212"/>
+<trkpt lat="40.0019994" lon="-83.0687903"/>
+<trkpt lat="40.0019580" lon="-83.0689240"/>
+<trkpt lat="40.0017838" lon="-83.0693183"/>
+<trkpt lat="40.0017292" lon="-83.0694146"/>
+<trkpt lat="40.0016611" lon="-83.0694885"/>
+<trkpt lat="40.0011950" lon="-83.0698810"/>
+<trkpt lat="40.0010305" lon="-83.0700175"/>
+<trkpt lat="40.0009270" lon="-83.0700870"/>
+<trkpt lat="40.0005590" lon="-83.0703090"/>
+<trkpt lat="40.0005047" lon="-83.0703443"/>
+<trkpt lat="40.0004746" lon="-83.0703875"/>
+<trkpt lat="40.0004580" lon="-83.0704240"/>
+<trkpt lat="40.0002981" lon="-83.0708240"/>
+<trkpt lat="40.0002561" lon="-83.0709030"/>
+<trkpt lat="40.0002079" lon="-83.0709649"/>
+<trkpt lat="39.9998287" lon="-83.0713696"/>
+<trkpt lat="39.9995530" lon="-83.0715930"/>
+<trkpt lat="39.9994235" lon="-83.0716852"/>
+<trkpt lat="39.9993055" lon="-83.0717301"/>
+<trkpt lat="39.9992200" lon="-83.0717421"/>
+<trkpt lat="39.9991232" lon="-83.0717312"/>
+<trkpt lat="39.9989005" lon="-83.0716303"/>
+<trkpt lat="39.9986255" lon="-83.0714960"/>
+<trkpt lat="39.9985420" lon="-83.0714580"/>
+<trkpt lat="39.9984782" lon="-83.0716107"/>
+<trkpt lat="39.9983159" lon="-83.0718344"/>
+<trkpt lat="39.9982100" lon="-83.0719340"/>
+<trkpt lat="39.9978550" lon="-83.0721520"/>
+<trkpt lat="39.9977550" lon="-83.0722090"/>
+<trkpt lat="39.9976770" lon="-83.0722680"/>
+<trkpt lat="39.9975800" lon="-83.0721610"/>
+<trkpt lat="39.9974804" lon="-83.0720538"/>
+<trkpt lat="39.9973950" lon="-83.0719620"/>
+<trkpt lat="39.9972500" lon="-83.0718110"/>
+<trkpt lat="39.9971283" lon="-83.0716739"/>
+<trkpt lat="39.9970315" lon="-83.0715435"/>
+<trkpt lat="39.9969400" lon="-83.0713930"/>
+<trkpt lat="39.9968657" lon="-83.0712424"/>
+<trkpt lat="39.9967980" lon="-83.0710770"/>
+<trkpt lat="39.9967460" lon="-83.0709150"/>
+<trkpt lat="39.9966880" lon="-83.0706330"/>
+<trkpt lat="39.9966710" lon="-83.0705350"/>
+<trkpt lat="39.9966630" lon="-83.0704470"/>
+<trkpt lat="39.9966648" lon="-83.0701894"/>
+<trkpt lat="39.9966813" lon="-83.0699931"/>
+<trkpt lat="39.9967099" lon="-83.0698147"/>
+<trkpt lat="39.9967440" lon="-83.0696530"/>
+<trkpt lat="39.9968050" lon="-83.0694370"/>
+<trkpt lat="39.9967355" lon="-83.0694292"/>
+<trkpt lat="39.9966810" lon="-83.0694230"/>
+<trkpt lat="39.9965633" lon="-83.0694012"/>
+<trkpt lat="39.9963547" lon="-83.0693382"/>
+<trkpt lat="39.9961410" lon="-83.0692370"/>
+<trkpt lat="39.9960070" lon="-83.0691400"/>
+<trkpt lat="39.9958820" lon="-83.0690270"/>
+<trkpt lat="39.9958100" lon="-83.0689700"/>
+<trkpt lat="39.9952170" lon="-83.0683670"/>
+<trkpt lat="39.9951740" lon="-83.0683150"/>
+<trkpt lat="39.9950590" lon="-83.0681760"/>
+<trkpt lat="39.9948074" lon="-83.0678697"/>
+<trkpt lat="39.9945697" lon="-83.0675262"/>
+<trkpt lat="39.9942650" lon="-83.0670670"/>
+<trkpt lat="39.9945697" lon="-83.0675262"/>
+<trkpt lat="39.9948074" lon="-83.0678697"/>
+<trkpt lat="39.9950590" lon="-83.0681760"/>
+<trkpt lat="39.9951740" lon="-83.0683150"/>
+<trkpt lat="39.9952210" lon="-83.0682410"/>
+<trkpt lat="39.9952720" lon="-83.0681400"/>
+<trkpt lat="39.9953510" lon="-83.0679548"/>
+<trkpt lat="39.9953925" lon="-83.0678217"/>
+<trkpt lat="39.9954260" lon="-83.0676610"/>
+<trkpt lat="39.9954860" lon="-83.0672940"/>
+<trkpt lat="39.9955520" lon="-83.0669040"/>
+<trkpt lat="39.9955611" lon="-83.0668246"/>
+<trkpt lat="39.9955570" lon="-83.0667270"/>
+<trkpt lat="39.9955409" lon="-83.0666269"/>
+<trkpt lat="39.9955160" lon="-83.0665580"/>
+<trkpt lat="39.9954805" lon="-83.0664708"/>
+<trkpt lat="39.9954196" lon="-83.0663889"/>
+<trkpt lat="39.9953247" lon="-83.0662886"/>
+<trkpt lat="39.9951067" lon="-83.0661021"/>
+<trkpt lat="39.9950437" lon="-83.0660449"/>
+<trkpt lat="39.9951586" lon="-83.0658382"/>
+<trkpt lat="39.9952397" lon="-83.0656742"/>
+<trkpt lat="39.9953467" lon="-83.0654230"/>
+<trkpt lat="39.9954657" lon="-83.0650763"/>
+<trkpt lat="39.9955196" lon="-83.0651252"/>
+<trkpt lat="39.9960220" lon="-83.0655810"/>
+<trkpt lat="39.9960720" lon="-83.0656270"/>
+<trkpt lat="39.9962164" lon="-83.0657977"/>
+<trkpt lat="39.9963350" lon="-83.0660020"/>
+<trkpt lat="39.9964014" lon="-83.0661612"/>
+<trkpt lat="39.9964318" lon="-83.0663474"/>
+<trkpt lat="39.9964410" lon="-83.0665650"/>
+<trkpt lat="39.9964240" lon="-83.0668430"/>
+<trkpt lat="39.9964110" lon="-83.0670380"/>
+<trkpt lat="39.9962850" lon="-83.0677460"/>
+<trkpt lat="39.9962130" lon="-83.0679890"/>
+<trkpt lat="39.9960070" lon="-83.0686520"/>
+<trkpt lat="39.9959510" lon="-83.0688090"/>
+<trkpt lat="39.9958820" lon="-83.0690270"/>
+<trkpt lat="39.9960070" lon="-83.0691400"/>
+<trkpt lat="39.9961410" lon="-83.0692370"/>
+<trkpt lat="39.9963547" lon="-83.0693382"/>
+<trkpt lat="39.9965633" lon="-83.0694012"/>
+<trkpt lat="39.9966810" lon="-83.0694230"/>
+<trkpt lat="39.9967355" lon="-83.0694292"/>
+<trkpt lat="39.9968050" lon="-83.0694370"/>
+<trkpt lat="39.9969610" lon="-83.0689550"/>
+<trkpt lat="39.9971040" lon="-83.0684660"/>
+<trkpt lat="39.9972420" lon="-83.0680140"/>
+<trkpt lat="39.9973120" lon="-83.0677950"/>
+<trkpt lat="39.9973478" lon="-83.0676610"/>
+<trkpt lat="39.9973711" lon="-83.0675138"/>
+<trkpt lat="39.9973759" lon="-83.0673917"/>
+<trkpt lat="39.9973633" lon="-83.0672136"/>
+<trkpt lat="39.9973461" lon="-83.0670331"/>
+<trkpt lat="39.9973398" lon="-83.0669075"/>
+<trkpt lat="39.9973427" lon="-83.0667774"/>
+<trkpt lat="39.9973529" lon="-83.0666576"/>
+<trkpt lat="39.9973610" lon="-83.0665941"/>
+<trkpt lat="39.9973728" lon="-83.0665228"/>
+<trkpt lat="39.9973945" lon="-83.0664075"/>
+<trkpt lat="39.9974173" lon="-83.0662534"/>
+<trkpt lat="39.9974221" lon="-83.0661583"/>
+<trkpt lat="39.9974248" lon="-83.0660633"/>
+<trkpt lat="39.9974070" lon="-83.0658850"/>
+<trkpt lat="39.9973812" lon="-83.0657185"/>
+<trkpt lat="39.9973421" lon="-83.0655764"/>
+<trkpt lat="39.9973326" lon="-83.0655417"/>
+<trkpt lat="39.9971790" lon="-83.0652280"/>
+<trkpt lat="39.9970110" lon="-83.0649910"/>
+<trkpt lat="39.9971790" lon="-83.0652280"/>
+<trkpt lat="39.9973326" lon="-83.0655417"/>
+<trkpt lat="39.9973421" lon="-83.0655764"/>
+<trkpt lat="39.9973812" lon="-83.0657185"/>
+<trkpt lat="39.9974070" lon="-83.0658850"/>
+<trkpt lat="39.9975240" lon="-83.0653420"/>
+<trkpt lat="39.9983319" lon="-83.0658742"/>
+<trkpt lat="39.9984669" lon="-83.0659631"/>
+<trkpt lat="39.9987405" lon="-83.0661420"/>
+<trkpt lat="39.9989992" lon="-83.0663170"/>
+<trkpt lat="39.9991962" lon="-83.0664662"/>
+<trkpt lat="39.9994444" lon="-83.0666677"/>
+<trkpt lat="39.9998140" lon="-83.0670270"/>
+<trkpt lat="39.9998020" lon="-83.0669180"/>
+<trkpt lat="39.9997900" lon="-83.0668090"/>
+<trkpt lat="39.9998018" lon="-83.0665472"/>
+<trkpt lat="39.9998112" lon="-83.0664184"/>
+<trkpt lat="39.9998360" lon="-83.0662710"/>
+<trkpt lat="39.9998667" lon="-83.0661464"/>
+<trkpt lat="39.9999199" lon="-83.0659855"/>
+<trkpt lat="40.0000100" lon="-83.0657780"/>
+<trkpt lat="40.0000182" lon="-83.0657623"/>
+<trkpt lat="40.0000300" lon="-83.0657398"/>
+<trkpt lat="40.0000850" lon="-83.0656360"/>
+<trkpt lat="40.0001040" lon="-83.0656490"/>
+<trkpt lat="40.0001610" lon="-83.0657008"/>
+<trkpt lat="40.0019376" lon="-83.0673162"/>
+<trkpt lat="40.0022508" lon="-83.0676010"/>
+<trkpt lat="40.0022970" lon="-83.0676430"/>
 <trkpt lat="40.0023492" lon="-83.0675557"/>
 <trkpt lat="40.0023649" lon="-83.0675294"/>
 <trkpt lat="40.0028061" lon="-83.0667912"/>
 <trkpt lat="40.0028346" lon="-83.0667434"/>
 <trkpt lat="40.0028790" lon="-83.0666680"/>
-<trkpt lat="40.0027290" lon="-83.0663240"/>
-<trkpt lat="40.0026377" lon="-83.0660906"/>
-<trkpt lat="40.0025679" lon="-83.0658801"/>
-<trkpt lat="40.0024456" lon="-83.0653950"/>
-<trkpt lat="40.0024090" lon="-83.0652500"/>
-<trkpt lat="40.0025023" lon="-83.0652074"/>
-<trkpt lat="40.0025361" lon="-83.0651920"/>
-<trkpt lat="40.0026772" lon="-83.0651236"/>
-<trkpt lat="40.0027577" lon="-83.0651578"/>
-<trkpt lat="40.0027652" lon="-83.0651620"/>
-<trkpt lat="40.0028860" lon="-83.0652290"/>
-<trkpt lat="40.0029810" lon="-83.0653110"/>
-<trkpt lat="40.0033694" lon="-83.0656668"/>
+<trkpt lat="40.0029647" lon="-83.0665211"/>
+<trkpt lat="40.0029752" lon="-83.0665033"/>
+<trkpt lat="40.0032266" lon="-83.0660760"/>
+<trkpt lat="40.0034046" lon="-83.0657733"/>
+<trkpt lat="40.0034330" lon="-83.0657250"/>
 <trkpt lat="40.0033912" lon="-83.0656867"/>
+<trkpt lat="40.0033694" lon="-83.0656668"/>
+<trkpt lat="40.0029810" lon="-83.0653110"/>
+<trkpt lat="40.0028860" lon="-83.0652290"/>
+<trkpt lat="40.0027652" lon="-83.0651620"/>
+<trkpt lat="40.0027577" lon="-83.0651578"/>
+<trkpt lat="40.0026772" lon="-83.0651236"/>
+<trkpt lat="40.0025361" lon="-83.0651920"/>
+<trkpt lat="40.0025023" lon="-83.0652074"/>
+<trkpt lat="40.0024090" lon="-83.0652500"/>
+<trkpt lat="40.0024456" lon="-83.0653950"/>
+<trkpt lat="40.0025679" lon="-83.0658801"/>
+<trkpt lat="40.0026377" lon="-83.0660906"/>
+<trkpt lat="40.0027290" lon="-83.0663240"/>
+<trkpt lat="40.0028790" lon="-83.0666680"/>
+<trkpt lat="40.0026206" lon="-83.0664569"/>
+<trkpt lat="40.0026110" lon="-83.0664490"/>
+<trkpt lat="40.0025970" lon="-83.0664363"/>
+<trkpt lat="40.0019696" lon="-83.0658646"/>
+<trkpt lat="40.0019580" lon="-83.0658540"/>
+<trkpt lat="40.0007069" lon="-83.0647227"/>
+<trkpt lat="40.0006220" lon="-83.0646460"/>
+<trkpt lat="40.0006709" lon="-83.0645620"/>
+<trkpt lat="40.0008022" lon="-83.0643365"/>
+<trkpt lat="40.0009623" lon="-83.0640902"/>
+<trkpt lat="40.0011143" lon="-83.0638954"/>
+<trkpt lat="40.0011525" lon="-83.0638518"/>
+<trkpt lat="40.0011778" lon="-83.0638229"/>
+<trkpt lat="40.0012530" lon="-83.0637370"/>
+<trkpt lat="40.0013279" lon="-83.0636401"/>
+<trkpt lat="40.0013380" lon="-83.0636270"/>
+<trkpt lat="40.0013517" lon="-83.0636075"/>
+<trkpt lat="40.0015367" lon="-83.0633743"/>
+<trkpt lat="40.0018330" lon="-83.0629190"/>
+<trkpt lat="40.0023398" lon="-83.0620610"/>
+<trkpt lat="40.0023632" lon="-83.0620215"/>
+<trkpt lat="40.0024190" lon="-83.0619270"/>
+<trkpt lat="40.0017204" lon="-83.0612880"/>
+<trkpt lat="40.0016203" lon="-83.0612478"/>
+<trkpt lat="40.0015019" lon="-83.0611381"/>
+<trkpt lat="40.0013330" lon="-83.0609817"/>
+<trkpt lat="40.0010457" lon="-83.0607156"/>
+<trkpt lat="40.0009900" lon="-83.0606640"/>
+<trkpt lat="40.0010457" lon="-83.0607156"/>
+<trkpt lat="40.0013330" lon="-83.0609817"/>
+<trkpt lat="40.0015019" lon="-83.0611381"/>
+<trkpt lat="40.0016203" lon="-83.0612478"/>
+<trkpt lat="40.0017204" lon="-83.0612880"/>
+<trkpt lat="40.0024715" lon="-83.0599939"/>
+<trkpt lat="40.0025152" lon="-83.0599214"/>
+<trkpt lat="40.0026280" lon="-83.0597275"/>
+<trkpt lat="40.0026610" lon="-83.0596710"/>
+<trkpt lat="40.0027155" lon="-83.0597249"/>
+<trkpt lat="40.0029120" lon="-83.0599190"/>
+<trkpt lat="40.0032910" lon="-83.0602989"/>
+<trkpt lat="40.0033470" lon="-83.0603550"/>
+<trkpt lat="40.0033965" lon="-83.0602706"/>
+<trkpt lat="40.0034161" lon="-83.0602373"/>
+<trkpt lat="40.0037238" lon="-83.0597156"/>
+<trkpt lat="40.0037700" lon="-83.0596372"/>
+<trkpt lat="40.0039478" lon="-83.0593357"/>
+<trkpt lat="40.0040084" lon="-83.0592329"/>
+<trkpt lat="40.0041392" lon="-83.0590110"/>
+<trkpt lat="40.0043320" lon="-83.0586840"/>
+<trkpt lat="40.0044148" lon="-83.0585352"/>
+<trkpt lat="40.0044482" lon="-83.0584750"/>
+<trkpt lat="40.0044615" lon="-83.0584511"/>
+<trkpt lat="40.0045170" lon="-83.0583550"/>
+<trkpt lat="40.0045522" lon="-83.0584493"/>
+<trkpt lat="40.0045605" lon="-83.0584704"/>
+<trkpt lat="40.0045670" lon="-83.0584925"/>
+<trkpt lat="40.0045795" lon="-83.0586063"/>
+<trkpt lat="40.0045830" lon="-83.0586380"/>
+<trkpt lat="40.0045937" lon="-83.0588946"/>
+<trkpt lat="40.0046051" lon="-83.0591675"/>
+<trkpt lat="40.0046127" lon="-83.0593493"/>
+<trkpt lat="40.0046176" lon="-83.0594661"/>
+<trkpt lat="40.0046210" lon="-83.0595478"/>
+<trkpt lat="40.0046222" lon="-83.0595756"/>
+<trkpt lat="40.0046306" lon="-83.0597769"/>
+<trkpt lat="40.0046341" lon="-83.0598605"/>
+<trkpt lat="40.0046386" lon="-83.0599694"/>
+<trkpt lat="40.0046468" lon="-83.0601646"/>
+<trkpt lat="40.0046475" lon="-83.0601822"/>
+<trkpt lat="40.0046485" lon="-83.0602062"/>
+<trkpt lat="40.0046507" lon="-83.0602585"/>
+<trkpt lat="40.0046574" lon="-83.0604188"/>
+<trkpt lat="40.0046588" lon="-83.0604511"/>
+<trkpt lat="40.0046630" lon="-83.0605530"/>
+<trkpt lat="40.0046680" lon="-83.0606747"/>
+<trkpt lat="40.0046697" lon="-83.0607171"/>
+<trkpt lat="40.0046851" lon="-83.0610932"/>
+<trkpt lat="40.0047027" lon="-83.0615222"/>
+<trkpt lat="40.0047170" lon="-83.0618720"/>
+<trkpt lat="40.0046570" lon="-83.0618760"/>
+<trkpt lat="40.0046020" lon="-83.0619100"/>
+<trkpt lat="40.0045630" lon="-83.0619690"/>
+<trkpt lat="40.0045544" lon="-83.0619836"/>
+<trkpt lat="40.0044262" lon="-83.0622017"/>
+<trkpt lat="40.0043271" lon="-83.0623703"/>
+<trkpt lat="40.0043091" lon="-83.0624009"/>
+<trkpt lat="40.0042321" lon="-83.0625317"/>
+<trkpt lat="40.0041272" lon="-83.0627103"/>
+<trkpt lat="40.0040889" lon="-83.0627753"/>
+<trkpt lat="40.0040809" lon="-83.0627889"/>
+<trkpt lat="40.0038913" lon="-83.0631114"/>
+<trkpt lat="40.0038310" lon="-83.0632140"/>
+<trkpt lat="40.0041776" lon="-83.0635291"/>
+<trkpt lat="40.0045350" lon="-83.0638540"/>
+<trkpt lat="40.0044815" lon="-83.0639450"/>
+<trkpt lat="40.0044650" lon="-83.0639731"/>
+<trkpt lat="40.0040135" lon="-83.0647431"/>
+<trkpt lat="40.0039740" lon="-83.0648110"/>
+<trkpt lat="40.0039367" lon="-83.0648741"/>
+<trkpt lat="40.0034765" lon="-83.0656515"/>
 <trkpt lat="40.0034330" lon="-83.0657250"/>
 <trkpt lat="40.0034894" lon="-83.0657759"/>
 <trkpt lat="40.0035100" lon="-83.0657945"/>
@@ -1202,15 +1293,235 @@
 <trkpt lat="40.0061850" lon="-83.0688220"/>
 <trkpt lat="40.0065500" lon="-83.0680490"/>
 <trkpt lat="40.0066570" lon="-83.0678120"/>
-<trkpt lat="40.0067170" lon="-83.0676950"/>
+<trkpt lat="40.0066046" lon="-83.0677649"/>
+<trkpt lat="40.0065793" lon="-83.0677417"/>
+<trkpt lat="40.0064807" lon="-83.0676515"/>
+<trkpt lat="40.0063796" lon="-83.0675268"/>
+<trkpt lat="40.0062650" lon="-83.0673380"/>
+<trkpt lat="40.0061694" lon="-83.0671495"/>
+<trkpt lat="40.0060895" lon="-83.0669748"/>
+<trkpt lat="40.0059617" lon="-83.0667419"/>
+<trkpt lat="40.0058263" lon="-83.0665394"/>
+<trkpt lat="40.0056703" lon="-83.0663454"/>
+<trkpt lat="40.0054820" lon="-83.0661860"/>
+<trkpt lat="40.0040560" lon="-83.0648855"/>
+<trkpt lat="40.0040327" lon="-83.0648643"/>
+<trkpt lat="40.0039740" lon="-83.0648110"/>
+<trkpt lat="40.0040135" lon="-83.0647431"/>
+<trkpt lat="40.0044650" lon="-83.0639731"/>
+<trkpt lat="40.0044815" lon="-83.0639450"/>
+<trkpt lat="40.0045350" lon="-83.0638540"/>
+<trkpt lat="40.0047500" lon="-83.0640490"/>
+<trkpt lat="40.0057220" lon="-83.0649330"/>
+<trkpt lat="40.0061108" lon="-83.0652801"/>
+<trkpt lat="40.0064182" lon="-83.0656003"/>
+<trkpt lat="40.0066610" lon="-83.0659320"/>
+<trkpt lat="40.0070040" lon="-83.0664580"/>
+<trkpt lat="40.0070970" lon="-83.0664998"/>
+<trkpt lat="40.0072040" lon="-83.0665040"/>
+<trkpt lat="40.0076062" lon="-83.0664766"/>
+<trkpt lat="40.0076701" lon="-83.0664722"/>
+<trkpt lat="40.0077320" lon="-83.0664680"/>
+<trkpt lat="40.0076701" lon="-83.0664722"/>
+<trkpt lat="40.0076062" lon="-83.0664766"/>
+<trkpt lat="40.0072040" lon="-83.0665040"/>
+<trkpt lat="40.0070970" lon="-83.0664998"/>
+<trkpt lat="40.0070040" lon="-83.0664580"/>
+<trkpt lat="40.0070085" lon="-83.0666252"/>
+<trkpt lat="40.0070095" lon="-83.0666575"/>
+<trkpt lat="40.0070220" lon="-83.0670720"/>
 <trkpt lat="40.0069197" lon="-83.0672809"/>
+<trkpt lat="40.0067170" lon="-83.0676950"/>
+<trkpt lat="40.0066570" lon="-83.0678120"/>
+<trkpt lat="40.0065500" lon="-83.0680490"/>
+<trkpt lat="40.0061850" lon="-83.0688220"/>
+<trkpt lat="40.0059740" lon="-83.0692750"/>
+<trkpt lat="40.0059052" lon="-83.0694173"/>
+<trkpt lat="40.0058580" lon="-83.0695150"/>
+<trkpt lat="40.0058502" lon="-83.0695430"/>
+<trkpt lat="40.0058160" lon="-83.0696670"/>
+<trkpt lat="40.0062630" lon="-83.0697900"/>
+<trkpt lat="40.0062926" lon="-83.0696704"/>
+<trkpt lat="40.0062960" lon="-83.0696570"/>
+<trkpt lat="40.0069360" lon="-83.0681200"/>
+<trkpt lat="40.0070020" lon="-83.0679396"/>
+<trkpt lat="40.0070567" lon="-83.0677226"/>
+<trkpt lat="40.0070723" lon="-83.0675653"/>
+<trkpt lat="40.0070725" lon="-83.0673935"/>
+<trkpt lat="40.0070555" lon="-83.0672408"/>
 <trkpt lat="40.0070220" lon="-83.0670720"/>
 <trkpt lat="40.0070095" lon="-83.0666575"/>
 <trkpt lat="40.0070085" lon="-83.0666252"/>
 <trkpt lat="40.0070040" lon="-83.0664580"/>
 <trkpt lat="40.0066610" lon="-83.0659320"/>
-<trkpt lat="40.0064182" lon="-83.0656003"/>
-<trkpt lat="40.0061108" lon="-83.0652801"/>
+<trkpt lat="40.0066699" lon="-83.0658274"/>
+<trkpt lat="40.0066860" lon="-83.0656380"/>
+<trkpt lat="40.0066015" lon="-83.0637483"/>
+<trkpt lat="40.0065790" lon="-83.0632450"/>
+<trkpt lat="40.0066455" lon="-83.0632401"/>
+<trkpt lat="40.0069802" lon="-83.0632157"/>
+<trkpt lat="40.0071034" lon="-83.0632067"/>
+<trkpt lat="40.0075202" lon="-83.0631763"/>
+<trkpt lat="40.0075790" lon="-83.0631720"/>
+<trkpt lat="40.0075202" lon="-83.0631763"/>
+<trkpt lat="40.0071034" lon="-83.0632067"/>
+<trkpt lat="40.0069802" lon="-83.0632157"/>
+<trkpt lat="40.0066455" lon="-83.0632401"/>
+<trkpt lat="40.0065790" lon="-83.0632450"/>
+<trkpt lat="40.0065555" lon="-83.0627034"/>
+<trkpt lat="40.0065487" lon="-83.0625484"/>
+<trkpt lat="40.0065357" lon="-83.0622484"/>
+<trkpt lat="40.0065350" lon="-83.0622330"/>
+<trkpt lat="40.0065266" lon="-83.0620249"/>
+<trkpt lat="40.0065206" lon="-83.0618745"/>
+<trkpt lat="40.0065165" lon="-83.0617735"/>
+<trkpt lat="40.0065103" lon="-83.0616206"/>
+<trkpt lat="40.0065029" lon="-83.0614366"/>
+<trkpt lat="40.0064867" lon="-83.0610352"/>
+<trkpt lat="40.0064835" lon="-83.0609537"/>
+<trkpt lat="40.0064681" lon="-83.0605721"/>
+<trkpt lat="40.0064669" lon="-83.0605411"/>
+<trkpt lat="40.0064620" lon="-83.0604200"/>
+<trkpt lat="40.0064580" lon="-83.0603274"/>
+<trkpt lat="40.0064567" lon="-83.0602980"/>
+<trkpt lat="40.0064470" lon="-83.0600779"/>
+<trkpt lat="40.0064466" lon="-83.0600678"/>
+<trkpt lat="40.0064412" lon="-83.0599462"/>
+<trkpt lat="40.0064303" lon="-83.0596961"/>
+<trkpt lat="40.0064287" lon="-83.0596592"/>
+<trkpt lat="40.0064213" lon="-83.0594923"/>
+<trkpt lat="40.0064192" lon="-83.0594440"/>
+<trkpt lat="40.0064127" lon="-83.0592955"/>
+<trkpt lat="40.0064103" lon="-83.0592396"/>
+<trkpt lat="40.0064028" lon="-83.0590683"/>
+<trkpt lat="40.0063952" lon="-83.0588948"/>
+<trkpt lat="40.0063943" lon="-83.0588763"/>
+<trkpt lat="40.0063901" lon="-83.0587800"/>
+<trkpt lat="40.0063740" lon="-83.0584111"/>
+<trkpt lat="40.0063722" lon="-83.0583710"/>
+<trkpt lat="40.0063660" lon="-83.0582290"/>
+<trkpt lat="40.0064482" lon="-83.0582224"/>
+<trkpt lat="40.0066372" lon="-83.0582074"/>
+<trkpt lat="40.0066731" lon="-83.0582045"/>
+<trkpt lat="40.0067025" lon="-83.0582022"/>
+<trkpt lat="40.0068167" lon="-83.0581931"/>
+<trkpt lat="40.0068538" lon="-83.0581901"/>
+<trkpt lat="40.0068803" lon="-83.0581880"/>
+<trkpt lat="40.0069524" lon="-83.0581822"/>
+<trkpt lat="40.0070062" lon="-83.0581779"/>
+<trkpt lat="40.0071483" lon="-83.0581666"/>
+<trkpt lat="40.0072453" lon="-83.0581589"/>
+<trkpt lat="40.0072565" lon="-83.0581580"/>
+<trkpt lat="40.0073700" lon="-83.0581490"/>
+<trkpt lat="40.0073629" lon="-83.0579944"/>
+<trkpt lat="40.0073618" lon="-83.0579708"/>
+<trkpt lat="40.0073546" lon="-83.0578116"/>
+<trkpt lat="40.0073489" lon="-83.0576865"/>
+<trkpt lat="40.0073444" lon="-83.0575895"/>
+<trkpt lat="40.0073432" lon="-83.0575621"/>
+<trkpt lat="40.0073400" lon="-83.0574912"/>
+<trkpt lat="40.0073367" lon="-83.0574203"/>
+<trkpt lat="40.0073170" lon="-83.0569930"/>
+<trkpt lat="40.0071947" lon="-83.0570002"/>
+<trkpt lat="40.0071695" lon="-83.0570017"/>
+<trkpt lat="40.0071179" lon="-83.0570047"/>
+<trkpt lat="40.0069211" lon="-83.0570163"/>
+<trkpt lat="40.0067340" lon="-83.0570273"/>
+<trkpt lat="40.0066703" lon="-83.0570310"/>
+<trkpt lat="40.0066580" lon="-83.0570317"/>
+<trkpt lat="40.0065695" lon="-83.0570369"/>
+<trkpt lat="40.0064279" lon="-83.0570453"/>
+<trkpt lat="40.0063981" lon="-83.0570470"/>
+<trkpt lat="40.0063764" lon="-83.0570483"/>
+<trkpt lat="40.0062042" lon="-83.0570584"/>
+<trkpt lat="40.0060004" lon="-83.0570704"/>
+<trkpt lat="40.0058958" lon="-83.0570766"/>
+<trkpt lat="40.0058558" lon="-83.0570789"/>
+<trkpt lat="40.0055164" lon="-83.0570988"/>
+<trkpt lat="40.0054845" lon="-83.0571007"/>
+<trkpt lat="40.0054120" lon="-83.0571050"/>
+<trkpt lat="40.0053527" lon="-83.0571065"/>
+<trkpt lat="40.0053229" lon="-83.0571073"/>
+<trkpt lat="40.0052930" lon="-83.0571080"/>
+<trkpt lat="40.0050443" lon="-83.0571273"/>
+<trkpt lat="40.0049830" lon="-83.0571320"/>
+<trkpt lat="40.0048360" lon="-83.0571396"/>
+<trkpt lat="40.0048297" lon="-83.0571399"/>
+<trkpt lat="40.0047987" lon="-83.0571415"/>
+<trkpt lat="40.0046404" lon="-83.0571496"/>
+<trkpt lat="40.0045170" lon="-83.0571560"/>
+<trkpt lat="40.0046404" lon="-83.0571496"/>
+<trkpt lat="40.0047987" lon="-83.0571415"/>
+<trkpt lat="40.0048297" lon="-83.0571399"/>
+<trkpt lat="40.0048360" lon="-83.0571396"/>
+<trkpt lat="40.0049830" lon="-83.0571320"/>
+<trkpt lat="40.0050443" lon="-83.0571273"/>
+<trkpt lat="40.0052930" lon="-83.0571080"/>
+<trkpt lat="40.0053229" lon="-83.0571073"/>
+<trkpt lat="40.0053527" lon="-83.0571065"/>
+<trkpt lat="40.0054120" lon="-83.0571050"/>
+<trkpt lat="40.0054159" lon="-83.0571948"/>
+<trkpt lat="40.0054181" lon="-83.0572450"/>
+<trkpt lat="40.0054280" lon="-83.0574712"/>
+<trkpt lat="40.0054381" lon="-83.0577018"/>
+<trkpt lat="40.0054412" lon="-83.0577730"/>
+<trkpt lat="40.0054567" lon="-83.0581248"/>
+<trkpt lat="40.0054583" lon="-83.0581622"/>
+<trkpt lat="40.0054640" lon="-83.0582900"/>
+<trkpt lat="40.0057568" lon="-83.0582702"/>
+<trkpt lat="40.0057681" lon="-83.0582694"/>
+<trkpt lat="40.0059653" lon="-83.0582561"/>
+<trkpt lat="40.0060787" lon="-83.0582485"/>
+<trkpt lat="40.0061655" lon="-83.0582426"/>
+<trkpt lat="40.0063660" lon="-83.0582290"/>
+<trkpt lat="40.0063722" lon="-83.0583710"/>
+<trkpt lat="40.0063740" lon="-83.0584111"/>
+<trkpt lat="40.0063901" lon="-83.0587800"/>
+<trkpt lat="40.0063943" lon="-83.0588763"/>
+<trkpt lat="40.0063952" lon="-83.0588948"/>
+<trkpt lat="40.0064028" lon="-83.0590683"/>
+<trkpt lat="40.0064103" lon="-83.0592396"/>
+<trkpt lat="40.0064127" lon="-83.0592955"/>
+<trkpt lat="40.0064192" lon="-83.0594440"/>
+<trkpt lat="40.0064213" lon="-83.0594923"/>
+<trkpt lat="40.0064287" lon="-83.0596592"/>
+<trkpt lat="40.0064303" lon="-83.0596961"/>
+<trkpt lat="40.0064412" lon="-83.0599462"/>
+<trkpt lat="40.0064466" lon="-83.0600678"/>
+<trkpt lat="40.0064470" lon="-83.0600779"/>
+<trkpt lat="40.0064567" lon="-83.0602980"/>
+<trkpt lat="40.0064580" lon="-83.0603274"/>
+<trkpt lat="40.0064620" lon="-83.0604200"/>
+<trkpt lat="40.0065313" lon="-83.0604149"/>
+<trkpt lat="40.0067907" lon="-83.0603960"/>
+<trkpt lat="40.0068857" lon="-83.0603891"/>
+<trkpt lat="40.0070107" lon="-83.0603800"/>
+<trkpt lat="40.0070207" lon="-83.0603793"/>
+<trkpt lat="40.0073522" lon="-83.0603552"/>
+<trkpt lat="40.0073778" lon="-83.0603533"/>
+<trkpt lat="40.0074230" lon="-83.0603500"/>
+<trkpt lat="40.0074590" lon="-83.0603510"/>
+<trkpt lat="40.0074230" lon="-83.0603500"/>
+<trkpt lat="40.0073778" lon="-83.0603533"/>
+<trkpt lat="40.0073522" lon="-83.0603552"/>
+<trkpt lat="40.0070207" lon="-83.0603793"/>
+<trkpt lat="40.0070107" lon="-83.0603800"/>
+<trkpt lat="40.0068857" lon="-83.0603891"/>
+<trkpt lat="40.0067907" lon="-83.0603960"/>
+<trkpt lat="40.0065313" lon="-83.0604149"/>
+<trkpt lat="40.0064620" lon="-83.0604200"/>
+<trkpt lat="40.0063947" lon="-83.0604254"/>
+<trkpt lat="40.0061550" lon="-83.0604446"/>
+<trkpt lat="40.0060184" lon="-83.0604556"/>
+<trkpt lat="40.0059125" lon="-83.0604641"/>
+<trkpt lat="40.0056572" lon="-83.0604845"/>
+<trkpt lat="40.0055640" lon="-83.0604920"/>
+<trkpt lat="40.0055691" lon="-83.0606098"/>
+<trkpt lat="40.0055706" lon="-83.0606458"/>
+<trkpt lat="40.0056778" lon="-83.0631415"/>
+<trkpt lat="40.0056813" lon="-83.0632218"/>
+<trkpt lat="40.0057450" lon="-83.0647050"/>
+<trkpt lat="40.0057306" lon="-83.0648479"/>
 <trkpt lat="40.0057220" lon="-83.0649330"/>
 <trkpt lat="40.0047500" lon="-83.0640490"/>
 <trkpt lat="40.0047950" lon="-83.0639489"/>
@@ -1278,113 +1589,10 @@
 <trkpt lat="40.0042971" lon="-83.0605810"/>
 <trkpt lat="40.0046016" lon="-83.0605577"/>
 <trkpt lat="40.0046630" lon="-83.0605530"/>
-<trkpt lat="40.0046588" lon="-83.0604511"/>
-<trkpt lat="40.0046574" lon="-83.0604188"/>
-<trkpt lat="40.0046507" lon="-83.0602585"/>
-<trkpt lat="40.0046485" lon="-83.0602062"/>
-<trkpt lat="40.0046475" lon="-83.0601822"/>
-<trkpt lat="40.0046468" lon="-83.0601646"/>
-<trkpt lat="40.0046386" lon="-83.0599694"/>
-<trkpt lat="40.0046341" lon="-83.0598605"/>
-<trkpt lat="40.0046306" lon="-83.0597769"/>
-<trkpt lat="40.0046222" lon="-83.0595756"/>
-<trkpt lat="40.0046210" lon="-83.0595478"/>
-<trkpt lat="40.0046176" lon="-83.0594661"/>
-<trkpt lat="40.0046127" lon="-83.0593493"/>
-<trkpt lat="40.0046051" lon="-83.0591675"/>
-<trkpt lat="40.0045937" lon="-83.0588946"/>
-<trkpt lat="40.0045830" lon="-83.0586380"/>
-<trkpt lat="40.0045795" lon="-83.0586063"/>
-<trkpt lat="40.0045670" lon="-83.0584925"/>
-<trkpt lat="40.0045605" lon="-83.0584704"/>
-<trkpt lat="40.0045522" lon="-83.0584493"/>
-<trkpt lat="40.0045170" lon="-83.0583550"/>
-<trkpt lat="40.0049809" lon="-83.0583244"/>
-<trkpt lat="40.0050574" lon="-83.0583194"/>
-<trkpt lat="40.0051750" lon="-83.0583116"/>
-<trkpt lat="40.0053660" lon="-83.0582990"/>
-<trkpt lat="40.0054640" lon="-83.0582900"/>
-<trkpt lat="40.0057568" lon="-83.0582702"/>
-<trkpt lat="40.0057681" lon="-83.0582694"/>
-<trkpt lat="40.0059653" lon="-83.0582561"/>
-<trkpt lat="40.0060787" lon="-83.0582485"/>
-<trkpt lat="40.0061655" lon="-83.0582426"/>
-<trkpt lat="40.0063660" lon="-83.0582290"/>
-<trkpt lat="40.0063722" lon="-83.0583710"/>
-<trkpt lat="40.0063740" lon="-83.0584111"/>
-<trkpt lat="40.0063901" lon="-83.0587800"/>
-<trkpt lat="40.0063943" lon="-83.0588763"/>
-<trkpt lat="40.0063952" lon="-83.0588948"/>
-<trkpt lat="40.0064028" lon="-83.0590683"/>
-<trkpt lat="40.0064103" lon="-83.0592396"/>
-<trkpt lat="40.0064127" lon="-83.0592955"/>
-<trkpt lat="40.0064192" lon="-83.0594440"/>
-<trkpt lat="40.0064213" lon="-83.0594923"/>
-<trkpt lat="40.0064287" lon="-83.0596592"/>
-<trkpt lat="40.0064303" lon="-83.0596961"/>
-<trkpt lat="40.0064412" lon="-83.0599462"/>
-<trkpt lat="40.0064466" lon="-83.0600678"/>
-<trkpt lat="40.0064470" lon="-83.0600779"/>
-<trkpt lat="40.0064567" lon="-83.0602980"/>
-<trkpt lat="40.0064580" lon="-83.0603274"/>
-<trkpt lat="40.0064620" lon="-83.0604200"/>
-<trkpt lat="40.0065313" lon="-83.0604149"/>
-<trkpt lat="40.0067907" lon="-83.0603960"/>
-<trkpt lat="40.0068857" lon="-83.0603891"/>
-<trkpt lat="40.0070107" lon="-83.0603800"/>
-<trkpt lat="40.0070207" lon="-83.0603793"/>
-<trkpt lat="40.0073522" lon="-83.0603552"/>
-<trkpt lat="40.0073778" lon="-83.0603533"/>
-<trkpt lat="40.0074230" lon="-83.0603500"/>
-<trkpt lat="40.0074590" lon="-83.0603510"/>
-<trkpt lat="40.0074230" lon="-83.0603500"/>
-<trkpt lat="40.0073778" lon="-83.0603533"/>
-<trkpt lat="40.0073522" lon="-83.0603552"/>
-<trkpt lat="40.0070207" lon="-83.0603793"/>
-<trkpt lat="40.0070107" lon="-83.0603800"/>
-<trkpt lat="40.0068857" lon="-83.0603891"/>
-<trkpt lat="40.0067907" lon="-83.0603960"/>
-<trkpt lat="40.0065313" lon="-83.0604149"/>
-<trkpt lat="40.0064620" lon="-83.0604200"/>
-<trkpt lat="40.0063947" lon="-83.0604254"/>
-<trkpt lat="40.0061550" lon="-83.0604446"/>
-<trkpt lat="40.0060184" lon="-83.0604556"/>
-<trkpt lat="40.0059125" lon="-83.0604641"/>
-<trkpt lat="40.0056572" lon="-83.0604845"/>
-<trkpt lat="40.0055640" lon="-83.0604920"/>
-<trkpt lat="40.0055017" lon="-83.0604962"/>
-<trkpt lat="40.0051815" lon="-83.0605179"/>
-<trkpt lat="40.0050318" lon="-83.0605280"/>
 <trkpt lat="40.0047285" lon="-83.0605486"/>
-<trkpt lat="40.0046630" lon="-83.0605530"/>
-<trkpt lat="40.0046680" lon="-83.0606747"/>
-<trkpt lat="40.0046697" lon="-83.0607171"/>
-<trkpt lat="40.0046851" lon="-83.0610932"/>
-<trkpt lat="40.0047027" lon="-83.0615222"/>
-<trkpt lat="40.0047170" lon="-83.0618720"/>
-<trkpt lat="40.0046570" lon="-83.0618760"/>
-<trkpt lat="40.0046020" lon="-83.0619100"/>
-<trkpt lat="40.0045630" lon="-83.0619690"/>
-<trkpt lat="40.0045544" lon="-83.0619836"/>
-<trkpt lat="40.0044262" lon="-83.0622017"/>
-<trkpt lat="40.0043271" lon="-83.0623703"/>
-<trkpt lat="40.0043091" lon="-83.0624009"/>
-<trkpt lat="40.0042321" lon="-83.0625317"/>
-<trkpt lat="40.0041272" lon="-83.0627103"/>
-<trkpt lat="40.0040889" lon="-83.0627753"/>
-<trkpt lat="40.0040809" lon="-83.0627889"/>
-<trkpt lat="40.0038913" lon="-83.0631114"/>
-<trkpt lat="40.0038310" lon="-83.0632140"/>
-<trkpt lat="40.0041776" lon="-83.0635291"/>
-<trkpt lat="40.0045350" lon="-83.0638540"/>
-<trkpt lat="40.0047500" lon="-83.0640490"/>
-<trkpt lat="40.0057220" lon="-83.0649330"/>
-<trkpt lat="40.0057306" lon="-83.0648479"/>
-<trkpt lat="40.0057450" lon="-83.0647050"/>
-<trkpt lat="40.0056813" lon="-83.0632218"/>
-<trkpt lat="40.0056778" lon="-83.0631415"/>
-<trkpt lat="40.0055706" lon="-83.0606458"/>
-<trkpt lat="40.0055691" lon="-83.0606098"/>
+<trkpt lat="40.0050318" lon="-83.0605280"/>
+<trkpt lat="40.0051815" lon="-83.0605179"/>
+<trkpt lat="40.0055017" lon="-83.0604962"/>
 <trkpt lat="40.0055640" lon="-83.0604920"/>
 <trkpt lat="40.0055600" lon="-83.0603980"/>
 <trkpt lat="40.0055580" lon="-83.0603552"/>
@@ -1402,320 +1610,104 @@
 <trkpt lat="40.0054713" lon="-83.0584507"/>
 <trkpt lat="40.0054685" lon="-83.0583895"/>
 <trkpt lat="40.0054640" lon="-83.0582900"/>
-<trkpt lat="40.0054583" lon="-83.0581622"/>
-<trkpt lat="40.0054567" lon="-83.0581248"/>
-<trkpt lat="40.0054412" lon="-83.0577730"/>
-<trkpt lat="40.0054381" lon="-83.0577018"/>
-<trkpt lat="40.0054280" lon="-83.0574712"/>
-<trkpt lat="40.0054181" lon="-83.0572450"/>
-<trkpt lat="40.0054159" lon="-83.0571948"/>
-<trkpt lat="40.0054120" lon="-83.0571050"/>
-<trkpt lat="40.0054074" lon="-83.0569855"/>
-<trkpt lat="40.0054063" lon="-83.0569577"/>
-<trkpt lat="40.0053959" lon="-83.0566822"/>
-<trkpt lat="40.0053944" lon="-83.0566420"/>
-<trkpt lat="40.0053807" lon="-83.0562813"/>
-<trkpt lat="40.0053727" lon="-83.0560696"/>
-<trkpt lat="40.0053637" lon="-83.0558320"/>
-<trkpt lat="40.0053548" lon="-83.0555975"/>
-<trkpt lat="40.0053470" lon="-83.0553930"/>
-<trkpt lat="40.0053463" lon="-83.0553775"/>
-<trkpt lat="40.0053383" lon="-83.0551975"/>
-<trkpt lat="40.0053357" lon="-83.0551385"/>
-<trkpt lat="40.0053312" lon="-83.0550381"/>
-<trkpt lat="40.0053207" lon="-83.0548019"/>
-<trkpt lat="40.0053100" lon="-83.0545618"/>
-<trkpt lat="40.0053021" lon="-83.0543835"/>
-<trkpt lat="40.0052986" lon="-83.0543058"/>
-<trkpt lat="40.0052950" lon="-83.0542240"/>
-<trkpt lat="40.0052346" lon="-83.0542305"/>
-<trkpt lat="40.0052166" lon="-83.0542324"/>
-<trkpt lat="40.0049760" lon="-83.0542580"/>
-<trkpt lat="40.0048940" lon="-83.0542633"/>
-<trkpt lat="40.0047226" lon="-83.0542744"/>
-<trkpt lat="40.0044573" lon="-83.0542916"/>
-<trkpt lat="40.0043900" lon="-83.0542960"/>
-<trkpt lat="40.0043411" lon="-83.0542991"/>
-<trkpt lat="40.0041690" lon="-83.0543100"/>
-<trkpt lat="40.0036940" lon="-83.0543490"/>
-<trkpt lat="40.0035960" lon="-83.0543580"/>
-<trkpt lat="40.0035684" lon="-83.0543605"/>
-<trkpt lat="40.0034980" lon="-83.0543670"/>
-<trkpt lat="40.0035015" lon="-83.0544480"/>
-<trkpt lat="40.0036080" lon="-83.0568980"/>
-<trkpt lat="40.0036134" lon="-83.0570503"/>
-<trkpt lat="40.0036146" lon="-83.0570840"/>
-<trkpt lat="40.0036190" lon="-83.0572060"/>
-<trkpt lat="40.0036963" lon="-83.0572024"/>
-<trkpt lat="40.0038106" lon="-83.0571971"/>
-<trkpt lat="40.0039210" lon="-83.0571920"/>
-<trkpt lat="40.0040446" lon="-83.0571837"/>
-<trkpt lat="40.0042420" lon="-83.0571706"/>
-<trkpt lat="40.0043550" lon="-83.0571630"/>
-<trkpt lat="40.0044412" lon="-83.0571588"/>
-<trkpt lat="40.0044830" lon="-83.0571568"/>
-<trkpt lat="40.0045170" lon="-83.0571560"/>
-<trkpt lat="40.0045124" lon="-83.0570510"/>
-<trkpt lat="40.0045110" lon="-83.0570196"/>
-<trkpt lat="40.0045000" lon="-83.0567730"/>
-<trkpt lat="40.0044710" lon="-83.0560040"/>
-<trkpt lat="40.0044332" lon="-83.0551798"/>
-<trkpt lat="40.0044304" lon="-83.0551196"/>
-<trkpt lat="40.0044260" lon="-83.0550240"/>
-<trkpt lat="40.0044207" lon="-83.0549161"/>
-<trkpt lat="40.0043955" lon="-83.0543933"/>
-<trkpt lat="40.0043946" lon="-83.0543750"/>
-<trkpt lat="40.0043900" lon="-83.0542960"/>
-<trkpt lat="40.0043865" lon="-83.0542047"/>
-<trkpt lat="40.0043510" lon="-83.0532910"/>
-<trkpt lat="40.0043240" lon="-83.0526240"/>
-<trkpt lat="40.0042810" lon="-83.0516850"/>
-<trkpt lat="40.0042750" lon="-83.0515765"/>
-<trkpt lat="40.0042700" lon="-83.0514840"/>
-<trkpt lat="40.0042182" lon="-83.0514877"/>
-<trkpt lat="40.0041947" lon="-83.0514894"/>
-<trkpt lat="40.0038890" lon="-83.0515110"/>
-<trkpt lat="40.0034800" lon="-83.0515430"/>
-<trkpt lat="40.0034434" lon="-83.0515434"/>
-<trkpt lat="40.0033770" lon="-83.0515440"/>
-<trkpt lat="40.0033258" lon="-83.0515472"/>
-<trkpt lat="40.0032180" lon="-83.0515540"/>
-<trkpt lat="40.0029510" lon="-83.0515730"/>
-<trkpt lat="40.0025718" lon="-83.0516029"/>
-<trkpt lat="40.0025580" lon="-83.0516040"/>
-<trkpt lat="40.0025430" lon="-83.0516050"/>
-<trkpt lat="40.0024790" lon="-83.0516090"/>
-<trkpt lat="40.0024295" lon="-83.0516122"/>
-<trkpt lat="40.0024034" lon="-83.0516139"/>
-<trkpt lat="40.0022950" lon="-83.0516210"/>
-<trkpt lat="40.0017910" lon="-83.0516620"/>
-<trkpt lat="40.0016475" lon="-83.0516751"/>
-<trkpt lat="40.0015830" lon="-83.0516810"/>
-<trkpt lat="40.0015876" lon="-83.0517837"/>
-<trkpt lat="40.0015894" lon="-83.0518228"/>
-<trkpt lat="40.0017110" lon="-83.0544980"/>
-<trkpt lat="40.0017693" lon="-83.0544938"/>
-<trkpt lat="40.0017958" lon="-83.0544919"/>
-<trkpt lat="40.0025512" lon="-83.0544377"/>
-<trkpt lat="40.0026030" lon="-83.0544340"/>
-<trkpt lat="40.0026678" lon="-83.0544288"/>
-<trkpt lat="40.0028040" lon="-83.0544180"/>
-<trkpt lat="40.0029380" lon="-83.0544100"/>
-<trkpt lat="40.0033950" lon="-83.0543720"/>
-<trkpt lat="40.0034156" lon="-83.0543710"/>
-<trkpt lat="40.0034455" lon="-83.0543695"/>
-<trkpt lat="40.0034980" lon="-83.0543670"/>
-<trkpt lat="40.0034520" lon="-83.0532840"/>
-<trkpt lat="40.0034210" lon="-83.0525260"/>
-<trkpt lat="40.0033920" lon="-83.0518470"/>
-<trkpt lat="40.0033831" lon="-83.0516665"/>
-<trkpt lat="40.0033810" lon="-83.0516247"/>
-<trkpt lat="40.0033770" lon="-83.0515440"/>
-<trkpt lat="40.0033754" lon="-83.0514691"/>
-<trkpt lat="40.0033750" lon="-83.0514500"/>
-<trkpt lat="40.0033743" lon="-83.0514345"/>
-<trkpt lat="40.0033190" lon="-83.0501180"/>
-<trkpt lat="40.0032740" lon="-83.0491650"/>
-<trkpt lat="40.0032363" lon="-83.0483334"/>
-<trkpt lat="40.0032344" lon="-83.0482927"/>
-<trkpt lat="40.0032300" lon="-83.0481950"/>
-<trkpt lat="40.0031510" lon="-83.0482010"/>
-<trkpt lat="40.0029670" lon="-83.0482120"/>
-<trkpt lat="40.0023360" lon="-83.0482520"/>
-<trkpt lat="40.0018880" lon="-83.0482800"/>
-<trkpt lat="40.0015244" lon="-83.0483012"/>
-<trkpt lat="40.0014370" lon="-83.0483060"/>
-<trkpt lat="40.0011560" lon="-83.0483280"/>
-<trkpt lat="40.0009160" lon="-83.0483390"/>
-<trkpt lat="40.0006351" lon="-83.0483531"/>
-<trkpt lat="40.0005380" lon="-83.0483580"/>
-<trkpt lat="40.0000993" lon="-83.0483794"/>
-<trkpt lat="40.0000527" lon="-83.0483818"/>
-<trkpt lat="39.9999630" lon="-83.0483860"/>
-<trkpt lat="39.9998076" lon="-83.0483874"/>
-<trkpt lat="39.9996720" lon="-83.0483714"/>
-<trkpt lat="39.9996520" lon="-83.0483647"/>
-<trkpt lat="39.9995380" lon="-83.0483265"/>
-<trkpt lat="39.9994525" lon="-83.0483053"/>
-<trkpt lat="39.9993958" lon="-83.0482785"/>
-<trkpt lat="39.9991631" lon="-83.0481687"/>
-<trkpt lat="39.9991141" lon="-83.0481687"/>
-<trkpt lat="39.9990897" lon="-83.0481731"/>
-<trkpt lat="39.9990573" lon="-83.0481789"/>
-<trkpt lat="39.9990399" lon="-83.0481824"/>
-<trkpt lat="39.9989812" lon="-83.0481943"/>
-<trkpt lat="39.9989679" lon="-83.0482220"/>
-<trkpt lat="39.9989510" lon="-83.0482460"/>
-<trkpt lat="39.9989210" lon="-83.0482731"/>
-<trkpt lat="39.9988866" lon="-83.0482889"/>
-<trkpt lat="39.9988502" lon="-83.0482923"/>
-<trkpt lat="39.9988144" lon="-83.0482831"/>
-<trkpt lat="39.9987978" lon="-83.0482742"/>
-<trkpt lat="39.9987823" lon="-83.0482624"/>
-<trkpt lat="39.9986983" lon="-83.0482454"/>
-<trkpt lat="39.9986425" lon="-83.0482444"/>
-<trkpt lat="39.9985975" lon="-83.0482436"/>
-<trkpt lat="39.9983644" lon="-83.0482915"/>
-<trkpt lat="39.9982658" lon="-83.0483235"/>
-<trkpt lat="39.9980780" lon="-83.0484274"/>
-<trkpt lat="39.9978791" lon="-83.0484905"/>
-<trkpt lat="39.9978372" lon="-83.0485057"/>
-<trkpt lat="39.9977791" lon="-83.0485189"/>
-<trkpt lat="39.9976789" lon="-83.0485311"/>
-<trkpt lat="39.9975667" lon="-83.0485383"/>
-<trkpt lat="39.9975410" lon="-83.0485400"/>
-<trkpt lat="39.9972971" lon="-83.0485552"/>
-<trkpt lat="39.9972744" lon="-83.0485566"/>
-<trkpt lat="39.9972200" lon="-83.0485600"/>
-<trkpt lat="39.9971534" lon="-83.0485643"/>
-<trkpt lat="39.9968326" lon="-83.0485854"/>
-<trkpt lat="39.9967507" lon="-83.0485908"/>
-<trkpt lat="39.9966774" lon="-83.0485952"/>
-<trkpt lat="39.9966544" lon="-83.0485966"/>
-<trkpt lat="39.9964620" lon="-83.0486090"/>
-<trkpt lat="39.9965310" lon="-83.0487680"/>
-<trkpt lat="39.9965610" lon="-83.0488330"/>
-<trkpt lat="39.9966304" lon="-83.0489461"/>
-<trkpt lat="39.9966442" lon="-83.0489710"/>
-<trkpt lat="39.9967239" lon="-83.0490874"/>
-<trkpt lat="39.9967958" lon="-83.0491837"/>
-<trkpt lat="39.9968616" lon="-83.0492760"/>
-<trkpt lat="39.9969718" lon="-83.0494246"/>
-<trkpt lat="39.9971273" lon="-83.0496769"/>
-<trkpt lat="39.9972637" lon="-83.0499500"/>
-<trkpt lat="39.9975000" lon="-83.0504600"/>
-<trkpt lat="39.9975799" lon="-83.0503956"/>
-<trkpt lat="39.9976017" lon="-83.0503780"/>
-<trkpt lat="39.9978820" lon="-83.0501520"/>
-<trkpt lat="39.9979480" lon="-83.0501020"/>
-<trkpt lat="39.9979832" lon="-83.0500792"/>
-<trkpt lat="39.9980020" lon="-83.0500670"/>
-<trkpt lat="39.9981136" lon="-83.0500129"/>
-<trkpt lat="39.9982420" lon="-83.0499840"/>
-<trkpt lat="39.9988794" lon="-83.0499335"/>
-<trkpt lat="39.9989037" lon="-83.0499316"/>
-<trkpt lat="39.9989647" lon="-83.0499277"/>
-<trkpt lat="39.9989608" lon="-83.0498272"/>
-<trkpt lat="39.9989428" lon="-83.0493599"/>
-<trkpt lat="39.9989083" lon="-83.0490225"/>
-<trkpt lat="39.9988973" lon="-83.0489154"/>
-<trkpt lat="39.9988968" lon="-83.0488970"/>
-<trkpt lat="39.9988879" lon="-83.0485955"/>
-<trkpt lat="39.9988685" lon="-83.0485121"/>
-<trkpt lat="39.9988584" lon="-83.0484728"/>
-<trkpt lat="39.9988405" lon="-83.0484144"/>
-<trkpt lat="39.9988228" lon="-83.0483565"/>
-<trkpt lat="39.9988207" lon="-83.0483383"/>
-<trkpt lat="39.9988144" lon="-83.0482831"/>
-<trkpt lat="39.9988207" lon="-83.0483383"/>
-<trkpt lat="39.9988228" lon="-83.0483565"/>
-<trkpt lat="39.9988405" lon="-83.0484144"/>
-<trkpt lat="39.9988584" lon="-83.0484728"/>
-<trkpt lat="39.9988685" lon="-83.0485121"/>
-<trkpt lat="39.9988879" lon="-83.0485955"/>
-<trkpt lat="39.9989093" lon="-83.0485259"/>
-<trkpt lat="39.9989283" lon="-83.0483981"/>
-<trkpt lat="39.9989510" lon="-83.0482460"/>
-<trkpt lat="39.9989679" lon="-83.0482220"/>
-<trkpt lat="39.9989812" lon="-83.0481943"/>
-<trkpt lat="39.9990399" lon="-83.0481824"/>
-<trkpt lat="39.9990573" lon="-83.0481789"/>
-<trkpt lat="39.9990897" lon="-83.0481731"/>
-<trkpt lat="39.9991141" lon="-83.0481687"/>
-<trkpt lat="39.9991631" lon="-83.0481687"/>
-<trkpt lat="39.9993958" lon="-83.0482785"/>
-<trkpt lat="39.9994525" lon="-83.0483053"/>
-<trkpt lat="39.9995380" lon="-83.0483265"/>
-<trkpt lat="39.9996520" lon="-83.0483647"/>
-<trkpt lat="39.9996720" lon="-83.0483714"/>
-<trkpt lat="39.9996777" lon="-83.0485155"/>
-<trkpt lat="39.9996798" lon="-83.0485564"/>
-<trkpt lat="39.9997250" lon="-83.0494510"/>
-<trkpt lat="39.9997870" lon="-83.0507570"/>
-<trkpt lat="39.9998780" lon="-83.0527250"/>
-<trkpt lat="39.9998827" lon="-83.0528217"/>
-<trkpt lat="39.9999310" lon="-83.0538130"/>
-<trkpt lat="39.9999390" lon="-83.0540141"/>
-<trkpt lat="39.9999409" lon="-83.0540624"/>
-<trkpt lat="39.9999480" lon="-83.0542420"/>
-<trkpt lat="39.9999641" lon="-83.0544259"/>
-<trkpt lat="39.9999677" lon="-83.0544700"/>
-<trkpt lat="39.9999846" lon="-83.0546755"/>
-<trkpt lat="40.0000462" lon="-83.0559392"/>
-<trkpt lat="40.0000406" lon="-83.0562731"/>
-<trkpt lat="40.0000173" lon="-83.0564408"/>
-<trkpt lat="39.9999843" lon="-83.0565896"/>
-<trkpt lat="39.9998649" lon="-83.0569761"/>
-<trkpt lat="39.9998600" lon="-83.0569920"/>
-<trkpt lat="39.9998540" lon="-83.0570056"/>
-<trkpt lat="39.9998150" lon="-83.0570940"/>
-<trkpt lat="39.9997681" lon="-83.0571855"/>
-<trkpt lat="39.9997486" lon="-83.0572237"/>
-<trkpt lat="39.9997290" lon="-83.0572620"/>
-<trkpt lat="39.9995301" lon="-83.0576079"/>
-<trkpt lat="39.9994150" lon="-83.0578080"/>
-<trkpt lat="39.9990240" lon="-83.0584590"/>
-<trkpt lat="39.9990063" lon="-83.0584736"/>
-<trkpt lat="39.9989861" lon="-83.0584776"/>
-<trkpt lat="39.9989481" lon="-83.0584680"/>
-<trkpt lat="39.9988627" lon="-83.0584371"/>
-<trkpt lat="39.9988049" lon="-83.0584183"/>
-<trkpt lat="39.9988339" lon="-83.0582221"/>
-<trkpt lat="39.9988590" lon="-83.0579365"/>
-<trkpt lat="39.9988628" lon="-83.0577179"/>
-<trkpt lat="39.9988621" lon="-83.0577066"/>
-<trkpt lat="39.9988572" lon="-83.0575743"/>
-<trkpt lat="39.9988530" lon="-83.0574719"/>
-<trkpt lat="39.9988460" lon="-83.0572720"/>
-<trkpt lat="39.9988240" lon="-83.0568740"/>
-<trkpt lat="39.9988145" lon="-83.0566527"/>
-<trkpt lat="39.9988138" lon="-83.0566372"/>
-<trkpt lat="39.9988077" lon="-83.0564791"/>
-<trkpt lat="39.9987219" lon="-83.0564210"/>
-<trkpt lat="39.9986869" lon="-83.0563943"/>
-<trkpt lat="39.9986589" lon="-83.0563729"/>
-<trkpt lat="39.9984092" lon="-83.0562255"/>
-<trkpt lat="39.9981519" lon="-83.0560681"/>
-<trkpt lat="39.9981399" lon="-83.0560608"/>
-<trkpt lat="39.9981036" lon="-83.0560430"/>
-<trkpt lat="39.9979659" lon="-83.0559756"/>
-<trkpt lat="39.9978970" lon="-83.0559419"/>
-<trkpt lat="39.9978280" lon="-83.0559081"/>
-<trkpt lat="39.9977004" lon="-83.0558563"/>
-<trkpt lat="39.9975861" lon="-83.0558100"/>
-<trkpt lat="39.9975628" lon="-83.0558027"/>
-<trkpt lat="39.9974631" lon="-83.0557670"/>
-<trkpt lat="39.9974616" lon="-83.0558651"/>
-<trkpt lat="39.9974608" lon="-83.0559130"/>
-<trkpt lat="39.9974512" lon="-83.0565273"/>
-<trkpt lat="39.9974260" lon="-83.0568495"/>
-<trkpt lat="39.9974200" lon="-83.0569260"/>
-<trkpt lat="39.9974131" lon="-83.0569949"/>
-<trkpt lat="39.9973648" lon="-83.0574811"/>
-<trkpt lat="39.9972941" lon="-83.0579532"/>
-<trkpt lat="39.9972890" lon="-83.0579872"/>
-<trkpt lat="39.9972770" lon="-83.0580670"/>
-<trkpt lat="39.9972613" lon="-83.0581362"/>
-<trkpt lat="39.9972545" lon="-83.0581662"/>
-<trkpt lat="39.9971793" lon="-83.0585820"/>
-<trkpt lat="39.9970450" lon="-83.0590920"/>
-<trkpt lat="39.9970334" lon="-83.0591382"/>
-<trkpt lat="39.9970150" lon="-83.0592120"/>
-<trkpt lat="39.9969967" lon="-83.0592736"/>
-<trkpt lat="39.9969750" lon="-83.0593430"/>
-<trkpt lat="39.9968764" lon="-83.0596650"/>
-<trkpt lat="39.9967243" lon="-83.0600887"/>
-<trkpt lat="39.9965607" lon="-83.0604752"/>
-<trkpt lat="39.9965460" lon="-83.0605100"/>
-<trkpt lat="39.9965389" lon="-83.0605276"/>
-<trkpt lat="39.9964820" lon="-83.0606570"/>
-<trkpt lat="39.9964261" lon="-83.0607727"/>
-<trkpt lat="39.9964170" lon="-83.0607910"/>
-<trkpt lat="39.9964030" lon="-83.0608176"/>
-<trkpt lat="39.9962273" lon="-83.0611789"/>
-<trkpt lat="39.9960410" lon="-83.0615070"/>
-<trkpt lat="39.9959957" lon="-83.0615903"/>
-<trkpt lat="39.9959801" lon="-83.0616189"/>
-<trkpt lat="39.9959640" lon="-83.0616500"/>
-<trkpt lat="39.9959150" lon="-83.0617300"/>
+<trkpt lat="40.0053660" lon="-83.0582990"/>
+<trkpt lat="40.0051750" lon="-83.0583116"/>
+<trkpt lat="40.0050574" lon="-83.0583194"/>
+<trkpt lat="40.0049809" lon="-83.0583244"/>
+<trkpt lat="40.0045170" lon="-83.0583550"/>
+<trkpt lat="40.0044960" lon="-83.0583503"/>
+<trkpt lat="40.0043090" lon="-83.0583089"/>
+<trkpt lat="40.0042553" lon="-83.0582908"/>
+<trkpt lat="40.0041381" lon="-83.0582511"/>
+<trkpt lat="40.0040826" lon="-83.0582324"/>
+<trkpt lat="40.0038615" lon="-83.0581264"/>
+<trkpt lat="40.0038338" lon="-83.0581058"/>
+<trkpt lat="40.0038087" lon="-83.0580872"/>
+<trkpt lat="40.0036640" lon="-83.0579800"/>
+<trkpt lat="40.0036084" lon="-83.0580739"/>
+<trkpt lat="40.0027104" lon="-83.0595878"/>
+<trkpt lat="40.0026610" lon="-83.0596710"/>
+<trkpt lat="40.0026280" lon="-83.0597275"/>
+<trkpt lat="40.0025152" lon="-83.0599214"/>
+<trkpt lat="40.0024715" lon="-83.0599939"/>
+<trkpt lat="40.0017204" lon="-83.0612880"/>
+<trkpt lat="40.0016440" lon="-83.0614026"/>
+<trkpt lat="40.0011760" lon="-83.0621890"/>
+<trkpt lat="40.0008988" lon="-83.0626561"/>
+<trkpt lat="40.0006696" lon="-83.0630423"/>
+<trkpt lat="40.0006080" lon="-83.0631460"/>
+<trkpt lat="40.0007043" lon="-83.0632342"/>
+<trkpt lat="40.0010807" lon="-83.0635791"/>
+<trkpt lat="40.0011994" lon="-83.0636879"/>
+<trkpt lat="40.0012530" lon="-83.0637370"/>
+<trkpt lat="40.0012991" lon="-83.0637798"/>
+<trkpt lat="40.0013221" lon="-83.0638009"/>
+<trkpt lat="40.0017650" lon="-83.0642080"/>
+<trkpt lat="40.0019474" lon="-83.0643950"/>
+<trkpt lat="40.0020040" lon="-83.0644530"/>
+<trkpt lat="40.0020535" lon="-83.0645242"/>
+<trkpt lat="40.0022060" lon="-83.0647439"/>
+<trkpt lat="40.0023175" lon="-83.0649783"/>
+<trkpt lat="40.0023592" lon="-83.0651021"/>
+<trkpt lat="40.0023813" lon="-83.0651677"/>
+<trkpt lat="40.0024090" lon="-83.0652500"/>
+<trkpt lat="40.0025023" lon="-83.0652074"/>
+<trkpt lat="40.0025361" lon="-83.0651920"/>
+<trkpt lat="40.0026772" lon="-83.0651236"/>
+<trkpt lat="40.0027565" lon="-83.0650064"/>
+<trkpt lat="40.0027764" lon="-83.0649816"/>
+<trkpt lat="40.0028200" lon="-83.0649270"/>
+<trkpt lat="40.0037575" lon="-83.0633385"/>
+<trkpt lat="40.0037759" lon="-83.0633073"/>
+<trkpt lat="40.0038310" lon="-83.0632140"/>
+<trkpt lat="40.0036076" lon="-83.0630096"/>
+<trkpt lat="40.0031260" lon="-83.0625690"/>
+<trkpt lat="40.0030681" lon="-83.0626659"/>
+<trkpt lat="40.0030504" lon="-83.0626957"/>
+<trkpt lat="40.0020816" lon="-83.0643231"/>
+<trkpt lat="40.0020670" lon="-83.0643476"/>
+<trkpt lat="40.0020040" lon="-83.0644530"/>
+<trkpt lat="40.0019474" lon="-83.0643950"/>
+<trkpt lat="40.0017650" lon="-83.0642080"/>
+<trkpt lat="40.0013221" lon="-83.0638009"/>
+<trkpt lat="40.0012991" lon="-83.0637798"/>
+<trkpt lat="40.0012530" lon="-83.0637370"/>
+<trkpt lat="40.0011994" lon="-83.0636879"/>
+<trkpt lat="40.0010807" lon="-83.0635791"/>
+<trkpt lat="40.0007043" lon="-83.0632342"/>
+<trkpt lat="40.0006080" lon="-83.0631460"/>
+<trkpt lat="39.9999640" lon="-83.0625654"/>
+<trkpt lat="39.9998798" lon="-83.0624895"/>
+<trkpt lat="39.9998047" lon="-83.0624033"/>
+<trkpt lat="39.9999059" lon="-83.0622821"/>
+<trkpt lat="39.9999910" lon="-83.0621800"/>
+<trkpt lat="40.0001570" lon="-83.0619429"/>
+<trkpt lat="39.9999910" lon="-83.0621800"/>
+<trkpt lat="39.9999059" lon="-83.0622821"/>
+<trkpt lat="39.9998047" lon="-83.0624033"/>
+<trkpt lat="39.9997161" lon="-83.0624903"/>
+<trkpt lat="39.9996216" lon="-83.0625805"/>
+<trkpt lat="39.9994790" lon="-83.0626883"/>
+<trkpt lat="39.9993390" lon="-83.0627720"/>
+<trkpt lat="39.9991198" lon="-83.0628798"/>
+<trkpt lat="39.9988804" lon="-83.0629641"/>
+<trkpt lat="39.9988070" lon="-83.0629900"/>
+<trkpt lat="39.9988712" lon="-83.0630486"/>
+<trkpt lat="40.0005747" lon="-83.0646028"/>
+<trkpt lat="40.0006220" lon="-83.0646460"/>
+<trkpt lat="40.0005811" lon="-83.0647213"/>
+<trkpt lat="40.0001585" lon="-83.0655005"/>
+<trkpt lat="40.0001442" lon="-83.0655269"/>
+<trkpt lat="40.0000850" lon="-83.0656360"/>
+<trkpt lat="40.0000399" lon="-83.0655950"/>
+<trkpt lat="39.9979775" lon="-83.0637201"/>
+<trkpt lat="39.9979180" lon="-83.0636660"/>
+<trkpt lat="39.9978700" lon="-83.0637080"/>
+<trkpt lat="39.9978482" lon="-83.0637483"/>
+<trkpt lat="39.9978370" lon="-83.0637690"/>
+<trkpt lat="39.9976584" lon="-83.0646667"/>
+<trkpt lat="39.9975419" lon="-83.0652521"/>
+<trkpt lat="39.9975240" lon="-83.0653420"/>
+<trkpt lat="39.9974702" lon="-83.0653052"/>
+<trkpt lat="39.9970110" lon="-83.0649910"/>
 </trkseg></trk></gpx>
