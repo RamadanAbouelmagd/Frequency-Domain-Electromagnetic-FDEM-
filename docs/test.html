@@ -1,0 +1,472 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><style>:root{color-scheme:light dark}body{margin:0}</style></head><body><title>Route Driver</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;700;800&family=Overpass+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: one screen, thumb-reachable. Road-sign green instruction card on top,
+   rotated close-up of the intersection in the middle (your approach always points up),
+   BACK / NEXT at the bottom. Type: Overpass (Highway Gothic descendant) + Overpass Mono. */
+:root {
+  --bg: #eceee9; --panel: #ffffff; --ink: #141a17; --muted: #55625a; --line: #c9d1c9;
+  --sign: #0b6a44; --sign-ink: #ffffff; --route: #1565c0; --collect: #14903f; --drive: #b87800;
+  --warn: #c62828; --map-bg: #f7f8f4; --bgline: #c3cbc2; --next: #1565c0; --btn: #141a17; --btn-ink: #ffffff;
+  --font: "Overpass", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --mono: "Overpass Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1210; --panel: #17201b; --ink: #edf2ee; --muted: #9db0a4; --line: #2a362f;
+    --sign: #0b5a3a; --route: #6db3ff; --collect: #3ddc84; --drive: #ffc233;
+    --warn: #ff8080; --map-bg: #111915; --bgline: #2c3931; --next: #6db3ff; --btn: #edf2ee; --btn-ink: #0d1210;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1210; --panel: #17201b; --ink: #edf2ee; --muted: #9db0a4; --line: #2a362f;
+  --sign: #0b5a3a; --route: #6db3ff; --collect: #3ddc84; --drive: #ffc233;
+  --warn: #ff8080; --map-bg: #111915; --bgline: #2c3931; --next: #6db3ff; --btn: #edf2ee; --btn-ink: #0d1210;
+  color-scheme: dark;
+}
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font); font-size: 16px; }
+.app {
+  box-sizing: border-box; height: 100%; max-width: 560px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px;
+  padding-block: 8px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid var(--route); outline-offset: 2px; }
+
+.top { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.top .name { flex: 1; min-width: 0; font-weight: 700; font-size: 14px; letter-spacing: .02em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chip { font-family: var(--mono); font-weight: 700; font-size: 12px; padding: 5px 9px; border-radius: 999px;
+  border: 1.5px solid var(--line); background: var(--panel); white-space: nowrap; }
+.chip.ok { border-color: var(--collect); color: var(--collect); }
+.chip.bad { border-color: var(--warn); color: var(--warn); }
+button.chip { cursor: pointer; }
+.prog { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.prog > i { display: block; height: 100%; width: 0; background: var(--route); transition: width .25s; }
+.counts { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+.sign { position: relative; display: grid; grid-template-columns: 84px 1fr; gap: 14px; align-items: center;
+  background: var(--sign); color: var(--sign-ink); border-radius: 14px; padding: 14px 16px; min-width: 0; }
+.sign::after { content: ""; position: absolute; inset: 5px; border: 2px solid rgba(255,255,255,.85);
+  border-radius: 10px; pointer-events: none; }
+.sign svg { width: 84px; height: 84px; display: block; }
+.sign .txt { min-width: 0; }
+.verb { font-weight: 800; font-size: clamp(18px, 5.4vw, 24px); letter-spacing: .06em; text-transform: uppercase; line-height: 1.1; }
+.street { font-weight: 800; font-size: clamp(26px, 8.6vw, 38px); line-height: 1.04; margin-top: 3px; overflow-wrap: anywhere;
+  text-wrap: balance; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 8px; }
+.dist { font-family: var(--mono); font-weight: 700; font-size: 20px; }
+.badge { font-weight: 800; font-size: 13px; letter-spacing: .08em; padding: 3px 9px; border-radius: 6px; color: #fff; }
+.badge.collect { background: #14903f; }
+.badge.drive { background: #b87800; }
+.warn { background: var(--warn); color: #fff; border-radius: 10px; padding: 8px 12px; font-weight: 700; font-size: 15px; }
+
+.map { flex: 1; min-height: 150px; position: relative; border-radius: 14px; overflow: hidden;
+  background: var(--map-bg); border: 1.5px solid var(--line); }
+.map svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.map text { font-family: var(--font); font-weight: 700; font-size: 11px; fill: var(--ink);
+  paint-order: stroke; stroke: var(--map-bg); stroke-width: 3.5px; stroke-linejoin: round; }
+
+.then { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 8px 12px; background: var(--panel);
+  border: 1.5px solid var(--line); border-radius: 12px; }
+.then .lab { font-family: var(--mono); font-weight: 700; font-size: 12px; color: var(--muted); letter-spacing: .08em; }
+.then svg { width: 30px; height: 30px; flex: none; color: var(--next); }
+.then .t { min-width: 0; font-weight: 700; font-size: 16px; line-height: 1.15; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+
+.ctrl { display: grid; grid-template-columns: 1fr 2.2fr; gap: 10px; }
+.big { height: 66px; border-radius: 14px; border: 0; font-weight: 800; font-size: 22px; letter-spacing: .08em; }
+.big.back { background: var(--panel); border: 2px solid var(--line); }
+.big.next { background: var(--btn); color: var(--btn-ink); }
+.big:active { transform: scale(.98); }
+.small { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.small button { height: 44px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--panel);
+  font-weight: 700; font-size: 14px; }
+.small button[aria-pressed="true"] { border-color: var(--route); color: var(--route); }
+
+.sheet { position: fixed; inset: 0; z-index: 20; background: var(--bg); display: flex; flex-direction: column;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.sheet header { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; gap: 10px; }
+.sheet h2 { margin: 0; font-size: 20px; font-weight: 800; }
+.sheet .close { height: 44px; padding: 0 18px; border-radius: 10px; border: 2px solid var(--line); background: var(--panel); font-weight: 800; }
+.list { overflow-y: auto; flex: 1; padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
+.row { display: grid; grid-template-columns: 52px 1fr auto; gap: 10px; align-items: center; width: 100%; text-align: left;
+  padding: 10px 6px; background: none; border: 0; border-bottom: 1px solid var(--line); min-width: 0; }
+.row .n { font-family: var(--mono); font-weight: 700; color: var(--muted); }
+.row .s { min-width: 0; }
+.row .s b { display: block; font-size: 16px; overflow-wrap: anywhere; }
+.row .s span { font-size: 13px; color: var(--muted); font-weight: 700; letter-spacing: .04em; }
+.row .f { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.row.cur { background: color-mix(in srgb, var(--route) 14%, transparent); }
+.row.done .s b { color: var(--muted); }
+.row .m-c { color: var(--collect); } .row .m-d { color: var(--drive); }
+.pick { display: block; width: 100%; text-align: left; padding: 14px; margin-bottom: 10px; border-radius: 12px;
+  border: 2px solid var(--line); background: var(--panel); font-weight: 800; font-size: 18px; }
+.pick small { display: block; font-weight: 500; color: var(--muted); font-size: 14px; margin-top: 2px; }
+</style>
+
+<div class="app" id="app">
+  <div class="top">
+    <div class="name" id="rname">Route</div>
+    <button class="chip" id="gps" type="button">GPS: tap to enable</button>
+    <button class="chip" id="chg" type="button" hidden>Routes</button>
+  </div>
+  <div>
+    <div class="prog"><i id="bar"></i></div>
+    <div class="counts"><span id="cnt">Step 1 / 1</span><span id="rem">0 mi left</span></div>
+  </div>
+
+  <section class="sign" aria-live="polite">
+    <div id="arrow"></div>
+    <div class="txt">
+      <div class="verb" id="verb">START</div>
+      <div class="street" id="street">Street</div>
+      <div class="meta"><span class="dist" id="dist">0 ft</span><span class="badge" id="badge">DRIVE</span></div>
+    </div>
+  </section>
+  <div class="warn" id="warn" hidden></div>
+  <div class="warn" id="off" hidden></div>
+
+  <section class="map" aria-label="Close-up of this intersection, your approach points up">
+    <svg id="map" viewBox="0 0 360 300" preserveAspectRatio="xMidYMid meet"></svg>
+  </section>
+
+  <section class="then"><span class="lab">THEN</span><span id="thenArrow"></span><span class="t" id="thenText">-</span></section>
+
+  <div class="ctrl">
+    <button class="big back" id="back" type="button">BACK</button>
+    <button class="big next" id="next" type="button">NEXT STEP</button>
+  </div>
+  <div class="small">
+    <button id="bSteps" type="button">Steps</button>
+    <button id="bNear" type="button">Nearest</button>
+    <button id="bVoice" type="button" aria-pressed="false">Voice off</button>
+    <button id="bDone" type="button">Restart</button>
+  </div>
+</div>
+
+<div class="sheet" id="stepsSheet" hidden>
+  <header><h2>All steps</h2><button class="close" id="stepsClose" type="button">Close</button></header>
+  <div class="list" id="stepsList"></div>
+</div>
+<div class="sheet" id="routesSheet" hidden>
+  <header><h2>Choose a route</h2><button class="close" id="routesClose" type="button">Close</button></header>
+  <div class="list" id="routesList"></div>
+</div>
+
+<script>
+(function () {
+  var ROUTES = [{"id":"test-ember-liberty","title":"TEST: Ember Sq to 111 Liberty St","note":"test drive, not a collection route","steps":[{"turn":"start","street":"Ember Square","mode":"DRIVE","ft":169,"coords":[[-83.136731,40.043709],[-83.136806,40.043683],[-83.137026,40.043605],[-83.136914,40.043408]]},{"turn":"right","street":"Ember Square","mode":"DRIVE","ft":79,"coords":[[-83.136914,40.043408],[-83.137171,40.04332]]},{"turn":"right","street":"Mountain Laurel Road","mode":"DRIVE","ft":332,"coords":[[-83.137171,40.04332],[-83.137292,40.043524],[-83.137409,40.043713],[-83.137469,40.043811],[-83.137539,40.043924],[-83.137675,40.044145]]},{"turn":"left","street":"Prairie Rose Boulevard","mode":"DRIVE","ft":334,"coords":[[-83.137675,40.044145],[-83.137781,40.04414],[-83.137826,40.044138],[-83.137969,40.044087],[-83.138155,40.044038],[-83.138332,40.044008],[-83.138465,40.043987],[-83.138611,40.043962],[-83.138674,40.043943],[-83.138701,40.043935],[-83.138824,40.043922]]},{"turn":"left","street":"Leap Road","mode":"DRIVE","ft":755,"coords":[[-83.138824,40.043922],[-83.13881,40.043825],[-83.13881,40.043696],[-83.13886,40.042979],[-83.138893,40.042854],[-83.13892,40.042591],[-83.138931,40.042443],[-83.138933,40.042268],[-83.138925,40.042149],[-83.138905,40.042044],[-83.138901,40.041998],[-83.138899,40.041977],[-83.138945,40.041861]]},{"turn":"roundabout","street":"Leap Road","mode":"DRIVE","ft":107,"coords":[[-83.138945,40.041861],[-83.138972,40.041845],[-83.138996,40.041826],[-83.13903,40.041787],[-83.139051,40.041744],[-83.139059,40.041698],[-83.139053,40.041651],[-83.139028,40.0416]],"exit":1},{"turn":"slight_right","street":"Leap Road","mode":"DRIVE","ft":491,"coords":[[-83.139028,40.0416],[-83.139037,40.041518],[-83.139062,40.041423],[-83.139089,40.041359],[-83.139109,40.041315],[-83.139184,40.041198],[-83.139289,40.041002],[-83.139373,40.040852],[-83.13938,40.040831],[-83.139393,40.040716],[-83.139534,40.040317]]},{"turn":"left","street":"Reynolds Drive","mode":"DRIVE","ft":2632,"coords":[[-83.139534,40.040317],[-83.1394,40.04031],[-83.138694,40.040271],[-83.138009,40.040234],[-83.137843,40.04021],[-83.137887,40.039958],[-83.137877,40.039898],[-83.137861,40.039807],[-83.137815,40.039677],[-83.137737,40.039554],[-83.137639,40.039436],[-83.137529,40.039334],[-83.137391,40.039241],[-83.137324,40.039205],[-83.137212,40.03917],[-83.137072,40.039123],[-83.136896,40.039087],[-83.136701,40.039082],[-83.136478,40.039087],[-83.136399,40.039089],[-83.13614,40.039095],[-83.135363,40.039111],[-83.135048,40.039122],[-83.134439,40.039137],[-83.134298,40.03914],[-83.134179,40.039145],[-83.133946,40.039154],[-83.133926,40.039155],[-83.133241,40.039174],[-83.133131,40.039177],[-83.133052,40.039179],[-83.132943,40.03917],[-83.132832,40.039147],[-83.132766,40.039126],[-83.132636,40.039073],[-83.132524,40.038996],[-83.132301,40.0388],[-83.132177,40.03872],[-83.132053,40.03866],[-83.131964,40.038628],[-83.131876,40.038606],[-83.131756,40.038599],[-83.131478,40.038588],[-83.131413,40.038586]]},{"turn":"right","street":"Britton Parkway","mode":"DRIVE","ft":682,"coords":[[-83.131413,40.038586],[-83.131249,40.037337],[-83.131194,40.037034],[-83.131193,40.036947],[-83.131212,40.03682],[-83.131258,40.036731]]},{"turn":"roundabout","street":"Britton Parkway","mode":"DRIVE","ft":156,"coords":[[-83.131258,40.036731],[-83.131331,40.036687],[-83.13138,40.036626],[-83.131401,40.036556],[-83.13139,40.036485],[-83.13135,40.036421],[-83.131284,40.03637]],"exit":2},{"turn":"slight_right","street":"Britton Parkway","mode":"DRIVE","ft":1414,"coords":[[-83.131284,40.03637],[-83.131219,40.036196],[-83.131202,40.036018],[-83.13122,40.035861],[-83.131282,40.035502],[-83.131478,40.034294],[-83.131513,40.03388],[-83.131516,40.033517],[-83.131488,40.033179],[-83.131418,40.032695],[-83.131413,40.032664],[-83.131392,40.032515]]},{"turn":"left","street":"Cemetery Road","mode":"DRIVE","ft":921,"coords":[[-83.131392,40.032515],[-83.131376,40.032416],[-83.131222,40.032429],[-83.131068,40.032439],[-83.130625,40.03247],[-83.130357,40.032496],[-83.130322,40.0325],[-83.130068,40.032523],[-83.12959,40.032567],[-83.129437,40.032581],[-83.129237,40.032592],[-83.12891,40.03262],[-83.12855,40.032653],[-83.128236,40.032682]]},{"turn":"slight_right","street":"I 270 South: Grove City","mode":"DRIVE","ft":2849,"coords":[[-83.128236,40.032682],[-83.127397,40.032688],[-83.126342,40.032621],[-83.125333,40.032366],[-83.124935,40.032232],[-83.124722,40.032134],[-83.12448,40.031994],[-83.124281,40.031871],[-83.124109,40.031712],[-83.123836,40.031406],[-83.123668,40.031113],[-83.123562,40.030823],[-83.123349,40.030044],[-83.12319,40.029456],[-83.122893,40.028206],[-83.122637,40.027509]]},{"turn":"slight_left","street":"Jack Nicklaus Freeway","mode":"DRIVE","ft":15561,"coords":[[-83.122637,40.027509],[-83.121728,40.022475],[-83.121586,40.021678],[-83.121409,40.020756],[-83.121061,40.01884],[-83.120989,40.018446],[-83.120602,40.016331],[-83.119676,40.011188],[-83.119532,40.010396],[-83.119354,40.009478],[-83.119209,40.008675],[-83.118961,40.007302],[-83.118876,40.006832],[-83.11863,40.005407],[-83.118442,40.003857],[-83.118363,40.002618],[-83.118353,40.002327],[-83.11834,40.001762],[-83.118351,40.000724],[-83.11839,39.99973],[-83.118496,39.996822],[-83.118508,39.99651],[-83.118531,39.99589],[-83.118539,39.99569],[-83.118642,39.992898],[-83.118665,39.992155],[-83.118722,39.990629],[-83.118751,39.989807],[-83.118782,39.98893],[-83.118836,39.987331],[-83.118845,39.986963],[-83.118852,39.986793],[-83.118903,39.985334],[-83.118913,39.985021]]},{"turn":"slight_right","street":"I 70 East, I 70 West: Columbus, Dayton","mode":"DRIVE","ft":1336,"coords":[[-83.118913,39.985021],[-83.118981,39.984522],[-83.119162,39.982681],[-83.119214,39.981363]]},{"turn":"slight_left","street":"I 70 East: Columbus","mode":"DRIVE","ft":6162,"coords":[[-83.119214,39.981363],[-83.119223,39.98107],[-83.119287,39.979648],[-83.119315,39.979411],[-83.119362,39.9792],[-83.119415,39.979061],[-83.119507,39.978884],[-83.119605,39.978729],[-83.119721,39.978576],[-83.119889,39.9784],[-83.120048,39.978263],[-83.120601,39.977807],[-83.120769,39.977652],[-83.120912,39.97749],[-83.12103,39.977318],[-83.121132,39.977116],[-83.121201,39.976931],[-83.12125,39.976767],[-83.121266,39.976611],[-83.121273,39.976456],[-83.12126,39.976261],[-83.121228,39.976072],[-83.12117,39.975887],[-83.121096,39.975691],[-83.121009,39.975542],[-83.120892,39.975395],[-83.120756,39.975242],[-83.12059,39.975094],[-83.120408,39.974954],[-83.120238,39.974853],[-83.120075,39.974769],[-83.119884,39.974684],[-83.119766,39.974635],[-83.119535,39.974561],[-83.119364,39.974515],[-83.119153,39.974481],[-83.118984,39.974465],[-83.118827,39.974458],[-83.118709,39.974458],[-83.118471,39.974465],[-83.118235,39.974489],[-83.117958,39.97454],[-83.117744,39.974598],[-83.117538,39.974662],[-83.115419,39.975423],[-83.114834,39.975632],[-83.11448,39.975743],[-83.114244,39.975813],[-83.113879,39.975895],[-83.113649,39.975941],[-83.113396,39.975978],[-83.113069,39.976019],[-83.112796,39.976035],[-83.112422,39.976049],[-83.112007,39.976035],[-83.111074,39.976002],[-83.110207,39.975954],[-83.10945,39.975905],[-83.108155,39.975849]]},{"turn":"slight_left","street":"West Freeway","mode":"DRIVE","ft":12044,"coords":[[-83.108155,39.975849],[-83.103752,39.975243],[-83.102602,39.975084],[-83.101379,39.974922],[-83.100327,39.974777],[-83.098886,39.974582],[-83.097654,39.974416],[-83.097099,39.974353],[-83.095201,39.974172],[-83.093947,39.974094],[-83.091861,39.974021],[-83.08931,39.973977],[-83.088731,39.973953],[-83.086687,39.973824],[-83.085393,39.973701],[-83.084087,39.973548],[-83.081789,39.973201],[-83.081174,39.973085],[-83.080554,39.972963],[-83.080014,39.972856],[-83.0798,39.972813],[-83.078638,39.972566],[-83.078477,39.972526],[-83.078056,39.972426],[-83.078009,39.972416],[-83.076995,39.972144],[-83.076874,39.972112],[-83.076544,39.972024],[-83.074453,39.971385],[-83.073925,39.971223],[-83.07288,39.970871],[-83.071761,39.970503],[-83.068423,39.969371],[-83.068307,39.969329],[-83.067734,39.969132],[-83.066906,39.968856],[-83.066544,39.968742]]},{"turn":"slight_right","street":"West Freeway","mode":"DRIVE","ft":17032,"coords":[[-83.066544,39.968742],[-83.065565,39.968363],[-83.065004,39.96817],[-83.064654,39.968056],[-83.064047,39.967851],[-83.061357,39.966938],[-83.060526,39.966657],[-83.060028,39.966487],[-83.059432,39.966284],[-83.058293,39.965901],[-83.057924,39.965763],[-83.05772,39.965691],[-83.057267,39.965513],[-83.056823,39.965325],[-83.056386,39.965132],[-83.055958,39.964929],[-83.055535,39.96472],[-83.05523,39.964566],[-83.054768,39.964313],[-83.054316,39.964051],[-83.053492,39.963531],[-83.052963,39.963168],[-83.052753,39.963021],[-83.051873,39.962407],[-83.051393,39.962077],[-83.05096,39.961776],[-83.050372,39.961364],[-83.049848,39.96099],[-83.049557,39.960783],[-83.049123,39.96047],[-83.048689,39.960146],[-83.048497,39.96],[-83.048384,39.959912],[-83.047911,39.959535],[-83.047606,39.959286],[-83.047164,39.958914],[-83.04658,39.958414],[-83.0459,39.95781],[-83.045038,39.956996],[-83.04478,39.956744],[-83.043987,39.955917],[-83.043106,39.95495],[-83.042457,39.954187],[-83.042273,39.953982],[-83.041949,39.953557],[-83.041794,39.953355],[-83.041518,39.952996],[-83.040903,39.952152],[-83.040764,39.951917],[-83.040322,39.951298],[-83.03982,39.950595],[-83.039495,39.950193],[-83.039289,39.949937],[-83.039047,39.949682],[-83.038786,39.949429],[-83.038493,39.949181],[-83.038205,39.948971],[-83.037898,39.948768],[-83.037569,39.948579],[-83.037235,39.948402],[-83.036921,39.948251],[-83.036585,39.948113],[-83.036221,39.947985],[-83.035854,39.947877],[-83.035522,39.947795],[-83.035242,39.947733],[-83.034994,39.947694],[-83.034514,39.947632],[-83.034168,39.9476],[-83.033804,39.947581],[-83.03343,39.947582],[-83.033166,39.947587],[-83.032905,39.947602],[-83.032767,39.947612],[-83.032596,39.947626],[-83.032426,39.947648],[-83.032176,39.947682],[-83.031928,39.947723],[-83.031817,39.947746],[-83.0312,39.947875],[-83.031057,39.94791],[-83.030735,39.947994],[-83.030168,39.948146],[-83.029972,39.948196],[-83.029554,39.94831],[-83.028749,39.948522],[-83.028131,39.948685],[-83.027536,39.948823],[-83.027039,39.948963],[-83.026874,39.949004],[-83.026232,39.949167],[-83.025636,39.949301],[-83.025077,39.949414],[-83.024462,39.949538],[-83.023152,39.949714],[-83.021759,39.949879],[-83.021221,39.94994],[-83.02109,39.949958],[-83.020939,39.949971],[-83.0208,39.949979],[-83.020441,39.949991],[-83.020054,39.949998],[-83.019329,39.95],[-83.018736,39.950004],[-83.018262,39.950008],[-83.017608,39.95003]]},{"turn":"straight","street":"South Innerbelt","mode":"DRIVE","ft":2950,"coords":[[-83.017608,39.95003],[-83.016722,39.950078],[-83.015933,39.950199],[-83.015357,39.950328],[-83.014678,39.95053],[-83.014146,39.950724],[-83.013614,39.950932],[-83.011293,39.951976],[-83.01025,39.952348],[-83.009704,39.952513],[-83.009122,39.952658],[-83.008532,39.952782],[-83.007873,39.952889]]},{"turn":"slight_right","street":"unnamed road","mode":"DRIVE","ft":2027,"coords":[[-83.007873,39.952889],[-83.007669,39.952888],[-83.00733,39.952898],[-83.00668,39.952938],[-83.005921,39.952972],[-83.005329,39.952991],[-83.004841,39.953003],[-83.004541,39.953002],[-83.004204,39.952984],[-83.003247,39.952906],[-83.003049,39.952897],[-83.002821,39.952904],[-83.002644,39.952929],[-83.002062,39.953067],[-83.001675,39.95315],[-83.001222,39.953231],[-83.000713,39.953288]]},{"turn":"right","street":"South Front Street","mode":"DRIVE","ft":774,"coords":[[-83.000713,39.953288],[-83.000634,39.95286],[-83.000607,39.95273],[-83.000591,39.952646],[-83.000516,39.952253],[-83.000481,39.952069],[-83.00046,39.951959],[-83.000455,39.951938],[-83.00045,39.951911],[-83.000407,39.951672],[-83.000368,39.951483],[-83.000336,39.951317],[-83.00031,39.951186]]},{"turn":"right","street":"Liberty Street","mode":"DRIVE","ft":446,"coords":[[-83.00031,39.951186],[-83.00043,39.951176],[-83.000499,39.95117],[-83.001164,39.951114],[-83.001409,39.951094],[-83.001893,39.951055]]},{"turn":"arrive","street":"Destination","mode":"DRIVE","ft":0,"coords":[[-83.001893,39.951055],[-83.001893,39.951055]]}]}];
+  var $ = function (id) { return document.getElementById(id); };
+  var FT = 3.28084, ADV_M = 30, OFF_M = 70;
+  var R, steps, i = 0, remFt = [], pos = null, watchId = null, voiceOn = false;
+
+  function sget(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function sset(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+  var VERB = { start: "START", straight: "CONTINUE", slight_right: "BEAR RIGHT", right: "TURN RIGHT",
+    sharp_right: "SHARP RIGHT", uturn: "U-TURN", sharp_left: "SHARP LEFT", left: "TURN LEFT",
+    slight_left: "BEAR LEFT", roundabout: "ROUNDABOUT", arrive: "ARRIVE" };
+  var ANG = { straight: 0, start: 0, slight_right: 45, right: 90, sharp_right: 135, slight_left: -45, left: -90, sharp_left: -135 };
+  function verbOf(s) {
+    if (s.turn === "roundabout" && s.exit) return "ROUNDABOUT, EXIT " + s.exit;
+    return VERB[s.turn] || "CONTINUE";
+  }
+  function fmtFt(ft) { return ft >= 1000 ? (ft / 5280).toFixed(2) + " mi" : Math.round(ft).toLocaleString() + " ft"; }
+
+  function arrowSVG(turn) {
+    var a = '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
+    if (turn === "uturn") {
+      a += '<path d="M66 94V40A16 16 0 0 0 34 40V60"/><path d="M22 60L34 80L46 60Z" fill="currentColor"/>';
+    } else if (turn === "roundabout") {
+      a += '<path d="M50 94V72"/><circle cx="50" cy="50" r="22"/><path d="M50 28V14"/><path d="M36 22L50 4L64 22Z" fill="currentColor"/>';
+    } else if (turn === "arrive") {
+      a += '<path d="M30 92V12"/><path d="M30 14L80 30L30 48Z" fill="currentColor"/>';
+    } else {
+      var d = ANG[turn] || 0;
+      a += '<path d="M50 94V58"/><g transform="rotate(' + d + ' 50 58)"><path d="M50 58V30"/><path d="M34 32L50 8L66 32Z" fill="currentColor"/></g>';
+    }
+    return a + "</svg>";
+  }
+
+  /* ---------- geometry ---------- */
+  function hyp(x, y) { return Math.sqrt(x * x + y * y); }
+  function dm(a, b) {
+    var k = Math.cos(a[1] * Math.PI / 180);
+    return hyp((a[0] - b[0]) * 111320 * k, (a[1] - b[1]) * 110574);
+  }
+  function distToLine(p, line) {
+    var k = Math.cos(p[1] * Math.PI / 180), best = 1e12;
+    for (var j = 0; j < line.length - 1; j++) {
+      var ax = (line[j][0] - p[0]) * 111320 * k, ay = (line[j][1] - p[1]) * 110574;
+      var bx = (line[j + 1][0] - p[0]) * 111320 * k, by = (line[j + 1][1] - p[1]) * 110574;
+      var dx = bx - ax, dy = by - ay, L = dx * dx + dy * dy, t = L ? Math.max(0, Math.min(1, -(ax * dx + ay * dy) / L)) : 0;
+      var d = hyp(ax + t * dx, ay + t * dy);
+      if (d < best) best = d;
+    }
+    if (line.length === 1) best = dm(p, line[0]);
+    return best;
+  }
+  function clipLen(pts, maxM, fromEnd) {
+    var a = fromEnd ? pts.slice().reverse() : pts, out = [a[0]], run = 0;
+    for (var j = 1; j < a.length; j++) {
+      var d = hyp(a[j].x - a[j - 1].x, a[j].y - a[j - 1].y);
+      if (run + d > maxM) {
+        var t = (maxM - run) / d;
+        out.push({ x: a[j - 1].x + (a[j].x - a[j - 1].x) * t, y: a[j - 1].y + (a[j].y - a[j - 1].y) * t });
+        run = maxM; break;
+      }
+      out.push(a[j]); run += d;
+    }
+    return { pts: fromEnd ? out.reverse() : out, cut: run >= maxM };
+  }
+
+  /* ---------- map close-up (rotated so the approach heading points up) ---------- */
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function el(name, attrs, parent) {
+    var e = document.createElementNS(SVGNS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function poly(pts) { return pts.map(function (p) { return p.sx.toFixed(1) + "," + p.sy.toFixed(1); }).join(" "); }
+
+  function drawMap() {
+    var svg = $("map"); svg.textContent = "";
+    var W = svg.clientWidth || 360, H = svg.clientHeight || 300, pad = 34;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    var s = steps[i], cur = s.coords, prev = i > 0 ? steps[i - 1].coords : null, nxt = i < steps.length - 1 ? steps[i + 1].coords : null;
+    var o = cur[0], k = Math.cos(o[1] * Math.PI / 180);
+    var P = function (c) { return { x: (c[0] - o[0]) * 111320 * k, y: (c[1] - o[1]) * 110574 }; };
+    var cp = cur.map(P), pp = prev ? prev.map(P) : null, np = nxt ? nxt.map(P) : null;
+    var head = null, ref = pp || cp, end = pp ? pp[pp.length - 1] : cp[0], j;
+    if (pp) { for (j = pp.length - 1; j >= 0; j--) if (hyp(pp[j].x - end.x, pp[j].y - end.y) > 8) { head = Math.atan2(end.y - pp[j].y, end.x - pp[j].x); break; } }
+    if (head === null) { for (j = 1; j < cp.length; j++) if (hyp(cp[j].x, cp[j].y) > 8) { head = Math.atan2(cp[j].y, cp[j].x); break; } }
+    if (head === null) head = Math.PI / 2;
+    var rot = Math.PI / 2 - head, cr = Math.cos(rot), sr = Math.sin(rot);
+    var T = function (p) { return { x: p.x * cr - p.y * sr, y: p.x * sr + p.y * cr }; };
+
+    var cC = clipLen(cp, 420, false), pC = pp ? clipLen(pp, 140, true) : null, nC = np ? clipLen(np, 200, false) : null;
+    var parts = [cC.pts.map(T)]; if (pC) parts.push(pC.pts.map(T)); if (nC) parts.push(nC.pts.map(T));
+    var minx = 1e9, maxx = -1e9, miny = 1e9, maxy = -1e9;
+    parts.forEach(function (a) { a.forEach(function (p) { minx = Math.min(minx, p.x); maxx = Math.max(maxx, p.x); miny = Math.min(miny, p.y); maxy = Math.max(maxy, p.y); }); });
+    var cx = (minx + maxx) / 2, cy = (miny + maxy) / 2, w = Math.max(maxx - minx, 110), h = Math.max(maxy - miny, 110);
+    var sc = Math.min((W - 2 * pad) / w, (H - 2 * pad) / h);
+    var S = function (p) { var t = p.x !== undefined && p.sx === undefined ? p : p; return { sx: W / 2 + (t.x - cx) * sc, sy: H / 2 - (t.y - cy) * sc }; };
+
+    /* background streets of the zone, faint, so you can see the cross streets */
+    if (R.bg) {
+      var half = Math.max(w, h) / 2 + 120, lonpad = half / (111320 * k), latpad = half / 110574;
+      var rcx = o[0] + (cx * cr + cy * sr) / (111320 * k), rcy = o[1] + (-cx * sr + cy * cr) / 110574;
+      var g = el("g", { fill: "none", stroke: "var(--bgline)", "stroke-width": 1.4, "stroke-linecap": "round", "stroke-linejoin": "round" }, svg);
+      R.bg.forEach(function (b) {
+        if (b.x1 < rcx - lonpad || b.x0 > rcx + lonpad || b.y1 < rcy - latpad || b.y0 > rcy + latpad) return;
+        el("polyline", { points: poly(b.c.map(function (c) { return S(T(P(c))); })) }, g);
+      });
+    }
+    var tr = function (a) { return a.map(function (p) { return S(T(p)); }); };
+    if (pC) el("polyline", { points: poly(tr(pC.pts)), fill: "none", stroke: "var(--muted)", "stroke-width": 7, "stroke-linecap": "round", "stroke-linejoin": "round", opacity: .55 }, svg);
+    if (nC) el("polyline", { points: poly(tr(nC.pts)), fill: "none", stroke: "var(--next)", "stroke-width": 6, "stroke-dasharray": "2 11", "stroke-linecap": "round", "stroke-linejoin": "round" }, svg);
+    var col = s.mode === "COLLECT" ? "var(--collect)" : s.turn === "arrive" ? "var(--route)" : "var(--drive)";
+    var cs = tr(cC.pts);
+    el("polyline", { points: poly(cs), fill: "none", stroke: col, "stroke-width": 9, "stroke-linecap": "round", "stroke-linejoin": "round" }, svg);
+    /* direction chevrons along the current leg */
+    var acc = 0, nextAt = 28;
+    for (j = 1; j < cs.length; j++) {
+      var dx = cs[j].sx - cs[j - 1].sx, dy = cs[j].sy - cs[j - 1].sy, L = hyp(dx, dy), ang = Math.atan2(dy, dx) * 180 / Math.PI;
+      while (acc + L >= nextAt) {
+        var t = (nextAt - acc) / L, mx = cs[j - 1].sx + dx * t, my = cs[j - 1].sy + dy * t;
+        el("path", { d: "M-5 -5L3 0L-5 5", transform: "translate(" + mx.toFixed(1) + " " + my.toFixed(1) + ") rotate(" + ang.toFixed(0) + ")",
+          fill: "none", stroke: "#fff", "stroke-width": 2.6, "stroke-linecap": "round", "stroke-linejoin": "round" }, svg);
+        nextAt += 46;
+      }
+      acc += L;
+    }
+    /* the intersection you turn at, and where this leg ends */
+    var a0 = S(T(cp[0]));
+    el("circle", { cx: a0.sx, cy: a0.sy, r: 10, fill: "var(--ink)" }, svg);
+    el("circle", { cx: a0.sx, cy: a0.sy, r: 4.5, fill: "var(--map-bg)" }, svg);
+    if (!cC.cut && cs.length > 1) {
+      var z = cs[cs.length - 1];
+      el("circle", { cx: z.sx, cy: z.sy, r: 7, fill: "var(--map-bg)", stroke: "var(--ink)", "stroke-width": 3 }, svg);
+    }
+    /* labels: street you came on, this street, street after */
+    function label(txt, p, dx, dy) {
+      if (txt.length > 24) txt = txt.slice(0, 23) + "...";
+      var wpx = txt.length * 6.4, right = p.sx + dx + wpx > W - 6;
+      var t = el("text", { x: right ? p.sx - dx : p.sx + dx, y: Math.max(14, Math.min(H - 6, p.sy + dy)), "text-anchor": right ? "end" : "start" }, svg);
+      t.textContent = txt;
+    }
+    if (pC && i > 0) { var pa = tr(pC.pts)[0]; label(steps[i - 1].street, pa, 12, 4); }
+    var mid = cs[Math.min(cs.length - 1, Math.floor(cs.length / 2))];
+    label(s.street, mid, 12, -15);
+    if (nC && nxt) { var na = tr(nC.pts), ne = na[na.length - 1]; label(steps[i + 1].street, ne, 10, 4); }
+    /* north indicator */
+    var ng = el("g", { transform: "translate(24 28) rotate(" + (rot * 180 / Math.PI).toFixed(0) + ")" }, svg);
+    el("path", { d: "M0 -13L6 7L0 3L-6 7Z", fill: "var(--ink)" }, ng);
+    var nt = el("text", { x: 0, y: -17, "text-anchor": "middle", transform: "rotate(" + (-(rot * 180 / Math.PI)).toFixed(0) + " 0 -17)" }, ng); nt.textContent = "N";
+    /* you (GPS) */
+    if (pos) {
+      var up = S(T(P(pos)));
+      if (up.sx > 0 && up.sx < W && up.sy > 0 && up.sy < H) {
+        el("circle", { cx: up.sx, cy: up.sy, r: 16, fill: "var(--route)", opacity: .22 }, svg);
+        el("circle", { cx: up.sx, cy: up.sy, r: 8, fill: "var(--route)", stroke: "#fff", "stroke-width": 3 }, svg);
+      }
+    }
+  }
+
+  /* ---------- render ---------- */
+  function render(speak) {
+    var s = steps[i], n = steps.length;
+    $("rname").textContent = R.title;
+    $("cnt").textContent = "Step " + (i + 1) + " / " + n;
+    $("rem").textContent = (remFt[i] / 5280).toFixed(1) + " mi left";
+    $("bar").style.width = (100 * i / Math.max(1, n - 1)).toFixed(1) + "%";
+    $("arrow").innerHTML = arrowSVG(s.turn);
+    $("verb").textContent = verbOf(s) + (s.turn === "start" || s.turn === "arrive" ? "" : " onto");
+    if (s.turn === "start") $("verb").textContent = "START ON";
+    if (s.turn === "arrive") $("verb").textContent = "ARRIVE";
+    $("street").textContent = s.turn === "arrive" ? (s.street || "Destination") : s.street;
+    $("dist").textContent = s.turn === "arrive" ? "" : fmtFt(s.ft);
+    var b = $("badge"); b.textContent = s.mode === "COLLECT" ? "COLLECT" : s.mode === "DRIVE" ? "DRIVE" : "REPEAT - NO PICKUP";
+    b.className = "badge " + (s.mode === "COLLECT" ? "collect" : "drive");
+    b.hidden = s.turn === "arrive";
+    var w = $("warn"); w.hidden = !s.warn; w.textContent = s.warn || "";
+    var nx = steps[i + 1];
+    $("thenArrow").innerHTML = nx ? arrowSVG(nx.turn) : "";
+    $("thenText").textContent = nx ? verbOf(nx) + (nx.turn === "arrive" ? "" : " onto ") + (nx.turn === "arrive" ? "" : nx.street) + (nx.turn === "arrive" ? "" : "  -  " + fmtFt(nx.ft)) : "End of route";
+    $("back").disabled = i === 0;
+    $("back").style.opacity = i === 0 ? .4 : 1;
+    $("next").textContent = i === n - 1 ? "FINISHED" : "NEXT STEP";
+    drawMap();
+    sset("drv:" + R.id, String(i));
+    if (speak && voiceOn) say(s);
+    checkOff();
+  }
+  function say(s) {
+    try {
+      if (!window.speechSynthesis) return;
+      window.speechSynthesis.cancel();
+      var t = verbOf(s).toLowerCase() + (s.turn === "arrive" ? "" : " onto " + s.street + ". " + Math.round(s.ft) + " feet." + (s.mode === "COLLECT" ? " Collect." : ""));
+      window.speechSynthesis.speak(new SpeechSynthesisUtterance(t));
+    } catch (e) {}
+  }
+  function go(j, speak) { i = Math.max(0, Math.min(steps.length - 1, j)); render(speak !== false); }
+
+  /* ---------- GPS ---------- */
+  function setGps(txt, cls) { var g = $("gps"); g.textContent = txt; g.className = "chip " + (cls || ""); }
+  function startGps() {
+    if (!navigator.geolocation) { setGps("GPS unavailable: manual", "bad"); return; }
+    if (watchId !== null) return;
+    setGps("GPS: waiting...", "");
+    try {
+      watchId = navigator.geolocation.watchPosition(onPos, function (e) {
+        watchId = null;
+        setGps(e && e.code === 1 ? "GPS blocked: manual mode" : "GPS error: manual mode", "bad");
+      }, { enableHighAccuracy: true, maximumAge: 1000, timeout: 20000 });
+    } catch (e) { setGps("GPS blocked: manual mode", "bad"); }
+  }
+  function onPos(p) {
+    pos = [p.coords.longitude, p.coords.latitude];
+    setGps("GPS +/-" + Math.round(p.coords.accuracy) + " m", p.coords.accuracy < 40 ? "ok" : "");
+    if (p.coords.accuracy < 60) {
+      for (var j = i; j <= Math.min(steps.length - 1, i + 2); j++) {
+        var c = steps[j].coords, e = c[c.length - 1];
+        if (j < steps.length - 1 && dm(pos, e) < ADV_M) { i = j + 1; render(true); return; }
+      }
+    }
+    drawMap(); checkOff();
+  }
+  function checkOff() {
+    var o = $("off");
+    if (!pos) { o.hidden = true; return; }
+    var d = 1e12;
+    for (var j = Math.max(0, i - 1); j <= Math.min(steps.length - 1, i + 1); j++) d = Math.min(d, distToLine(pos, steps[j].coords));
+    if (d > OFF_M) { o.hidden = false; o.textContent = "Off route (" + Math.round(d * FT) + " ft). Tap Nearest to re-sync."; }
+    else o.hidden = true;
+  }
+  function nearest() {
+    if (!pos) { startGps(); return; }
+    var best = -1, bd = 1e12, lo = Math.max(0, i - 3), hi = Math.min(steps.length - 1, i + 60), j, d;
+    for (j = lo; j <= hi; j++) { d = distToLine(pos, steps[j].coords) + (j < i ? 15 : 0); if (d < bd) { bd = d; best = j; } }
+    if (bd > 120) for (j = 0; j < steps.length; j++) { d = distToLine(pos, steps[j].coords); if (d < bd) { bd = d; best = j; } }
+    if (best >= 0) go(best);
+  }
+
+  /* ---------- sheets ---------- */
+  function buildSteps() {
+    var L = $("stepsList"); L.textContent = "";
+    steps.forEach(function (s, j) {
+      var b = document.createElement("button"); b.type = "button"; b.className = "row" + (j === i ? " cur" : j < i ? " done" : ""); b.id = "row" + j;
+      b.innerHTML = '<span class="n"></span><span class="s"><b></b><span></span></span><span class="f"></span>';
+      b.querySelector(".n").textContent = j + 1;
+      b.querySelector("b").textContent = s.street || "Destination";
+      var sp = b.querySelector(".s span"); sp.textContent = verbOf(s) + " - " + (s.mode === "COLLECT" ? "COLLECT" : s.mode === "DRIVE" ? "DRIVE" : "REPEAT"); sp.className = s.mode === "COLLECT" ? "m-c" : "m-d";
+      b.querySelector(".f").textContent = s.turn === "arrive" ? "" : fmtFt(s.ft);
+      b.addEventListener("click", function () { $("stepsSheet").hidden = true; go(j); });
+      L.appendChild(b);
+    });
+  }
+  function openSteps() { buildSteps(); $("stepsSheet").hidden = false; var r = $("row" + i); if (r) r.scrollIntoView({ block: "center" }); }
+  function buildRoutes() {
+    var L = $("routesList"); L.textContent = "";
+    ROUTES.forEach(function (r, j) {
+      var b = document.createElement("button"); b.type = "button"; b.className = "pick";
+      var mi = r.steps.reduce(function (a, s) { return a + s.ft; }, 0) / 5280;
+      b.innerHTML = "<span></span><small></small>";
+      b.querySelector("span").textContent = r.title;
+      b.querySelector("small").textContent = r.steps.length + " steps - " + mi.toFixed(1) + " mi" + (r.note ? " - " + r.note : "");
+      b.addEventListener("click", function () { $("routesSheet").hidden = true; openRoute(j); });
+      L.appendChild(b);
+    });
+  }
+
+  function openRoute(idx) {
+    R = ROUTES[idx]; steps = R.steps; sset("drv:last", String(idx));
+    if (R.bg && !R.bg[0].c) R.bg = R.bg.map(function (c) {
+      var x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+      c.forEach(function (p) { x0 = Math.min(x0, p[0]); x1 = Math.max(x1, p[0]); y0 = Math.min(y0, p[1]); y1 = Math.max(y1, p[1]); });
+      return { c: c, x0: x0, x1: x1, y0: y0, y1: y1 };
+    });
+    remFt = new Array(steps.length); var t = 0;
+    for (var j = steps.length - 1; j >= 0; j--) { t += steps[j].ft; remFt[j] = t; }
+    var saved = parseInt(sget("drv:" + R.id) || "0", 10);
+    i = isNaN(saved) ? 0 : Math.max(0, Math.min(steps.length - 1, saved));
+    render(false);
+  }
+
+  window.addEventListener("resize", function () { if (steps) drawMap(); });
+
+  /* ---------- wiring ---------- */
+  $("next").addEventListener("click", function () { go(i + 1); });
+  $("back").addEventListener("click", function () { go(i - 1); });
+  $("bSteps").addEventListener("click", openSteps);
+  $("stepsClose").addEventListener("click", function () { $("stepsSheet").hidden = true; });
+  $("routesClose").addEventListener("click", function () { $("routesSheet").hidden = true; });
+  $("bNear").addEventListener("click", nearest);
+  $("gps").addEventListener("click", startGps);
+  $("bVoice").addEventListener("click", function () {
+    voiceOn = !voiceOn; this.setAttribute("aria-pressed", voiceOn); this.textContent = voiceOn ? "Voice on" : "Voice off";
+    if (voiceOn) say(steps[i]);
+  });
+  var confirmRestart = false, rt = 0;
+  $("bDone").addEventListener("click", function () {
+    if (!confirmRestart) { confirmRestart = true; this.textContent = "Tap again"; clearTimeout(rt); var b = this; rt = setTimeout(function () { confirmRestart = false; b.textContent = "Restart"; }, 3000); return; }
+    confirmRestart = false; this.textContent = "Restart"; go(0, false);
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "ArrowRight") go(i + 1); if (e.key === "ArrowLeft") go(i - 1); });
+  function wake() { try { if (navigator.wakeLock && document.visibilityState === "visible") navigator.wakeLock.request("screen").catch(function () {}); } catch (e) {} }
+  document.addEventListener("visibilitychange", wake); wake();
+
+  if (ROUTES.length > 1) { $("chg").hidden = false; $("chg").addEventListener("click", function () { buildRoutes(); $("routesSheet").hidden = false; }); }
+  var last = parseInt(sget("drv:last") || "0", 10);
+  openRoute(ROUTES.length > 1 && last >= 0 && last < ROUTES.length ? last : 0);
+  if (ROUTES.length > 1 && sget("drv:last") === null) { buildRoutes(); $("routesSheet").hidden = false; }
+})();
+</script>
+</body></html>
