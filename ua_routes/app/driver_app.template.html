@@ -107,6 +107,7 @@ button.chip { cursor: pointer; }
 .row .m-c { color: var(--collect); } .row .m-d { color: var(--drive); }
 .pick { display: block; width: 100%; text-align: left; padding: 14px; margin-bottom: 10px; border-radius: 12px;
   border: 2px solid var(--line); background: var(--panel); font-weight: 800; font-size: 18px; }
+.grp { font-family: var(--mono); font-weight: 700; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 14px 0 8px; }
 .pick small { display: block; font-weight: 500; color: var(--muted); font-size: 14px; margin-top: 2px; }
 </style>
 
@@ -162,6 +163,7 @@ button.chip { cursor: pointer; }
 <script>
 (function () {
   var ROUTES = /*ROUTES_JSON*/;
+  var BGS = /*BG_JSON*/, BGC = {};
   var $ = function (id) { return document.getElementById(id); };
   var FT = 3.28084, ADV_M = 30, OFF_M = 70;
   var R, steps, i = 0, remFt = [], pos = null, watchId = null, voiceOn = false;
@@ -415,7 +417,11 @@ button.chip { cursor: pointer; }
   function openSteps() { buildSteps(); $("stepsSheet").hidden = false; var r = $("row" + i); if (r) r.scrollIntoView({ block: "center" }); }
   function buildRoutes() {
     var L = $("routesList"); L.textContent = "";
+    var lastGroup = null;
     ROUTES.forEach(function (r, j) {
+      if (r.group && r.group !== lastGroup) {
+        var h = document.createElement("div"); h.className = "grp"; h.textContent = r.group; L.appendChild(h); lastGroup = r.group;
+      }
       var b = document.createElement("button"); b.type = "button"; b.className = "pick";
       var mi = r.steps.reduce(function (a, s) { return a + s.ft; }, 0) / 5280;
       b.innerHTML = "<span></span><small></small>";
@@ -428,11 +434,14 @@ button.chip { cursor: pointer; }
 
   function openRoute(idx) {
     R = ROUTES[idx]; steps = R.steps; sset("drv:last", String(idx));
-    if (R.bg && !R.bg[0].c) R.bg = R.bg.map(function (c) {
-      var x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
-      c.forEach(function (p) { x0 = Math.min(x0, p[0]); x1 = Math.max(x1, p[0]); y0 = Math.min(y0, p[1]); y1 = Math.max(y1, p[1]); });
-      return { c: c, x0: x0, x1: x1, y0: y0, y1: y1 };
-    });
+    if (R.bgKey && BGS[R.bgKey]) {
+      if (!BGC[R.bgKey]) BGC[R.bgKey] = BGS[R.bgKey].map(function (c) {
+        var x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+        c.forEach(function (p) { x0 = Math.min(x0, p[0]); x1 = Math.max(x1, p[0]); y0 = Math.min(y0, p[1]); y1 = Math.max(y1, p[1]); });
+        return { c: c, x0: x0, x1: x1, y0: y0, y1: y1 };
+      });
+      R.bg = BGC[R.bgKey];
+    }
     remFt = new Array(steps.length); var t = 0;
     for (var j = steps.length - 1; j >= 0; j--) { t += steps[j].ft; remFt[j] = t; }
     var saved = parseInt(sget("drv:" + R.id) || "0", 10);
@@ -464,8 +473,9 @@ button.chip { cursor: pointer; }
   document.addEventListener("visibilitychange", wake); wake();
 
   if (ROUTES.length > 1) { $("chg").hidden = false; $("chg").addEventListener("click", function () { buildRoutes(); $("routesSheet").hidden = false; }); }
+  var firstVisit = sget("drv:last") === null;
   var last = parseInt(sget("drv:last") || "0", 10);
   openRoute(ROUTES.length > 1 && last >= 0 && last < ROUTES.length ? last : 0);
-  if (ROUTES.length > 1 && sget("drv:last") === null) { buildRoutes(); $("routesSheet").hidden = false; }
+  if (ROUTES.length > 1 && firstVisit) { buildRoutes(); $("routesSheet").hidden = false; }
 })();
 </script>

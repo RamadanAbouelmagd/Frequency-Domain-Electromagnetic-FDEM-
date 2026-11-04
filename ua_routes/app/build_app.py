@@ -8,9 +8,18 @@ import json, sys, pathlib
 here = pathlib.Path(__file__).parent
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 standalone = "--standalone" in sys.argv
-out, routes = args[0], [json.load(open(p)) for p in args[1:]]
+out = args[0]
+routes = []
+for p in args[1:]:
+    d = json.load(open(p))
+    routes.extend(d if isinstance(d, list) else [d])
+BG = {}
+for r in routes:
+    if "bg" in r:
+        BG[r["bgKey"]] = r.pop("bg")
 html = (here / "driver_app.template.html").read_text()
 html = html.replace("/*ROUTES_JSON*/", json.dumps(routes, separators=(",", ":")).replace("</", "<\\/"))
+html = html.replace("/*BG_JSON*/", json.dumps(BG, separators=(",", ":")).replace("</", "<\\/"))
 if standalone:
     html = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'

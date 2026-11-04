@@ -39,6 +39,7 @@ Run:      python ua_routes.py --zone all
 """
 
 import argparse
+import json
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 import csv
@@ -673,6 +674,8 @@ def write_outputs(G, zid, zone, zone_geom, steps, s, t, stats_before, stats_afte
     kml.savekmz(f"{pre}_route.kmz")
 
     write_gpx(f"{pre}_route.gpx", f"UA {zone['name']}", groups, G, t)
+    APP_ROUTES[pre].append(app_route(G, zone, f"{pre}-full", f"{zone['day'].title()}: full day", groups, t, True,
+                                     f"{(svc + dh) / M_PER_MI:.1f} mi"))
     write_turn_sheet(f"{pre}_turn_sheet.csv", groups, G)
     print(f"  wrote {pre}_route.kmz, {pre}_route.gpx, {pre}_turn_sheet.csv, {pre}_streets.csv")
     return dict(zone=zid, name=zone["name"], nonstop_drive_h=nonstop_h, total_mi=(svc + dh) / M_PER_MI,
@@ -729,6 +732,25 @@ def write_turn_sheet(fn, groups, G):
 
 
 SHIFT_ROWS = []
+APP_ROUTES = defaultdict(list)     # day -> routes for the driver app
+APP_BG = {}                        # day -> street centerlines (faint background in the app)
+
+
+def app_route(G, zone, rid, title, groups, end_node, last, note=""):
+    """Driver-app route: one step per street change, with the geometry of that leg."""
+    steps = []
+    for g in groups:
+        step = dict(turn=g["turn"], street=g["street"], mode="COLLECT" if g["_collect"] else "REPEAT",
+                    ft=round(g["len"] * FT_PER_M),
+                    coords=[[round(x, 6), round(y, 6)] for x, y in g["coords"]])
+        if g["wrong"]:
+            step["warn"] = "ONE-WAY: this block is against traffic. Go around the island the legal way."
+        steps.append(step)
+    x, y = node_xy(G, end_node)
+    steps.append(dict(turn="arrive", mode="DRIVE", ft=0, coords=[[round(x, 6), round(y, 6)]],
+                      street=("END OF DAY" if last else "END OF SHIFT: next shift starts here")))
+    return dict(id=rid, title=title, group=zone["day"].title(), bgKey=zone["day"], note=note, steps=steps)
+
 
 
 def write_shifts(G, Gu, zid, zone, req, s, t, n, total_mi):
@@ -775,6 +797,9 @@ def write_shifts(G, Gu, zid, zone, req, s, t, n, total_mi):
         groups = group_steps(G, steps)
         pre = f"shifts/{day}_{n}shifts_part{k + 1}"
         write_gpx(f"{pre}.gpx", f"UA {zone['name']} - shift {k + 1} of {n}", groups, G, ends[k])
+        APP_ROUTES[day].append(app_route(
+            G, zone, f"{day}-{n}-{k + 1}", f"{day.title()}: shift {k + 1} of {n}", groups, ends[k], k == n - 1,
+            f"{sum(g['len'] for g in groups) / M_PER_MI:.1f} mi"))
         write_turn_sheet(f"{pre}_turn_sheet.csv", groups, G)
         sv = sum(g["len"] for g in groups if g["_collect"])
         dh = sum(g["len"] for g in groups if not g["_collect"])
@@ -790,6 +815,21 @@ def write_shifts(G, Gu, zid, zone, req, s, t, n, total_mi):
             end_lat=round(y1, 6), end_lon=round(x1, 6)))
     print(f"  {n} shifts: {sum_mi:.2f} mi total vs {total_mi:.2f} mi single route "
           f"(+{sum_mi - total_mi:.2f})")
+
+
+def write_app_data(zids):
+    """app/data/<day>.json: full-day route, then its 2- and 3-shift routes, plus background streets."""
+    import os
+    os.makedirs("app/data", exist_ok=True)
+    for z in zids:
+        day = ZONES[z]["day"]
+        routes = APP_ROUTES.pop(day + "_route", []) + sorted(
+            APP_ROUTES.get(day, []), key=lambda r: r["id"])
+        # the full-day route is keyed f"{day}_route" in write_outputs; keep full first
+        routes.sort(key=lambda r: (0 if r["id"].endswith("-full") else 1, r["id"]))
+        routes[0]["bg"] = APP_BG[day]
+        json.dump(routes, open(f"app/data/{day}.json", "w"), separators=(",", ":"))
+        print(f"  app data: app/data/{day}.json ({len(routes)} routes)")
 
 
 def write_shift_plan():
@@ -1105,6 +1145,8 @@ def run_zone(G, Gu, roads, zid, geom, req, s, t):
     missing = sum((need - got).values())
     assert steps[0][0] == s and steps[-1][1] == t, "route does not run START -> END"
     print("  coverage:", "OK - every segment covered" if not missing else f"{missing} MISSING")
+    APP_BG[zone["day"]] = [[[round(x, 5), round(y, 5)] for x, y in edge_coords(Gu, u, v, d)]
+                           for u, v, k, d in req]
     stats = write_outputs(G, zid, zone, geom, steps, s, t, before, after)
     stats.update(missing=missing, streets=len(tot), segments=len(req),
                  alley_mi=alley / M_PER_MI)
@@ -1139,6 +1181,7 @@ def main(G=None, args=None):
         results[z] = run_zone(G, Gu, roads, z, geoms[z], reqs[z], *ends[z])
     write_summary(results)
     write_shift_plan()
+    write_app_data(zids)
     if len(zids) > 1:
         write_overview(results)
         city = check_gaps(Gu, results)
